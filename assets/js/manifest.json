@@ -1,0 +1,340 @@
+[
+  {
+    "file": "/mnt/data/flyer_assets/01_full_flyer.png",
+    "box": [
+      0,
+      0,
+      1448,
+      1086
+    ],
+    "size": [
+      1448,
+      1086
+    ]
+  },
+  {
+    "file": "/mnt/data/flyer_assets/02_flag_spain.png",
+    "box": [
+      24,
+      25,
+      115,
+      105
+    ],
+    "size": [
+      91,
+      80
+    ]
+  },
+  {
+    "file": "/mnt/data/flyer_assets/03_logo_tb.png",
+    "box": [
+      156,
+      10,
+      330,
+      166
+    ],
+    "size": [
+      174,
+      156
+    ]
+  },
+  {
+    "file": "/mnt/data/flyer_assets/04_brand_title_block.png",
+    "box": [
+      228,
+      10,
+      760,
+      180
+    ],
+    "size": [
+      532,
+      170
+    ]
+  },
+  {
+    "file": "/mnt/data/flyer_assets/05_guaranteed_work_badge.png",
+    "box": [
+      924,
+      8,
+      1088,
+      176
+    ],
+    "size": [
+      164,
+      168
+    ]
+  },
+  {
+    "file": "/mnt/data/flyer_assets/06_header_values_block.png",
+    "box": [
+      1150,
+      6,
+      1444,
+      176
+    ],
+    "size": [
+      294,
+      170
+    ]
+  },
+  {
+    "file": "/mnt/data/flyer_assets/07_main_headline_block.png",
+    "box": [
+      264,
+      185,
+      1206,
+      378
+    ],
+    "size": [
+      942,
+      193
+    ]
+  },
+  {
+    "file": "/mnt/data/flyer_assets/08_trust_values_center_block.png",
+    "box": [
+      472,
+      314,
+      958,
+      411
+    ],
+    "size": [
+      486,
+      97
+    ]
+  },
+  {
+    "file": "/mnt/data/flyer_assets/09_service_card_pool.png",
+    "box": [
+      24,
+      323,
+      352,
+      838
+    ],
+    "size": [
+      328,
+      515
+    ]
+  },
+  {
+    "file": "/mnt/data/flyer_assets/10_icon_pool.png",
+    "box": [
+      137,
+      284,
+      220,
+      369
+    ],
+    "size": [
+      83,
+      85
+    ]
+  },
+  {
+    "file": "/mnt/data/flyer_assets/11_image_pool.png",
+    "box": [
+      31,
+      421,
+      345,
+      537
+    ],
+    "size": [
+      314,
+      116
+    ]
+  },
+  {
+    "file": "/mnt/data/flyer_assets/12_service_card_electricity.png",
+    "box": [
+      363,
+      323,
+      694,
+      838
+    ],
+    "size": [
+      331,
+      515
+    ]
+  },
+  {
+    "file": "/mnt/data/flyer_assets/13_icon_electricity.png",
+    "box": [
+      474,
+      285,
+      556,
+      370
+    ],
+    "size": [
+      82,
+      85
+    ]
+  },
+  {
+    "file": "/mnt/data/flyer_assets/14_image_electricity.png",
+    "box": [
+      368,
+      420,
+      688,
+      537
+    ],
+    "size": [
+      320,
+      117
+    ]
+  },
+  {
+    "file": "/mnt/data/flyer_assets/15_service_card_cctv.png",
+    "box": [
+      700,
+      323,
+      1037,
+      839
+    ],
+    "size": [
+      337,
+      516
+    ]
+  },
+  {
+    "file": "/mnt/data/flyer_assets/16_icon_cctv.png",
+    "box": [
+      811,
+      286,
+      899,
+      374
+    ],
+    "size": [
+      88,
+      88
+    ]
+  },
+  {
+    "file": "/mnt/data/flyer_assets/17_image_cctv.png",
+    "box": [
+      708,
+      420,
+      1031,
+      538
+    ],
+    "size": [
+      323,
+      118
+    ]
+  },
+  {
+    "file": "/mnt/data/flyer_assets/18_service_card_satellite.png",
+    "box": [
+      1053,
+      323,
+      1398,
+      838
+    ],
+    "size": [
+      345,
+      515
+    ]
+  },
+  {
+    "file": "/mnt/data/flyer_assets/19_icon_satellite.png",
+    "box": [
+      1169,
+      286,
+      1262,
+      375
+    ],
+    "size": [
+      93,
+      89
+    ]
+  },
+  {
+    "file": "/mnt/data/flyer_assets/20_image_satellite.png",
+    "box": [
+      1060,
+      421,
+      1391,
+      537
+    ],
+    "size": [
+      331,
+      116
+    ]
+  },
+  {
+    "file": "/mnt/data/flyer_assets/21_team_block.png",
+    "box": [
+      28,
+      842,
+      480,
+      985
+    ],
+    "size": [
+      452,
+      143
+    ]
+  },
+  {
+    "file": "/mnt/data/flyer_assets/22_team_icon.png",
+    "box": [
+      39,
+      848,
+      148,
+      957
+    ],
+    "size": [
+      109,
+      109
+    ]
+  },
+  {
+    "file": "/mnt/data/flyer_assets/23_contact_block.png",
+    "box": [
+      498,
+      843,
+      786,
+      986
+    ],
+    "size": [
+      288,
+      143
+    ]
+  },
+  {
+    "file": "/mnt/data/flyer_assets/24_service_area_block.png",
+    "box": [
+      932,
+      839,
+      1436,
+      986
+    ],
+    "size": [
+      504,
+      147
+    ]
+  },
+  {
+    "file": "/mnt/data/flyer_assets/25_service_area_map.png",
+    "box": [
+      936,
+      844,
+      1200,
+      981
+    ],
+    "size": [
+      264,
+      137
+    ]
+  },
+  {
+    "file": "/mnt/data/flyer_assets/26_footer_bar.png",
+    "box": [
+      0,
+      989,
+      1448,
+      1086
+    ],
+    "size": [
+      1448,
+      97
+    ]
+  }
+]

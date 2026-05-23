@@ -259,6 +259,7 @@ img {
   font-size: clamp(0.9rem, 1.3vw, 1.25rem);
 }
 
+
 /* =========================================================
    SERVICIOS
 ========================================================= */
@@ -267,8 +268,22 @@ img {
   padding: clamp(1rem, 1.7vw, 1.7rem) 0 clamp(0.8rem, 1.5vw, 1.4rem);
 }
 
+/* Asegura que las columnas Bootstrap estiren la card */
+.services-section .row {
+  align-items: stretch;
+}
+
+/* Cada columna se comporta como contenedor flexible */
+.services-section .row > [class*="col"] {
+  display: flex;
+}
+
+/* La card se convierte en una columna vertical */
 .service-card {
+  display: flex;
+  flex-direction: column;
   height: 100%;
+  width: 100%;
   border: 1px solid var(--border);
   border-radius: 0.6rem;
   background-color: var(--white);
@@ -276,15 +291,18 @@ img {
   box-shadow: 0 8px 18px rgba(7, 18, 47, 0.06);
 }
 
+/* Todas las cabeceras de las cards tendrán la misma altura */
 .service-header {
-  min-height: 7.2rem;
+  height: 8.8rem;
+  min-height: unset;
+  flex: 0 0 auto;
   padding: 0.2rem 0.75rem 0.6rem;
-  text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: end;
+  justify-content: flex-end;
   align-items: center;
   gap: 0.5rem;
+  text-align: center;
 }
 
 .service-icon {
@@ -292,6 +310,7 @@ img {
   height: clamp(4.2rem, 5.2vw, 5.4rem);
   border-radius: 50%;
   display: grid;
+  flex: 0 0 auto;
   place-items: center;
   color: var(--white);
   font-size: clamp(2.1rem, 2.7vw, 2.9rem);
@@ -313,13 +332,13 @@ img {
   background: linear-gradient(180deg, #008f52, #00572f);
 }
 
+/* Reserva una altura estable para los títulos */
 .service-header h3 {
-  margin: 0;
-  text-transform: uppercase;
-  font-weight: 900;
-  letter-spacing: 0.03em;
-  line-height: 1.08;
-  font-size: clamp(1rem, 1.4vw, 1.45rem);
+  min-height: 3.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .service-header h3 span {
@@ -344,13 +363,31 @@ img {
   color: var(--green);
 }
 
+/* Todas las imágenes tendrán exactamente la misma altura */
 .service-image {
   width: 100%;
-  aspect-ratio: 2.3 / 1;
+  height: 9.2rem;
+  border-radius: 0.6rem;
   object-fit: cover;
+  flex: 0 0 auto;
 }
 
+/* =========================================================
+   AJUSTE FINO - IMÁGENES DE VIDEO Y ANTENAS
+   Reduce mínimamente la imagen para igualarla visualmente
+   con las dos primeras cards.
+========================================================= */
+
+.service-card.video-card .service-image,
+.service-card.satellite-card .service-image {
+  width: calc(100% - 0.6rem);
+  margin-inline: auto;
+  border-radius: 0.6rem;
+}
+
+/* El bloque de texto crece y empuja el footer hacia abajo */
 .service-body {
+  flex: 1 1 auto;
   padding: clamp(0.8rem, 1.2vw, 1.15rem);
 }
 
@@ -390,7 +427,9 @@ img {
   color: var(--green);
 }
 
+/* El footer queda siempre abajo */
 .service-footer {
+  margin-top: auto;
   min-height: 4.4rem;
   padding: 0.65rem 1rem;
   display: grid;
@@ -399,6 +438,9 @@ img {
   gap: 0.5rem;
   font-weight: 600;
   line-height: 1.16;
+
+  /* Opción recomendada para que encaje con la card */
+  border-radius: 0 0 0.6rem 0.6rem;
 }
 
 .service-footer i {
@@ -428,6 +470,103 @@ img {
   color: var(--white);
   background: linear-gradient(90deg, #00572f, #007a45);
 }
+
+/* =========================================================
+   SERVICIOS - CARDS ROBUSTAS Y RESPONSIVE
+========================================================= */
+
+/* Bootstrap: fuerza que todas las columnas estiren igual */
+.services-section .row {
+  align-items: stretch;
+}
+
+.services-section .row > [class*="col"] {
+  display: flex;
+}
+
+/* Card como columna flexible */
+.service-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Cabecera con aire arriba para que los iconos no se corten */
+.service-header {
+  flex: 0 0 auto;
+  min-height: 9.4rem;
+  padding: 1.05rem 0.75rem 0.85rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  gap: 0.55rem;
+}
+
+/* Iconos sin margen negativo ni desplazamientos raros */
+.service-icon {
+  flex: 0 0 auto;
+  width: clamp(4rem, 5vw, 5.2rem);
+  height: clamp(4rem, 5vw, 5.2rem);
+  margin: 0;
+}
+
+/* Título con altura estable para que las imágenes arranquen igual */
+.service-header h3 {
+  min-height: 3.15rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.08;
+}
+
+/* Imagen siempre alineada y con misma altura */
+.service-image {
+  flex: 0 0 auto;
+  width: 100%;
+  height: clamp(8.8rem, 10.5vw, 10.4rem);
+  object-fit: cover;
+}
+
+/* El cuerpo crece y empuja el footer hacia abajo */
+.service-body {
+  flex: 1 1 auto;
+}
+
+/* Footer fijo abajo, más estable que grid en zoom 110% */
+.service-footer {
+  margin-top: auto;
+  min-height: 4.6rem;
+  padding: 0.75rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  border-radius: 0 0 0.6rem 0.6rem;
+}
+
+/* Icono del footer con ancho fijo */
+.service-footer i {
+  flex: 0 0 2.25rem;
+  width: 2.25rem;
+  text-align: center;
+  font-size: 2rem;
+}
+
+/* Texto del footer: evita roturas raras al hacer zoom */
+.service-footer p {
+  flex: 1 1 auto;
+  min-width: 0;
+  margin: 0;
+  line-height: 1.18;
+  overflow-wrap: normal;
+  word-break: normal;
+  hyphens: none;
+}
+
 
 /* =========================================================
    BLOQUE INFERIOR
