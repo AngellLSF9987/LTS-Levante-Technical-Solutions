@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "title": "TLS | Servicios técnicos integrales",
+    "description": "Servicios técnicos integrales: piscinas, electricidad, videovigilancia, antenas y satélite en el sureste de España."
+  },
+  "brand": {
+    "top": "Levante",
+    "name": "Technical Solutions",
+    "claimStart": "Soluciones que funcionan,",
+    "claimStrong": "servicios en los que puedes confiar.",
+    "logoAlt": "Logotipo de Levante Technical Solutions"
+  },
+  "header": {
+    "badgeAlt": "Trabajo garantizado"
+  },
+  "values": {
+    "quality": "Calidad",
+    "experience": "Experiencia",
+    "commitment": "Compromiso",
+    "subtitle": "Todo en un solo lugar<br />para tu tranquilidad.",
+    "subtitlePlain": "Todo en un solo lugar para tu tranquilidad."
+  },
+  "hero": {
+    "title": "Soluciones que funcionan,",
+    "subtitle": "Servicios en los que puedes confiar."
+  },
+  "services": {
+    "pool": {
+      "title": "Tratamiento de piscinas<br />todo incluido",
+      "imageAlt": "Piscina limpia y cristalina",
+      "items": [
+        "Análisis y control del agua",
+        "Tratamiento químico balanceado",
+        "Limpieza y mantenimiento completo",
+        "Equipos en óptimas condiciones",
+        "Asesoría personalizada"
+      ],
+      "footer": "Agua limpia, segura y cristalina todo el año."
+    },
+    "electricity": {
+      "title": "Electricidad",
+      "imageAlt": "Instalación de panel eléctrico",
+      "items": [
+        "Instalaciones eléctricas residenciales, comerciales e industriales",
+        "Mantenimiento preventivo y correctivo",
+        "Diagnóstico de fallas",
+        "Tableros eléctricos y protecciones",
+        "Iluminación interior y exterior"
+      ],
+      "footer": "Seguridad, eficiencia y energía que se nota."
+    },
+    "surveillance": {
+      "title": "Video<br />vigilancia",
+      "imageAlt": "Cámara de seguridad CCTV",
+      "items": [
+        "Instalación de cámaras de seguridad CCTV",
+        "Monitoreo remoto en tiempo real",
+        "Grabación y almacenamiento seguro",
+        "Sistemas para hogar, negocio y empresas",
+        "Asesoría personalizada según tus necesidades"
+      ],
+      "footer": "Protegemos lo que más te importa, las 24 horas."
+    },
+    "satellite": {
+      "title": "Antenas y satélite",
+      "subtitle": "Canales de tu país de origen",
+      "imageAlt": "Antena parabólica",
+      "items": [
+        "Instalación de antenas y sistemas satelitales",
+        "Acceso a canales de tu país de origen",
+        "Imagen en alta definición HD",
+        "Orientación y configuración profesional",
+        "Servicio técnico y mantenimiento"
+      ],
+      "footer": "Disfruta los canales de tu país, estés donde estés."
+    }
+  },
+  "team": {
+    "title": "Un solo equipo,<br />todas las soluciones.",
+    "subtitle": "¡Estamos para servirte!"
+  },
+  "contact": {
+    "title": "Contáctanos",
+    "phone": "Tu número aquí",
+    "location": "Tu ciudad / zona de servicio",
+    "website": "Tus redes sociales / página web"
+  },
+  "area": {
+    "title": "Zona de trabajo:<br />Sureste de España"
+  },
+  "footer": {
+    "main": "Comprometidos con tu hogar, tu empresa y tu tranquilidad.",
+    "professionalism": "Profesionalidad",
+    "trust": "Confianza",
+    "results": "Resultados"
+  }
+}

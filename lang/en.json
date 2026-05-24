@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "title": "TLS | Technical Services",
+    "description": "Integrated technical services: pool maintenance, electricity, video surveillance, antennas and satellite systems in Southeast Spain."
+  },
+  "brand": {
+    "top": "Levante",
+    "name": "Technical Solutions",
+    "claimStart": "Solutions that work,",
+    "claimStrong": "services you can trust.",
+    "logoAlt": "Levante Technical Solutions logo"
+  },
+  "header": {
+    "badgeAlt": "Guaranteed work"
+  },
+  "values": {
+    "quality": "Quality",
+    "experience": "Experience",
+    "commitment": "Commitment",
+    "subtitle": "Everything in one place<br />for your peace of mind.",
+    "subtitlePlain": "Everything in one place for your peace of mind."
+  },
+  "hero": {
+    "title": "Solutions that work,",
+    "subtitle": "Services you can trust."
+  },
+  "services": {
+    "pool": {
+      "title": "All-inclusive<br />pool maintenance",
+      "imageAlt": "Clean swimming pool",
+      "items": [
+        "Water analysis and control",
+        "Balanced chemical treatment",
+        "Complete cleaning and maintenance",
+        "Equipment kept in optimal condition",
+        "Personalized advice"
+      ],
+      "footer": "Clean, safe and crystal-clear water all year round."
+    },
+    "electricity": {
+      "title": "Electricity",
+      "imageAlt": "Electrical panel installation",
+      "items": [
+        "Residential, commercial and industrial electrical installations",
+        "Preventive and corrective maintenance",
+        "Fault diagnostics",
+        "Electrical panels and protection systems",
+        "Indoor and outdoor lighting"
+      ],
+      "footer": "Safety, efficiency and energy you can notice."
+    },
+    "surveillance": {
+      "title": "Video<br />surveillance",
+      "imageAlt": "CCTV security camera",
+      "items": [
+        "CCTV security camera installation",
+        "Real-time remote monitoring",
+        "Secure recording and storage",
+        "Systems for homes, businesses and companies",
+        "Personalized advice tailored to your needs"
+      ],
+      "footer": "Protecting what matters most, 24 hours a day."
+    },
+    "satellite": {
+      "title": "Antennas & Satellite",
+      "subtitle": "Channels from your home country",
+      "imageAlt": "Satellite dish",
+      "items": [
+        "Installation of antennas and satellite systems",
+        "Access to channels from your home country",
+        "High-definition image quality HD",
+        "Professional guidance and setup",
+        "Technical service and maintenance"
+      ],
+      "footer": "Enjoy channels from your country wherever you are."
+    }
+  },
+  "team": {
+    "title": "One team,<br />all the solutions.",
+    "subtitle": "We are here to help you!"
+  },
+  "contact": {
+    "title": "Contact us",
+    "phone": "Your phone number here",
+    "location": "Your city / service area",
+    "website": "Your social media / website"
+  },
+  "area": {
+    "title": "Service area:<br />Southeast Spain"
+  },
+  "footer": {
+    "main": "Committed to your home, your business and your peace of mind.",
+    "professionalism": "Professionalism",
+    "trust": "Trust",
+    "results": "Results"
+  }
+}

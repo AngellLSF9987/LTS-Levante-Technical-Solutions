@@ -1,16 +1,21 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <!-- Configuración básica del documento -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>The Best Company | Technical Services</title>
+    <!-- Permite que Google traduzca/indexe correctamente el contenido -->
+    <meta name="google" content="translate" />
+    <meta
+      name="description"
+      content="Servicios técnicos integrales: piscinas, electricidad, videovigilancia, antenas y satélite en el sureste de España."
+      data-i18n-content="meta.description"
+    />
 
-    <!-- CSS propio del proyecto -->
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <title data-i18n="meta.title">TLS | Servicios técnicos integrales</title>
 
-        <!-- Bootstrap CSS -->
+    <!-- Bootstrap CSS: primero Bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -21,6 +26,12 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
       rel="stylesheet"
     />
+
+    <!-- CSS propio del proyecto: siempre después de Bootstrap -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- CSS específico del selector de idioma -->
+    <link rel="stylesheet" href="assets/css/i18n.css" />
   </head>
 
   <body>
@@ -30,54 +41,91 @@
       <header class="top-header">
         <div class="container-fluid px-4 px-xl-5">
           <div class="row align-items-center g-3">
-            <!-- Bandera + logo + nombre empresa -->
+            <!-- Selector idioma + logo + nombre empresa -->
             <div class="col-lg-7">
               <div class="brand-area">
-                <img
-                  src="assets/img/flag-spain.png"
-                  alt="United Kingdom flag"
-                  class="language-flag"
-                />
+                <!-- Selector de idioma. Sustituye a la bandera estática. -->
+                <div class="language-switcher" aria-label="Selector de idioma">
+                  <button
+                    type="button"
+                    data-lang="es"
+                    aria-label="Cambiar idioma a español"
+                    aria-pressed="true"
+                  >
+                    <img src="assets/img/flag-spain.png" alt="Español" />
+                  </button>
+
+                  <button
+                    type="button"
+                    data-lang="en"
+                    aria-label="Change language to English"
+                    aria-pressed="false"
+                  >
+                    <img src="assets/img/flag-uk.png" alt="English" />
+                  </button>
+                </div>
 
                 <img
                   src="assets/img/03_logo_tb.png"
-                  alt="The Best Company logo"
+                  alt="Logotipo de Levante Technical Solutions"
                   class="brand-logo"
+                  data-i18n-alt="brand.logoAlt"
                 />
 
                 <div class="brand-text">
                   <h1>
-                    <span>The Best</span>
-                    <strong>Company</strong>
+                    <span data-i18n="brand.top">Levante</span>
+                    <strong data-i18n="brand.name">Technical Solutions</strong>
                   </h1>
 
                   <p>
-                    Solutions that work,
-                    <strong>services you can trust.</strong>
+                    <span data-i18n="brand.claimStart">Soluciones que funcionan,</span>
+                    <strong data-i18n="brand.claimStrong">
+                      servicios en los que puedes confiar.
+                    </strong>
                   </p>
                 </div>
               </div>
             </div>
 
-            <!-- Sello de trabajo garantizado -->
-            <div class="col-5 col-lg-2 d-flex justify-content-center">
-              <div class="guarantee-badge">
-                <i class="bi bi-check-lg"></i>
-                <span>Guaranteed<br />Work</span>
-                <small>★★★</small>
-              </div>
-            </div>
+            <!-- Bloque derecho del header: escudo + valores -->
+            <div class="col-lg-5">
+              <div class="header-right-panel">
+                <!-- Escudo exportado como PNG con transparencia real -->
+                <img
+                  src="assets/img/badge-guarantee-transparent-alpha.png"
+                  alt="Trabajo garantizado"
+                  class="header-badge-img"
+                  data-i18n-alt="header.badgeAlt"
+                />
 
-            <!-- Valores rápidos de empresa -->
-            <div class="col-7 col-lg-3">
-              <div class="header-values">
-                <ul>
-                  <li><i class="bi bi-check-circle"></i> Quality</li>
-                  <li><i class="bi bi-star"></i> Experience</li>
-                  <li><i class="bi bi-patch-check"></i> Commitment</li>
-                </ul>
+                <!-- Línea separadora -->
+                <div class="header-separator" aria-hidden="true"></div>
 
-                <p>Everything in one place<br />for your peace of mind.</p>
+                <!-- Valores escritos en HTML para poder traducirlos -->
+                <div class="header-values-html">
+                  <ul>
+                    <li>
+                      <i class="bi bi-check-circle"></i>
+                      <span data-i18n="values.quality">Calidad</span>
+                    </li>
+
+                    <li>
+                      <i class="bi bi-check-circle"></i>
+                      <span data-i18n="values.experience">Experiencia</span>
+                    </li>
+
+                    <li>
+                      <i class="bi bi-check-circle"></i>
+                      <span data-i18n="values.commitment">Compromiso</span>
+                    </li>
+                  </ul>
+
+                  <p data-i18n-html="values.subtitle">
+                    Todo en un solo lugar<br />
+                    para tu tranquilidad.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -88,8 +136,8 @@
       <section class="hero-section">
         <div class="container-fluid px-4 px-xl-5 text-center">
           <div class="hero-title">
-            <h2>Solutions that work,</h2>
-            <p>Services you can trust.</p>
+            <h2 data-i18n="hero.title">Soluciones que funcionan,</h2>
+            <p data-i18n="hero.subtitle">Servicios en los que puedes confiar.</p>
           </div>
 
           <div class="trust-line">
@@ -97,15 +145,15 @@
               <i class="bi bi-check-lg"></i>
             </span>
 
-            <strong>Quality</strong>
+            <strong data-i18n="values.quality">Calidad</strong>
             <span>•</span>
-            <strong>Experience</strong>
+            <strong data-i18n="values.experience">Experiencia</strong>
             <span>•</span>
-            <strong>Commitment</strong>
+            <strong data-i18n="values.commitment">Compromiso</strong>
           </div>
 
-          <p class="hero-subtitle">
-            Everything in one place for your peace of mind.
+          <p class="hero-subtitle" data-i18n="values.subtitlePlain">
+            Todo en un solo lugar para tu tranquilidad.
           </p>
         </div>
       </section>
@@ -122,31 +170,34 @@
                     <i class="bi bi-water"></i>
                   </div>
 
-                  <h3 class="blue-text">
-                    All-inclusive<br />
-                    Pool Maintenance
+                  <h3 class="blue-text" data-i18n-html="services.pool.title">
+                    Tratamiento de piscinas<br />
+                    todo incluido
                   </h3>
                 </div>
 
                 <img
                   src="assets/img/pool.png"
-                  alt="Clean swimming pool"
+                  alt="Piscina limpia y cristalina"
                   class="service-image"
+                  data-i18n-alt="services.pool.imageAlt"
                 />
 
                 <div class="service-body">
                   <ul>
-                    <li>Water analysis and control</li>
-                    <li>Balanced chemical treatment</li>
-                    <li>Complete cleaning and maintenance</li>
-                    <li>Equipment kept in optimal condition</li>
-                    <li>Personalized advice</li>
+                    <li data-i18n="services.pool.items.0">Análisis y control del agua</li>
+                    <li data-i18n="services.pool.items.1">Tratamiento químico balanceado</li>
+                    <li data-i18n="services.pool.items.2">Limpieza y mantenimiento completo</li>
+                    <li data-i18n="services.pool.items.3">Equipos en óptimas condiciones</li>
+                    <li data-i18n="services.pool.items.4">Asesoría personalizada</li>
                   </ul>
                 </div>
 
                 <div class="service-footer blue-bg">
                   <i class="bi bi-droplet-fill"></i>
-                  <p>Clean, safe and crystal-clear water all year round.</p>
+                  <p data-i18n="services.pool.footer">
+                    Agua limpia, segura y cristalina todo el año.
+                  </p>
                 </div>
               </div>
             </article>
@@ -159,28 +210,41 @@
                     <i class="bi bi-lightning-charge-fill"></i>
                   </div>
 
-                  <h3 class="yellow-text">Electricity</h3>
+                  <h3 class="yellow-text" data-i18n="services.electricity.title">
+                    Electricidad
+                  </h3>
                 </div>
 
                 <img
                   src="assets/img/electricity.png"
-                  alt="Electrical panel installation"
+                  alt="Instalación de panel eléctrico"
                   class="service-image"
+                  data-i18n-alt="services.electricity.imageAlt"
                 />
 
                 <div class="service-body yellow-checks">
                   <ul>
-                    <li>Residential, commercial and industrial electrical installations</li>
-                    <li>Preventive and corrective maintenance</li>
-                    <li>Fault diagnostics</li>
-                    <li>Electrical panels and protection systems</li>
-                    <li>Indoor and outdoor lighting</li>
+                    <li data-i18n="services.electricity.items.0">
+                      Instalaciones eléctricas residenciales, comerciales e industriales
+                    </li>
+                    <li data-i18n="services.electricity.items.1">
+                      Mantenimiento preventivo y correctivo
+                    </li>
+                    <li data-i18n="services.electricity.items.2">Diagnóstico de fallas</li>
+                    <li data-i18n="services.electricity.items.3">
+                      Tableros eléctricos y protecciones
+                    </li>
+                    <li data-i18n="services.electricity.items.4">
+                      Iluminación interior y exterior
+                    </li>
                   </ul>
                 </div>
 
                 <div class="service-footer yellow-bg">
                   <i class="bi bi-lightbulb"></i>
-                  <p>Safety, efficiency and energy you can notice.</p>
+                  <p data-i18n="services.electricity.footer">
+                    Seguridad, eficiencia y energía que se nota.
+                  </p>
                 </div>
               </div>
             </article>
@@ -193,31 +257,44 @@
                     <i class="bi bi-camera-video-fill"></i>
                   </div>
 
-                  <h3 class="navy-text">
+                  <h3 class="navy-text" data-i18n-html="services.surveillance.title">
                     Video<br />
-                    Surveillance
+                    vigilancia
                   </h3>
                 </div>
 
                 <img
                   src="assets/img/cam.png"
-                  alt="Security camera"
+                  alt="Cámara de seguridad CCTV"
                   class="service-image"
+                  data-i18n-alt="services.surveillance.imageAlt"
                 />
 
                 <div class="service-body navy-checks">
                   <ul>
-                    <li>CCTV security camera installation</li>
-                    <li>Real-time remote monitoring</li>
-                    <li>Secure recording and storage</li>
-                    <li>Systems for homes, businesses and companies</li>
-                    <li>Personalized advice tailored to your needs</li>
+                    <li data-i18n="services.surveillance.items.0">
+                      Instalación de cámaras de seguridad CCTV
+                    </li>
+                    <li data-i18n="services.surveillance.items.1">
+                      Monitoreo remoto en tiempo real
+                    </li>
+                    <li data-i18n="services.surveillance.items.2">
+                      Grabación y almacenamiento seguro
+                    </li>
+                    <li data-i18n="services.surveillance.items.3">
+                      Sistemas para hogar, negocio y empresas
+                    </li>
+                    <li data-i18n="services.surveillance.items.4">
+                      Asesoría personalizada según tus necesidades
+                    </li>
                   </ul>
                 </div>
 
                 <div class="service-footer navy-bg">
                   <i class="bi bi-shield-check"></i>
-                  <p>Protecting what matters most, 24 hours a day.</p>
+                  <p data-i18n="services.surveillance.footer">
+                    Protegemos lo que más te importa, las 24 horas.
+                  </p>
                 </div>
               </div>
             </article>
@@ -231,30 +308,45 @@
                   </div>
 
                   <h3 class="green-text">
-                    Antennas & Satellite
-                    <span>Channels from your home country</span>
+                    <span data-i18n="services.satellite.title">Antenas y satélite</span>
+                    <span data-i18n="services.satellite.subtitle">
+                      Canales de tu país de origen
+                    </span>
                   </h3>
                 </div>
 
                 <img
                   src="assets/img/antennas.png"
-                  alt="Satellite dish"
+                  alt="Antena parabólica"
                   class="service-image"
+                  data-i18n-alt="services.satellite.imageAlt"
                 />
 
                 <div class="service-body green-checks">
                   <ul>
-                    <li>Installation of antennas and satellite systems</li>
-                    <li>Access to channels from your home country</li>
-                    <li>High-definition image quality HD</li>
-                    <li>Professional guidance and setup</li>
-                    <li>Technical service and maintenance</li>
+                    <li data-i18n="services.satellite.items.0">
+                      Instalación de antenas y sistemas satelitales
+                    </li>
+                    <li data-i18n="services.satellite.items.1">
+                      Acceso a canales de tu país de origen
+                    </li>
+                    <li data-i18n="services.satellite.items.2">
+                      Imagen en alta definición HD
+                    </li>
+                    <li data-i18n="services.satellite.items.3">
+                      Orientación y configuración profesional
+                    </li>
+                    <li data-i18n="services.satellite.items.4">
+                      Servicio técnico y mantenimiento
+                    </li>
                   </ul>
                 </div>
 
                 <div class="service-footer green-bg">
                   <i class="bi bi-tv"></i>
-                  <p>Enjoy channels from your country wherever you are.</p>
+                  <p data-i18n="services.satellite.footer">
+                    Disfruta los canales de tu país, estés donde estés.
+                  </p>
                 </div>
               </div>
             </article>
@@ -274,12 +366,12 @@
                 </div>
 
                 <div>
-                  <h2>
-                    One team,<br />
-                    all the solutions.
+                  <h2 data-i18n-html="team.title">
+                    Un solo equipo,<br />
+                    todas las soluciones.
                   </h2>
 
-                  <p>We are here to help you!</p>
+                  <p data-i18n="team.subtitle">¡Estamos para servirte!</p>
                 </div>
               </div>
             </div>
@@ -287,22 +379,22 @@
             <!-- Contacto -->
             <div class="col-lg-4">
               <div class="contact-box">
-                <h2>Contact us</h2>
+                <h2 data-i18n="contact.title">Contáctanos</h2>
 
                 <ul>
                   <li>
                     <i class="bi bi-telephone-fill"></i>
-                    Your phone number here
+                    <span data-i18n="contact.phone">Tu número aquí</span>
                   </li>
 
                   <li>
                     <i class="bi bi-geo-alt-fill"></i>
-                    Your city / service area
+                    <span data-i18n="contact.location">Tu ciudad / zona de servicio</span>
                   </li>
 
                   <li>
                     <i class="bi bi-globe2"></i>
-                    Your social media / website
+                    <span data-i18n="contact.website">Tus redes sociales / página web</span>
                   </li>
                 </ul>
               </div>
@@ -311,11 +403,11 @@
             <!-- Zona de trabajo -->
             <div class="col-lg-4">
               <div class="service-area-box">
-                <div class="map-placeholder"></div>
+                <div class="map-placeholder" aria-hidden="true"></div>
 
-                <h2>
-                  Service area:<br />
-                  Southeast Spain
+                <h2 data-i18n-html="area.title">
+                  Zona de trabajo:<br />
+                  Sureste de España
                 </h2>
               </div>
             </div>
@@ -329,15 +421,15 @@
           <div class="footer-main-line">
             <i class="bi bi-shield-check"></i>
 
-            <p>
-              Committed to your home, your business and your peace of mind.
+            <p data-i18n="footer.main">
+              Comprometidos con tu hogar, tu empresa y tu tranquilidad.
             </p>
           </div>
 
           <div class="footer-values">
-            <span>Professionalism</span>
-            <span>Trust</span>
-            <span>Results</span>
+            <span data-i18n="footer.professionalism">Profesionalidad</span>
+            <span data-i18n="footer.trust">Confianza</span>
+            <span data-i18n="footer.results">Resultados</span>
           </div>
         </div>
       </footer>
@@ -345,5 +437,8 @@
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Sistema básico de traducción -->
+    <script src="assets/js/i18n.js"></script>
   </body>
 </html>
