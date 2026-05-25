@@ -1,0 +1,19 @@
+Flyers TLS preparados para imprenta
+
+Formato base: DINA5 vertical
+Tamaño de corte: 148 x 210 mm
+Sangrado aplicado: 2 mm por cada lado
+Tamaño final del archivo con sangrado: 152 x 214 mm
+Resolución: 300 ppp
+Dimensión global en píxeles: 1795 x 2528 px
+Modo de color: CMYK
+
+Archivos incluidos:
+- flyer_tls_es_DINA5_2mm_sangrado_CMYK_300ppp.tif
+- flyer_tls_es_DINA5_2mm_sangrado_CMYK_300ppp.jpg
+- flyer_tls_en_DINA5_2mm_sangrado_CMYK_300ppp.tif
+- flyer_tls_en_DINA5_2mm_sangrado_CMYK_300ppp.jpg
+
+Nota:
+Los archivos TIFF son la opción principal recomendada para imprenta raster.
+Los JPG CMYK se incluyen como alternativa por compatibilidad.
