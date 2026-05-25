@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "title": "TLS | Technische Gesamtdienstleistungen",
+    "description": "Technische Gesamtdienstleistungen: Pools, Elektrik, Videoüberwachung, Antennen und Satellit von der Costa del Sol bis zur Levante-Region."
+  },
+  "brand": {
+    "logoAlt": "Logo von Levante Technical Solutions",
+    "top": "Levante",
+    "name": "Technical Solutions",
+    "claimStart": "Lösungen, die funktionieren,",
+    "claimStrong": "Dienstleistungen, denen Sie vertrauen können."
+  },
+  "header": {
+    "badgeAlt": "Garantierte Arbeit"
+  },
+  "values": {
+    "quality": "Qualität",
+    "experience": "Erfahrung",
+    "commitment": "Engagement",
+    "subtitle": "Alles an einem Ort<br />für Ihre Sicherheit.",
+    "subtitlePlain": "Alles an einem Ort für Ihre Sicherheit."
+  },
+  "hero": {
+    "title": "Lösungen, die funktionieren,",
+    "subtitle": "Dienstleistungen, denen Sie vertrauen können."
+  },
+  "services": {
+    "pool": {
+      "title": "Poolwartung<br />alles inklusive",
+      "imageAlt": "Sauberer und kristallklarer Pool",
+      "items": [
+        "Wasseranalyse und Kontrolle",
+        "Ausgewogene chemische Behandlung",
+        "Komplette Reinigung und Wartung",
+        "Ausrüstung in optimalem Zustand",
+        "Persönliche Beratung"
+      ],
+      "footer": "Sauberes, sicheres und kristallklares Wasser das ganze Jahr."
+    },
+    "electricity": {
+      "title": "Elektrik",
+      "imageAlt": "Installation eines Schaltschrankes",
+      "items": [
+        "Elektrische Installationen für Wohn-, Gewerbe- und Industriebereiche",
+        "Vorbeugende und korrektive Wartung",
+        "Fehlerdiagnose",
+        "Schaltschränke und Schutzsysteme",
+        "Innen- und Außenbeleuchtung"
+      ],
+      "footer": "Sicherheit, Effizienz und Energie, die man merkt."
+    },
+    "surveillance": {
+      "title": "Video<br />überwachung",
+      "imageAlt": "CCTV-Sicherheitskamera",
+      "items": [
+        "Installation von CCTV-Sicherheitskameras",
+        "Fernüberwachung in Echtzeit",
+        "Sichere Aufzeichnung und Speicherung",
+        "Systeme für Zuhause, Geschäft und Unternehmen",
+        "Persönliche Beratung nach Bedarf"
+      ],
+      "footer": "Wir schützen, was Ihnen wichtig ist, rund um die Uhr."
+    },
+    "satellite": {
+      "title": "Antennen & Satellit",
+      "subtitle": "Kanäle aus Ihrem Heimatland",
+      "imageAlt": "Satellitenschüssel",
+      "items": [
+        "Installation von Antennen und Satellitensystemen",
+        "Zugang zu Kanälen aus Ihrem Heimatland",
+        "Bildqualität in High Definition HD",
+        "Professionelle Beratung und Einrichtung",
+        "Technischer Service und Wartung"
+      ],
+      "footer": "Genießen Sie Kanäle aus Ihrem Land, wo immer Sie sind."
+    }
+  },
+  "team": {
+    "title": "Ein Team,<br />alle Lösungen.",
+    "subtitle": "Wir sind da, um Ihnen zu helfen!"
+  },
+  "contact": {
+    "title": "Kontakt",
+    "phoneWhatsappLabel": "Telefon / WhatsApp",
+    "emailLabel": "E-Mail",
+    "googleProfileLabel": "Unternehmensprofil",
+    "googleProfileText": "Finden Sie uns auf Google"
+  },
+  "area": {
+    "title": "Arbeitsgebiet:<br />Costa del Sol - Levante",
+    "mapLinkLabel": "In Google Maps öffnen"
+  },
+  "footer": {
+    "main": "Engagiert für Ihr Zuhause, Ihr Unternehmen und Ihre Ruhe.",
+    "professionalism": "Professionalität",
+    "trust": "Vertrauen",
+    "results": "Ergebnisse",
+    "rights": "Alle Rechte vorbehalten.",
+    "brandNotice": "ist eine Marke des TLS-Projekts.",
+    "author": "Webdesign und Entwicklung:"
+  }
+}

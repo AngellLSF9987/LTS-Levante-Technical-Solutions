@@ -1,14 +1,14 @@
 {
   "meta": {
-    "title": "TLS | Technical Services",
-    "description": "Integrated technical services: pool maintenance, electricity, video surveillance, antennas and satellite systems in Southeast Spain."
+    "title": "TLS | Comprehensive Technical Services",
+    "description": "Comprehensive technical services: pools, electricity, video surveillance, antennas and satellite from the Costa del Sol to the Levante area."
   },
   "brand": {
+    "logoAlt": "Levante Technical Solutions logo",
     "top": "Levante",
     "name": "Technical Solutions",
     "claimStart": "Solutions that work,",
-    "claimStrong": "services you can trust.",
-    "logoAlt": "Levante Technical Solutions logo"
+    "claimStrong": "services you can trust."
   },
   "header": {
     "badgeAlt": "Guaranteed work"
@@ -27,7 +27,7 @@
   "services": {
     "pool": {
       "title": "All-inclusive<br />pool maintenance",
-      "imageAlt": "Clean swimming pool",
+      "imageAlt": "Clean and crystal-clear pool",
       "items": [
         "Water analysis and control",
         "Balanced chemical treatment",
@@ -56,13 +56,13 @@
         "CCTV security camera installation",
         "Real-time remote monitoring",
         "Secure recording and storage",
-        "Systems for homes, businesses and companies",
+        "Systems for homes, shops and companies",
         "Personalized advice tailored to your needs"
       ],
       "footer": "Protecting what matters most, 24 hours a day."
     },
     "satellite": {
-      "title": "Antennas & Satellite",
+      "title": "Antennas & satellite",
       "subtitle": "Channels from your home country",
       "imageAlt": "Satellite dish",
       "items": [
@@ -81,17 +81,22 @@
   },
   "contact": {
     "title": "Contact us",
-    "phone": "Your phone number here",
-    "location": "Your city / service area",
-    "website": "Your social media / website"
+    "phoneWhatsappLabel": "Phone / WhatsApp",
+    "emailLabel": "Email",
+    "googleProfileLabel": "Business profile",
+    "googleProfileText": "Find us on Google"
   },
   "area": {
-    "title": "Service area:<br />Southeast Spain"
+    "title": "Service area:<br />Costa del Sol - Levante",
+    "mapLinkLabel": "Open in Google Maps"
   },
   "footer": {
     "main": "Committed to your home, your business and your peace of mind.",
     "professionalism": "Professionalism",
     "trust": "Trust",
-    "results": "Results"
+    "results": "Results",
+    "rights": "All rights reserved.",
+    "brandNotice": "is a trademark of the TLS project.",
+    "author": "Web design and development:"
   }
 }

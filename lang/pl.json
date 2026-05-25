@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "title": "TLS | Kompleksowe usługi techniczne",
+    "description": "Kompleksowe usługi techniczne: baseny, elektryka, monitoring, anteny i satelita od Costa del Sol po Lewant."
+  },
+  "brand": {
+    "logoAlt": "Logo Levante Technical Solutions",
+    "top": "Levante",
+    "name": "Technical Solutions",
+    "claimStart": "Rozwiązania, które działają,",
+    "claimStrong": "usługi, którym możesz zaufać."
+  },
+  "header": {
+    "badgeAlt": "Gwarantowana praca"
+  },
+  "values": {
+    "quality": "Jakość",
+    "experience": "Doświadczenie",
+    "commitment": "Zaangażowanie",
+    "subtitle": "Wszystko w jednym miejscu<br />dla Twojego spokoju.",
+    "subtitlePlain": "Wszystko w jednym miejscu dla Twojego spokoju."
+  },
+  "hero": {
+    "title": "Rozwiązania, które działają,",
+    "subtitle": "Usługi, którym możesz zaufać."
+  },
+  "services": {
+    "pool": {
+      "title": "Kompleksowa obsługa<br />basenów",
+      "imageAlt": "Czysty i krystaliczny basen",
+      "items": [
+        "Analiza i kontrola wody",
+        "Zrównoważone uzdatnianie chemiczne",
+        "Pełne czyszczenie i konserwacja",
+        "Sprzęt w optymalnym stanie",
+        "Indywidualne doradztwo"
+      ],
+      "footer": "Czysta, bezpieczna i krystaliczna woda przez cały rok."
+    },
+    "electricity": {
+      "title": "Elektryka",
+      "imageAlt": "Instalacja rozdzielnicy elektrycznej",
+      "items": [
+        "Instalacje elektryczne domowe, komercyjne i przemysłowe",
+        "Konserwacja prewencyjna i naprawcza",
+        "Diagnostyka usterek",
+        "Rozdzielnice i systemy zabezpieczeń",
+        "Oświetlenie wewnętrzne i zewnętrzne"
+      ],
+      "footer": "Bezpieczeństwo, wydajność i energia, którą widać."
+    },
+    "surveillance": {
+      "title": "Monitoring<br />wideo",
+      "imageAlt": "Kamera bezpieczeństwa CCTV",
+      "items": [
+        "Instalacja kamer bezpieczeństwa CCTV",
+        "Zdalny monitoring w czasie rzeczywistym",
+        "Bezpieczne nagrywanie i przechowywanie",
+        "Systemy dla domów, sklepów i firm",
+        "Indywidualne doradztwo dopasowane do potrzeb"
+      ],
+      "footer": "Chronimy to, co najważniejsze, 24 godziny na dobę."
+    },
+    "satellite": {
+      "title": "Anteny i satelita",
+      "subtitle": "Kanały z Twojego kraju",
+      "imageAlt": "Antena satelitarna",
+      "items": [
+        "Instalacja anten i systemów satelitarnych",
+        "Dostęp do kanałów z Twojego kraju",
+        "Jakość obrazu w wysokiej rozdzielczości HD",
+        "Profesjonalne doradztwo i konfiguracja",
+        "Serwis techniczny i konserwacja"
+      ],
+      "footer": "Oglądaj kanały ze swojego kraju, gdziekolwiek jesteś."
+    }
+  },
+  "team": {
+    "title": "Jeden zespół,<br />wszystkie rozwiązania.",
+    "subtitle": "Jesteśmy tutaj, aby pomóc!"
+  },
+  "contact": {
+    "title": "Skontaktuj się",
+    "phoneWhatsappLabel": "Telefon / WhatsApp",
+    "emailLabel": "E-mail",
+    "googleProfileLabel": "Profil firmy",
+    "googleProfileText": "Znajdź nas w Google"
+  },
+  "area": {
+    "title": "Obszar pracy:<br />Costa del Sol - Levante",
+    "mapLinkLabel": "Otwórz w Google Maps"
+  },
+  "footer": {
+    "main": "Zaangażowani w Twój dom, firmę i spokój.",
+    "professionalism": "Profesjonalizm",
+    "trust": "Zaufanie",
+    "results": "Wyniki",
+    "rights": "Wszelkie prawa zastrzeżone.",
+    "brandNotice": "jest znakiem towarowym projektu TLS.",
+    "author": "Projekt i tworzenie strony:"
+  }
+}

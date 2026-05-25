@@ -279,6 +279,99 @@ img {
   color: var(--white);
 }
 
+/* =========================================================
+   SELECTOR DE IDIOMA EN CABECERA DERECHA
+========================================================= */
+
+.header-right-zone {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.45rem;
+}
+
+.header-language-switcher {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.35rem;
+  margin-bottom: 0.15rem;
+}
+
+.language-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.25rem 0.42rem;
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  border-radius: 0.4rem;
+  background: rgba(255, 255, 255, 0.08);
+  color: #ffffff;
+  font-size: 0.68rem;
+  font-weight: 800;
+  line-height: 1;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.language-btn img {
+  width: 1.35rem;
+  height: 0.9rem;
+  object-fit: cover;
+  border-radius: 0.12rem;
+}
+
+.language-btn:hover {
+  background: rgba(255, 255, 255, 0.18);
+  border-color: rgba(255, 255, 255, 0.85);
+}
+
+.language-btn.active,
+.language-btn[aria-pressed="true"] {
+  background: var(--cyan);
+  border-color: var(--cyan);
+  color: var(--navy);
+}
+
+/* Ajuste para mantener escudo y valores debajo del selector */
+.header-right-panel {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+/* Responsive */
+@media (max-width: 991.98px) {
+  .header-right-zone {
+    align-items: center;
+    margin-top: 1rem;
+  }
+
+  .header-language-switcher {
+    justify-content: center;
+  }
+
+  .header-right-panel {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .language-btn {
+    padding: 0.32rem 0.45rem;
+    font-size: 0.72rem;
+  }
+
+  .language-btn img {
+    width: 1.45rem;
+    height: 0.95rem;
+  }
+}
+
 /* Responsive */
 @media (max-width: 991.98px) {
   .header-right-panel {
@@ -301,6 +394,100 @@ img {
 
   .header-values-html li {
     justify-content: center;
+  }
+}
+
+
+
+/* =========================================================
+   CONTACTO RÁPIDO EN HEADER
+========================================================= */
+
+.header-contact-bar {
+  margin-top: clamp(0.65rem, 1vw, 0.9rem);
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.header-contact-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.42rem;
+  min-height: 2rem;
+  padding: 0.32rem 0.62rem;
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  border-radius: 999px;
+  color: var(--white);
+  background: rgba(255, 255, 255, 0.075);
+  text-decoration: none;
+  font-size: clamp(0.7rem, 0.82vw, 0.86rem);
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: 0.03em;
+  backdrop-filter: blur(3px);
+  transition: background-color 0.18s ease, border-color 0.18s ease, transform 0.18s ease;
+}
+
+.header-contact-link:hover {
+  color: var(--white);
+  background: rgba(0, 167, 255, 0.18);
+  border-color: rgba(0, 167, 255, 0.72);
+  transform: translateY(-0.08rem);
+}
+
+.header-contact-icon {
+  width: 1.35rem;
+  height: 1.35rem;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  color: var(--white);
+  background: linear-gradient(180deg, #0074df, #0044a9);
+  font-size: 0.72rem;
+  flex: 0 0 auto;
+}
+
+.header-contact-icon-duo {
+  position: relative;
+  background: linear-gradient(135deg, #005bd1 0%, #005bd1 52%, #25d366 52%, #128c7e 100%);
+}
+
+.header-contact-icon-duo .bi-telephone-fill {
+  position: absolute;
+  left: 0.29rem;
+  top: 0.32rem;
+  font-size: 0.5rem;
+}
+
+.header-contact-icon-duo .bi-whatsapp {
+  position: absolute;
+  right: 0.22rem;
+  bottom: 0.2rem;
+  font-size: 0.62rem;
+}
+
+@media (max-width: 991.98px) {
+  .header-contact-bar {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .header-contact-bar {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: stretch;
+    gap: 0.42rem;
+  }
+
+  .header-contact-link {
+    justify-content: center;
+    width: 100%;
+    max-width: 18rem;
+    margin-inline: auto;
   }
 }
 
@@ -769,27 +956,58 @@ img {
   display: flex;
   align-items: center;
   justify-content: end;
-  gap: clamp(1rem, 2vw, 2rem);
+  gap: clamp(1.25rem, 2.2vw, 2.5rem);
 }
 
-.map-placeholder {
-  width: clamp(8.5rem, 13vw, 14rem);
-  aspect-ratio: 1.35 / 1;
-  border: 1px solid #b8c8df;
-  border-radius: 52% 48% 45% 55% / 48% 44% 56% 52%;
+/* Google Maps embebido: sustituye al mapa vectorial anterior */
+.map-embed-box {
   position: relative;
+  width: clamp(12.5rem, 18vw, 20rem);
+  aspect-ratio: 16 / 9;
+  border: 1px solid #b8c8df;
+  border-radius: 1rem;
+  overflow: hidden;
   background-color: #f7fbff;
+  box-shadow: 0 0.6rem 1.4rem rgba(4, 91, 210, 0.12);
 }
 
-.map-placeholder::before {
-  content: "";
+.map-embed {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+  filter: saturate(0.95) contrast(1.02);
+}
+
+.map-open-link {
   position: absolute;
-  left: 38%;
-  top: 46%;
-  width: 24%;
-  height: 34%;
-  background-color: #045bd2;
-  clip-path: polygon(0 30%, 45% 0, 100% 22%, 80% 100%, 25% 88%);
+  left: 50%;
+  bottom: 0.45rem;
+  transform: translateX(-50%);
+  z-index: 2;
+
+  width: max-content;
+  max-width: 90%;
+  padding: 0.22rem 0.65rem;
+  border-radius: 999px;
+
+  color: var(--white);
+  background: linear-gradient(90deg, #005bd1, #0044a9);
+  text-decoration: none;
+
+  font-size: clamp(0.6rem, 0.75vw, 0.78rem);
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+
+  box-shadow: 0 0.35rem 0.8rem rgba(0, 68, 169, 0.28);
+  transition: background 0.18s ease, transform 0.18s ease;
+}
+
+.map-open-link:hover {
+  color: var(--white);
+  background: linear-gradient(90deg, #0074ff, #005bd1);
+  transform: translateX(-50%) translateY(-0.08rem);
 }
 
 .service-area-box h2 {
@@ -900,5 +1118,445 @@ img {
 
   .footer-values span:not(:last-child)::after {
     display: none;
+  }
+}
+
+/* =========================================================
+   HEADER TUNING - distribución visual TLS
+   Sobrescribe el bloque anterior de header sin tocar servicios.
+========================================================= */
+
+.top-header {
+  min-height: clamp(12.5rem, 16vw, 15.8rem);
+  padding: clamp(1.25rem, 2vw, 1.9rem) 0;
+}
+
+.header-main-row {
+  min-height: clamp(10.5rem, 13.5vw, 13.8rem);
+}
+
+.header-brand-col {
+  display: flex;
+  align-items: center;
+}
+
+.brand-area {
+  width: 100%;
+  display: grid;
+  grid-template-columns: clamp(7rem, 10.5vw, 10.25rem) minmax(0, 1fr);
+  align-items: center;
+  column-gap: clamp(1.6rem, 2.7vw, 3rem);
+}
+
+.brand-logo {
+  width: clamp(7rem, 10.5vw, 10.25rem);
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+}
+
+.brand-text {
+  width: min(100%, 44rem);
+}
+
+.brand-text h1 {
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: 900;
+  line-height: 0.88;
+  letter-spacing: 0.12em;
+}
+
+.brand-text h1 span {
+  display: block;
+  font-size: clamp(2rem, 3.6vw, 4.05rem);
+  letter-spacing: 0.16em;
+  color: var(--white);
+}
+
+.brand-text h1 strong {
+  display: block;
+  font-size: clamp(2.8rem, 5.15vw, 6.05rem);
+  letter-spacing: 0.11em;
+  color: var(--cyan);
+  text-shadow: 0 0.3rem 1.5rem rgba(0, 156, 255, 0.4);
+}
+
+.brand-text p {
+  width: 100%;
+  margin: 0.85rem 0 0;
+  padding-top: 0.62rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.55);
+  font-size: clamp(0.78rem, 1.05vw, 1.05rem);
+  font-weight: 900;
+  letter-spacing: 0.11em;
+  line-height: 1.22;
+}
+
+.header-side-col {
+  display: flex;
+  align-items: center;
+}
+
+.header-right-zone {
+  width: 100%;
+  min-height: clamp(9.8rem, 12vw, 12.5rem);
+  display: grid;
+  grid-template-rows: auto 1fr;
+  justify-items: end;
+  align-items: center;
+  gap: 0.55rem;
+}
+
+.header-language-switcher {
+  justify-self: end;
+  margin: 0 0 0.2rem 0;
+  gap: 0.4rem;
+}
+
+.header-language-switcher.btn-group > .btn {
+  border-radius: 0.35rem !important;
+}
+
+.language-btn {
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  padding: 0.28rem 0.56rem;
+  font-size: 0.72rem;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.language-btn .fi {
+  width: 1.45rem;
+  height: 0.95rem;
+  border-radius: 0.1rem;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.32);
+}
+
+.header-right-panel {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: clamp(1.45rem, 2.4vw, 2.55rem);
+}
+
+.header-badge-img {
+  width: clamp(7.3rem, 10.2vw, 10.7rem);
+  height: auto;
+  object-fit: contain;
+  flex: 0 0 auto;
+}
+
+.header-separator {
+  width: 1px;
+  height: clamp(7rem, 9vw, 9.4rem);
+  background-color: rgba(255, 255, 255, 0.72);
+  flex: 0 0 auto;
+}
+
+.header-values-html {
+  min-width: clamp(11rem, 14vw, 15.5rem);
+  color: var(--white);
+}
+
+.header-values-html ul {
+  margin: 0 0 0.55rem;
+  display: grid;
+  gap: 0.42rem;
+}
+
+.header-values-html li {
+  gap: 0.6rem;
+  font-size: clamp(1.05rem, 1.45vw, 1.58rem);
+  font-weight: 900;
+  line-height: 1.12;
+}
+
+.header-values-html p {
+  font-size: clamp(0.92rem, 1.15vw, 1.25rem);
+  line-height: 1.2;
+}
+
+@media (max-width: 1199.98px) {
+  .brand-area {
+    grid-template-columns: clamp(6rem, 10vw, 8.5rem) minmax(0, 1fr);
+    column-gap: 1.5rem;
+  }
+
+  .brand-logo {
+    width: clamp(6rem, 10vw, 8.5rem);
+  }
+
+  .brand-text h1 strong {
+    font-size: clamp(2.6rem, 4.8vw, 4.8rem);
+  }
+
+  .header-badge-img {
+    width: clamp(6.8rem, 9.5vw, 9rem);
+  }
+}
+
+@media (max-width: 991.98px) {
+  .top-header {
+    min-height: auto;
+  }
+
+  .header-brand-col,
+  .header-side-col {
+    justify-content: center;
+  }
+
+  .brand-area {
+    max-width: 48rem;
+    margin-inline: auto;
+  }
+
+  .brand-text {
+    width: 100%;
+  }
+
+  .header-right-zone {
+    justify-items: center;
+    margin-top: 1rem;
+  }
+
+  .header-language-switcher {
+    justify-self: center;
+  }
+
+  .header-right-panel {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .brand-area {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+    row-gap: 0.85rem;
+  }
+
+  .brand-logo {
+    width: 5.4rem;
+  }
+
+  .brand-text h1 span {
+    font-size: 1.75rem;
+  }
+
+  .brand-text h1 strong {
+    font-size: 2.55rem;
+    letter-spacing: 0.08em;
+  }
+
+  .brand-text p {
+    font-size: 0.72rem;
+  }
+
+  .header-right-panel {
+    flex-direction: column;
+    gap: 0.8rem;
+    text-align: center;
+  }
+
+  .header-badge-img {
+    width: 7.2rem;
+  }
+
+  .header-separator {
+    width: min(70%, 16rem);
+    height: 1px;
+  }
+
+  .header-values-html li {
+    justify-content: center;
+  }
+}
+
+
+/* =========================================================
+   CONTACTO, MAPA Y FOOTER LEGAL - Ajustes finales
+========================================================= */
+
+/* Contacto más visual */
+.contact-box {
+  border-left: 1px solid #9aaac0;
+  padding-left: clamp(1rem, 2vw, 2rem);
+}
+
+.contact-list {
+  display: grid;
+  gap: 0.55rem;
+}
+
+.contact-box .contact-item {
+  margin: 0;
+}
+
+.contact-box .contact-link {
+  display: grid;
+  grid-template-columns: 2.35rem minmax(0, 1fr);
+  align-items: center;
+  gap: 0.7rem;
+  min-height: 2.45rem;
+  color: var(--text);
+  text-decoration: none;
+  border-radius: 0.55rem;
+  padding: 0.28rem 0.35rem;
+  transition: background-color 0.18s ease, transform 0.18s ease;
+}
+
+.contact-box .contact-link:hover {
+  background-color: rgba(0, 93, 184, 0.08);
+  transform: translateX(0.15rem);
+}
+
+.contact-icon {
+  width: 2.1rem;
+  height: 2.1rem;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  color: var(--white);
+  background: linear-gradient(180deg, #0074df, #0044a9);
+  font-size: 1rem;
+  box-shadow: 0 0.35rem 0.75rem rgba(0, 68, 169, 0.22);
+}
+
+.contact-icon-duo {
+  position: relative;
+  grid-template-columns: 1fr;
+  background: linear-gradient(135deg, #005bd1 0%, #005bd1 52%, #25d366 52%, #128c7e 100%);
+}
+
+.contact-icon-duo .bi-telephone-fill {
+  position: absolute;
+  left: 0.42rem;
+  top: 0.48rem;
+  font-size: 0.78rem;
+}
+
+.contact-icon-duo .bi-whatsapp {
+  position: absolute;
+  right: 0.34rem;
+  bottom: 0.34rem;
+  font-size: 0.88rem;
+}
+
+.contact-text {
+  display: grid;
+  gap: 0.08rem;
+  min-width: 0;
+  line-height: 1.12;
+}
+
+.contact-text strong {
+  color: #0044a9;
+  font-size: clamp(0.78rem, 0.95vw, 0.95rem);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.contact-text span {
+  color: var(--text);
+  font-size: clamp(0.82rem, 1vw, 1rem);
+}
+
+/* Footer legal */
+.footer-legal {
+  margin-top: 0.55rem;
+  padding-top: 0.55rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.16);
+  display: grid;
+  gap: 0.18rem;
+  color: rgba(255, 255, 255, 0.82);
+  font-size: clamp(0.68rem, 0.82vw, 0.86rem);
+  line-height: 1.35;
+}
+
+.footer-legal p {
+  margin: 0;
+}
+
+.footer-legal strong {
+  color: var(--white);
+}
+
+.footer-legal sup {
+  top: -0.35em;
+  margin-left: 0.08rem;
+  color: var(--cyan);
+  font-weight: 900;
+}
+
+.footer-separator {
+  margin-inline: 0.45rem;
+  color: rgba(255, 255, 255, 0.38);
+}
+
+@media (max-width: 991.98px) {
+  .contact-box {
+    border-left: 0;
+    padding-left: 0;
+  }
+
+  .contact-list {
+    max-width: 24rem;
+  }
+
+  .service-area-box {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .contact-box h2 {
+    margin-inline: auto;
+  }
+
+  .contact-list {
+    margin-inline: auto;
+  }
+
+  .footer-separator {
+    display: none;
+  }
+
+  .footer-legal {
+    gap: 0.35rem;
+  }
+}
+
+/* Responsive específico para Google Maps embebido */
+@media (max-width: 991.98px) {
+  .map-embed-box {
+    width: min(100%, 24rem);
+  }
+
+  .service-area-box {
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .service-area-box {
+    flex-direction: column;
+    gap: 0.9rem;
+  }
+
+  .map-embed-box {
+    width: min(100%, 21rem);
+    aspect-ratio: 4 / 3;
+  }
+
+  .map-open-link {
+    font-size: 0.62rem;
+    padding: 0.22rem 0.55rem;
   }
 }

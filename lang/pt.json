@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "title": "TLS | Serviços técnicos integrais",
+    "description": "Serviços técnicos integrais: piscinas, eletricidade, videovigilância, antenas e satélite da Costa del Sol ao Levante."
+  },
+  "brand": {
+    "logoAlt": "Logótipo da Levante Technical Solutions",
+    "top": "Levante",
+    "name": "Technical Solutions",
+    "claimStart": "Soluções que funcionam,",
+    "claimStrong": "serviços em que pode confiar."
+  },
+  "header": {
+    "badgeAlt": "Trabalho garantido"
+  },
+  "values": {
+    "quality": "Qualidade",
+    "experience": "Experiência",
+    "commitment": "Compromisso",
+    "subtitle": "Tudo num só lugar<br />para a sua tranquilidade.",
+    "subtitlePlain": "Tudo num só lugar para a sua tranquilidade."
+  },
+  "hero": {
+    "title": "Soluções que funcionam,",
+    "subtitle": "Serviços em que pode confiar."
+  },
+  "services": {
+    "pool": {
+      "title": "Manutenção de piscinas<br />tudo incluído",
+      "imageAlt": "Piscina limpa e cristalina",
+      "items": [
+        "Análise e controlo da água",
+        "Tratamento químico equilibrado",
+        "Limpeza e manutenção completas",
+        "Equipamentos em condições ideais",
+        "Aconselhamento personalizado"
+      ],
+      "footer": "Água limpa, segura e cristalina durante todo o ano."
+    },
+    "electricity": {
+      "title": "Eletricidade",
+      "imageAlt": "Instalação de quadro elétrico",
+      "items": [
+        "Instalações elétricas residenciais, comerciais e industriais",
+        "Manutenção preventiva e corretiva",
+        "Diagnóstico de avarias",
+        "Quadros elétricos e sistemas de proteção",
+        "Iluminação interior e exterior"
+      ],
+      "footer": "Segurança, eficiência e energia que se nota."
+    },
+    "surveillance": {
+      "title": "Video<br />vigilância",
+      "imageAlt": "Câmara de segurança CCTV",
+      "items": [
+        "Instalação de câmaras de segurança CCTV",
+        "Monitorização remota em tempo real",
+        "Gravação e armazenamento seguros",
+        "Sistemas para casas, negócios e empresas",
+        "Aconselhamento personalizado conforme as suas necessidades"
+      ],
+      "footer": "Protegemos o que mais importa, 24 horas por dia."
+    },
+    "satellite": {
+      "title": "Antenas e satélite",
+      "subtitle": "Canais do seu país de origem",
+      "imageAlt": "Antena parabólica",
+      "items": [
+        "Instalação de antenas e sistemas de satélite",
+        "Acesso a canais do seu país de origem",
+        "Qualidade de imagem em alta definição HD",
+        "Orientação e configuração profissional",
+        "Serviço técnico e manutenção"
+      ],
+      "footer": "Veja os canais do seu país onde quer que esteja."
+    }
+  },
+  "team": {
+    "title": "Uma só equipa,<br />todas as soluções.",
+    "subtitle": "Estamos aqui para ajudar!"
+  },
+  "contact": {
+    "title": "Contacte-nos",
+    "phoneWhatsappLabel": "Telefone / WhatsApp",
+    "emailLabel": "E-mail",
+    "googleProfileLabel": "Perfil da empresa",
+    "googleProfileText": "Encontre-nos no Google"
+  },
+  "area": {
+    "title": "Zona de trabalho:<br />Costa del Sol - Levante",
+    "mapLinkLabel": "Abrir no Google Maps"
+  },
+  "footer": {
+    "main": "Comprometidos com a sua casa, a sua empresa e a sua tranquilidade.",
+    "professionalism": "Profissionalismo",
+    "trust": "Confiança",
+    "results": "Resultados",
+    "rights": "Todos os direitos reservados.",
+    "brandNotice": "é uma marca comercial do projeto TLS.",
+    "author": "Design e desenvolvimento web:"
+  }
+}

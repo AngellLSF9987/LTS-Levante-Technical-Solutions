@@ -1,14 +1,14 @@
 {
   "meta": {
     "title": "TLS | Servicios técnicos integrales",
-    "description": "Servicios técnicos integrales: piscinas, electricidad, videovigilancia, antenas y satélite en el sureste de España."
+    "description": "Servicios técnicos integrales: piscinas, electricidad, videovigilancia, antenas y satélite desde la Costa del Sol hasta el Levante."
   },
   "brand": {
+    "logoAlt": "Logotipo de Levante Technical Solutions",
     "top": "Levante",
     "name": "Technical Solutions",
     "claimStart": "Soluciones que funcionan,",
-    "claimStrong": "servicios en los que puedes confiar.",
-    "logoAlt": "Logotipo de Levante Technical Solutions"
+    "claimStrong": "servicios en los que puedes confiar."
   },
   "header": {
     "badgeAlt": "Trabajo garantizado"
@@ -81,17 +81,22 @@
   },
   "contact": {
     "title": "Contáctanos",
-    "phone": "Tu número aquí",
-    "location": "Tu ciudad / zona de servicio",
-    "website": "Tus redes sociales / página web"
+    "phoneWhatsappLabel": "Teléfono / WhatsApp",
+    "emailLabel": "Correo electrónico",
+    "googleProfileLabel": "Perfil de empresa",
+    "googleProfileText": "Encuéntranos en Google"
   },
   "area": {
-    "title": "Zona de trabajo:<br />Sureste de España"
+    "title": "Zona de trabajo:<br />Costa del Sol - Levante",
+    "mapLinkLabel": "Abrir en Google Maps"
   },
   "footer": {
     "main": "Comprometidos con tu hogar, tu empresa y tu tranquilidad.",
     "professionalism": "Profesionalidad",
     "trust": "Confianza",
-    "results": "Resultados"
+    "results": "Resultados",
+    "rights": "Todos los derechos reservados.",
+    "brandNotice": "es una marca comercial del proyecto TLS.",
+    "author": "Diseño y desarrollo web:"
   }
 }
