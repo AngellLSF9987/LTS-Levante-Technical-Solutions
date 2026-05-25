@@ -1,0 +1,48 @@
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.bottom-footer {
+  padding: 0.8rem 0;
+  color: var(--white);
+  text-align: center;
+  background: linear-gradient(90deg, #061734, #061d48);
+}
+
+.footer-main-line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: clamp(0.7rem, 1.5vw, 1.6rem);
+  flex-wrap: wrap;
+}
+
+.footer-main-line i {
+  font-size: 1.7rem;
+}
+
+.footer-main-line p {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: clamp(0.85rem, 1.05vw, 1.05rem);
+}
+
+.footer-values {
+  margin-top: 0.35rem;
+  display: flex;
+  justify-content: center;
+  gap: clamp(1rem, 3vw, 3rem);
+  flex-wrap: wrap;
+  color: var(--cyan);
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.13em;
+  font-size: clamp(0.9rem, 1.2vw, 1.25rem);
+}
+
+.footer-values span:not(:last-child)::after {
+  content: "•";
+  color: #008cff;
+  margin-left: clamp(1rem, 3vw, 3rem);
+}

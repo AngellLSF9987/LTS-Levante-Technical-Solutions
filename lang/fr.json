@@ -82,9 +82,10 @@
   "contact": {
     "title": "Contactez-nous",
     "phoneWhatsappLabel": "Téléphone / WhatsApp",
-    "emailLabel": "E-mail",
+    "emailLabel": "Formulaire de contact",
     "googleProfileLabel": "Profil d’entreprise",
-    "googleProfileText": "Trouvez-nous sur Google"
+    "googleProfileText": "Trouvez-nous sur Google",
+    "formLinkAria": "Ouvrir le formulaire de contact"
   },
   "area": {
     "title": "Zone de travail :<br />Costa del Sol - Levant",
@@ -98,5 +99,32 @@
     "rights": "Tous droits réservés.",
     "brandNotice": "est une marque commerciale du projet TLS.",
     "author": "Conception et développement web :"
+  },
+  "contactForm": {
+    "kicker": "Demande de service",
+    "title": "Dites-nous ce dont vous avez besoin",
+    "description": "Remplissez le formulaire et nous préparerons une réponse adaptée à votre besoin : piscines, électricité, vidéosurveillance, antennes ou systèmes satellites.",
+    "benefits": [
+      "Réponse personnalisée selon le type de service.",
+      "Assistance pour maisons, copropriétés, commerces et entreprises.",
+      "Zone d’intervention : Costa del Sol et Levante."
+    ],
+    "fields": {
+      "name": "Nom",
+      "phone": "Téléphone / WhatsApp",
+      "email": "E-mail",
+      "service": "Type de service",
+      "message": "Message"
+    },
+    "services": {
+      "placeholder": "Sélectionnez une option",
+      "pool": "Piscines",
+      "electricity": "Électricité",
+      "surveillance": "Vidéosurveillance CCTV",
+      "satellite": "Antennes et satellite",
+      "other": "Autre service technique"
+    },
+    "submit": "Envoyer la demande",
+    "privacy": "En envoyant le formulaire, votre client de messagerie s’ouvrira pour préparer le message."
   }
 }

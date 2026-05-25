@@ -8,7 +8,11 @@ function getNestedValue(object, path) {
 
 async function loadLanguage(language) {
   try {
-    const response = await fetch(`lang/${language}.json`);
+    let response = await fetch(`/lang/${language}.json`);
+
+    if (!response.ok) {
+      response = await fetch(`lang/${language}.json`);
+    }
 
     if (!response.ok) {
       throw new Error(`No se pudo cargar el idioma: ${language}`);
@@ -62,6 +66,16 @@ function applyTranslations(translations) {
       element.setAttribute("content", value);
     }
   });
+
+  document.querySelectorAll("[data-i18n-aria-label]").forEach((element) => {
+    const key = element.dataset.i18nAriaLabel;
+    const value = getNestedValue(translations, key);
+
+    if (value !== null) {
+      element.setAttribute("aria-label", value);
+    }
+  });
+
 }
 
 function updateLanguageButtons(activeLanguage) {

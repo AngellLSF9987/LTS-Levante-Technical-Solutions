@@ -82,9 +82,10 @@
   "contact": {
     "title": "Contact us",
     "phoneWhatsappLabel": "Phone / WhatsApp",
-    "emailLabel": "Email",
+    "emailLabel": "Contact form",
     "googleProfileLabel": "Business profile",
-    "googleProfileText": "Find us on Google"
+    "googleProfileText": "Find us on Google",
+    "formLinkAria": "Open contact form"
   },
   "area": {
     "title": "Service area:<br />Costa del Sol - Levante",
@@ -98,5 +99,32 @@
     "rights": "All rights reserved.",
     "brandNotice": "is a trademark of the TLS project.",
     "author": "Web design and development:"
+  },
+  "contactForm": {
+    "kicker": "Service request",
+    "title": "Tell us what you need",
+    "description": "Fill in the form and we will prepare a response focused on your needs: pools, electricity, CCTV, antennas or satellite systems.",
+    "benefits": [
+      "Personalized response according to the type of service.",
+      "Support for homes, communities, shops and companies.",
+      "Service area: Costa del Sol and Levante."
+    ],
+    "fields": {
+      "name": "Name",
+      "phone": "Phone / WhatsApp",
+      "email": "Email",
+      "service": "Service type",
+      "message": "Message"
+    },
+    "services": {
+      "placeholder": "Select an option",
+      "pool": "Pools",
+      "electricity": "Electricity",
+      "surveillance": "CCTV video surveillance",
+      "satellite": "Antennas and satellite",
+      "other": "Other technical service"
+    },
+    "submit": "Send request",
+    "privacy": "When you submit the form, your email client will open to prepare the message."
   }
 }

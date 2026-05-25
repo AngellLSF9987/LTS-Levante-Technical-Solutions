@@ -82,9 +82,10 @@
   "contact": {
     "title": "Skontaktuj się",
     "phoneWhatsappLabel": "Telefon / WhatsApp",
-    "emailLabel": "E-mail",
+    "emailLabel": "Formularz kontaktowy",
     "googleProfileLabel": "Profil firmy",
-    "googleProfileText": "Znajdź nas w Google"
+    "googleProfileText": "Znajdź nas w Google",
+    "formLinkAria": "Otwórz formularz kontaktowy"
   },
   "area": {
     "title": "Obszar pracy:<br />Costa del Sol - Levante",
@@ -98,5 +99,32 @@
     "rights": "Wszelkie prawa zastrzeżone.",
     "brandNotice": "jest znakiem towarowym projektu TLS.",
     "author": "Projekt i tworzenie strony:"
+  },
+  "contactForm": {
+    "kicker": "Zgłoszenie usługi",
+    "title": "Powiedz nam, czego potrzebujesz",
+    "description": "Wypełnij formularz, a przygotujemy odpowiedź dopasowaną do Twoich potrzeb: baseny, elektryka, monitoring, anteny lub systemy satelitarne.",
+    "benefits": [
+      "Indywidualna odpowiedź według rodzaju usługi.",
+      "Obsługa domów, wspólnot, sklepów i firm.",
+      "Obszar działania: Costa del Sol i Levante."
+    ],
+    "fields": {
+      "name": "Imię i nazwisko",
+      "phone": "Telefon / WhatsApp",
+      "email": "E-mail",
+      "service": "Rodzaj usługi",
+      "message": "Wiadomość"
+    },
+    "services": {
+      "placeholder": "Wybierz opcję",
+      "pool": "Baseny",
+      "electricity": "Elektryka",
+      "surveillance": "Monitoring CCTV",
+      "satellite": "Anteny i satelita",
+      "other": "Inna usługa techniczna"
+    },
+    "submit": "Wyślij zgłoszenie",
+    "privacy": "Po wysłaniu formularza otworzy się klient poczty, aby przygotować wiadomość."
   }
 }
