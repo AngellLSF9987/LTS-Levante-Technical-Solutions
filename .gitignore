@@ -141,3 +141,14 @@ dist
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 .vite/
+
+# Archivos pesados / imprenta / recursos locales
+*.zip
+*.tif
+*.tiff
+*.psd
+*.ai
+*.pdf
+resources.zip
+assets/flyers/
+assets/img/flyers_multilang/
