@@ -1,4 +1,42 @@
-#TLS-levante-technical-solutions. 
-#Web corporativa tipo landing page, modularizada y preparada para escalar.
+# Levante Technical Solutions — TLS Web
 
-##Web corporativa para Levante Technical Solutions, empresa de servicios técnicos integrales especializada en mantenimiento de piscinas, electricidad, videovigilancia, antenas y soluciones para hogares, negocios y comunidades en el sureste de España.
+## Descripción
+
+Web corporativa tipo landing page, modularizada y preparada para escalar.
+
+## Estado actual
+
+**Versión:** v0.2  
+**Estado:** completada  
+**Tipo de proyecto:** landing page corporativa modular  
+
+## Tecnologías utilizadas
+
+- HTML5
+- CSS3 modular
+- JavaScript
+- Bootstrap 5
+- Bootstrap Icons
+- Sistema i18n mediante JSON
+- SEO técnico base
+
+## Estructura del proyecto
+
+```plaintext
+index.html
+services.html
+contact.html
+areas.html
+assets/
+  css/
+  js/
+  img/
+lang/
+es/
+en/
+de/
+fr/
+it/
+pt/
+ru/
+pl/
