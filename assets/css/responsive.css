@@ -50,3 +50,225 @@
     display: none;
   }
 }
+
+
+/* =========================================================
+   MOBILE FIRST FIX - HEADER / IDIOMAS / HERO
+   Ajuste específico para evitar desbordes en móvil.
+========================================================= */
+
+@media (max-width: 575.98px) {
+  html,
+  body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .flyer-wrapper {
+    width: 100%;
+    max-width: 100%;
+    box-shadow: none;
+  }
+
+  .top-header {
+    padding: 1.15rem 0 1.65rem;
+  }
+
+  .top-header .container-fluid {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+
+  .header-main-row {
+    min-height: auto;
+  }
+
+  .brand-area {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+    row-gap: 0.85rem;
+  }
+
+  .brand-logo {
+    width: clamp(5.8rem, 28vw, 8rem);
+  }
+
+  .brand-text {
+    width: 100%;
+  }
+
+  .brand-text h1 span {
+    font-size: clamp(1.75rem, 8vw, 2.45rem);
+    letter-spacing: 0.22em;
+  }
+
+  .brand-text h1 strong {
+    font-size: clamp(2.05rem, 10.2vw, 3.15rem);
+    letter-spacing: 0.12em;
+    line-height: 1.02;
+  }
+
+  .brand-text p {
+    width: min(100%, 22rem);
+    margin: 0.85rem auto 0;
+    font-size: clamp(0.68rem, 3.05vw, 0.86rem);
+    letter-spacing: 0.12em;
+    line-height: 1.35;
+  }
+
+  .header-contact-bar {
+    width: min(100%, 21rem);
+    margin: 1rem auto 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.55rem;
+  }
+
+  .header-contact-link {
+    width: 100%;
+    max-width: none;
+    justify-content: center;
+    min-height: 2.55rem;
+    padding: 0.45rem 0.75rem;
+    font-size: 0.82rem;
+  }
+
+  .header-right-zone {
+    width: 100%;
+    min-height: auto;
+    margin-top: 1.15rem;
+    display: grid;
+    justify-items: center;
+    gap: 1rem;
+  }
+
+  .header-language-switcher {
+    width: 100%;
+    max-width: 100%;
+    justify-content: flex-start;
+    overflow-x: auto;
+    overflow-y: hidden;
+    flex-wrap: nowrap;
+    gap: 0.45rem;
+    padding: 0.15rem 0.15rem 0.45rem;
+    scrollbar-width: thin;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .header-language-switcher.btn-group {
+    display: flex;
+  }
+
+  .header-language-switcher .language-btn {
+    flex: 0 0 auto;
+    min-width: 4.25rem;
+    padding: 0.5rem 0.62rem;
+    font-size: 0.78rem;
+  }
+
+  .header-language-switcher .language-btn .fi {
+    width: 1.55rem;
+    height: 1.05rem;
+  }
+
+  .header-right-panel {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .header-badge-img {
+    width: clamp(8rem, 38vw, 11rem);
+  }
+
+  .header-separator {
+    width: min(78%, 22rem);
+    height: 1px;
+  }
+
+  .header-values-html {
+    min-width: 0;
+    width: 100%;
+  }
+
+  .header-values-html ul {
+    width: fit-content;
+    margin: 0 auto 0.75rem;
+    gap: 0.55rem;
+  }
+
+  .header-values-html li {
+    justify-content: flex-start;
+    font-size: clamp(1.15rem, 5vw, 1.45rem);
+    line-height: 1.15;
+  }
+
+  .header-values-html p {
+    font-size: clamp(1rem, 4.4vw, 1.25rem);
+    line-height: 1.25;
+  }
+
+  .hero-section {
+    padding: 1.35rem 0 1rem;
+  }
+
+  .hero-section .container-fluid {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+
+  .hero-title {
+    display: grid;
+    justify-items: center;
+    gap: 0.35rem;
+  }
+
+  .hero-title h2 {
+    width: 100%;
+    max-width: 100%;
+    font-size: clamp(1.85rem, 9.2vw, 2.75rem);
+    letter-spacing: 0.14em;
+    line-height: 1.08;
+    overflow-wrap: anywhere;
+    text-wrap: balance;
+  }
+
+  .hero-title p {
+    max-width: 100%;
+    font-size: clamp(1.55rem, 8vw, 2.35rem);
+    line-height: 1.05;
+    text-wrap: balance;
+  }
+
+  .trust-line {
+    gap: 0.45rem;
+    font-size: clamp(0.9rem, 4vw, 1.1rem);
+  }
+
+  .trust-icon {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+
+@media (max-width: 390px) {
+  .brand-text h1 strong {
+    font-size: clamp(1.85rem, 9.5vw, 2.65rem);
+    letter-spacing: 0.1em;
+  }
+
+  .hero-title h2 {
+    font-size: clamp(1.55rem, 8.5vw, 2.15rem);
+    letter-spacing: 0.12em;
+  }
+
+  .header-language-switcher .language-btn {
+    min-width: 4rem;
+  }
+}
+
