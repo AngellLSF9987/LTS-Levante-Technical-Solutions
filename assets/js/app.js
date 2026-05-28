@@ -2,7 +2,7 @@
 // TLS - Versión pública de assets
 // Cambia este valor cuando sustituyas favicon, logos o CSS crítico.
 // =========================================================
-const TLS_ASSET_VERSION = "0.3.3";
+const TLS_ASSET_VERSION = "0.3.6";
 
 function versionFavicons() {
   document
