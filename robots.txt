@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.levante-technical-solutions.com/sitemap.xml
+Sitemap: https://levante-tls.pages.dev/sitemap.xml
