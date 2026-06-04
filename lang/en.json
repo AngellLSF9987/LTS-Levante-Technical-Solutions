@@ -125,6 +125,7 @@
       "other": "Other technical service"
     },
     "submit": "Send request",
-    "privacy": "When you submit the form, your email client will open to prepare the message."
+    "privacy": "Your data will only be used to manage this request. You can also contact us by phone or WhatsApp.",
+    "privacyConsent": "I agree that TLS may use this information to respond to my contact request."
   }
 }

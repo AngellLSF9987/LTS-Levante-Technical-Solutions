@@ -521,3 +521,76 @@
   }
 }
 
+
+
+/* =========================================================
+   FORMULARIO SEGURO - Turnstile + estados
+========================================================= */
+
+.tls-hp {
+  position: absolute !important;
+  left: -9999px !important;
+  width: 1px !important;
+  height: 1px !important;
+  overflow: hidden !important;
+  opacity: 0 !important;
+}
+
+.privacy-consent-field {
+  padding: 0.75rem 0.85rem;
+  border: 1px solid #d8e4f3;
+  border-radius: 0.65rem;
+  background: #f8fbff;
+}
+
+.privacy-consent-label {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  margin: 0;
+  color: var(--text);
+  font-size: 0.9rem;
+  font-weight: 700;
+  line-height: 1.35;
+  text-transform: none !important;
+  letter-spacing: 0 !important;
+}
+
+.privacy-consent-label input {
+  width: auto;
+  min-width: 1rem;
+  margin-top: 0.2rem;
+}
+
+.turnstile-field {
+  min-height: 4.2rem;
+}
+
+.contact-form-status {
+  min-height: 1.4rem;
+  padding: 0.65rem 0.85rem;
+  border-radius: 0.65rem;
+  background: #f3f7fd;
+  color: var(--muted);
+  font-weight: 700;
+}
+
+.contact-form-status:empty {
+  display: none;
+}
+
+.contact-form-status.is-success {
+  background: #e8f7ef;
+  color: #126b3f;
+}
+
+.contact-form-status.is-error {
+  background: #fdecec;
+  color: #9b1c1c;
+}
+
+.contact-submit-btn[disabled] {
+  opacity: 0.65;
+  cursor: wait;
+  transform: none;
+}

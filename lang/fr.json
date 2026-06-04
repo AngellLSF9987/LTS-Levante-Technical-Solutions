@@ -125,6 +125,7 @@
       "other": "Autre service technique"
     },
     "submit": "Envoyer la demande",
-    "privacy": "En envoyant le formulaire, votre client de messagerie s’ouvrira pour préparer le message."
+    "privacy": "Vos données seront utilisées uniquement pour gérer cette demande. Vous pouvez également nous contacter par téléphone ou WhatsApp.",
+    "privacyConsent": "J’accepte que TLS utilise ces données pour répondre à ma demande de contact."
   }
 }

@@ -125,6 +125,7 @@
       "other": "Altro servizio tecnico"
     },
     "submit": "Invia richiesta",
-    "privacy": "Inviando il modulo si aprirà il tuo client di posta per preparare il messaggio."
+    "privacy": "I tuoi dati saranno utilizzati solo per gestire questa richiesta. Puoi contattarci anche per telefono o WhatsApp.",
+    "privacyConsent": "Accetto che TLS utilizzi questi dati per rispondere alla mia richiesta di contatto."
   }
 }

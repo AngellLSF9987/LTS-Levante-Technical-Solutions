@@ -125,6 +125,7 @@
       "other": "Outro serviço técnico"
     },
     "submit": "Enviar pedido",
-    "privacy": "Ao enviar o formulário, o seu cliente de e-mail será aberto para preparar a mensagem."
+    "privacy": "Os seus dados serão utilizados apenas para gerir este pedido. Também pode contactar por telefone ou WhatsApp.",
+    "privacyConsent": "Aceito que a TLS utilize estes dados para responder ao meu pedido de contacto."
   }
 }

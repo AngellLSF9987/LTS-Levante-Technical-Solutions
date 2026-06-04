@@ -6,23 +6,23 @@
   <meta name="google" content="translate" />
   <meta name="robots" content="index, follow" />
   <meta name="description" content="Contacta con Levante Technical Solutions por teléfono, WhatsApp o correo electrónico para solicitar servicios técnicos en Costa del Sol y Levante." data-i18n-content="meta.description" />
-  <link rel="canonical" href="https://www.levante-technical-solutions.com/es/contact.html" />
+  <link rel="canonical" href="https://levante-tls.pages.dev/es/contact.html" />
 
-  <link rel="alternate" hreflang="es" href="https://www.levante-technical-solutions.com/es/contact.html" />
-  <link rel="alternate" hreflang="en" href="https://www.levante-technical-solutions.com/en/contact.html" />
-  <link rel="alternate" hreflang="de" href="https://www.levante-technical-solutions.com/de/contact.html" />
-  <link rel="alternate" hreflang="fr" href="https://www.levante-technical-solutions.com/fr/contact.html" />
-  <link rel="alternate" hreflang="it" href="https://www.levante-technical-solutions.com/it/contact.html" />
-  <link rel="alternate" hreflang="pt" href="https://www.levante-technical-solutions.com/pt/contact.html" />
-  <link rel="alternate" hreflang="ru" href="https://www.levante-technical-solutions.com/ru/contact.html" />
-  <link rel="alternate" hreflang="pl" href="https://www.levante-technical-solutions.com/pl/contact.html" />
-  <link rel="alternate" hreflang="x-default" href="https://www.levante-technical-solutions.com/es/contact.html" />
+  <link rel="alternate" hreflang="es" href="https://levante-tls.pages.dev/es/contact.html" />
+  <link rel="alternate" hreflang="en" href="https://levante-tls.pages.dev/en/contact.html" />
+  <link rel="alternate" hreflang="de" href="https://levante-tls.pages.dev/de/contact.html" />
+  <link rel="alternate" hreflang="fr" href="https://levante-tls.pages.dev/fr/contact.html" />
+  <link rel="alternate" hreflang="it" href="https://levante-tls.pages.dev/it/contact.html" />
+  <link rel="alternate" hreflang="pt" href="https://levante-tls.pages.dev/pt/contact.html" />
+  <link rel="alternate" hreflang="ru" href="https://levante-tls.pages.dev/ru/contact.html" />
+  <link rel="alternate" hreflang="pl" href="https://levante-tls.pages.dev/pl/contact.html" />
+  <link rel="alternate" hreflang="x-default" href="https://levante-tls.pages.dev/es/contact.html" />
 
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Contacto | Levante Technical Solutions" />
   <meta property="og:description" content="Contacta con Levante Technical Solutions por teléfono, WhatsApp o correo electrónico para solicitar servicios técnicos en Costa del Sol y Levante." />
-  <meta property="og:url" content="https://www.levante-technical-solutions.com/es/contact.html" />
-  <meta property="og:image" content="https://www.levante-technical-solutions.com/assets/img/logo-company.png" />
+  <meta property="og:url" content="https://levante-tls.pages.dev/es/contact.html" />
+  <meta property="og:image" content="https://levante-tls.pages.dev/assets/img/logo-company.png" />
 
   <title data-i18n="meta.title">Contacto | Levante Technical Solutions</title>
 
@@ -46,7 +46,7 @@
     "email": "levante.tls@gmail.com",
     "areaServed": ["Costa del Sol", "Málaga", "Murcia", "Alicante", "Valencia", "Levante"],
     "serviceType": ["Mantenimiento de piscinas", "Instalaciones eléctricas", "Videovigilancia CCTV", "Antenas", "Sistemas satelitales"],
-    "url": "https://www.levante-technical-solutions.com/"
+    "url": "https://levante-tls.pages.dev/"
   }
   </script>
 </head>
@@ -216,52 +216,73 @@
             </ul>
           </div>
 
-          <form class="contact-form" action="mailto:levante.tls@gmail.com" method="post" enctype="text/plain">
-            <div class="form-grid">
-              <div class="form-field">
-                <label for="contact-name" data-i18n="contactForm.fields.name">Nombre</label>
-                <input id="contact-name" name="nombre" type="text" autocomplete="name" required />
+          <form class="contact-form" action="/api/contact" method="post" data-contact-form novalidate>
+              <div class="form-grid">
+                <div class="form-field tls-hp" aria-hidden="true">
+                  <label for="contact-website">Web</label>
+                  <input id="contact-website" name="website" type="text" tabindex="-1" autocomplete="off" />
+                </div>
+
+                <div class="form-field">
+                  <label for="contact-name" data-i18n="contactForm.fields.name">Nombre</label>
+                  <input id="contact-name" name="nombre" type="text" autocomplete="name" required />
+                </div>
+
+                <div class="form-field">
+                  <label for="contact-phone" data-i18n="contactForm.fields.phone">Teléfono / WhatsApp</label>
+                  <input id="contact-phone" name="telefono" type="tel" autocomplete="tel" required />
+                </div>
+
+                <div class="form-field">
+                  <label for="contact-email" data-i18n="contactForm.fields.email">Correo electrónico</label>
+                  <input id="contact-email" name="email" type="email" autocomplete="email" />
+                </div>
+
+                <div class="form-field">
+                  <label for="contact-service" data-i18n="contactForm.fields.service">Tipo de servicio</label>
+                  <select id="contact-service" name="servicio" required>
+                    <option value="" data-i18n="contactForm.services.placeholder">Selecciona una opción</option>
+                    <option value="piscinas" data-i18n="contactForm.services.pool">Piscinas</option>
+                    <option value="electricidad" data-i18n="contactForm.services.electricity">Electricidad</option>
+                    <option value="videovigilancia" data-i18n="contactForm.services.surveillance">Videovigilancia CCTV</option>
+                    <option value="antenas-satelite" data-i18n="contactForm.services.satellite">Antenas y satélite</option>
+                    <option value="otros" data-i18n="contactForm.services.other">Otro servicio técnico</option>
+                  </select>
+                </div>
+
+                <div class="form-field form-field-full">
+                  <label for="contact-message" data-i18n="contactForm.fields.message">Mensaje</label>
+                  <textarea id="contact-message" name="mensaje" rows="5" required></textarea>
+                </div>
+
+                <div class="form-field form-field-full privacy-consent-field">
+                  <label class="privacy-consent-label">
+                    <input id="contact-privacy" name="privacidad" type="checkbox" value="aceptada" required />
+                    <span data-i18n="contactForm.privacyConsent">
+                      Acepto que TLS utilice estos datos para responder a mi solicitud de contacto.
+                    </span>
+                  </label>
+                </div>
+
+                <div class="form-field form-field-full turnstile-field">
+                  <!-- Sustituye TU_SITE_KEY_DE_TURNSTILE por la Site Key pública de Cloudflare Turnstile -->
+                  <div class="cf-turnstile" data-sitekey="TU_SITE_KEY_DE_TURNSTILE" data-theme="light"></div>
+                </div>
               </div>
 
-              <div class="form-field">
-                <label for="contact-phone" data-i18n="contactForm.fields.phone">Teléfono / WhatsApp</label>
-                <input id="contact-phone" name="telefono" type="tel" autocomplete="tel" required />
+              <div class="form-actions">
+                <button type="submit" class="contact-submit-btn">
+                  <i class="bi bi-send-fill" aria-hidden="true"></i>
+                  <span data-i18n="contactForm.submit">Enviar solicitud</span>
+                </button>
+
+                <p class="contact-form-status" data-contact-status role="status" aria-live="polite"></p>
+
+                <p data-i18n="contactForm.privacy">
+                  Tus datos se utilizarán únicamente para gestionar esta solicitud. También puedes contactar por teléfono o WhatsApp.
+                </p>
               </div>
-
-              <div class="form-field">
-                <label for="contact-email" data-i18n="contactForm.fields.email">Correo electrónico</label>
-                <input id="contact-email" name="email" type="email" autocomplete="email" />
-              </div>
-
-              <div class="form-field">
-                <label for="contact-service" data-i18n="contactForm.fields.service">Tipo de servicio</label>
-                <select id="contact-service" name="servicio" required>
-                  <option value="" data-i18n="contactForm.services.placeholder">Selecciona una opción</option>
-                  <option value="piscinas" data-i18n="contactForm.services.pool">Piscinas</option>
-                  <option value="electricidad" data-i18n="contactForm.services.electricity">Electricidad</option>
-                  <option value="videovigilancia" data-i18n="contactForm.services.surveillance">Videovigilancia CCTV</option>
-                  <option value="antenas-satelite" data-i18n="contactForm.services.satellite">Antenas y satélite</option>
-                  <option value="otros" data-i18n="contactForm.services.other">Otro servicio técnico</option>
-                </select>
-              </div>
-
-              <div class="form-field form-field-full">
-                <label for="contact-message" data-i18n="contactForm.fields.message">Mensaje</label>
-                <textarea id="contact-message" name="mensaje" rows="5" required></textarea>
-              </div>
-            </div>
-
-            <div class="form-actions">
-              <button type="submit" class="contact-submit-btn">
-                <i class="bi bi-send-fill" aria-hidden="true"></i>
-                <span data-i18n="contactForm.submit">Enviar solicitud</span>
-              </button>
-
-              <p data-i18n="contactForm.privacy">
-                Al enviar el formulario se abrirá tu cliente de correo para preparar el mensaje.
-              </p>
-            </div>
-          </form>
+            </form>
         </div>
       </div>
     </section>
@@ -415,5 +436,8 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/i18n.js"></script>
   <script src="assets/js/app.js"></script>
+
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+  <script src="assets/js/contact-form.js?v=0.4.0" defer></script>
 </body>
 </html>

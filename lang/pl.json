@@ -125,6 +125,7 @@
       "other": "Inna usługa techniczna"
     },
     "submit": "Wyślij zgłoszenie",
-    "privacy": "Po wysłaniu formularza otworzy się klient poczty, aby przygotować wiadomość."
+    "privacy": "Twoje dane zostaną wykorzystane wyłącznie do obsługi tego zgłoszenia. Możesz także skontaktować się telefonicznie lub przez WhatsApp.",
+    "privacyConsent": "Zgadzam się, aby TLS wykorzystało te dane do odpowiedzi na moje zgłoszenie kontaktowe."
   }
 }
