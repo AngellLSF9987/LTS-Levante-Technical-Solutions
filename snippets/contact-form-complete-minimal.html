@@ -1,0 +1,42 @@
+<form class="contact-form" id="contact-form" action="/api/contact" method="post" data-contact-form novalidate>
+  <div class="form-field tls-hp" aria-hidden="true">
+    <label for="contact-website">Web</label>
+    <input id="contact-website" name="website" type="text" tabindex="-1" autocomplete="off" />
+  </div>
+
+  <input type="hidden" name="form_started_at" value="" />
+
+  <label for="nombre">Nombre</label>
+  <input id="nombre" name="nombre" type="text" required />
+
+  <label for="telefono">Teléfono / WhatsApp</label>
+  <input id="telefono" name="telefono" type="tel" required />
+
+  <label for="email">Correo electrónico</label>
+  <input id="email" name="email" type="email" />
+
+  <label for="servicio">Tipo de servicio</label>
+  <select id="servicio" name="servicio" required>
+    <option value="">Selecciona una opción</option>
+    <option value="piscinas">Piscinas</option>
+    <option value="electricidad">Electricidad</option>
+    <option value="videovigilancia">Videovigilancia CCTV</option>
+    <option value="antenas-satelite">Antenas y satélite</option>
+    <option value="otros">Otro servicio técnico</option>
+  </select>
+
+  <label for="mensaje">Mensaje</label>
+  <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+  <label>
+    <input type="checkbox" name="privacidad" value="aceptada" required />
+    Acepto que TLS utilice estos datos para responder a mi solicitud de contacto.
+  </label>
+
+  <div class="form-field form-field-full turnstile-field">
+    <div class="cf-turnstile" data-sitekey="TU_SITE_KEY_DE_TURNSTILE" data-theme="light"></div>
+  </div>
+
+  <button type="submit">Enviar solicitud</button>
+  <p data-contact-status role="status" aria-live="polite"></p>
+</form>

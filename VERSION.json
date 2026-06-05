@@ -1,0 +1,16 @@
+{
+  "project": "TLS - Levante Technical Solutions",
+  "version": "v0.4.2",
+  "date": "2026-06-05",
+  "type": "documentation-and-turnstile-patch",
+  "base_version": "v0.4.1",
+  "includes": [
+    "README.md updated",
+    "CHANGELOG.md",
+    "technical dossier",
+    "versioned README files",
+    "docs organization scripts",
+    "Cloudflare Turnstile + Pages Functions + Resend patch"
+  ],
+  "target_repo": "https://github.com/AngellLSF9987/TLS-Levante-Technical-Solutions.git"
+}

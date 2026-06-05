@@ -1,6 +1,7 @@
 // =========================================================
 // TLS - Cloudflare Pages Function: /api/contact
-// Turnstile validation + Resend transactional email
+// Turnstile server-side validation + honeypot + Resend
+// Versión: v0.4.2
 // =========================================================
 
 const SERVICE_LABELS = {
@@ -10,6 +11,10 @@ const SERVICE_LABELS = {
   "antenas-satelite": "Antenas y satélite",
   otros: "Otro servicio técnico",
 };
+
+const DEFAULT_CONTACT_EMAIL = "levante.tls@gmail.com";
+const DEFAULT_SITE_URL = "https://levante-tls.pages.dev";
+const MIN_FORM_TIME_MS = 2500;
 
 function jsonResponse(data, status = 200) {
   return new Response(JSON.stringify(data), {
@@ -29,8 +34,17 @@ function clean(value, maxLength = 1000) {
     .slice(0, maxLength);
 }
 
+function cleanLongText(value, maxLength = 3000) {
+  return String(value || "")
+    .replace(/[\u0000-\u0008\u000B\u000C\u000E-\u001F\u007F]/g, " ")
+    .replace(/\r\n/g, "\n")
+    .replace(/\r/g, "\n")
+    .trim()
+    .slice(0, maxLength);
+}
+
 function escapeHtml(value) {
-  return clean(value, 5000)
+  return String(value || "")
     .replace(/&/g, "&amp;")
     .replace(/</g, "&lt;")
     .replace(/>/g, "&gt;")
@@ -43,14 +57,25 @@ function isValidEmail(email) {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 }
 
+function isValidPhone(phone) {
+  return /^[0-9+()\s.-]{6,30}$/.test(phone);
+}
+
 async function readRequestData(request) {
   const contentType = request.headers.get("content-type") || "";
+
   if (contentType.includes("application/json")) {
     return await request.json();
   }
 
   const formData = await request.formData();
   return Object.fromEntries(formData.entries());
+}
+
+function looksLikeBotByTiming(raw) {
+  const startedAt = Number(raw.form_started_at || 0);
+  if (!startedAt) return false;
+  return Date.now() - startedAt < MIN_FORM_TIME_MS;
 }
 
 async function verifyTurnstile(token, request, env) {
@@ -69,13 +94,19 @@ async function verifyTurnstile(token, request, env) {
   const ip = request.headers.get("CF-Connecting-IP");
   if (ip) formData.append("remoteip", ip);
 
+  if (crypto.randomUUID) {
+    formData.append("idempotency_key", crypto.randomUUID());
+  }
+
   const response = await fetch("https://challenges.cloudflare.com/turnstile/v0/siteverify", {
     method: "POST",
     body: formData,
   });
 
-  const result = await response.json();
-  if (!result.success) {
+  const result = await response.json().catch(() => ({}));
+
+  if (!response.ok || !result.success) {
+    console.warn("Turnstile verification failed", result);
     return { ok: false, message: "No se ha podido validar la verificación anti-spam." };
   }
 
@@ -84,10 +115,12 @@ async function verifyTurnstile(token, request, env) {
 
 function buildInternalEmail(data, request, env) {
   const serviceLabel = SERVICE_LABELS[data.servicio] || clean(data.servicio, 80) || "Servicio no indicado";
-  const siteUrl = env.PUBLIC_SITE_URL || "https://levante-tls.pages.dev";
+  const siteUrl = env.PUBLIC_SITE_URL || DEFAULT_SITE_URL;
   const submittedAt = new Date().toLocaleString("es-ES", { timeZone: "Europe/Madrid" });
+  const referer = request.headers.get("referer") || siteUrl;
+  const ip = request.headers.get("CF-Connecting-IP") || "No disponible";
 
-  const text = `Nueva solicitud de contacto TLS\n\nFecha: ${submittedAt}\nNombre: ${data.nombre}\nTeléfono/WhatsApp: ${data.telefono}\nEmail: ${data.email || "No indicado"}\nServicio: ${serviceLabel}\n\nMensaje:\n${data.mensaje}\n\nOrigen: ${request.headers.get("referer") || siteUrl}\nIP Cloudflare: ${request.headers.get("CF-Connecting-IP") || "No disponible"}`;
+  const text = `Nueva solicitud de contacto TLS\n\nFecha: ${submittedAt}\nNombre: ${data.nombre}\nTeléfono/WhatsApp: ${data.telefono}\nEmail: ${data.email || "No indicado"}\nServicio: ${serviceLabel}\n\nMensaje:\n${data.mensaje}\n\nOrigen: ${referer}\nIP Cloudflare: ${ip}`;
 
   const html = `
     <h2>Nueva solicitud de contacto TLS</h2>
@@ -99,8 +132,8 @@ function buildInternalEmail(data, request, env) {
     <h3>Mensaje</h3>
     <p>${escapeHtml(data.mensaje).replace(/\n/g, "<br>")}</p>
     <hr>
-    <p><strong>Origen:</strong> ${escapeHtml(request.headers.get("referer") || siteUrl)}</p>
-    <p><strong>IP Cloudflare:</strong> ${escapeHtml(request.headers.get("CF-Connecting-IP") || "No disponible")}</p>
+    <p><strong>Origen:</strong> ${escapeHtml(referer)}</p>
+    <p><strong>IP Cloudflare:</strong> ${escapeHtml(ip)}</p>
   `;
 
   return {
@@ -111,7 +144,7 @@ function buildInternalEmail(data, request, env) {
 }
 
 function buildAutoReply(data, env) {
-  const siteUrl = env.PUBLIC_SITE_URL || "https://levante-tls.pages.dev";
+  const siteUrl = env.PUBLIC_SITE_URL || DEFAULT_SITE_URL;
 
   return {
     subject: "Hemos recibido tu solicitud - TLS",
@@ -153,7 +186,9 @@ async function sendWithResend({ to, subject, text, html, replyTo }, env) {
   });
 
   const result = await response.json().catch(() => ({}));
+
   if (!response.ok) {
+    console.error("Resend error", result);
     throw new Error(result.message || "Error al enviar el email con Resend.");
   }
 
@@ -164,12 +199,21 @@ export async function onRequestOptions() {
   return jsonResponse({ ok: true });
 }
 
+export async function onRequestGet() {
+  return jsonResponse({ ok: false, message: "Método no permitido." }, 405);
+}
+
 export async function onRequestPost({ request, env }) {
   try {
     const raw = await readRequestData(request);
 
-    // Campo honeypot: si un bot lo rellena, fingimos éxito y no enviamos nada.
+    // Honeypot: si un bot rellena este campo oculto, fingimos éxito y no enviamos nada.
     if (clean(raw.website, 200)) {
+      return jsonResponse({ ok: true, message: "Solicitud enviada correctamente." });
+    }
+
+    // Anti-bot suave: si el formulario se envía demasiado rápido, fingimos éxito.
+    if (looksLikeBotByTiming(raw)) {
       return jsonResponse({ ok: true, message: "Solicitud enviada correctamente." });
     }
 
@@ -178,12 +222,16 @@ export async function onRequestPost({ request, env }) {
       telefono: clean(raw.telefono, 80),
       email: clean(raw.email, 180).toLowerCase(),
       servicio: clean(raw.servicio, 80),
-      mensaje: clean(raw.mensaje, 3000),
+      mensaje: cleanLongText(raw.mensaje, 3000),
       privacidad: clean(raw.privacidad, 40),
     };
 
     if (!data.nombre || !data.telefono || !data.servicio || !data.mensaje) {
       return jsonResponse({ ok: false, message: "Completa los campos obligatorios del formulario." }, 400);
+    }
+
+    if (!isValidPhone(data.telefono)) {
+      return jsonResponse({ ok: false, message: "El teléfono no parece válido." }, 400);
     }
 
     if (data.email && !isValidEmail(data.email)) {
@@ -196,11 +244,12 @@ export async function onRequestPost({ request, env }) {
 
     const token = clean(raw["cf-turnstile-response"] || raw.turnstileToken, 3000);
     const turnstile = await verifyTurnstile(token, request, env);
+
     if (!turnstile.ok) {
       return jsonResponse({ ok: false, message: turnstile.message }, 400);
     }
 
-    const to = env.CONTACT_TO_EMAIL || "levante.tls@gmail.com";
+    const to = env.CONTACT_TO_EMAIL || DEFAULT_CONTACT_EMAIL;
     const internal = buildInternalEmail(data, request, env);
 
     await sendWithResend({
@@ -211,7 +260,8 @@ export async function onRequestPost({ request, env }) {
       replyTo: data.email || undefined,
     }, env);
 
-    if (data.email) {
+    // Auto-respuesta opcional. Actívala con SEND_AUTOREPLY=true cuando Resend esté listo.
+    if (data.email && String(env.SEND_AUTOREPLY || "").toLowerCase() === "true") {
       const auto = buildAutoReply(data, env);
       await sendWithResend({
         to: data.email,
@@ -230,8 +280,4 @@ export async function onRequestPost({ request, env }) {
       message: "No se ha podido enviar la solicitud. Inténtalo de nuevo o contacta por WhatsApp.",
     }, 500);
   }
-}
-
-export async function onRequestGet() {
-  return jsonResponse({ ok: false, message: "Método no permitido." }, 405);
 }

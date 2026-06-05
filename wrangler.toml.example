@@ -1,0 +1,14 @@
+# Ejemplo para desarrollo local. No subas claves reales al repositorio.
+# En producción, configura las variables desde Cloudflare Dashboard.
+
+name = "levante-tls"
+compatibility_date = "2026-06-05"
+pages_build_output_dir = "."
+
+[vars]
+PUBLIC_SITE_URL = "https://levante-tls.pages.dev"
+CONTACT_TO_EMAIL = "levante.tls@gmail.com"
+SEND_AUTOREPLY = "false"
+# FROM_EMAIL = "TLS - Levante Technical Solutions <contacto@tu-dominio-verificado.com>"
+# RESEND_API_KEY = "NO_PONER_AQUI_EN_PRODUCCION"
+# TURNSTILE_SECRET_KEY = "NO_PONER_AQUI_EN_PRODUCCION"
