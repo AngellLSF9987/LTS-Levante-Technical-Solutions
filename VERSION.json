@@ -1,18 +1,17 @@
 {
   "project": "TLS - Levante Technical Solutions",
-  "version": "v0.4.4",
+  "version": "0.4.5",
   "date": "2026-06-09",
-  "type": "google-business-profile-link-and-search-console-indexing-patch",
-  "base_version": "v0.4.3",
-  "includes": [
-    "Google Business Profile public share link integration",
-    "Replacement scripts for Google private/search links in HTML pages",
-    "robots.txt normalized for Cloudflare Pages",
-    "sitemap.xml converted to valid XML sitemap format",
-    "Search Console indexing checklist",
-    "Documentation update for SEO and local profile visibility"
-  ],
-  "google_business_profile_public_url": "https://share.google/ydplMedKFJiICu13F",
-  "public_site_url": "https://levante-tls.pages.dev",
-  "target_repo": "https://github.com/AngellLSF9987/TLS-Levante-Technical-Solutions.git"
+  "phase": "Google Search Console verification and indexing request",
+  "public_site": "https://levante-tls.pages.dev/",
+  "google_business_profile_url": "https://share.google/ydplMedKFJiICu13F",
+  "search_console_verification_file": "googlebf14d2205ce8e958.html",
+  "verification_file_public_url": "https://levante-tls.pages.dev/googlebf14d2205ce8e958.html",
+  "sitemap": "https://levante-tls.pages.dev/sitemap.xml",
+  "robots": "https://levante-tls.pages.dev/robots.txt",
+  "notes": [
+    "Keep the Google verification file in the root directory permanently.",
+    "Submit sitemap.xml in Google Search Console after ownership verification.",
+    "Request indexing for the main public pages after sitemap submission."
+  ]
 }
