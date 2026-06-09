@@ -1,9 +1,9 @@
 # TLS - Levante Technical Solutions
 
-**Versión documental y técnica:** `v0.4.2`  
-**Fecha:** 2026-06-05  
+**Versión documental y técnica:** `v0.4.4`  
+**Fecha:** 2026-06-09  
 **Proyecto:** Web corporativa TLS - Levante Technical Solutions  
-**Tipo:** Landing web corporativa multilingüe + formulario seguro en Cloudflare Pages
+**Tipo:** Landing web corporativa multilingüe + formulario seguro + integración Google Business Profile + preparación Search Console
 
 ---
 
@@ -17,7 +17,7 @@ TLS - Levante Technical Solutions es una web corporativa orientada a la captaci�
 - Antenas y sistemas satélite.
 - Servicios técnicos para hogares, comunidades, negocios y viviendas vacacionales.
 
-El proyecto está preparado para funcionar como sitio estático desplegado en **Cloudflare Pages**, con soporte multilingüe y formulario de contacto protegido mediante **Cloudflare Turnstile** y validación server-side mediante **Cloudflare Pages Functions**.
+El proyecto está preparado para funcionar como sitio estático desplegado en **Cloudflare Pages**, con soporte multilingüe, formulario de contacto protegido mediante **Cloudflare Turnstile**, validación server-side mediante **Cloudflare Pages Functions** y conexión pública con el **Perfil de Empresa de Google**.
 
 ---
 
@@ -28,37 +28,48 @@ El proyecto está preparado para funcionar como sitio estático desplegado en **
 | Versión base histórica | v0.2 |
 | Versión responsive/ajustes visuales | v0.3 |
 | Versión formulario seguro | v0.4.1 |
-| Versión actual propuesta | v0.4.2 |
-| Estado | Preparada para integración local, commit y despliegue |
+| Versión documentación/histórico | v0.4.2 |
+| Versión SEO/Google inicial | v0.4.3 |
+| Versión actual | v0.4.4 |
 | Hosting recomendado | Cloudflare Pages |
 | Formulario | `/api/contact` mediante Pages Functions |
 | Anti-spam | Cloudflare Turnstile + honeypot + tiempo mínimo |
 | Email transaccional | Resend |
+| Perfil de Empresa Google | Enlace público integrado: `https://share.google/ydplMedKFJiICu13F` |
+| Indexación | Preparada para Google Search Console |
 
 ---
 
-## 3. Tecnologías utilizadas
+## 3. Cambios principales en v0.4.4
 
-- HTML5.
-- CSS3 modular.
-- JavaScript vanilla.
-- Bootstrap 5.
-- Bootstrap Icons.
-- Sistema i18n mediante JSON.
-- SEO técnico base: `robots.txt`, `sitemap.xml`, schema y estructura semántica.
-- Cloudflare Pages.
-- Cloudflare Pages Functions.
-- Cloudflare Turnstile.
-- Resend API.
+Esta versión corrige y deja documentada la integración pública con Google:
+
+1. Sustitución del enlace privado/genérico de Google por el enlace público real del Perfil de Empresa.
+2. Eliminación progresiva de enlaces no aptos para clientes, como búsquedas con `authuser`, `mat`, `ved`, `sca_esv` o búsquedas genéricas.
+3. Normalización de `robots.txt`.
+4. Conversión de `sitemap.xml` a XML válido.
+5. Inclusión de scripts para reemplazar enlaces Google dentro de todas las páginas HTML del proyecto.
+6. Documentación de alta y envío en Google Search Console.
+7. Checklist de pruebas tras despliegue.
 
 ---
 
-## 4. Estructura recomendada del proyecto
+## 4. Enlaces principales
+
+- Web pública Cloudflare Pages: `https://levante-tls.pages.dev/`
+- Sitemap: `https://levante-tls.pages.dev/sitemap.xml`
+- Perfil público Google Business Profile: `https://share.google/ydplMedKFJiICu13F`
+- Repositorio GitHub: `https://github.com/AngellLSF9987/TLS-Levante-Technical-Solutions`
+
+---
+
+## 5. Estructura recomendada
 
 ```txt
 TLS-Levante-Technical-Solutions/
   README.md
   LICENSE
+  VERSION.json
   index.html
   services.html
   contact.html
@@ -66,134 +77,112 @@ TLS-Levante-Technical-Solutions/
   robots.txt
   sitemap.xml
   _headers
-  wrangler.toml.example
   assets/
     css/
     js/
       contact-form.js
+      google-business-link.js
     img/
   functions/
     api/
       contact.js
-  lang/
-  partials/
-  es/
-  en/
-  de/
-  fr/
-  it/
-  pt/
-  ru/
-  pl/
   docs/
-    INDICE_DOCUMENTACION.md
     CHANGELOG.md
-    historial/
-      HISTORICO_TECNICO_TLS_v0.2_a_v0.4.2.md
+    INDICE_DOCUMENTACION.md
+    google/
+      README_GOOGLE_PROFILE_SEARCH_CONSOLE_v0.4.4.md
+    search-console/
+      URLS_A_SOLICITAR_INDEXACION.txt
+      QA_GOOGLE_INDEXING_v0.4.4.md
     versiones/
-      README_v0.2.md
-      README_v0.3.md
-      README_v0.4.1.md
-      README_v0.4.2.md
-    fixes/
-      README_FIXES_INDEX.md
-    checks/
-      README_CHECKS_INDEX.md
+      README_v0.4.4.md
     formulario/
-      README_TURNSTILE_FORMULARIO_TLS.md
-      QA_TEST_FORMULARIO_TURNSTILE.md
-    git/
-      GIT_FIX_WINDOWS_INVALID_FILENAMES.md
+    fixes/
+    checks/
   scripts/
-    organize_docs_tls.ps1
-    organize_docs_tls.sh
+    apply_v0.4.4_google_profile_link.py
+    apply_v0.4.4_google_profile_link.ps1
+    apply_v0.4.4_google_profile_link.sh
   snippets/
 ```
 
 ---
 
-## 5. Documentación técnica
+## 6. Aplicación de la versión v0.4.4
 
-La documentación completa del proyecto queda agrupada en `/docs`:
+### 6.1 Copiar paquete
 
-- `docs/INDICE_DOCUMENTACION.md`: índice general de la documentación.
-- `docs/CHANGELOG.md`: evolución resumida por versiones.
-- `docs/historial/HISTORICO_TECNICO_TLS_v0.2_a_v0.4.2.md`: dossier técnico completo del proyecto.
-- `docs/versiones/`: README por versión.
-- `docs/fixes/`: índice de correcciones técnicas históricas.
-- `docs/checks/`: índice de comprobaciones históricas.
-- `docs/formulario/`: documentación del formulario seguro.
-- `docs/git/`: solución del problema de nombres incompatibles con Windows.
+Descomprimir este paquete sobre la raíz del proyecto local.
 
----
+### 6.2 Aplicar enlace público de Google
 
-## 6. Formulario seguro
+Ejecutar uno de estos scripts desde la raíz del proyecto.
 
-La versión actual incorpora arquitectura de formulario robusta:
+#### Opción Python
 
-```txt
-Usuario rellena formulario
-        ↓
-Turnstile genera token
-        ↓
-assets/js/contact-form.js envía FormData a /api/contact
-        ↓
-functions/api/contact.js valida Turnstile en servidor
-        ↓
-Si es correcto, envía email vía Resend
-        ↓
-Muestra confirmación al usuario
+```bash
+python scripts/apply_v0.4.4_google_profile_link.py
 ```
 
-### Variables necesarias en Cloudflare Pages
+#### Opción PowerShell
 
-Configurar en **Production** y, si se usa, también en **Preview**:
-
-```txt
-TURNSTILE_SECRET_KEY = Secret Key del widget Turnstile
-RESEND_API_KEY       = API Key de Resend
-FROM_EMAIL           = TLS - Levante Technical Solutions <contacto@tu-dominio-verificado.com>
-CONTACT_TO_EMAIL     = levante.tls@gmail.com
-PUBLIC_SITE_URL      = https://levante-tls.pages.dev
-SEND_AUTOREPLY       = false
+```powershell
+powershell -ExecutionPolicy Bypass -File scripts/apply_v0.4.4_google_profile_link.ps1
 ```
 
-La **Site Key** de Turnstile va en el HTML.  
-La **Secret Key** solo va en Cloudflare Pages como variable de entorno.
+#### Opción Git Bash / Linux
+
+```bash
+bash scripts/apply_v0.4.4_google_profile_link.sh
+```
+
+El enlace aplicado por defecto es:
+
+```txt
+https://share.google/ydplMedKFJiICu13F
+```
+
+También se puede pasar otro enlace como argumento:
+
+```bash
+python scripts/apply_v0.4.4_google_profile_link.py "https://share.google/ydplMedKFJiICu13F"
+```
 
 ---
 
-## 7. Orden de integración recomendado
-
-1. Arreglar primero nombres incompatibles con Windows si todavía existe error de `git pull`.
-2. Copiar los archivos de este paquete encima del proyecto local.
-3. Ejecutar, si procede, `scripts/organize_docs_tls.ps1` o `scripts/organize_docs_tls.sh` para ordenar README/CHECK históricos.
-4. Sustituir `TU_SITE_KEY_DE_TURNSTILE` en `contact.html` por la Site Key real.
-5. Configurar variables de entorno en Cloudflare Pages.
-6. Hacer commit y push.
-7. Probar formulario en Cloudflare Pages.
-8. Activar autorespuesta solo cuando el envío interno esté validado.
-
----
-
-## 8. Comandos Git recomendados
+## 7. Comandos Git recomendados
 
 ```bash
 git status
+git diff
 git add .
-git commit -m "TLS v0.4.2 historial tecnico y formulario seguro"
+git commit -m "TLS v0.4.4 Google Business Profile link and Search Console SEO fixes"
 git push origin main
 ```
 
 ---
 
+## 8. Comprobaciones tras despliegue
+
+1. Abrir `https://levante-tls.pages.dev/`.
+2. Pulsar **Encuéntranos en Google**.
+3. Confirmar que abre `https://share.google/ydplMedKFJiICu13F` o redirección pública equivalente.
+4. Probar en ventana de incógnito.
+5. Abrir `https://levante-tls.pages.dev/robots.txt`.
+6. Abrir `https://levante-tls.pages.dev/sitemap.xml`.
+7. Añadir propiedad en Google Search Console.
+8. Enviar sitemap.
+9. Solicitar indexación de las páginas principales.
+
+---
+
 ## 9. Notas de mantenimiento
 
-- No subir claves secretas al repositorio.
-- No poner `TURNSTILE_SECRET_KEY` ni `RESEND_API_KEY` en HTML ni JavaScript público.
-- Mantener la documentación histórica en `/docs`.
-- Evitar nombres de archivo con caracteres incompatibles con Windows: `: ? * " < > | \`.
-- Usar versiones documentales claras: v0.2, v0.3, v0.4.1, v0.4.2.
+- No usar enlaces de Google de la barra del navegador si contienen parámetros de sesión.
+- No usar enlaces de búsqueda tipo `google.com/search?q=mi empresa`.
+- Usar siempre el enlace público generado desde **Compartir** en el Perfil de Empresa.
+- Mantener `robots.txt` y `sitemap.xml` en formato válido y legible.
+- Search Console puede tardar en reflejar indexación aunque el sitemap esté enviado correctamente.
 
 ---
 
