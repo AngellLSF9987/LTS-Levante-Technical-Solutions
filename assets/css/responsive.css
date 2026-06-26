@@ -331,3 +331,50 @@
   }
 }
 
+
+
+/* ===== Ajuste responsive nuevo header ===== */
+
+@media (max-width:991.98px){
+  .brand-text .header-right-zone{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:1rem;
+    width:100%;
+  }
+
+  .brand-text .header-language-switcher{
+    justify-content:center;
+    flex-wrap:wrap;
+  }
+
+  .brand-text .header-contact-bar{
+    justify-content:center;
+    width:100%;
+  }
+}
+
+@media (max-width:575.98px){
+
+  .brand-text .header-language-switcher{
+      display:grid!important;
+      grid-template-columns:repeat(4,1fr);
+      gap:.45rem;
+      width:100%;
+      max-width:22rem;
+      margin:auto;
+  }
+
+  .brand-text .header-contact-bar{
+      display:grid;
+      grid-template-columns:1fr;
+      width:min(100%,21rem);
+      margin:1rem auto 0;
+  }
+
+  .brand-text .header-contact-link{
+      justify-content:center;
+      width:100%;
+  }
+}
