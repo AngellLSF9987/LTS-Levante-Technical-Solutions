@@ -99,8 +99,8 @@
                     <span>levante.tls@gmail.com</span>
                   </a>
 
-                  <a href="https://share.google/ydplMedKFJiICu13F" class="header-contact-link" target="_blank"
-                    rel="noopener noreferrer" aria-label="Abrir perfil de empresa en Google">
+                  <a href="https://share.google/ydplMedKFJiICu13F" class="header-contact-link"
+                    target="_blank" rel="noopener noreferrer" aria-label="Abrir perfil de empresa en Google">
                     <span class="header-contact-icon" aria-hidden="true">
                       <i class="bi bi-google"></i>
                     </span>
@@ -236,6 +236,52 @@
           <article class="col-12 col-md-6 col-xl-3">
             <div class="service-card">
               <div class="service-header">
+                <div class="service-icon blue">
+                  <i class="bi bi-water"></i>
+                </div>
+
+                <h3 class="blue-text" data-i18n-html="services.pool.title">
+                  Tratamiento de piscinas<br />
+                  todo incluido
+                </h3>
+              </div>
+
+              <img src="assets/img/pool.png" alt="Piscina limpia y cristalina" class="service-image"
+                data-i18n-alt="services.pool.imageAlt" />
+
+              <div class="service-body">
+                <ul>
+                  <li data-i18n="services.pool.items.0">
+                    Análisis y control del agua
+                  </li>
+                  <li data-i18n="services.pool.items.1">
+                    Tratamiento químico balanceado
+                  </li>
+                  <li data-i18n="services.pool.items.2">
+                    Limpieza y mantenimiento completo
+                  </li>
+                  <li data-i18n="services.pool.items.3">
+                    Equipos en óptimas condiciones
+                  </li>
+                  <li data-i18n="services.pool.items.4">
+                    Asesoría personalizada
+                  </li>
+                </ul>
+              </div>
+
+              <div class="service-footer blue-bg">
+                <i class="bi bi-droplet-fill"></i>
+                <p data-i18n="services.pool.footer">
+                  Agua limpia, segura y cristalina todo el año.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Servicio 2 -->
+          <article class="col-12 col-md-6 col-xl-3">
+            <div class="service-card">
+              <div class="service-header">
                 <div class="service-icon yellow">
                   <i class="bi bi-lightning-charge-fill"></i>
                 </div>
@@ -278,7 +324,7 @@
             </div>
           </article>
 
-          <!-- Servicio 2 -->
+          <!-- Servicio 3 -->
           <article class="col-12 col-md-6 col-xl-3">
             <div class="service-card video-card">
               <div class="service-header">
@@ -324,7 +370,7 @@
             </div>
           </article>
 
-          <!-- Servicio  -->
+          <!-- Servicio 4 -->
           <article class="col-12 col-md-6 col-xl-3">
             <div class="service-card satellite-card">
               <div class="service-header">
@@ -434,8 +480,8 @@
                 </li>
 
                 <li class="contact-item">
-                  <a href="https://share.google/ydplMedKFJiICu13F" class="contact-link" target="_blank"
-                    rel="noopener noreferrer" aria-label="Abrir perfil de empresa en Google">
+                  <a href="https://share.google/ydplMedKFJiICu13F" class="contact-link"
+                    target="_blank" rel="noopener noreferrer" aria-label="Abrir perfil de empresa en Google">
                     <span class="contact-icon" aria-hidden="true">
                       <i class="bi bi-google"></i>
                     </span>
@@ -463,8 +509,9 @@
                   loading="lazy" referrerpolicy="no-referrer-when-downgrade"
                   title="Zona de trabajo: Costa del Sol y Levante"></iframe>
 
-                <a class="map-open-link" href="https://share.google/ydplMedKFJiICu13F" target="_blank"
-                  rel="noopener noreferrer" data-i18n="area.mapLinkLabel">
+                <a class="map-open-link"
+                  href="https://share.google/ydplMedKFJiICu13F"
+                  target="_blank" rel="noopener noreferrer" data-i18n="area.mapLinkLabel">
                   Abrir en Google Maps
                 </a>
               </div>
