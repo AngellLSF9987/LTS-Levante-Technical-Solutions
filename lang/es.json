@@ -49,7 +49,7 @@
       ],
       "footer": "Seguridad, eficiencia y energía que se nota."
     },
-    "wireless": {
+    "network": {
       "title": "Redes y Conectividad",
       "imageAlt": "Diagrama de red y conectividad",
       "items": [
@@ -90,7 +90,7 @@
   "contactForm": {
     "kicker": "Solicitud de servicio",
     "title": "Cuéntanos qué necesitas",
-    "description": "Rellena el formulario y prepararemos una respuesta orientada a tu necesidad: piscinas, electricidad, videovigilancia, antenas o sistemas satelitales.",
+    "description": "Rellena el formulario y prepararemos una respuesta orientada a tu necesidad: videovigilancia y seguridad, electricidad, redes y conectividad, antenas sistemas satelitales.",
     "benefits": [
       "Respuesta personalizada según el tipo de servicio.",
       "Atención para hogares, comunidades, comercios y empresas.",
@@ -107,7 +107,7 @@
       "placeholder": "Selecciona una opción",
       "surveillance": "Videovigilancia y Seguridad",
       "electricity": "Electricidad",
-      "wireless": "Redes y Conectividad",
+      "network": "Redes y Conectividad",
       "other": "Otro servicio técnico"
     },
     "submit": "Enviar solicitud",
