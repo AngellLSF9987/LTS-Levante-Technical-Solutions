@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "TLS | Comprehensive Technical Services",
-    "description": "Comprehensive technical services: pools, electricity, video surveillance, antennas and satellite from the Costa del Sol to the Levante area."
+    "title": "LTS | Comprehensive Technical Services",
+    "description": "Comprehensive technical services: CCTV Surveillance & Security, Electrical Services, Networks & Connectivity from Costa del Sol to the Spanish Levante."
   },
   "brand": {
     "logoAlt": "Levante Technical Solutions logo",
@@ -11,7 +11,7 @@
     "claimStrong": "services you can trust."
   },
   "header": {
-    "badgeAlt": "Guaranteed work"
+    "badgeAlt": "Guaranteed workmanship"
   },
   "values": {
     "quality": "Quality",
@@ -25,65 +25,52 @@
     "subtitle": "Services you can trust."
   },
   "services": {
-    "pool": {
-      "title": "All-inclusive<br />pool maintenance",
-      "imageAlt": "Clean and crystal-clear pool",
+    "surveillance": {
+      "title": "CCTV Surveillance & Security",
+      "imageAlt": "CCTV security camera",
       "items": [
-        "Water analysis and control",
-        "Balanced chemical treatment",
-        "Complete cleaning and maintenance",
-        "Equipment kept in optimal condition",
-        "Personalized advice"
+        "Professional CCTV security camera installation",
+        "Real-time remote monitoring",
+        "Secure recording and storage",
+        "Solutions for homes, businesses and companies",
+        "Personalised advice tailored to your needs"
       ],
-      "footer": "Clean, safe and crystal-clear water all year round."
+      "footer": "Protecting what matters most, 24 hours a day."
     },
     "electricity": {
-      "title": "Electricity",
+      "title": "Electrical Services",
       "imageAlt": "Electrical panel installation",
       "items": [
         "Residential, commercial and industrial electrical installations",
         "Preventive and corrective maintenance",
-        "Fault diagnostics",
+        "Electrical fault diagnosis",
         "Electrical panels and protection systems",
         "Indoor and outdoor lighting"
       ],
-      "footer": "Safety, efficiency and energy you can notice."
+      "footer": "Safety, efficiency and energy you can rely on."
     },
-    "surveillance": {
-      "title": "Video<br />surveillance",
-      "imageAlt": "CCTV security camera",
-      "items": [
-        "CCTV security camera installation",
-        "Real-time remote monitoring",
-        "Secure recording and storage",
-        "Systems for homes, shops and companies",
-        "Personalized advice tailored to your needs"
-      ],
-      "footer": "Protecting what matters most, 24 hours a day."
-    },
-    "satellite": {
-      "title": "Antennas & satellite",
-      "subtitle": "Channels from your home country",
-      "imageAlt": "Satellite dish",
+    "network": {
+      "title": "Networks & Connectivity",
+      "imageAlt": "Network and connectivity diagram",
       "items": [
         "Installation of antennas and satellite systems",
-        "Access to channels from your home country",
-        "High-definition image quality HD",
-        "Professional guidance and setup",
-        "Technical service and maintenance"
+        "Access to TV channels from your home country",
+        "High-definition HD picture quality",
+        "Professional alignment and configuration",
+        "Technical support and maintenance"
       ],
-      "footer": "Enjoy channels from your country wherever you are."
+      "footer": "Enjoy the channels from your home country, wherever you are."
     }
   },
   "team": {
     "title": "One team,<br />all the solutions.",
-    "subtitle": "We are here to help you!"
+    "subtitle": "We're here to help!"
   },
   "contact": {
     "title": "Contact us",
     "phoneWhatsappLabel": "Phone / WhatsApp",
     "emailLabel": "Contact form",
-    "googleProfileLabel": "Business profile",
+    "googleProfileLabel": "Business Profile",
     "googleProfileText": "Find us on Google",
     "formLinkAria": "Open contact form"
   },
@@ -98,16 +85,16 @@
     "results": "Results",
     "rights": "All rights reserved.",
     "brandNotice": "is a trademark of the TLS project.",
-    "author": "Web design and development:"
+    "author": "Website design and development:"
   },
   "contactForm": {
     "kicker": "Service request",
     "title": "Tell us what you need",
-    "description": "Fill in the form and we will prepare a response focused on your needs: pools, electricity, CCTV, antennas or satellite systems.",
+    "description": "Fill out the form and we'll prepare a response tailored to your needs: pools, electrical services, CCTV surveillance, antennas or satellite systems.",
     "benefits": [
-      "Personalized response according to the type of service.",
-      "Support for homes, communities, shops and companies.",
-      "Service area: Costa del Sol and Levante."
+      "Personalised response according to the requested service.",
+      "Support for homes, residential communities, businesses and companies.",
+      "Service area: Costa del Sol and the Spanish Levante."
     ],
     "fields": {
       "name": "Name",
@@ -118,14 +105,13 @@
     },
     "services": {
       "placeholder": "Select an option",
-      "pool": "Pools",
-      "electricity": "Electricity",
-      "surveillance": "CCTV video surveillance",
-      "satellite": "Antennas and satellite",
+      "surveillance": "CCTV Surveillance & Security",
+      "electricity": "Electrical Services",
+      "wireless": "Networks & Connectivity",
       "other": "Other technical service"
     },
     "submit": "Send request",
-    "privacy": "Your data will only be used to manage this request. You can also contact us by phone or WhatsApp.",
-    "privacyConsent": "I agree that TLS may use this information to respond to my contact request."
+    "privacy": "Your data will only be used to process this request. You can also contact us by phone or WhatsApp.",
+    "privacyConsent": "I agree that TLS may use this data to respond to my contact request."
   }
 }

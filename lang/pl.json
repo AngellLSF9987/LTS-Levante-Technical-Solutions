@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "TLS | Kompleksowe usługi techniczne",
-    "description": "Kompleksowe usługi techniczne: baseny, elektryka, monitoring, anteny i satelita od Costa del Sol po Lewant."
+    "title": "LTS | Kompleksowe Usługi Techniczne",
+    "description": "Kompleksowe usługi techniczne: monitoring CCTV i systemy bezpieczeństwa, instalacje elektryczne, sieci i łączność od Costa del Sol po hiszpański Lewant."
   },
   "brand": {
     "logoAlt": "Logo Levante Technical Solutions",
@@ -11,7 +11,7 @@
     "claimStrong": "usługi, którym możesz zaufać."
   },
   "header": {
-    "badgeAlt": "Gwarantowana praca"
+    "badgeAlt": "Gwarancja jakości"
   },
   "values": {
     "quality": "Jakość",
@@ -25,62 +25,49 @@
     "subtitle": "Usługi, którym możesz zaufać."
   },
   "services": {
-    "pool": {
-      "title": "Kompleksowa obsługa<br />basenów",
-      "imageAlt": "Czysty i krystaliczny basen",
+    "surveillance": {
+      "title": "Monitoring CCTV i Bezpieczeństwo",
+      "imageAlt": "Kamera monitoringu CCTV",
       "items": [
-        "Analiza i kontrola wody",
-        "Zrównoważone uzdatnianie chemiczne",
-        "Pełne czyszczenie i konserwacja",
-        "Sprzęt w optymalnym stanie",
-        "Indywidualne doradztwo"
+        "Profesjonalny montaż kamer monitoringu CCTV",
+        "Zdalny monitoring w czasie rzeczywistym",
+        "Bezpieczne nagrywanie i archiwizacja obrazu",
+        "Rozwiązania dla domów, firm i przedsiębiorstw",
+        "Indywidualne doradztwo dopasowane do Twoich potrzeb"
       ],
-      "footer": "Czysta, bezpieczna i krystaliczna woda przez cały rok."
+      "footer": "Chronimy to, co jest dla Ciebie najważniejsze — 24 godziny na dobę."
     },
     "electricity": {
-      "title": "Elektryka",
-      "imageAlt": "Instalacja rozdzielnicy elektrycznej",
+      "title": "Instalacje Elektryczne",
+      "imageAlt": "Instalacja elektryczna",
       "items": [
-        "Instalacje elektryczne domowe, komercyjne i przemysłowe",
-        "Konserwacja prewencyjna i naprawcza",
-        "Diagnostyka usterek",
-        "Rozdzielnice i systemy zabezpieczeń",
+        "Instalacje elektryczne dla domów, firm i przemysłu",
+        "Konserwacja zapobiegawcza i naprawcza",
+        "Diagnostyka usterek elektrycznych",
+        "Rozdzielnice elektryczne i systemy zabezpieczeń",
         "Oświetlenie wewnętrzne i zewnętrzne"
       ],
-      "footer": "Bezpieczeństwo, wydajność i energia, którą widać."
+      "footer": "Bezpieczeństwo, wydajność i niezawodna energia."
     },
-    "surveillance": {
-      "title": "Monitoring<br />wideo",
-      "imageAlt": "Kamera bezpieczeństwa CCTV",
+    "network": {
+      "title": "Sieci i Łączność",
+      "imageAlt": "Infrastruktura sieciowa",
       "items": [
-        "Instalacja kamer bezpieczeństwa CCTV",
-        "Zdalny monitoring w czasie rzeczywistym",
-        "Bezpieczne nagrywanie i przechowywanie",
-        "Systemy dla domów, sklepów i firm",
-        "Indywidualne doradztwo dopasowane do potrzeb"
+        "Okablowanie strukturalne",
+        "Profesjonalna instalacja sieci Wi-Fi",
+        "Optymalizacja zasięgu sieci",
+        "Routery, przełączniki i punkty dostępowe",
+        "Wsparcie techniczne i konserwacja"
       ],
-      "footer": "Chronimy to, co najważniejsze, 24 godziny na dobę."
-    },
-    "satellite": {
-      "title": "Anteny i satelita",
-      "subtitle": "Kanały z Twojego kraju",
-      "imageAlt": "Antena satelitarna",
-      "items": [
-        "Instalacja anten i systemów satelitarnych",
-        "Dostęp do kanałów z Twojego kraju",
-        "Jakość obrazu w wysokiej rozdzielczości HD",
-        "Profesjonalne doradztwo i konfiguracja",
-        "Serwis techniczny i konserwacja"
-      ],
-      "footer": "Oglądaj kanały ze swojego kraju, gdziekolwiek jesteś."
+      "footer": "Niezawodne połączenia tam, gdzie ich potrzebujesz."
     }
   },
   "team": {
     "title": "Jeden zespół,<br />wszystkie rozwiązania.",
-    "subtitle": "Jesteśmy tutaj, aby pomóc!"
+    "subtitle": "Jesteśmy do Twojej dyspozycji!"
   },
   "contact": {
-    "title": "Skontaktuj się",
+    "title": "Skontaktuj się z nami",
     "phoneWhatsappLabel": "Telefon / WhatsApp",
     "emailLabel": "Formularz kontaktowy",
     "googleProfileLabel": "Profil firmy",
@@ -88,44 +75,43 @@
     "formLinkAria": "Otwórz formularz kontaktowy"
   },
   "area": {
-    "title": "Obszar pracy:<br />Costa del Sol - Levante",
+    "title": "Obszar działania:<br />Costa del Sol - Lewant",
     "mapLinkLabel": "Otwórz w Google Maps"
   },
   "footer": {
-    "main": "Zaangażowani w Twój dom, firmę i spokój.",
+    "main": "Dbamy o Twój dom, Twoją firmę i Twój spokój.",
     "professionalism": "Profesjonalizm",
     "trust": "Zaufanie",
-    "results": "Wyniki",
+    "results": "Rezultaty",
     "rights": "Wszelkie prawa zastrzeżone.",
-    "brandNotice": "jest znakiem towarowym projektu TLS.",
-    "author": "Projekt i tworzenie strony:"
+    "brandNotice": "jest znakiem handlowym projektu TLS.",
+    "author": "Projekt i wykonanie strony:"
   },
   "contactForm": {
     "kicker": "Zgłoszenie usługi",
     "title": "Powiedz nam, czego potrzebujesz",
-    "description": "Wypełnij formularz, a przygotujemy odpowiedź dopasowaną do Twoich potrzeb: baseny, elektryka, monitoring, anteny lub systemy satelitarne.",
+    "description": "Wypełnij formularz, a przygotujemy rozwiązanie dopasowane do Twoich potrzeb: monitoring CCTV, instalacje elektryczne, sieci i łączność.",
     "benefits": [
-      "Indywidualna odpowiedź według rodzaju usługi.",
-      "Obsługa domów, wspólnot, sklepów i firm.",
-      "Obszar działania: Costa del Sol i Levante."
+      "Indywidualna odpowiedź dostosowana do wybranej usługi.",
+      "Obsługa domów, wspólnot mieszkaniowych, sklepów i firm.",
+      "Obszar działania: Costa del Sol i Lewant."
     ],
     "fields": {
       "name": "Imię i nazwisko",
       "phone": "Telefon / WhatsApp",
-      "email": "E-mail",
+      "email": "Adres e-mail",
       "service": "Rodzaj usługi",
       "message": "Wiadomość"
     },
     "services": {
       "placeholder": "Wybierz opcję",
-      "pool": "Baseny",
-      "electricity": "Elektryka",
-      "surveillance": "Monitoring CCTV",
-      "satellite": "Anteny i satelita",
+      "surveillance": "Monitoring CCTV i Bezpieczeństwo",
+      "electricity": "Instalacje Elektryczne",
+      "wireless": "Sieci i Łączność",
       "other": "Inna usługa techniczna"
     },
     "submit": "Wyślij zgłoszenie",
-    "privacy": "Twoje dane zostaną wykorzystane wyłącznie do obsługi tego zgłoszenia. Możesz także skontaktować się telefonicznie lub przez WhatsApp.",
-    "privacyConsent": "Zgadzam się, aby TLS wykorzystało te dane do odpowiedzi na moje zgłoszenie kontaktowe."
+    "privacy": "Twoje dane będą wykorzystywane wyłącznie do obsługi tego zgłoszenia. Możesz również skontaktować się z nami telefonicznie lub przez WhatsApp.",
+    "privacyConsent": "Wyrażam zgodę na wykorzystanie moich danych przez LTS w celu udzielenia odpowiedzi na moje zapytanie."
   }
 }

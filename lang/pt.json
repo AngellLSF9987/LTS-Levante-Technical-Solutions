@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "TLS | Serviços técnicos integrais",
-    "description": "Serviços técnicos integrais: piscinas, eletricidade, videovigilância, antenas e satélite da Costa del Sol ao Levante."
+    "title": "LTS | Serviços Técnicos Integrados",
+    "description": "Serviços técnicos integrados: Videovigilância CCTV e Segurança, Eletricidade, Redes e Conectividade desde a Costa del Sol até ao Levante espanhol."
   },
   "brand": {
     "logoAlt": "Logótipo da Levante Technical Solutions",
@@ -25,21 +25,21 @@
     "subtitle": "Serviços em que pode confiar."
   },
   "services": {
-    "pool": {
-      "title": "Manutenção de piscinas<br />tudo incluído",
-      "imageAlt": "Piscina limpa e cristalina",
+    "surveillance": {
+      "title": "Videovigilância CCTV e Segurança",
+      "imageAlt": "Câmara de videovigilância CCTV",
       "items": [
-        "Análise e controlo da água",
-        "Tratamento químico equilibrado",
-        "Limpeza e manutenção completas",
-        "Equipamentos em condições ideais",
-        "Aconselhamento personalizado"
+        "Instalação profissional de câmaras CCTV",
+        "Monitorização remota em tempo real",
+        "Gravação e armazenamento seguros",
+        "Soluções para habitações, empresas e estabelecimentos comerciais",
+        "Aconselhamento personalizado de acordo com as suas necessidades"
       ],
-      "footer": "Água limpa, segura e cristalina durante todo o ano."
+      "footer": "Protegemos o que é mais importante para si, 24 horas por dia."
     },
     "electricity": {
       "title": "Eletricidade",
-      "imageAlt": "Instalação de quadro elétrico",
+      "imageAlt": "Instalação elétrica",
       "items": [
         "Instalações elétricas residenciais, comerciais e industriais",
         "Manutenção preventiva e corretiva",
@@ -47,37 +47,24 @@
         "Quadros elétricos e sistemas de proteção",
         "Iluminação interior e exterior"
       ],
-      "footer": "Segurança, eficiência e energia que se nota."
+      "footer": "Segurança, eficiência e energia em que pode confiar."
     },
-    "surveillance": {
-      "title": "Video<br />vigilância",
-      "imageAlt": "Câmara de segurança CCTV",
+    "network": {
+      "title": "Redes e Conectividade",
+      "imageAlt": "Infraestrutura de rede",
       "items": [
-        "Instalação de câmaras de segurança CCTV",
-        "Monitorização remota em tempo real",
-        "Gravação e armazenamento seguros",
-        "Sistemas para casas, negócios e empresas",
-        "Aconselhamento personalizado conforme as suas necessidades"
+        "Cablagem estruturada",
+        "Instalação profissional de redes Wi-Fi",
+        "Otimização da cobertura de rede",
+        "Routers, switches e pontos de acesso",
+        "Assistência técnica e manutenção"
       ],
-      "footer": "Protegemos o que mais importa, 24 horas por dia."
-    },
-    "satellite": {
-      "title": "Antenas e satélite",
-      "subtitle": "Canais do seu país de origem",
-      "imageAlt": "Antena parabólica",
-      "items": [
-        "Instalação de antenas e sistemas de satélite",
-        "Acesso a canais do seu país de origem",
-        "Qualidade de imagem em alta definição HD",
-        "Orientação e configuração profissional",
-        "Serviço técnico e manutenção"
-      ],
-      "footer": "Veja os canais do seu país onde quer que esteja."
+      "footer": "Ligações fiáveis onde quer que precise."
     }
   },
   "team": {
     "title": "Uma só equipa,<br />todas as soluções.",
-    "subtitle": "Estamos aqui para ajudar!"
+    "subtitle": "Estamos ao seu dispor!"
   },
   "contact": {
     "title": "Contacte-nos",
@@ -88,7 +75,7 @@
     "formLinkAria": "Abrir formulário de contacto"
   },
   "area": {
-    "title": "Zona de trabalho:<br />Costa del Sol - Levante",
+    "title": "Área de serviço:<br />Costa del Sol - Levante",
     "mapLinkLabel": "Abrir no Google Maps"
   },
   "footer": {
@@ -102,30 +89,29 @@
   },
   "contactForm": {
     "kicker": "Pedido de serviço",
-    "title": "Diga-nos o que precisa",
-    "description": "Preencha o formulário e prepararemos uma resposta orientada à sua necessidade: piscinas, eletricidade, videovigilância, antenas ou sistemas por satélite.",
+    "title": "Diga-nos do que precisa",
+    "description": "Preencha o formulário e prepararemos uma resposta adaptada às suas necessidades: videovigilância CCTV, eletricidade, redes e conectividade.",
     "benefits": [
-      "Resposta personalizada conforme o tipo de serviço.",
-      "Atendimento para casas, comunidades, lojas e empresas.",
+      "Resposta personalizada de acordo com o serviço solicitado.",
+      "Atendimento a habitações, condomínios, empresas e estabelecimentos comerciais.",
       "Área de serviço: Costa del Sol e Levante."
     ],
     "fields": {
       "name": "Nome",
       "phone": "Telefone / WhatsApp",
-      "email": "E-mail",
+      "email": "Correio eletrónico",
       "service": "Tipo de serviço",
       "message": "Mensagem"
     },
     "services": {
       "placeholder": "Selecione uma opção",
-      "pool": "Piscinas",
+      "surveillance": "Videovigilância CCTV e Segurança",
       "electricity": "Eletricidade",
-      "surveillance": "Videovigilância CCTV",
-      "satellite": "Antenas e satélite",
+      "wireless": "Redes e Conectividade",
       "other": "Outro serviço técnico"
     },
     "submit": "Enviar pedido",
-    "privacy": "Os seus dados serão utilizados apenas para gerir este pedido. Também pode contactar por telefone ou WhatsApp.",
-    "privacyConsent": "Aceito que a TLS utilize estes dados para responder ao meu pedido de contacto."
+    "privacy": "Os seus dados serão utilizados exclusivamente para tratar este pedido. Também pode contactar-nos por telefone ou WhatsApp.",
+    "privacyConsent": "Aceito que a LTS utilize estes dados para responder ao meu pedido de contacto."
   }
 }

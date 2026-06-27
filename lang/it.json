@@ -1,14 +1,14 @@
 {
   "meta": {
-    "title": "TLS | Servizi tecnici integrali",
-    "description": "Servizi tecnici integrali: piscine, elettricità, videosorveglianza, antenne e satellite dalla Costa del Sol al Levante."
+    "title": "LTS | Servizi tecnici completi",
+    "description": "Servizi tecnici completi: videosorveglianza CCTV e sicurezza, impianti elettrici, reti e connettività dalla Costa del Sol fino alla costa di Levante."
   },
   "brand": {
     "logoAlt": "Logo di Levante Technical Solutions",
     "top": "Levante",
     "name": "Technical Solutions",
     "claimStart": "Soluzioni che funzionano,",
-    "claimStrong": "servizi di cui ti puoi fidare."
+    "claimStrong": "servizi di cui puoi fidarti."
   },
   "header": {
     "badgeAlt": "Lavoro garantito"
@@ -22,62 +22,49 @@
   },
   "hero": {
     "title": "Soluzioni che funzionano,",
-    "subtitle": "Servizi di cui ti puoi fidare."
+    "subtitle": "Servizi di cui puoi fidarti."
   },
   "services": {
-    "pool": {
-      "title": "Manutenzione piscine<br />tutto incluso",
-      "imageAlt": "Piscina pulita e cristallina",
-      "items": [
-        "Analisi e controllo dell’acqua",
-        "Trattamento chimico bilanciato",
-        "Pulizia e manutenzione complete",
-        "Attrezzature in condizioni ottimali",
-        "Consulenza personalizzata"
-      ],
-      "footer": "Acqua pulita, sicura e cristallina tutto l’anno."
-    },
-    "electricity": {
-      "title": "Elettricità",
-      "imageAlt": "Installazione di quadro elettrico",
-      "items": [
-        "Impianti elettrici residenziali, commerciali e industriali",
-        "Manutenzione preventiva e correttiva",
-        "Diagnosi dei guasti",
-        "Quadri elettrici e sistemi di protezione",
-        "Illuminazione interna ed esterna"
-      ],
-      "footer": "Sicurezza, efficienza ed energia che si notano."
-    },
     "surveillance": {
-      "title": "Video<br />sorveglianza",
+      "title": "Videosorveglianza CCTV e Sicurezza",
       "imageAlt": "Telecamera di sicurezza CCTV",
       "items": [
-        "Installazione di telecamere di sicurezza CCTV",
+        "Installazione professionale di telecamere CCTV",
         "Monitoraggio remoto in tempo reale",
         "Registrazione e archiviazione sicure",
-        "Sistemi per case, attività e aziende",
+        "Soluzioni per abitazioni, negozi e aziende",
         "Consulenza personalizzata in base alle tue esigenze"
       ],
       "footer": "Proteggiamo ciò che conta di più, 24 ore su 24."
     },
-    "satellite": {
-      "title": "Antenne e satellite",
-      "subtitle": "Canali del tuo paese d’origine",
-      "imageAlt": "Antenna parabolica",
+    "electricity": {
+      "title": "Impianti Elettrici",
+      "imageAlt": "Impianto elettrico",
       "items": [
-        "Installazione di antenne e sistemi satellitari",
-        "Accesso ai canali del tuo paese d’origine",
-        "Qualità dell’immagine in alta definizione HD",
-        "Consulenza e configurazione professionale",
+        "Impianti elettrici residenziali, commerciali e industriali",
+        "Manutenzione preventiva e correttiva",
+        "Diagnosi dei guasti elettrici",
+        "Quadri elettrici e sistemi di protezione",
+        "Illuminazione interna ed esterna"
+      ],
+      "footer": "Sicurezza, efficienza ed energia affidabile."
+    },
+    "network": {
+      "title": "Reti e Connettività",
+      "imageAlt": "Infrastruttura di rete",
+      "items": [
+        "Cablaggio strutturato di rete",
+        "Installazione professionale di reti Wi-Fi",
+        "Ottimizzazione della copertura di rete",
+        "Router, switch e punti di accesso",
         "Assistenza tecnica e manutenzione"
       ],
-      "footer": "Guarda i canali del tuo paese ovunque tu sia."
+      "footer": "Connessioni affidabili ovunque ne abbiate bisogno."
     }
   },
   "team": {
     "title": "Un solo team,<br />tutte le soluzioni.",
-    "subtitle": "Siamo qui per aiutarti!"
+    "subtitle": "Siamo al tuo servizio!"
   },
   "contact": {
     "title": "Contattaci",
@@ -88,26 +75,26 @@
     "formLinkAria": "Apri il modulo di contatto"
   },
   "area": {
-    "title": "Zona di lavoro:<br />Costa del Sol - Levante",
+    "title": "Area di intervento:<br />Costa del Sol - Levante",
     "mapLinkLabel": "Apri in Google Maps"
   },
   "footer": {
-    "main": "Impegnati per la tua casa, la tua azienda e la tua tranquillità.",
+    "main": "Al servizio della tua casa, della tua azienda e della tua tranquillità.",
     "professionalism": "Professionalità",
     "trust": "Fiducia",
     "results": "Risultati",
     "rights": "Tutti i diritti riservati.",
     "brandNotice": "è un marchio commerciale del progetto TLS.",
-    "author": "Design e sviluppo web:"
+    "author": "Progettazione e sviluppo web:"
   },
   "contactForm": {
     "kicker": "Richiesta di servizio",
-    "title": "Dicci di cosa hai bisogno",
-    "description": "Compila il modulo e prepareremo una risposta adatta alle tue esigenze: piscine, elettricità, videosorveglianza, antenne o sistemi satellitari.",
+    "title": "Raccontaci di cosa hai bisogno",
+    "description": "Compila il modulo e prepareremo una risposta adatta alle tue esigenze: videosorveglianza CCTV, impianti elettrici, reti e connettività.",
     "benefits": [
-      "Risposta personalizzata in base al tipo di servizio.",
-      "Assistenza per case, condomini, negozi e aziende.",
-      "Area di servizio: Costa del Sol e Levante."
+      "Risposta personalizzata in base al servizio richiesto.",
+      "Servizio per abitazioni, condomini, negozi e aziende.",
+      "Area di intervento: Costa del Sol e Levante."
     ],
     "fields": {
       "name": "Nome",
@@ -117,15 +104,14 @@
       "message": "Messaggio"
     },
     "services": {
-      "placeholder": "Seleziona un’opzione",
-      "pool": "Piscine",
-      "electricity": "Elettricità",
-      "surveillance": "Videosorveglianza CCTV",
-      "satellite": "Antenne e satellite",
+      "placeholder": "Seleziona un'opzione",
+      "surveillance": "Videosorveglianza CCTV e Sicurezza",
+      "electricity": "Impianti Elettrici",
+      "wireless": "Reti e Connettività",
       "other": "Altro servizio tecnico"
     },
     "submit": "Invia richiesta",
-    "privacy": "I tuoi dati saranno utilizzati solo per gestire questa richiesta. Puoi contattarci anche per telefono o WhatsApp.",
-    "privacyConsent": "Accetto che TLS utilizzi questi dati per rispondere alla mia richiesta di contatto."
+    "privacy": "I tuoi dati saranno utilizzati esclusivamente per gestire questa richiesta. Puoi contattarci anche telefonicamente o tramite WhatsApp.",
+    "privacyConsent": "Accetto che LTS utilizzi questi dati per rispondere alla mia richiesta di contatto."
   }
 }

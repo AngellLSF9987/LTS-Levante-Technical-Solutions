@@ -1,14 +1,14 @@
 {
   "meta": {
-    "title": "TLS | Services techniques complets",
-    "description": "Services techniques complets : piscines, électricité, vidéosurveillance, antennes et satellite de la Costa del Sol au Levant."
+    "title": "LTS | Services techniques complets",
+    "description": "Services techniques complets : vidéosurveillance CCTV et sécurité, électricité, réseaux et connectivité, de la Costa del Sol jusqu'à la côte méditerranéenne espagnole."
   },
   "brand": {
     "logoAlt": "Logo de Levante Technical Solutions",
     "top": "Levante",
     "name": "Technical Solutions",
     "claimStart": "Des solutions qui fonctionnent,",
-    "claimStrong": "des services de confiance."
+    "claimStrong": "des services en lesquels vous pouvez avoir confiance."
   },
   "header": {
     "badgeAlt": "Travail garanti"
@@ -22,73 +22,60 @@
   },
   "hero": {
     "title": "Des solutions qui fonctionnent,",
-    "subtitle": "Des services de confiance."
+    "subtitle": "Des services en lesquels vous pouvez avoir confiance."
   },
   "services": {
-    "pool": {
-      "title": "Entretien de piscine<br />tout compris",
-      "imageAlt": "Piscine propre et cristalline",
+    "surveillance": {
+      "title": "Vidéosurveillance CCTV et sécurité",
+      "imageAlt": "Caméra de vidéosurveillance CCTV",
       "items": [
-        "Analyse et contrôle de l’eau",
-        "Traitement chimique équilibré",
-        "Nettoyage et entretien complets",
-        "Équipements en parfait état",
-        "Conseil personnalisé"
+        "Installation professionnelle de caméras CCTV",
+        "Surveillance à distance en temps réel",
+        "Enregistrement et stockage sécurisés",
+        "Solutions pour habitations, commerces et entreprises",
+        "Conseils personnalisés selon vos besoins"
       ],
-      "footer": "Une eau propre, sûre et cristalline toute l’année."
+      "footer": "Nous protégeons ce qui compte le plus pour vous, 24h/24."
     },
     "electricity": {
       "title": "Électricité",
-      "imageAlt": "Installation de tableau électrique",
+      "imageAlt": "Installation électrique",
       "items": [
         "Installations électriques résidentielles, commerciales et industrielles",
         "Maintenance préventive et corrective",
-        "Diagnostic de pannes",
-        "Tableaux électriques et protections",
+        "Diagnostic des pannes électriques",
+        "Tableaux électriques et systèmes de protection",
         "Éclairage intérieur et extérieur"
       ],
-      "footer": "Sécurité, efficacité et énergie visibles."
+      "footer": "Sécurité, efficacité et énergie fiable."
     },
-    "surveillance": {
-      "title": "Vidéo<br />surveillance",
-      "imageAlt": "Caméra de sécurité CCTV",
+    "network": {
+      "title": "Réseaux et connectivité",
+      "imageAlt": "Infrastructure réseau",
       "items": [
-        "Installation de caméras de sécurité CCTV",
-        "Surveillance à distance en temps réel",
-        "Enregistrement et stockage sécurisés",
-        "Systèmes pour maisons, commerces et entreprises",
-        "Conseil personnalisé selon vos besoins"
+        "Câblage réseau structuré",
+        "Installation professionnelle de réseaux Wi-Fi",
+        "Optimisation de la couverture réseau",
+        "Routeurs, commutateurs et points d'accès",
+        "Assistance technique et maintenance"
       ],
-      "footer": "Nous protégeons ce qui compte le plus, 24 h/24."
-    },
-    "satellite": {
-      "title": "Antennes & satellite",
-      "subtitle": "Chaînes de votre pays d’origine",
-      "imageAlt": "Antenne parabolique",
-      "items": [
-        "Installation d’antennes et de systèmes satellites",
-        "Accès aux chaînes de votre pays d’origine",
-        "Qualité d’image haute définition HD",
-        "Conseil et configuration professionnels",
-        "Service technique et maintenance"
-      ],
-      "footer": "Profitez des chaînes de votre pays où que vous soyez."
+      "footer": "Des connexions fiables là où vous en avez besoin."
     }
   },
   "team": {
     "title": "Une seule équipe,<br />toutes les solutions.",
-    "subtitle": "Nous sommes là pour vous aider !"
+    "subtitle": "Nous sommes à votre service !"
   },
   "contact": {
     "title": "Contactez-nous",
     "phoneWhatsappLabel": "Téléphone / WhatsApp",
     "emailLabel": "Formulaire de contact",
-    "googleProfileLabel": "Profil d’entreprise",
-    "googleProfileText": "Trouvez-nous sur Google",
+    "googleProfileLabel": "Profil d'entreprise",
+    "googleProfileText": "Retrouvez-nous sur Google",
     "formLinkAria": "Ouvrir le formulaire de contact"
   },
   "area": {
-    "title": "Zone de travail :<br />Costa del Sol - Levant",
+    "title": "Zone d'intervention :<br />Costa del Sol - Levante",
     "mapLinkLabel": "Ouvrir dans Google Maps"
   },
   "footer": {
@@ -102,30 +89,29 @@
   },
   "contactForm": {
     "kicker": "Demande de service",
-    "title": "Dites-nous ce dont vous avez besoin",
-    "description": "Remplissez le formulaire et nous préparerons une réponse adaptée à votre besoin : piscines, électricité, vidéosurveillance, antennes ou systèmes satellites.",
+    "title": "Expliquez-nous vos besoins",
+    "description": "Remplissez le formulaire et nous préparerons une réponse adaptée à vos besoins : vidéosurveillance CCTV, électricité, réseaux et connectivité.",
     "benefits": [
-      "Réponse personnalisée selon le type de service.",
-      "Assistance pour maisons, copropriétés, commerces et entreprises.",
-      "Zone d’intervention : Costa del Sol et Levante."
+      "Réponse personnalisée selon le service demandé.",
+      "Service pour particuliers, copropriétés, commerces et entreprises.",
+      "Zone d'intervention : Costa del Sol et Levante."
     ],
     "fields": {
       "name": "Nom",
       "phone": "Téléphone / WhatsApp",
-      "email": "E-mail",
+      "email": "Adresse e-mail",
       "service": "Type de service",
       "message": "Message"
     },
     "services": {
       "placeholder": "Sélectionnez une option",
-      "pool": "Piscines",
+      "surveillance": "Vidéosurveillance CCTV et sécurité",
       "electricity": "Électricité",
-      "surveillance": "Vidéosurveillance CCTV",
-      "satellite": "Antennes et satellite",
+      "wireless": "Réseaux et connectivité",
       "other": "Autre service technique"
     },
     "submit": "Envoyer la demande",
-    "privacy": "Vos données seront utilisées uniquement pour gérer cette demande. Vous pouvez également nous contacter par téléphone ou WhatsApp.",
-    "privacyConsent": "J’accepte que TLS utilise ces données pour répondre à ma demande de contact."
+    "privacy": "Vos données seront utilisées uniquement pour traiter votre demande. Vous pouvez également nous contacter par téléphone ou WhatsApp.",
+    "privacyConsent": "J'accepte que LTS utilise ces données afin de répondre à ma demande de contact."
   }
 }
