@@ -1,692 +1,621 @@
-/* =========================================================
-   HEADER v1.0
-   LEVANTE TECHNICAL SOLUTIONS
-========================================================= */
+/* ==========================================================
+   RESET
+========================================================== */
 
-/* =========================================================
-   CONTENEDOR PRINCIPAL
-========================================================= */
-
-.top-header{
-    position:relative;
-    overflow:hidden;
-    color:var(--white);
-
-    padding:2rem 0;
-
-    background:
-        radial-gradient(circle at 82% 8%,
-        rgba(0,119,255,.25),
-        transparent 32%),
-
-        linear-gradient(
-            120deg,
-            #031126 0%,
-            #061c48 55%,
-            #0b327d 100%
-        );
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-.top-header::after{
+
+/* ==========================================================
+   HEADER
+========================================================== */
+
+.lts-header{
+
+    position:relative;
+    width:100%;
+    overflow:hidden;
+    padding:28px 0 22px;
+    background:
+
+        linear-gradient(
+            90deg,
+            #06142d 0%,
+            #0d2f79 42%,
+            #2b5fbe 100%
+        );
+
+}
+
+
+/* ==========================================================
+   ARO DECORATIVO
+========================================================== */
+
+.lts-header::after{
 
     content:"";
-
     position:absolute;
-
-    top:-10rem;
-    right:-8rem;
-
-    width:28rem;
-    height:28rem;
-
+    top:-180px;
+    right:-180px;
+    width:560px;
+    height:560px;
     border-radius:50%;
-
-    border:1.7rem solid rgba(0,132,255,.12);
-
+    border:34px solid rgba(0,190,255,.10);
     pointer-events:none;
 
 }
 
 
-/* =========================================================
-   FILA PRINCIPAL
-========================================================= */
-
-.header-main-row{
-
-    min-height:220px;
-
-    align-items:center;
-
-}
-
-
-/* =========================================================
-   COLUMNA PRINCIPAL
-========================================================= */
-
-.header-brand-col{
-
-    width:100%;
-
-    display:flex;
-
-    align-items:center;
-
-}
-
-
-/* =========================================================
-   LOGO + MARCA
-========================================================= */
-
-.brand-area{
-
-    width:100%;
-
-    display:grid;
-
-    grid-template-columns:
-
-        165px
-
-        minmax(0,1fr);
-
-    column-gap:2.25rem;
-
-    align-items:center;
-
-}
-
-
-.brand-logo{
-
-    width:155px;
-
-    height:auto;
-
-    display:block;
-
-    object-fit:contain;
-
-}
-
-
-/* =========================================================
-   BLOQUE TEXTO
-========================================================= */
-
-.brand-text{
-
-    width:100%;
-
-}
-
-
-/* =========================================================
-   TITULO
-========================================================= */
-
-.brand-text h1{
-
-    margin:0;
-
-    text-transform:uppercase;
-
-    line-height:.88;
-
-    font-weight:900;
-
-    letter-spacing:.10em;
-
-}
-
-
-.brand-text h1 span{
-
-    display:block;
-
-    color:#ffffff;
-
-    font-size:clamp(2rem,3.8vw,4rem);
-
-    letter-spacing:.16em;
-
-}
-
-
-.brand-text h1 strong{
-
-    display:block;
-
-    color:var(--cyan);
-
-    font-size:clamp(2.8rem,5vw,6rem);
-
-    letter-spacing:.08em;
-
-    text-shadow:
-
-        0 .30rem 1.5rem rgba(0,170,255,.35);
-
-}
-
-
-/* =========================================================
-   CLAIM
-========================================================= */
-
-.brand-text p{
-
-    width:100%;
-
-    margin:.90rem 0 0;
-
-    padding-top:.60rem;
-
-    border-top:
-
-        1px solid rgba(255,255,255,.45);
-
-    text-transform:uppercase;
-
-    font-weight:900;
-
-    font-size:
-
-        clamp(.82rem,1vw,1.05rem);
-
-    letter-spacing:.10em;
-
-    line-height:1.25;
-
-}
-
-
-.brand-text p strong{
-
-    color:var(--cyan);
-
-}
-
-
-/* =========================================================
-   BARRA INFERIOR DEL HEADER
-   (Contacto + Idiomas)
-========================================================= */
-
-.header-bottom-row{
-
-    margin-top:1.25rem;
-
-    display:flex;
-
-    justify-content:space-between;
-
-    align-items:center;
-
-    gap:1.5rem;
-
-    flex-wrap:wrap;
-
-}
-
-/* =========================================================
-   CONTACTO RÁPIDO
-========================================================= */
-
-.header-contact-bar{
-
-    display:flex;
-
-    align-items:center;
-
-    gap:.60rem;
-
-    flex-wrap:wrap;
-
-    flex:1;
-
-}
-
-
-.header-contact-link{
-
-    display:inline-flex;
-
-    align-items:center;
-
-    gap:.50rem;
-
-    min-height:42px;
-
-    padding:.45rem .90rem;
-
-    border-radius:999px;
-
-    text-decoration:none;
-
-    color:var(--white);
-
-    background:rgba(255,255,255,.08);
-
-    border:1px solid rgba(255,255,255,.22);
-
-    backdrop-filter:blur(5px);
-
-    transition:
-        background .20s ease,
-        border-color .20s ease,
-        transform .20s ease;
-
-}
-
-
-.header-contact-link:hover{
-
-    color:var(--white);
-
-    background:rgba(0,160,255,.18);
-
-    border-color:rgba(0,170,255,.70);
-
-    transform:translateY(-2px);
-
-}
-
-
-.header-contact-icon{
-
-    width:28px;
-
-    height:28px;
-
-    display:grid;
-
-    place-items:center;
-
-    border-radius:50%;
-
-    color:#ffffff;
-
-    background:linear-gradient(
-        180deg,
-        #0b7ef7,
-        #0047b2
-    );
-
-    flex:0 0 auto;
-
-    font-size:.82rem;
-
-}
-
-
-.header-contact-icon-duo{
+/* ==========================================================
+   CONTENEDOR
+========================================================== */
+
+.header-wrapper{
 
     position:relative;
-
-    background:
-        linear-gradient(
-            135deg,
-            #0059d6 0%,
-            #0059d6 52%,
-            #25d366 52%,
-            #128c7e 100%
-        );
+    z-index:2;
+    width:min(1400px,95%);
+    margin:auto;
 
 }
 
 
-.header-contact-icon-duo .bi-telephone-fill{
+/* ==========================================================
+   FILA SUPERIOR
+========================================================== */
 
-    position:absolute;
+.header-top{
 
-    left:.34rem;
+    display:grid;
+    grid-template-columns:
 
-    top:.32rem;
+        240px
+        minmax(600px,1fr)
+        210px;
 
-    font-size:.46rem;
-
-}
-
-
-.header-contact-icon-duo .bi-whatsapp{
-
-    position:absolute;
-
-    right:.22rem;
-
-    bottom:.18rem;
-
-    font-size:.62rem;
+    align-items:center;
+    column-gap:34px;
 
 }
 
 
-.header-contact-link span:last-child{
+/* ==========================================================
+   LOGO
+========================================================== */
 
-    font-size:.83rem;
-
-    font-weight:800;
-
-    letter-spacing:.02em;
-
-}
-
-
-/* =========================================================
-   SELECTOR DE IDIOMAS
-========================================================= */
-
-.header-language-switcher{
+.header-logo{
 
     display:flex;
-
-    justify-content:flex-end;
-
+    justify-content:center;
     align-items:center;
-
-    gap:.45rem;
-
-    flex-wrap:wrap;
 
 }
 
 
-.language-btn{
+.header-logo img{
 
-    display:inline-flex;
+    width:205px;
+    height:auto;
+    display:block;
 
+}
+
+
+/* ==========================================================
+   BLOQUE TITULO
+========================================================== */
+
+.header-title{
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:flex-start;
+
+}
+
+
+/* ==========================================================
+   LEVANTE
+========================================================== */
+
+.title-levante{
+
+    font-family:Arial,Helvetica,sans-serif;
+    font-size:5rem;
+    font-weight:900;
+    line-height:.90;
+    letter-spacing:.08em;
+    color:#ffffff;
+    text-shadow:
+
+        0 2px 0 rgba(255,255,255,.12),
+        0 5px 10px rgba(0,0,0,.35),
+        0 12px 24px rgba(0,0,0,.25);
+
+}
+
+
+/* ==========================================================
+   TECHNICAL SOLUTIONS
+========================================================== */
+
+.title-technical{
+
+    margin-top:.25rem;
+    white-space:nowrap;
+    font-family:Arial,Helvetica,sans-serif;
+    font-size:3.45rem;
+    font-weight:900;
+    line-height:.92;
+    letter-spacing:.01em;
+    background:
+
+        linear-gradient(
+
+            to bottom,
+
+            #bffcff 0%,
+            #8cf2ff 12%,
+            #5de8ff 28%,
+            #35dbff 48%,
+            #1bc7ff 66%,
+            #149fe6 82%,
+            #1173c7 100%
+
+        );
+
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+
+    background-clip:text;
+    text-shadow:
+
+        0 2px 0 rgba(255,255,255,.12),
+        0 4px 8px rgba(0,0,0,.25),
+        0 10px 18px rgba(0,0,0,.20);
+
+}
+
+
+/* ==========================================================
+   BANDERA SUPERIOR
+========================================================== */
+
+.header-flag{
+
+    display:flex;
+    justify-content:center;
     align-items:center;
 
-    justify-content:center;
+}
 
-    gap:.35rem;
 
-    min-width:58px;
+.header-flag img{
 
-    height:40px;
+    width:170px;
+    height:auto;
+    display:block;
+    border-radius:18px;
+    box-shadow:
 
-    padding:0 .70rem;
+        0 12px 28px rgba(0,0,0,.30);
 
-    border-radius:.45rem;
+}
 
-    background:rgba(255,255,255,.06);
+/* ==========================================================
+   TOOLBAR
+========================================================== */
 
-    border:1px solid rgba(255,255,255,.30);
+.header-toolbar{
+
+    margin-top:24px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:12px;
+    min-height:76px;
+    padding:0 18px;
+    border:1px solid rgba(0,195,255,.45);
+    border-radius:18px;
+    background:rgba(9,22,64,.38);
+    backdrop-filter:blur(6px);
+
+}
+
+
+/* ==========================================================
+   BLOQUES
+========================================================== */
+
+.toolbar-box{
+
+    display:flex;
+    align-items:center;
+    gap:14px;
+    flex:1;
+    min-width:0;
+    padding:12px 8px;
+    color:#ffffff;
+    text-decoration:none;
+    transition:.25s;
+
+}
+
+
+.toolbar-box:hover{
 
     color:#ffffff;
+    text-decoration:none;
+    background:rgba(255,255,255,.04);
 
-    font-size:.76rem;
+}
 
-    font-weight:800;
 
+/* ==========================================================
+   SEPARADORES
+========================================================== */
+
+.toolbar-divider{
+
+    width:1px;
+    height:44px;
+    background:rgba(255,255,255,.18);
+    flex-shrink:0;
+
+}
+
+
+/* ==========================================================
+   ICONOS
+========================================================== */
+
+.toolbar-icon{
+
+    width:48px;
+    height:48px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#ffffff;
+    font-size:1.55rem;
+    flex-shrink:0;
+
+}
+
+
+.whatsapp{
+
+    color:#19c655;
+
+}
+
+
+.email{
+
+    color:#2647df;
+
+}
+
+
+/* ==========================================================
+   MINI LOGO
+========================================================== */
+
+.toolbar-mini-logo{
+
+    width:52px;
+    height:auto;
+    flex-shrink:0;
+
+}
+
+
+/* ==========================================================
+   TEXTO
+========================================================== */
+
+.toolbar-text{
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    line-height:1.05;
+    min-width:0;
+
+}
+
+
+.toolbar-text small{
+
+    font-size:.82rem;
+    color:rgba(255,255,255,.88);
+
+}
+
+
+.toolbar-text strong{
+
+    margin-top:4px;
+    font-size:1rem;
+    font-weight:700;
+    color:#ffffff;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+
+}
+
+
+/* ==========================================================
+   IDIOMAS
+========================================================== */
+
+.toolbar-languages{
+
+    margin-left:auto;
+    display:flex;
+    align-items:center;
+    justify-content:flex-end;
+    gap:8px;
+    flex-shrink:0;
+    padding-left:16px;
+
+}
+
+/* ==========================================================
+   BOTONES DE IDIOMA
+========================================================== */
+
+.toolbar-languages .lang-btn{
+
+    width:44px;
+    height:44px;
+    padding:0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow:hidden;
+    flex-shrink:0;
     cursor:pointer;
+    background:rgba(255,255,255,.04);
+    border:1px solid rgba(255,255,255,.25);
+    border-radius:10px;
 
     transition:
-        background .20s ease,
-        border-color .20s ease,
-        transform .20s ease;
+        transform .25s ease,
+        background .25s ease,
+        border-color .25s ease,
+        box-shadow .25s ease;
 
 }
 
 
-.language-btn:hover{
+/* ==========================================================
+   IMAGEN BANDERA
+========================================================== */
 
-    background:rgba(255,255,255,.14);
+.toolbar-languages .lang-btn img{
 
-    border-color:rgba(255,255,255,.75);
+    width:100%;
+    height:100%;
+    display:block;
+    object-fit:cover;
+    border-radius:9px;
+    pointer-events:none;
+
+}
+
+
+/* ==========================================================
+   HOVER
+========================================================== */
+
+.toolbar-languages .lang-btn:hover{
 
     transform:translateY(-2px);
+    border-color:#2cc7ff;
+    background:rgba(44,199,255,.18);
 
 }
 
 
-.language-btn.active,
-.language-btn[aria-pressed="true"]{
+/* ==========================================================
+   BOTÓN ACTIVO
+========================================================== */
 
-    background:var(--cyan);
+.toolbar-languages .lang-btn.active{
 
-    border-color:var(--cyan);
+    border-color:#39d3ff;
+    background:rgba(57,211,255,.20);
+    box-shadow:
 
-    color:#06244d;
+        0 0 10px rgba(57,211,255,.40),
+        inset 0 0 8px rgba(255,255,255,.10);
+
+}
+
+
+/* ==========================================================
+   CLICK
+========================================================== */
+
+.toolbar-languages .lang-btn:active{
+
+    transform:scale(.96);
 
 }
 
 
-.language-btn .fi{
+/* ==========================================================
+   FOCUS ACCESIBILIDAD
+========================================================== */
 
-    font-size:1rem;
+.toolbar-languages .lang-btn:focus-visible{
 
-    line-height:1;
+    outline:none;
+    border-color:#7be6ff;
+    box-shadow:
+
+        0 0 0 3px rgba(123,230,255,.25);
 
 }
 
-/* =========================================================
-   RESPONSIVE
-========================================================= */
 
-/* =======================
-   Portátiles
-======================= */
+/* ==========================================================
+   RESPONSIVE 1200
+========================================================== */
 
 @media (max-width:1200px){
 
-    .brand-area{
+    .header-top{
 
         grid-template-columns:
 
-            135px
+            180px
+            1fr
+            150px;
 
-            1fr;
-
-        column-gap:1.75rem;
-
-    }
-
-    .brand-logo{
-
-        width:130px;
+        column-gap:24px;
 
     }
 
-    .brand-text h1 strong{
+    .title-levante{
 
-        font-size:clamp(2.4rem,4.5vw,4.8rem);
+        font-size:4rem;
+
+    }
+
+    .title-technical{
+
+        font-size:2.8rem;
+
+    }
+
+    .header-flag img{
+
+        width:135px;
 
     }
 
 }
 
 
-/* =======================
-   Tablets
-======================= */
+/* ==========================================================
+   RESPONSIVE 992
+========================================================== */
 
 @media (max-width:992px){
 
-    .top-header{
+    .header-top{
 
-        padding:2rem 0;
-
-    }
-
-    .header-main-row{
-
-        min-height:auto;
-
-    }
-
-    .brand-area{
-
-        grid-template-columns:1fr;
-
-        justify-items:center;
-
+        display:flex;
+        flex-direction:column;
+        gap:24px;
         text-align:center;
 
-        row-gap:1rem;
-
     }
 
-    .brand-logo{
-
-        width:120px;
-
-    }
-
-    .brand-text{
-
-        width:100%;
-
-    }
-
-    .header-bottom-row{
-
-        flex-direction:column;
+    .header-title{
 
         align-items:center;
 
-        justify-content:center;
+    }
 
-        gap:1rem;
+    .header-toolbar{
+
+        flex-wrap:wrap;
+        justify-content:center;
+        padding:14px;
+        gap:14px;
 
     }
 
-    .header-contact-bar{
+    .toolbar-divider{
 
-        justify-content:center;
+        display:none;
 
     }
 
-    .header-language-switcher{
+    .toolbar-box{
 
+        flex:1 1 280px;
+
+    }
+
+    .toolbar-languages{
+
+        width:100%;
         justify-content:center;
+        margin-left:0;
+        padding-left:0;
 
     }
 
 }
 
 
-/* =======================
-   Móviles
-======================= */
+/* ==========================================================
+   RESPONSIVE 768
+========================================================== */
+
+@media (max-width:768px){
+
+    .header-logo img{
+
+        width:150px;
+
+    }
+
+    .title-levante{
+
+        font-size:3rem;
+
+    }
+
+    .title-technical{
+
+        font-size:2rem;
+
+    }
+
+    .header-flag img{
+
+        width:110px;
+
+    }
+
+    .toolbar-box{
+
+        flex:1 1 100%;
+
+    }
+
+}
+
+
+/* ==========================================================
+   RESPONSIVE 576
+========================================================== */
 
 @media (max-width:576px){
 
-    .top-header{
+    .toolbar-languages{
 
-        padding:1.5rem 0;
-
-    }
-
-    .brand-logo{
-
-        width:95px;
+        gap:6px;
+        flex-wrap:wrap;
 
     }
 
-    .brand-text h1{
+    .toolbar-languages .lang-btn{
 
-        line-height:.95;
-
-    }
-
-    .brand-text h1 span{
-
-        font-size:1.65rem;
-
-        letter-spacing:.08em;
+        width:40px;
+        height:40px;
 
     }
-
-    .brand-text h1 strong{
-
-        font-size:2.45rem;
-
-        letter-spacing:.05em;
-
-    }
-
-    .brand-text p{
-
-        font-size:.72rem;
-
-    }
-
-    .header-contact-bar{
-
-        display:grid;
-
-        grid-template-columns:1fr;
-
-        width:100%;
-
-        gap:.55rem;
-
-    }
-
-    .header-contact-link{
-
-        width:100%;
-
-        justify-content:center;
-
-    }
-
-    .header-language-switcher{
-
-        justify-content:center;
-
-        gap:.35rem;
-
-    }
-
-    .language-btn{
-
-        min-width:54px;
-
-        height:38px;
-
-        font-size:.72rem;
-
-    }
-
 }
-
-
-/* =========================================================
-   PEQUEÑOS AJUSTES
-========================================================= */
-
-.header-contact-link:focus-visible,
-.language-btn:focus-visible{
-
-    outline:2px solid var(--cyan);
-
-    outline-offset:3px;
-
-}
-
-.header-contact-link i,
-.language-btn .fi{
-
-    user-select:none;
-
-}
-
-.brand-logo,
-.language-btn,
-.header-contact-link{
-
-    -webkit-user-select:none;
-
-    user-select:none;
-
-}
-
-
-/* =========================================================
-   FIN HEADER v1.0
-========================================================= */

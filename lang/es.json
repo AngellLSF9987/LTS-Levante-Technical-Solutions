@@ -25,17 +25,17 @@
     "subtitle": "Servicios en los que puedes confiar."
   },
   "services": {
-    "pool": {
-      "title": "Tratamiento de piscinas<br />todo incluido",
-      "imageAlt": "Piscina limpia y cristalina",
+      "surveillance": {
+      "title": "Videovigilancia y Seguridad",
+      "imageAlt": "Cámara de seguridad CCTV",
       "items": [
-        "Análisis y control del agua",
-        "Tratamiento químico balanceado",
-        "Limpieza y mantenimiento completo",
-        "Equipos en óptimas condiciones",
-        "Asesoría personalizada"
+        "Instalación de cámaras de seguridad CCTV",
+        "Monitoreo remoto en tiempo real",
+        "Grabación y almacenamiento seguro",
+        "Sistemas para hogar, negocio y empresas",
+        "Asesoría personalizada según tus necesidades"
       ],
-      "footer": "Agua limpia, segura y cristalina todo el año."
+      "footer": "Protegemos lo que más te importa, las 24 horas."
     },
     "electricity": {
       "title": "Electricidad",
@@ -49,22 +49,9 @@
       ],
       "footer": "Seguridad, eficiencia y energía que se nota."
     },
-    "surveillance": {
-      "title": "Video<br />vigilancia",
-      "imageAlt": "Cámara de seguridad CCTV",
-      "items": [
-        "Instalación de cámaras de seguridad CCTV",
-        "Monitoreo remoto en tiempo real",
-        "Grabación y almacenamiento seguro",
-        "Sistemas para hogar, negocio y empresas",
-        "Asesoría personalizada según tus necesidades"
-      ],
-      "footer": "Protegemos lo que más te importa, las 24 horas."
-    },
-    "satellite": {
-      "title": "Antenas y satélite",
-      "subtitle": "Canales de tu país de origen",
-      "imageAlt": "Antena parabólica",
+    "wireless": {
+      "title": "Redes y Conectividad",
+      "imageAlt": "Diagrama de red y conectividad",
       "items": [
         "Instalación de antenas y sistemas satelitales",
         "Acceso a canales de tu país de origen",

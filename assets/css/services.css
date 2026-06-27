@@ -1,525 +1,651 @@
-/* =========================================================
-   SERVICIOS
-========================================================= */
+/* ==========================================================
+   LTS - SERVICES.CSS
+   ENTREGA 1
+   Estructura general
+========================================================== */
 
-.services-section {
-  padding: clamp(1rem, 1.7vw, 1.7rem) 0 clamp(0.8rem, 1.5vw, 1.4rem);
-}
 
-/* Asegura que las columnas Bootstrap estiren la card */
-.services-section .row {
-  align-items: stretch;
-}
+/* ==========================================================
+   SECCIÓN
+========================================================== */
 
-/* Cada columna se comporta como contenedor flexible */
-.services-section .row > [class*="col"] {
-  display: flex;
-}
+.services{
 
-/* La card se convierte en una columna vertical */
-.service-card {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  width: 100%;
-  border: 1px solid var(--border);
-  border-radius: 0.6rem;
-  background-color: var(--white);
-  overflow: hidden;
-  box-shadow: 0 8px 18px rgba(7, 18, 47, 0.06);
-}
+    width:100%;
+    padding: 8px 0 20px;
 
-/* Todas las cabeceras de las cards tendrán la misma altura */
-.service-header {
-  height: 8.8rem;
-  min-height: unset;
-  flex: 0 0 auto;
-  padding: 0.2rem 0.75rem 0.6rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
-  gap: 0.5rem;
-  text-align: center;
-}
-
-.service-icon {
-  width: clamp(4.2rem, 5.2vw, 5.4rem);
-  height: clamp(4.2rem, 5.2vw, 5.4rem);
-  border-radius: 50%;
-  display: grid;
-  flex: 0 0 auto;
-  place-items: center;
-  color: var(--white);
-  font-size: clamp(2.1rem, 2.7vw, 2.9rem);
-}
-
-.service-icon.blue {
-  background: linear-gradient(180deg, #0769d9, #0044a9);
-}
-
-.service-icon.yellow {
-  background: linear-gradient(180deg, #ffc400, #f0a900);
-}
-
-.service-icon.navy {
-  background: linear-gradient(180deg, #102554, #020b21);
-}
-
-.service-icon.green {
-  background: linear-gradient(180deg, #008f52, #00572f);
-}
-
-/* Reserva una altura estable para los títulos */
-.service-header h3 {
-  min-height: 3.2rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.service-header h3 span {
-  display: block;
-  margin-top: 0.2rem;
-  font-size: clamp(0.67rem, 0.9vw, 0.9rem);
-}
-
-.blue-text {
-  color: #0044a9;
-}
-
-.yellow-text {
-  color: var(--yellow);
-}
-
-.navy-text {
-  color: var(--navy);
-}
-
-.green-text {
-  color: var(--green);
-}
-
-/* Todas las imágenes tendrán exactamente la misma altura */
-.service-image {
-  width: 100%;
-  height: 9.2rem;
-  border-radius: 0.6rem;
-  object-fit: cover;
-  flex: 0 0 auto;
-}
-
-/* =========================================================
-   AJUSTE FINO - IMÁGENES DE VIDEO Y ANTENAS
-   Reduce mínimamente la imagen para igualarla visualmente
-   con las dos primeras cards.
-========================================================= */
-
-.service-card.video-card .service-image,
-.service-card.satellite-card .service-image {
-  width: calc(100% - 0.6rem);
-  margin-inline: auto;
-  border-radius: 0.6rem;
-}
-
-/* El bloque de texto crece y empuja el footer hacia abajo */
-.service-body {
-  flex: 1 1 auto;
-  padding: clamp(0.8rem, 1.2vw, 1.15rem);
-}
-
-.service-body ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: grid;
-  gap: 0.45rem;
-  font-size: clamp(0.82rem, 1vw, 1rem);
-  line-height: 1.25;
-}
-
-.service-body li {
-  position: relative;
-  padding-left: 1.4rem;
-}
-
-.service-body li::before {
-  content: "✓";
-  position: absolute;
-  left: 0;
-  top: 0;
-  color: var(--blue);
-  font-weight: 900;
-}
-
-.yellow-checks li::before {
-  color: var(--yellow);
-}
-
-.navy-checks li::before {
-  color: var(--navy);
-}
-
-.green-checks li::before {
-  color: var(--green);
-}
-
-/* El footer queda siempre abajo */
-.service-footer {
-  margin-top: auto;
-  min-height: 4.4rem;
-  padding: 0.65rem 1rem;
-  display: grid;
-  grid-template-columns: 3.3rem 1fr;
-  align-items: center;
-  gap: 0.5rem;
-  font-weight: 600;
-  line-height: 1.16;
-
-  /* Opción recomendada para que encaje con la card */
-  border-radius: 0 0 0.6rem 0.6rem;
-}
-
-.service-footer i {
-  font-size: 2rem;
-}
-
-.service-footer p {
-  margin: 0;
-}
-
-.blue-bg {
-  color: var(--white);
-  background: linear-gradient(90deg, #005ed8, #006df3);
-}
-
-.yellow-bg {
-  color: var(--text);
-  background: linear-gradient(90deg, #eda600, #ffc300);
-}
-
-.navy-bg {
-  color: var(--white);
-  background: linear-gradient(90deg, #061734, #071d45);
-}
-
-.green-bg {
-  color: var(--white);
-  background: linear-gradient(90deg, #00572f, #007a45);
-}
-
-/* =========================================================
-   SERVICIOS - CARDS ROBUSTAS Y RESPONSIVE
-========================================================= */
-
-/* Bootstrap: fuerza que todas las columnas estiren igual */
-.services-section .row {
-  align-items: stretch;
-}
-
-.services-section .row > [class*="col"] {
-  display: flex;
-}
-
-/* Card como columna flexible */
-.service-card {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-
-/* Cabecera con aire arriba para que los iconos no se corten */
-.service-header {
-  flex: 0 0 auto;
-  min-height: 9.4rem;
-  padding: 1.05rem 0.75rem 0.85rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  text-align: center;
-  gap: 0.55rem;
-}
-
-/* Iconos sin margen negativo ni desplazamientos raros */
-.service-icon {
-  flex: 0 0 auto;
-  width: clamp(4rem, 5vw, 5.2rem);
-  height: clamp(4rem, 5vw, 5.2rem);
-  margin: 0;
-}
-
-/* Título con altura estable para que las imágenes arranquen igual */
-.service-header h3 {
-  min-height: 3.15rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  line-height: 1.08;
-}
-
-/* Imagen siempre alineada y con misma altura */
-.service-image {
-  flex: 0 0 auto;
-  width: 100%;
-  height: clamp(8.8rem, 10.5vw, 10.4rem);
-  object-fit: cover;
-}
-
-/* El cuerpo crece y empuja el footer hacia abajo */
-.service-body {
-  flex: 1 1 auto;
-}
-
-/* Footer fijo abajo, más estable que grid en zoom 110% */
-.service-footer {
-  margin-top: auto;
-  min-height: 4.6rem;
-  padding: 0.75rem 1rem;
-  display: flex;
-  align-items: center;
-  gap: 0.9rem;
-  border-radius: 0 0 0.6rem 0.6rem;
-}
-
-/* Icono del footer con ancho fijo */
-.service-footer i {
-  flex: 0 0 2.25rem;
-  width: 2.25rem;
-  text-align: center;
-  font-size: 2rem;
-}
-
-/* Texto del footer: evita roturas raras al hacer zoom */
-.service-footer p {
-  flex: 1 1 auto;
-  min-width: 0;
-  margin: 0;
-  line-height: 1.18;
-  overflow-wrap: normal;
-  word-break: normal;
-  hyphens: none;
 }
 
 
-/* =========================================================
-   SERVICIOS - CONTROL MULTIIDIOMA DE ALTURAS
-   Evita desbordes de títulos y footers descompensados.
-========================================================= */
+.services-wrapper{
 
-/* La tarjeta mantiene una arquitectura vertical estable */
-.service-card {
-  display: grid;
-  grid-template-rows: var(--service-header-height, 9.9rem) auto 1fr var(--service-footer-height, 5.15rem);
-  height: 100%;
-}
+    width:min(1400px,95%);
+    margin:auto;
+    display:grid;
+    
+    grid-template-columns:
+        repeat(3,1fr);
 
-/* Cabecera fija para todos los idiomas: icono + título */
-.service-header {
-  height: var(--service-header-height, 9.9rem);
-  min-height: var(--service-header-height, 9.9rem);
-  max-height: var(--service-header-height, 9.9rem);
-  padding: 0.75rem 0.65rem 0.55rem;
-  justify-content: flex-start;
-  overflow: hidden;
-}
+    gap:28px;
+    align-items:stretch;
 
-/* Iconos estables para que no empujen el título */
-.service-icon {
-  width: clamp(3.65rem, 4.2vw, 4.85rem);
-  height: clamp(3.65rem, 4.2vw, 4.85rem);
-  font-size: clamp(1.85rem, 2.35vw, 2.55rem);
-}
-
-/* Títulos de card: máximo 3 líneas, sin invadir la imagen */
-.service-header h3 {
-  width: 100%;
-  min-height: 3.55rem;
-  max-height: 3.55rem;
-  margin: 0;
-  padding-inline: 0.2rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  overflow: hidden;
-  text-wrap: balance;
-  overflow-wrap: anywhere;
-  word-break: normal;
-  hyphens: auto;
-  font-size: clamp(1.03rem, 1.55vw, 1.58rem);
-  line-height: 1.05;
-}
-
-/* Subtítulo específico de antenas: más compacto y estable */
-.service-header h3 span + span,
-.service-header h3 span[data-i18n="services.satellite.subtitle"] {
-  margin-top: 0.18rem;
-  font-size: clamp(0.58rem, 0.72vw, 0.78rem);
-  line-height: 1.05;
-  max-height: 1.7rem;
-  overflow: hidden;
-  text-wrap: balance;
-}
-
-/* Imagen siempre arranca debajo de la cabecera, sin solaparse con títulos largos */
-.service-image {
-  height: clamp(8.7rem, 10.2vw, 10.2rem);
-}
-
-/* Cuerpo de texto: espacio flexible, pero sin romper la altura del footer */
-.service-body {
-  min-height: 12.5rem;
-  padding: clamp(0.75rem, 1vw, 1.05rem);
-  overflow: hidden;
-}
-
-.service-body ul {
-  gap: 0.38rem;
-  font-size: clamp(0.76rem, 0.9vw, 0.94rem);
-  line-height: 1.22;
-}
-
-/* Footer igualado en las cuatro cards y en todos los idiomas */
-.service-footer {
-  height: var(--service-footer-height, 5.15rem);
-  min-height: var(--service-footer-height, 5.15rem);
-  max-height: var(--service-footer-height, 5.15rem);
-  margin-top: 0;
-  padding: 0.62rem 0.9rem;
-  align-self: end;
-  overflow: hidden;
-}
-
-.service-footer i {
-  flex: 0 0 2.15rem;
-  width: 2.15rem;
-  font-size: 1.85rem;
-}
-
-.service-footer p {
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  font-size: clamp(0.78rem, 0.92vw, 0.96rem);
-  line-height: 1.16;
-  text-wrap: balance;
-}
-
-/* Idiomas con palabras más largas: reducimos ligeramente título y cuerpo */
-html[lang="de"] .service-header h3,
-html[lang="ru"] .service-header h3,
-html[lang="pl"] .service-header h3,
-html[lang="pt"] .service-header h3,
-html[lang="it"] .service-header h3 {
-  font-size: clamp(0.92rem, 1.35vw, 1.36rem);
-  letter-spacing: 0.015em;
-}
-
-html[lang="de"] .service-body ul,
-html[lang="ru"] .service-body ul,
-html[lang="pl"] .service-body ul,
-html[lang="pt"] .service-body ul,
-html[lang="it"] .service-body ul,
-html[lang="fr"] .service-body ul {
-  font-size: clamp(0.72rem, 0.84vw, 0.88rem);
-  line-height: 1.18;
-}
-
-html[lang="de"] .service-footer p,
-html[lang="ru"] .service-footer p,
-html[lang="pl"] .service-footer p,
-html[lang="pt"] .service-footer p,
-html[lang="it"] .service-footer p,
-html[lang="fr"] .service-footer p {
-  font-size: clamp(0.72rem, 0.84vw, 0.88rem);
-  line-height: 1.12;
-}
-
-/* Responsive: en tablet/móvil recuperamos aire vertical sin solapes */
-@media (max-width: 991.98px) {
-  .service-card {
-    grid-template-rows: auto auto 1fr auto;
-  }
-
-  .service-header {
-    height: auto;
-    min-height: 8.6rem;
-    max-height: none;
-    overflow: visible;
-  }
-
-  .service-header h3 {
-    max-height: none;
-    overflow: visible;
-  }
-
-  .service-body {
-    min-height: auto;
-    overflow: visible;
-  }
-
-  .service-footer {
-    height: auto;
-    min-height: 4.75rem;
-    max-height: none;
-  }
-
-  .service-footer p {
-    -webkit-line-clamp: unset;
-  }
-}
-
-@media (max-width: 575.98px) {
-  .service-header {
-    min-height: 8.25rem;
-  }
-
-  .service-header h3 {
-    font-size: clamp(1.05rem, 7vw, 1.45rem);
-  }
-
-  .service-body ul {
-    font-size: 0.92rem;
-  }
 }
 
 
-/* =========================================================
-   SERVICIO 4 - TÍTULO SATÉLITE IGUALADO
-   El título de la card 4 usa <span>; se iguala al resto.
-========================================================= */
+/* ==========================================================
+   TARJETAS
+========================================================== */
 
-.satellite-card .service-header h3 {
-  font-size: clamp(1.03rem, 1.55vw, 1.58rem);
+.service-card{
+
+    display:flex;
+    flex-direction:column;
+    overflow:hidden;
+    border-radius:18px;
+    background:#ffffff;
+    border:1px solid #dfe8f6;
+    min-height:760px;
+
 }
 
-.satellite-card .service-header h3 > span:first-child {
-  display: block;
-  margin-top: 0;
-  font-size: 1em;
-  line-height: 1.05;
-  font-weight: 900;
+
+/* ==========================================================
+   ICONO
+========================================================== */
+
+.card-icon{
+
+    width:82px;
+    height:82px;
+    margin:26px auto 18px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:50%;
+    font-size:2.3rem;
+
 }
 
-.satellite-card .service-header h3 > span:last-child {
-  display: block;
-  margin-top: 0.18rem;
-  font-size: clamp(0.58rem, 0.72vw, 0.78rem);
-  line-height: 1.05;
-  font-weight: 800;
+
+/* ==========================================================
+   TITULO
+========================================================== */
+
+.service-card h3{
+
+    margin:0;
+    padding:0 20px;
+    text-align:center;
+    font-size:1.55rem;
+    font-weight:900;
+    line-height:1.12;
+    min-height:72px;
+
 }
 
-/* Mantiene proporcionalidad para idiomas largos */
-html[lang="de"] .satellite-card .service-header h3,
-html[lang="ru"] .satellite-card .service-header h3,
-html[lang="pl"] .satellite-card .service-header h3,
-html[lang="pt"] .satellite-card .service-header h3,
-html[lang="it"] .satellite-card .service-header h3 {
-  font-size: clamp(0.92rem, 1.35vw, 1.36rem);
+
+/* ==========================================================
+   IMAGEN
+========================================================== */
+
+.service-card img{
+
+    width:100%;
+    height:220px;
+    margin-top:22px;
+    object-fit:cover;
+    display:block;
+
 }
 
+
+/* ==========================================================
+   LISTA
+========================================================== */
+
+.service-card ul{
+
+    flex:1;
+    margin:24px;
+    padding-left:22px;
+
+}
+
+
+.service-card li{
+
+    margin-bottom:12px;
+    line-height:1.45;
+
+}
+
+
+/* ==========================================================
+   FOOTER
+========================================================== */
+
+.card-footer{
+
+    margin-top:auto;
+    padding:20px;
+    text-align:center;
+    font-weight:700;
+
+}
+
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+@media (max-width:1100px){
+
+    .services-wrapper{
+
+        grid-template-columns:
+            repeat(2,1fr);
+
+    }
+
+}
+
+
+@media (max-width:768px){
+
+    .services-wrapper{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+/* ==========================================================
+   LTS - SERVICES.CSS
+   ENTREGA 2
+   Identidad visual
+========================================================== */
+
+
+/* ==========================================================
+   SOMBRA GENERAL
+========================================================== */
+
+.service-card{
+
+    transition:
+        transform .30s ease,
+        box-shadow .30s ease;
+
+    box-shadow:
+        0 10px 28px rgba(0,25,70,.08);
+
+}
+
+
+.service-card:hover{
+
+    transform:translateY(-8px);
+    box-shadow:
+        0 22px 48px rgba(0,45,110,.16);
+
+}
+
+
+/* ==========================================================
+   ICONOS
+========================================================== */
+
+.card-icon{
+
+    color:#ffffff;
+
+    box-shadow:
+        0 10px 20px rgba(0,0,0,.20);
+
+}
+
+
+/* ==========================================================
+   CCTV
+========================================================== */
+
+.service-card.cctv .card-icon{
+
+    background:
+
+        linear-gradient(
+            180deg,
+            #006dff,
+            #003ea8
+        );
+
+}
+
+
+.service-card.cctv h3{
+
+    color:#0048b6;
+
+}
+
+
+/* ==========================================================
+   ELECTRICIDAD
+========================================================== */
+
+.service-card.electric .card-icon{
+
+    background:
+
+        linear-gradient(
+            180deg,
+            #ffd100,
+            #f2a400
+        );
+
+    color:#303030;
+
+}
+
+
+.service-card.electric h3{
+
+    color:#d08a00;
+
+}
+
+
+/* ==========================================================
+   REDES
+========================================================== */
+
+.service-card.network .card-icon{
+
+    background:
+
+        linear-gradient(
+            180deg,
+            #0a2e78,
+            #061738
+        );
+
+}
+
+
+.service-card.network h3{
+
+    color:#0a2e78;
+
+}
+
+
+/* ==========================================================
+   IMÁGENES
+========================================================== */
+
+.service-card img{
+
+    border-top:1px solid #edf2fb;
+    border-bottom:1px solid #edf2fb;
+
+}
+
+
+/* ==========================================================
+   LISTAS
+========================================================== */
+
+.service-card ul{
+
+    list-style:none;
+    padding-left:0;
+
+}
+
+
+.service-card li{
+
+    position:relative;
+    padding-left:32px;
+    color:#394455;
+    font-size:.96rem;
+
+}
+
+
+.service-card li::before{
+
+    content:"✓";
+    position:absolute;
+    left:0;
+    top:0;
+    font-weight:900;
+
+}
+
+
+/* ==========================================================
+   COLOR CHECKS
+========================================================== */
+
+.service-card.cctv li::before{
+
+    color:#005eff;
+
+}
+
+
+.service-card.electric li::before{
+
+    color:#e0a000;
+
+}
+
+
+.service-card.network li::before{
+
+    color:#0a2e78;
+
+}
+
+
+/* ==========================================================
+   FOOTERS
+========================================================== */
+
+.card-footer{
+
+    color:#ffffff;
+    font-size:.96rem;
+    line-height:1.35;
+
+}
+
+
+.service-card.cctv .card-footer{
+
+    background:
+
+        linear-gradient(
+            90deg,
+            #0059d9,
+            #007eff
+        );
+
+}
+
+
+.service-card.electric .card-footer{
+
+    color:#2d2d2d;
+
+    background:
+
+        linear-gradient(
+            90deg,
+            #efad00,
+            #ffd100
+        );
+
+}
+
+
+.service-card.network .card-footer{
+
+    background:
+
+        linear-gradient(
+            90deg,
+            #061734,
+            #0b2f72
+        );
+
+}
+
+/* ==========================================================
+   LTS - SERVICES.CSS
+   ENTREGA 3
+   Acabado profesional
+========================================================== */
+
+
+/* ==========================================================
+   TITULOS
+========================================================== */
+
+.service-card h3{
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-transform:uppercase;
+    letter-spacing:.04em;
+    text-wrap:balance;
+
+}
+
+
+/* ==========================================================
+   IMAGEN
+========================================================== */
+
+.service-card img{
+
+    transition:
+
+        transform .45s ease,
+        filter .35s ease;
+
+}
+
+
+.service-card:hover img{
+
+    transform:scale(1.045);
+    filter:saturate(1.08);
+
+}
+
+
+/* ==========================================================
+   LISTA
+========================================================== */
+
+.service-card li{
+
+    transition:
+
+        transform .25s ease,
+        color .25s ease;
+
+}
+
+
+.service-card:hover li{
+
+    transform:translateX(3px);
+
+}
+
+
+/* ==========================================================
+   FOOTER
+========================================================== */
+
+.card-footer{
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:82px;
+
+}
+
+
+/* ==========================================================
+   ICONOS
+========================================================== */
+
+.card-icon i{
+
+    transition:
+
+        transform .35s ease;
+
+}
+
+
+.service-card:hover .card-icon i{
+
+    transform:scale(1.15);
+
+}
+
+
+/* ==========================================================
+   TARJETAS
+========================================================== */
+
+.service-card{
+
+    position:relative;
+
+}
+
+
+.service-card::before{
+
+    content:"";
+    position:absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height:6px;
+    opacity:.95;
+
+}
+
+
+/* ==========================================================
+   COLOR SUPERIOR
+========================================================== */
+
+.service-card.cctv::before{
+
+    background:#006cff;
+
+}
+
+
+.service-card.electric::before{
+
+    background:#ffb800;
+
+}
+
+
+.service-card.network::before{
+
+    background:#0b2c73;
+
+}
+
+
+/* ==========================================================
+   RESPONSIVE TABLET
+========================================================== */
+
+@media (max-width:1100px){
+
+    .service-card{
+
+        min-height:unset;
+
+    }
+
+}
+
+
+/* ==========================================================
+   RESPONSIVE MOVIL
+========================================================== */
+
+@media (max-width:768px){
+
+    .services{
+
+        padding:24px 0;
+
+    }
+
+    .services-wrapper{
+
+        gap:22px;
+
+    }
+
+    .service-card{
+
+        border-radius:16px;
+
+    }
+
+    .service-card h3{
+
+        min-height:auto;
+        font-size:1.35rem;
+        padding:0 18px;
+
+    }
+
+    .service-card img{
+
+        height:210px;
+
+    }
+
+}
+
+
+/* ==========================================================
+   MOVILES PEQUEÑOS
+========================================================== */
+
+@media (max-width:480px){
+
+    .service-card img{
+
+        height:180px;
+
+    }
+
+    .card-icon{
+
+        width:72px;
+        height:72px;
+        font-size:2rem;
+
+    }
+
+    .service-card h3{
+
+        font-size:1.18rem;
+
+    }
+
+    .service-card li{
+
+        font-size:.92rem;
+
+    }
+
+    .card-footer{
+
+        padding:16px;
+        min-height:72px;
+        font-size:.92rem;
+
+    }
+
+}
