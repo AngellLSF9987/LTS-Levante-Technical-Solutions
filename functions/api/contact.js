@@ -1,19 +1,18 @@
 // =========================================================
-// TLS - Cloudflare Pages Function: /api/contact
+// LTS - Cloudflare Pages Function: /api/contact
 // Turnstile server-side validation + honeypot + Resend
 // Versión: v0.4.2
 // =========================================================
 
 const SERVICE_LABELS = {
-  piscinas: "Piscinas",
   electricidad: "Electricidad",
   videovigilancia: "Videovigilancia CCTV",
   "antenas-satelite": "Antenas y satélite",
   otros: "Otro servicio técnico",
 };
 
-const DEFAULT_CONTACT_EMAIL = "levante.tls@gmail.com";
-const DEFAULT_SITE_URL = "https://levante-tls.pages.dev";
+const DEFAULT_CONTACT_EMAIL = "levante.LTS@gmail.com";
+const DEFAULT_SITE_URL = "https://levante-LTS.pages.dev";
 const MIN_FORM_TIME_MS = 2500;
 
 function jsonResponse(data, status = 200) {
@@ -120,10 +119,10 @@ function buildInternalEmail(data, request, env) {
   const referer = request.headers.get("referer") || siteUrl;
   const ip = request.headers.get("CF-Connecting-IP") || "No disponible";
 
-  const text = `Nueva solicitud de contacto TLS\n\nFecha: ${submittedAt}\nNombre: ${data.nombre}\nTeléfono/WhatsApp: ${data.telefono}\nEmail: ${data.email || "No indicado"}\nServicio: ${serviceLabel}\n\nMensaje:\n${data.mensaje}\n\nOrigen: ${referer}\nIP Cloudflare: ${ip}`;
+  const text = `Nueva solicitud de contacto LTS\n\nFecha: ${submittedAt}\nNombre: ${data.nombre}\nTeléfono/WhatsApp: ${data.telefono}\nEmail: ${data.email || "No indicado"}\nServicio: ${serviceLabel}\n\nMensaje:\n${data.mensaje}\n\nOrigen: ${referer}\nIP Cloudflare: ${ip}`;
 
   const html = `
-    <h2>Nueva solicitud de contacto TLS</h2>
+    <h2>Nueva solicitud de contacto LTS</h2>
     <p><strong>Fecha:</strong> ${escapeHtml(submittedAt)}</p>
     <p><strong>Nombre:</strong> ${escapeHtml(data.nombre)}</p>
     <p><strong>Teléfono/WhatsApp:</strong> ${escapeHtml(data.telefono)}</p>
@@ -137,7 +136,7 @@ function buildInternalEmail(data, request, env) {
   `;
 
   return {
-    subject: `Nueva solicitud TLS: ${serviceLabel}`,
+    subject: `Nueva solicitud LTS: ${serviceLabel}`,
     text,
     html,
   };
@@ -147,15 +146,15 @@ function buildAutoReply(data, env) {
   const siteUrl = env.PUBLIC_SITE_URL || DEFAULT_SITE_URL;
 
   return {
-    subject: "Hemos recibido tu solicitud - TLS",
-    text: `Hola ${data.nombre},\n\nGracias por contactar con TLS - Levante Technical Solutions.\n\nHemos recibido tu solicitud y la revisaremos lo antes posible. Para poder orientarte mejor, revisaremos el tipo de servicio solicitado, la zona, la urgencia y cualquier información técnica que nos hayas enviado.\n\nTrabajamos en servicios técnicos integrales para hogares, comunidades, empresas y viviendas vacacionales: mantenimiento de piscinas, electricidad, videovigilancia CCTV, cámaras de seguridad, antenas y sistemas satélite.\n\nSi tu consulta es urgente, puedes contactar también por teléfono o WhatsApp: 614 616 135\n\nUn saludo,\nTLS - Levante Technical Solutions\nlevante.tls@gmail.com\n${siteUrl}`,
+    subject: "Hemos recibido tu solicitud - LTS",
+    text: `Hola ${data.nombre},\n\nGracias por contactar con LTS - Levante Technical Solutions.\n\nHemos recibido tu solicitud y la revisaremos lo antes posible. Para poder orientarte mejor, revisaremos el tipo de servicio solicitado, la zona, la urgencia y cualquier información técnica que nos hayas enviado.\n\nTrabajamos en servicios técnicos integrales para hogares, comunidades, empresas y viviendas vacacionales: electricidad, videovigilancia CCTV, cámaras de seguridad, antenas y sistemas satélite.\n\nSi tu consulta es urgente, puedes contactar también por teléfono o WhatsApp: 614 616 135\n\nUn saludo,\nLTS - Levante Technical Solutions\nlevante.tls@gmail.com\n${siteUrl}`,
     html: `
       <p>Hola ${escapeHtml(data.nombre)},</p>
-      <p>Gracias por contactar con <strong>TLS - Levante Technical Solutions</strong>.</p>
+      <p>Gracias por contactar con <strong>LTS - Levante Technical Solutions</strong>.</p>
       <p>Hemos recibido tu solicitud y la revisaremos lo antes posible. Para poder orientarte mejor, revisaremos el tipo de servicio solicitado, la zona, la urgencia y cualquier información técnica que nos hayas enviado.</p>
-      <p>Trabajamos en servicios técnicos integrales para hogares, comunidades, empresas y viviendas vacacionales: mantenimiento de piscinas, electricidad, videovigilancia CCTV, cámaras de seguridad, antenas y sistemas satélite.</p>
+      <p>Trabajamos en servicios técnicos integrales para hogares, comunidades, empresas y viviendas vacacionales: electricidad, videovigilancia CCTV, cámaras de seguridad, antenas y sistemas satélite.</p>
       <p>Si tu consulta es urgente, puedes contactar también por teléfono o WhatsApp: <strong>614 616 135</strong></p>
-      <p>Un saludo,<br><strong>TLS - Levante Technical Solutions</strong><br>levante.tls@gmail.com<br><a href="${escapeHtml(siteUrl)}">${escapeHtml(siteUrl)}</a></p>
+      <p>Un saludo,<br><strong>LTS - Levante Technical Solutions</strong><br>levante.tls@gmail.com<br><a href="${escapeHtml(siteUrl)}">${escapeHtml(siteUrl)}</a></p>
     `,
   };
 }
@@ -274,7 +273,7 @@ export async function onRequestPost({ request, env }) {
 
     return jsonResponse({ ok: true, message: "Solicitud enviada correctamente. Te responderemos lo antes posible." });
   } catch (error) {
-    console.error("TLS contact form error", error);
+    console.error("LTS contact form error", error);
     return jsonResponse({
       ok: false,
       message: "No se ha podido enviar la solicitud. Inténtalo de nuevo o contacta por WhatsApp.",

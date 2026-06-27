@@ -695,3 +695,47 @@
     justify-content: center;
   }
 }
+
+
+/* ===== NUEVO LAYOUT HEADER (intercambio solicitado) ===== */
+
+.header-brand-col{
+  flex:0 0 100%;
+  max-width:100%;
+}
+
+.brand-text{
+  width:100%;
+}
+
+.brand-text .header-right-zone{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  width:100%;
+  margin-top:1rem;
+  gap:1rem;
+}
+
+.brand-text .header-language-switcher{
+  justify-content:center;
+  width:100%;
+  flex-wrap:wrap;
+}
+
+.brand-text .header-contact-bar{
+  justify-content:center;
+  width:100%;
+}
+
+.header-side-col{
+  display:none!important;
+}
+
+.header-right-panel,
+.header-badge-img,
+.header-separator,
+.header-values-html{
+  display:none!important;
+}
