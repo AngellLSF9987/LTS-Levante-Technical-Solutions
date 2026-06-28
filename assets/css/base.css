@@ -1,49 +1,112 @@
-/* =========================================================
-   VARIABLES GENERALES DEL PROYECTO
-========================================================= */
+/* ==========================================================
+   LTS - BASE.CSS
+========================================================== */
 
-:root {
-  --navy: #061734;
-  --navy-light: #0a265d;
-  --blue: #005ed8;
-  --cyan: #00a7ff;
-  --yellow: #f6b500;
-  --green: #006b3f;
-  --text: #07122f;
-  --muted: #5e6b82;
-  --border: #d9e2ef;
-  --white: #ffffff;
-  --bg: #f5f8fc;
+
+/* ==========================================================
+   VARIABLES
+========================================================== */
+
+:root{
+
+    --navy:#061734;
+    --navy-light:#0a265d;
+    --blue:#005ed8;
+    --cyan:#00a7ff;
+    --yellow:#f6b500;
+    --green:#006b3f;
+    --text:#07122f;
+    --muted:#5e6b82;
+    --border:#d9e2ef;
+    --white:#ffffff;
+    --bg:#f5f8fc;
+
 }
 
-/* =========================================================
-   RESET BÁSICO
-========================================================= */
 
-* {
-  box-sizing: border-box;
+/* ==========================================================
+   RESET
+========================================================== */
+
+*,
+*::before,
+*::after{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
 }
 
-body {
-  margin: 0;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  color: var(--text);
-  background-color: var(--bg);
+
+/* ==========================================================
+   DOCUMENTO
+========================================================== */
+
+html{
+
+    scroll-behavior:smooth;
+
 }
 
-img {
-  max-width: 100%;
-  display: block;
+
+body{
+
+    font-family:
+
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+
+    color:var(--text);
+    background:var(--bg);
+
 }
 
-/* =========================================================
+
+/* ==========================================================
+   ELEMENTOS
+========================================================== */
+
+img{
+
+    display:block;
+    max-width:100%;
+
+}
+
+
+a{
+
+    color:inherit;
+    text-decoration:none;
+
+}
+
+
+button{
+
+    font:inherit;
+    border:none;
+    background:none;
+
+}
+
+
+/* ==========================================================
    CONTENEDOR PRINCIPAL
-========================================================= */
+========================================================== */
 
-.flyer-wrapper {
-  width: min(100%, 1600px);
-  margin: 0 auto;
-  background-color: var(--white);
-  overflow: hidden;
-  box-shadow: 0 20px 60px rgba(3, 20, 55, 0.18);
+.flyer-wrapper{
+
+    width:min(1600px,100%);
+    margin:auto;
+    overflow:hidden;
+    background:#ffffff;
+    box-shadow:
+
+        0 20px 60px rgba(3,20,55,.18);
+
 }
