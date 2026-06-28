@@ -1,15 +1,4 @@
 /* ==========================================================
-   RESET
-========================================================== */
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-
-/* ==========================================================
    HEADER
 ========================================================== */
 
@@ -18,7 +7,7 @@
     position:relative;
     width:100%;
     overflow:hidden;
-    padding:28px 0 22px;
+    padding:24px 0 20px;
     background:
 
         linear-gradient(
@@ -51,21 +40,21 @@
 
 
 /* ==========================================================
-   CONTENEDOR
+   WRAPPER
 ========================================================== */
 
 .header-wrapper{
 
     position:relative;
     z-index:2;
-    width:min(1400px,95%);
+    width:min(1440px,95%);
     margin:auto;
 
 }
 
 
 /* ==========================================================
-   FILA SUPERIOR
+   CABECERA SUPERIOR
 ========================================================== */
 
 .header-top{
@@ -73,15 +62,15 @@
     display:grid;
     grid-template-columns:
 
-        240px
+        220px
         minmax(600px,1fr)
-        210px;
+        220px;
 
     align-items:center;
-    column-gap:34px;
+    column-gap:40px;
+    margin-bottom:22px;
 
 }
-
 
 /* ==========================================================
    LOGO
@@ -90,11 +79,13 @@
 .header-logo{
 
     display:flex;
+    margin-top:8px;
     justify-content:center;
     align-items:center;
 
-}
+    transform:translateY(6px);
 
+}
 
 .header-logo img{
 
@@ -106,7 +97,7 @@
 
 
 /* ==========================================================
-   BLOQUE TITULO
+   TÍTULO
 ========================================================== */
 
 .header-title{
@@ -125,15 +116,16 @@
 
 .title-levante{
 
-    font-family:Arial,Helvetica,sans-serif;
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
     font-size:5rem;
     font-weight:900;
-    line-height:.90;
+    line-height:.88;
     letter-spacing:.08em;
     color:#ffffff;
     text-shadow:
 
-        0 2px 0 rgba(255,255,255,.12),
+        0 2px 0 rgba(255,255,255,.10),
         0 5px 10px rgba(0,0,0,.35),
         0 12px 24px rgba(0,0,0,.25);
 
@@ -146,26 +138,24 @@
 
 .title-technical{
 
-    margin-top:.25rem;
+    margin-top:.35rem;
     white-space:nowrap;
-    font-family:Arial,Helvetica,sans-serif;
-    font-size:3.45rem;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:3.35rem;
     font-weight:900;
     line-height:.92;
-    letter-spacing:.01em;
+    letter-spacing:.02em;
     background:
 
         linear-gradient(
 
             to bottom,
 
-            #bffcff 0%,
-            #8cf2ff 12%,
-            #5de8ff 28%,
-            #35dbff 48%,
-            #1bc7ff 66%,
-            #149fe6 82%,
-            #1173c7 100%
+            #d9ffff 0%,
+            #9ef5ff 18%,
+            #63e8ff 42%,
+            #24d3ff 66%,
+            #0d9df2 100%
 
         );
 
@@ -176,17 +166,31 @@
     text-shadow:
 
         0 2px 0 rgba(255,255,255,.12),
-        0 4px 8px rgba(0,0,0,.25),
-        0 10px 18px rgba(0,0,0,.20);
+        0 5px 12px rgba(0,0,0,.30);
 
 }
 
 
 /* ==========================================================
-   BANDERA SUPERIOR
+   PANEL DE IDIOMAS
 ========================================================== */
 
-.header-flag{
+.language-panel{
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    gap:10px;
+
+}
+
+
+/* ==========================================================
+   BANDERA EUROPA
+========================================================== */
+
+.language-panel-flag{
 
     display:flex;
     justify-content:center;
@@ -194,16 +198,212 @@
 
 }
 
+.language-panel-flag img{
 
-.header-flag img{
-
-    width:170px;
+    width:165px;
     height:auto;
-    display:block;
     border-radius:18px;
     box-shadow:
 
-        0 12px 28px rgba(0,0,0,.30);
+        0 14px 28px rgba(0,0,0,.30);
+
+}
+
+
+/* ==========================================================
+   CAMBIAR IDIOMA
+========================================================== */
+
+.language-panel-title{
+
+    display:flex;
+    align-items:center;
+    gap:.6rem;
+    padding:.65rem 1.15rem;
+    border-radius:14px;
+    border:1px solid rgba(255,255,255,.18);
+
+    background:
+
+        rgba(255,255,255,.05);
+
+    backdrop-filter:blur(6px);
+    color:#ffffff;
+    font-size:1rem;
+    font-weight:700;
+    letter-spacing:.03em;
+
+}
+
+.language-panel-title i{
+
+    font-size:1.15rem;
+    color:#54d8ff;
+
+}
+
+.language-panel-title span{
+
+    white-space:nowrap;
+
+}
+
+/* ==========================================================
+   MENÚ PRINCIPAL
+========================================================== */
+
+.header-nav{
+
+    margin-bottom:22px;
+
+}
+
+
+/* ==========================================================
+   CONTENEDOR
+========================================================== */
+
+.header-nav ul{
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:10px;
+    list-style:none;
+    margin:0;
+    padding:0;
+
+}
+
+
+/* ==========================================================
+   ELEMENTOS
+========================================================== */
+
+.header-nav li{
+
+    display:flex;
+
+}
+
+
+/* ==========================================================
+   ENLACES
+========================================================== */
+
+.header-nav a{
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:.55rem;
+    padding:.80rem 1.45rem;
+    border-radius:14px;
+    text-decoration:none;
+    color:#ffffff;
+    font-size:1rem;
+    font-weight:700;
+    letter-spacing:.02em;
+
+    background:
+
+        rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.14);
+    backdrop-filter:blur(8px);
+
+    transition:
+        background .25s ease,
+        border-color .25s ease,
+        transform .25s ease,
+        box-shadow .25s ease;
+
+}
+
+
+/* ==========================================================
+   ICONOS
+========================================================== */
+
+.header-nav a i{
+
+    font-size:1rem;
+    color:#63dcff;
+
+}
+
+
+/* ==========================================================
+   HOVER
+========================================================== */
+
+.header-nav a:hover{
+
+    color:#ffffff;
+    transform:translateY(-2px);
+    border-color:#39d3ff;
+
+    background:
+
+        rgba(57,211,255,.18);
+
+    box-shadow:
+
+        0 8px 22px rgba(0,0,0,.22);
+
+}
+
+
+/* ==========================================================
+   ENLACE GOOGLE
+========================================================== */
+
+.google-business-link a{
+
+    background:
+
+        linear-gradient(
+            90deg,
+            rgba(25,135,84,.22),
+            rgba(57,211,255,.18)
+        );
+
+    border-color:
+
+        rgba(80,220,160,.45);
+
+}
+
+
+.google-business-link a:hover{
+
+    background:
+
+        linear-gradient(
+            90deg,
+            rgba(25,135,84,.38),
+            rgba(57,211,255,.30)
+        );
+
+}
+
+
+/* ==========================================================
+   ACTIVO
+========================================================== */
+
+.header-nav a.active{
+
+    border-color:#39d3ff;
+
+    background:
+
+        rgba(57,211,255,.20);
+
+    box-shadow:
+
+        inset 0 0 14px rgba(255,255,255,.10),
+        0 0 16px rgba(57,211,255,.30);
 
 }
 
@@ -213,18 +413,29 @@
 
 .header-toolbar{
 
-    margin-top:24px;
     display:flex;
     align-items:center;
-    justify-content:space-between;
-    gap:12px;
-    min-height:76px;
-    padding:0 18px;
-    border:1px solid rgba(0,195,255,.45);
-    border-radius:18px;
-    background:rgba(9,22,64,.38);
-    backdrop-filter:blur(6px);
+    justify-content:flex-start;
+    gap:18px;
+    margin-top:0;
+    padding:18px 22px;
+    border-radius:22px;
+    border:1px solid rgba(80,220,255,.25);
 
+    background:
+
+        linear-gradient(
+            180deg,
+            rgba(12,34,78,.55),
+            rgba(5,18,46,.55)
+        );
+
+    backdrop-filter:blur(10px);
+
+    box-shadow:
+
+        0 12px 28px rgba(0,0,0,.22);
+    
 }
 
 
@@ -234,15 +445,21 @@
 
 .toolbar-box{
 
+    flex:none;
+    min-width:0;
     display:flex;
     align-items:center;
-    gap:14px;
-    flex:1;
-    min-width:0;
-    padding:12px 8px;
-    color:#ffffff;
+    gap:16px;
+    padding:12px 14px;
+    border-radius:14px;
     text-decoration:none;
-    transition:.25s;
+    color:#ffffff;
+
+    transition:
+
+        background .25s ease,
+        transform .25s ease,
+        box-shadow .25s ease;
 
 }
 
@@ -251,7 +468,12 @@
 
     color:#ffffff;
     text-decoration:none;
-    background:rgba(255,255,255,.04);
+
+    background:
+
+        rgba(255,255,255,.06);
+
+    transform:translateY(-2px);
 
 }
 
@@ -263,9 +485,17 @@
 .toolbar-divider{
 
     width:1px;
-    height:44px;
-    background:rgba(255,255,255,.18);
-    flex-shrink:0;
+    height:52px;
+
+    background:
+
+        linear-gradient(
+
+            transparent,
+            rgba(255,255,255,.30),
+            transparent
+
+        );
 
 }
 
@@ -276,29 +506,33 @@
 
 .toolbar-icon{
 
-    width:48px;
-    height:48px;
-    border-radius:50%;
+    width:54px;
+    height:54px;
+    flex-shrink:0;
     display:flex;
     justify-content:center;
     align-items:center;
+    border-radius:50%;
     background:#ffffff;
-    font-size:1.55rem;
-    flex-shrink:0;
+    font-size:1.65rem;
+
+    box-shadow:
+
+        0 8px 18px rgba(0,0,0,.20);
 
 }
 
 
 .whatsapp{
 
-    color:#19c655;
+    color:#22c55e;
 
 }
 
 
 .email{
 
-    color:#2647df;
+    color:#2d6df5;
 
 }
 
@@ -309,7 +543,7 @@
 
 .toolbar-mini-logo{
 
-    width:52px;
+    width:58px;
     height:auto;
     flex-shrink:0;
 
@@ -325,8 +559,8 @@
     display:flex;
     flex-direction:column;
     justify-content:center;
-    line-height:1.05;
     min-width:0;
+    line-height:1.08;
 
 }
 
@@ -334,7 +568,11 @@
 .toolbar-text small{
 
     font-size:.82rem;
-    color:rgba(255,255,255,.88);
+    font-weight:500;
+
+    color:
+
+        rgba(255,255,255,.82);
 
 }
 
@@ -342,9 +580,11 @@
 .toolbar-text strong{
 
     margin-top:4px;
+    
     font-size:1rem;
     font-weight:700;
     color:#ffffff;
+    
     white-space:nowrap;
     overflow:hidden;
     text-overflow:ellipsis;
@@ -352,123 +592,497 @@
 }
 
 
-/* ==========================================================
-   IDIOMAS
-========================================================== */
+/* =========================================================
+   SELECTOR DE IDIOMAS
+========================================================= */
 
 .toolbar-languages{
 
-    margin-left:auto;
     display:flex;
     align-items:center;
     justify-content:flex-end;
-    gap:8px;
+
+    gap:6px;
+
     flex-shrink:0;
-    padding-left:16px;
+
+    margin-left:auto;
 
 }
 
-/* ==========================================================
-   BOTONES DE IDIOMA
-========================================================== */
+/* =========================================================
+   BOTÓN TRADUCCIÓN
+========================================================= */
 
-.toolbar-languages .lang-btn{
+.translate-btn{
 
-    width:44px;
-    height:44px;
-    padding:0;
+    width:36px;
+    height:36px;
+
     display:flex;
-    justify-content:center;
     align-items:center;
-    overflow:hidden;
-    flex-shrink:0;
-    cursor:pointer;
-    background:rgba(255,255,255,.04);
-    border:1px solid rgba(255,255,255,.25);
+    justify-content:center;
+
+    margin-right:4px;
+
+    padding:0;
+
+    border:none;
     border-radius:10px;
 
-    transition:
-        transform .25s ease,
-        background .25s ease,
-        border-color .25s ease,
-        box-shadow .25s ease;
+    background:
+        linear-gradient(
+            180deg,
+            rgba(35,95,180,.95),
+            rgba(20,55,125,.95)
+        );
+
+    box-shadow:
+        inset 0 0 0 1px rgba(255,255,255,.15),
+        0 3px 8px rgba(0,0,0,.20);
+
+    cursor:default;
 
 }
 
+.translate-btn i{
 
-/* ==========================================================
-   IMAGEN BANDERA
-========================================================== */
+    font-size:1.05rem;
+    color:#78E8FF;
 
-.toolbar-languages .lang-btn img{
+    line-height:1;
+
+}
+
+/* =========================================================
+   BANDERAS
+========================================================= */
+
+.lang-btn{
+
+    width:36px;
+    height:36px;
+
+    padding:0;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border:none;
+    border-radius:10px;
+
+    overflow:hidden;
+
+    background:transparent;
+
+    cursor:pointer;
+
+    transition:
+        transform .20s ease,
+        box-shadow .20s ease;
+
+}
+
+.lang-btn:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:
+        0 0 12px rgba(80,220,255,.35);
+
+}
+
+.lang-btn.active{
+
+    box-shadow:
+        0 0 0 2px rgba(80,220,255,.40);
+
+}
+
+.lang-btn img{
 
     width:100%;
     height:100%;
+
     display:block;
+
     object-fit:cover;
-    border-radius:9px;
-    pointer-events:none;
+
+}
+
+
+
+/* ==========================================================
+   TRANSICIONES GLOBALES
+========================================================== */
+
+.header-nav a,
+.toolbar-box,
+.lang-btn,
+.language-panel-title,
+.language-panel-flag img,
+.header-logo img{
+
+    transition:
+
+        all .28s cubic-bezier(.4,.2,.2,1);
 
 }
 
 
 /* ==========================================================
-   HOVER
+   LOGO
 ========================================================== */
 
-.toolbar-languages .lang-btn:hover{
+.header-logo img:hover{
 
-    transform:translateY(-2px);
-    border-color:#2cc7ff;
-    background:rgba(44,199,255,.18);
+    transform:
+
+        scale(1.035);
 
 }
 
 
 /* ==========================================================
-   BOTÓN ACTIVO
+   TÍTULOS
 ========================================================== */
 
-.toolbar-languages .lang-btn.active{
+.title-levante{
 
-    border-color:#39d3ff;
-    background:rgba(57,211,255,.20);
+    animation:
+
+        fadeTitle .9s ease-out;
+
+}
+
+
+.title-technical{
+
+    animation:
+
+        fadeTitle 1.15s ease-out;
+
+}
+
+
+/* ==========================================================
+   EFECTO BRILLO
+========================================================== */
+
+.title-technical{
+
+    position:relative;
+    overflow:hidden;
+
+}
+
+
+.title-technical::after{
+
+    content:"";
+    position:absolute;
+    top:0;
+    left:-180%;
+    width:120%;
+    height:100%;
+
+    background:
+
+        linear-gradient(
+
+            90deg,
+            transparent,
+            rgba(255,255,255,.28),
+            transparent
+
+        );
+
+    animation:
+
+        shine 8s linear infinite;
+
+}
+
+
+/* ==========================================================
+   PANEL IDIOMA
+========================================================== */
+
+.language-panel:hover .language-panel-title{
+
+    background:
+
+        rgba(57,211,255,.12);
+
+    border-color:
+
+        rgba(57,211,255,.40);
+
+}
+
+
+.language-panel:hover .language-panel-flag img{
+
+    transform:
+
+        translateY(-2px);
+
+}
+
+
+/* ==========================================================
+   MENÚ
+========================================================== */
+
+.header-nav a{
+
+    position:relative;
+    overflow:hidden;
+
+}
+
+
+.header-nav a::before{
+
+    content:"";
+    position:absolute;
+    inset:0;
+
+    background:
+
+        linear-gradient(
+
+            90deg,
+            transparent,
+            rgba(255,255,255,.12),
+            transparent
+
+        );
+
+    transform:
+
+        translateX(-130%);
+
+    transition:
+
+        transform .65s ease;
+
+}
+
+
+.header-nav a:hover::before{
+
+    transform:
+
+        translateX(130%);
+
+}
+
+
+.header-nav a:hover{
+
     box-shadow:
 
-        0 0 10px rgba(57,211,255,.40),
-        inset 0 0 8px rgba(255,255,255,.10);
+        0 10px 22px rgba(0,0,0,.20);
 
 }
 
 
 /* ==========================================================
-   CLICK
+   TOOLBAR
 ========================================================== */
 
-.toolbar-languages .lang-btn:active{
+.toolbar-box{
 
-    transform:scale(.96);
+    position:relative;
+
+}
+
+
+.toolbar-box:hover{
+
+    transform:
+
+        translateY(-3px);
+
+}
+
+
+.toolbar-box::after{
+
+    content:"";
+    position:absolute;
+    left:12px;
+    right:12px;
+    bottom:0;
+    height:1px;
+
+    background:
+
+        linear-gradient(
+
+            90deg,
+            transparent,
+            rgba(57,211,255,.45),
+            transparent
+
+        );
+
+    opacity:0;
+
+    transition:
+
+        opacity .30s ease;
+
+}
+
+
+.toolbar-box:hover::after{
+
+    opacity:1;
 
 }
 
 
 /* ==========================================================
-   FOCUS ACCESIBILIDAD
+   BANDERAS
 ========================================================== */
 
-.toolbar-languages .lang-btn:focus-visible{
+.lang-btn:hover{
 
-    outline:none;
-    border-color:#7be6ff;
-    box-shadow:
+    transform:
 
-        0 0 0 3px rgba(123,230,255,.25);
+        translateY(-3px) scale(1.05);
+
+}
+
+
+.lang-btn.active{
+
+    animation:
+
+        pulseLanguage 3s infinite;
 
 }
 
 
 /* ==========================================================
-   RESPONSIVE 1200
+   KEYFRAMES
+========================================================== */
+
+@keyframes fadeTitle{
+
+    from{
+
+        opacity:0;
+
+        transform:
+
+            translateY(12px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:
+
+            translateY(0);
+
+    }
+
+}
+
+
+
+@keyframes shine{
+
+    from{
+
+        left:-180%;
+
+    }
+
+    to{
+
+        left:220%;
+
+    }
+
+}
+
+
+
+@keyframes pulseLanguage{
+
+    0%{
+
+        box-shadow:
+
+            0 0 0 rgba(57,211,255,.18);
+
+    }
+
+    50%{
+
+        box-shadow:
+
+            0 0 18px rgba(57,211,255,.45);
+
+    }
+
+    100%{
+
+        box-shadow:
+
+            0 0 0 rgba(57,211,255,.18);
+
+    }
+
+}
+
+/* ==========================================================
+   RESPONSIVE · 1400px
+========================================================== */
+
+@media (max-width:1400px){
+
+    .header-wrapper{
+
+        width:min(96%,1400px);
+
+    }
+
+    .header-top{
+
+        grid-template-columns:
+            190px
+            1fr
+            190px;
+
+        column-gap:28px;
+
+    }
+
+    .title-levante{
+
+        font-size:4.5rem;
+
+    }
+
+    .title-technical{
+
+        font-size:3rem;
+
+    }
+
+}
+
+
+/* ==========================================================
+   RESPONSIVE · 1200px
 ========================================================== */
 
 @media (max-width:1200px){
@@ -476,30 +1090,49 @@
     .header-top{
 
         grid-template-columns:
-
-            180px
+            170px
             1fr
-            150px;
+            170px;
 
-        column-gap:24px;
+        column-gap:22px;
+
+    }
+
+    .header-logo img{
+
+        width:170px;
 
     }
 
     .title-levante{
 
-        font-size:4rem;
+        font-size:3.8rem;
 
     }
 
     .title-technical{
 
-        font-size:2.8rem;
+        font-size:2.55rem;
 
     }
 
-    .header-flag img{
+    .language-panel-flag img{
 
-        width:135px;
+        width:130px;
+
+    }
+
+    .header-nav ul{
+
+        gap:8px;
+        flex-wrap:wrap;
+
+    }
+
+    .header-nav a{
+
+        padding:.70rem 1.10rem;
+        font-size:.92rem;
 
     }
 
@@ -507,7 +1140,7 @@
 
 
 /* ==========================================================
-   RESPONSIVE 992
+   RESPONSIVE · 992px
 ========================================================== */
 
 @media (max-width:992px){
@@ -516,8 +1149,9 @@
 
         display:flex;
         flex-direction:column;
-        gap:24px;
+        align-items:center;
         text-align:center;
+        gap:22px;
 
     }
 
@@ -527,12 +1161,21 @@
 
     }
 
+    .header-nav ul{
+
+        justify-content:center;
+
+    }
+
     .header-toolbar{
 
         flex-wrap:wrap;
-        justify-content:center;
-        padding:14px;
-        gap:14px;
+
+    }
+
+    .toolbar-box{
+
+        flex:1 1 320px;
 
     }
 
@@ -542,18 +1185,11 @@
 
     }
 
-    .toolbar-box{
-
-        flex:1 1 280px;
-
-    }
-
     .toolbar-languages{
 
         width:100%;
         justify-content:center;
-        margin-left:0;
-        padding-left:0;
+        margin-top:12px;
 
     }
 
@@ -561,14 +1197,14 @@
 
 
 /* ==========================================================
-   RESPONSIVE 768
+   RESPONSIVE · 768px
 ========================================================== */
 
 @media (max-width:768px){
 
     .header-logo img{
 
-        width:150px;
+        width:145px;
 
     }
 
@@ -584,9 +1220,28 @@
 
     }
 
-    .header-flag img{
+    .language-panel-flag img{
 
-        width:110px;
+        width:105px;
+
+    }
+
+    .language-panel-title{
+
+        font-size:.90rem;
+
+    }
+
+    .header-nav ul{
+
+        gap:6px;
+
+    }
+
+    .header-nav a{
+
+        padding:.60rem .95rem;
+        font-size:.88rem;
 
     }
 
@@ -600,15 +1255,35 @@
 
 
 /* ==========================================================
-   RESPONSIVE 576
+   RESPONSIVE · 576px
 ========================================================== */
 
 @media (max-width:576px){
 
+    .header-nav ul{
+
+        flex-direction:column;
+        width:100%;
+
+    }
+
+    .header-nav li{
+
+        width:100%;
+
+    }
+
+    .header-nav a{
+
+        width:100%;
+        justify-content:center;
+
+    }
+
     .toolbar-languages{
 
-        gap:6px;
         flex-wrap:wrap;
+        gap:6px;
 
     }
 
@@ -618,4 +1293,79 @@
         height:40px;
 
     }
+
+}
+
+
+/* ==========================================================
+   RESPONSIVE · 480px
+========================================================== */
+
+@media (max-width:480px){
+
+    .title-levante{
+
+        font-size:2.45rem;
+
+    }
+
+    .title-technical{
+
+        font-size:1.65rem;
+
+    }
+
+    .toolbar-icon{
+
+        width:46px;
+        height:46px;
+        font-size:1.35rem;
+
+    }
+
+    .toolbar-text strong{
+
+        font-size:.92rem;
+
+    }
+
+}
+
+
+/* ==========================================================
+   RESPONSIVE · 390px
+========================================================== */
+
+@media (max-width:390px){
+
+    .title-levante{
+
+        font-size:2.05rem;
+
+    }
+
+    .title-technical{
+
+        font-size:1.35rem;
+
+    }
+
+    .header-logo img{
+
+        width:125px;
+
+    }
+
+    .toolbar-text small{
+
+        font-size:.72rem;
+
+    }
+
+    .toolbar-text strong{
+
+        font-size:.82rem;
+
+    }
+
 }
