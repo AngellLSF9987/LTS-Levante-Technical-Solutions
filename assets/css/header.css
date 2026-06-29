@@ -536,16 +536,26 @@
 
 }
 
+/* ==========================================
+   LOGOTIPO CENTRAL TOOLBAR
+========================================== */
 
-/* ==========================================================
-   MINI LOGO
-========================================================== */
+.toolbar-logo{
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex:0 0 auto;
+    padding:0 .35rem;
+
+}
 
 .toolbar-mini-logo{
 
+    display:block;
     width:58px;
     height:auto;
-    flex-shrink:0;
+    object-fit:contain;
 
 }
 
