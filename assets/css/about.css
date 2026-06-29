@@ -1,0 +1,407 @@
+/* ========================================================= */
+/* HERO */
+/* ========================================================= */
+
+.about-hero {
+
+    position: relative;
+    padding: 5rem 1.5rem 4rem;
+    text-align: center;
+    overflow: hidden;
+
+}
+
+.about-hero::before {
+
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background:
+        radial-gradient(circle at top,
+            rgba(0, 102, 204, .08),
+            transparent 65%);
+
+    pointer-events: none;
+
+}
+
+.about-hero .hero-wrapper {
+
+    position: relative;
+    z-index: 2;
+    max-width: 1000px;
+    margin: auto;
+
+}
+
+.about-hero .hero-script {
+
+    margin-bottom: 1rem;
+
+}
+
+.about-hero .hero-values {
+
+    margin: 2rem auto;
+
+}
+
+.about-hero .hero-subtitle {
+
+    max-width: 850px;
+    margin: auto;
+    line-height: 1.8;
+    font-size: 1.10rem;
+
+}
+
+/* ========================================================= */
+/* PROCESS */
+/* ========================================================= */
+
+.process-grid {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+
+}
+
+.process-card {
+
+    position: relative;
+    padding: 2.25rem;
+
+    background: #ffffff;
+
+    border-radius: 18px;
+    border: 1px solid rgba(0,0,0,.08);
+    
+    box-shadow: 0 10px 30px rgba(0,0,0,.06);
+
+    transition:
+        transform .30s ease,
+        box-shadow .30s ease,
+        border-color .30s ease;
+
+}
+
+.process-card:hover {
+
+    transform: translateY(-8px);
+    border-color: rgba(0,102,204,.30);
+    box-shadow: 0 18px 40px rgba(0,0,0,.12);
+
+}
+
+.process-number {
+
+    width: 58px;
+    height: 58px;
+
+    margin-bottom: 1.5rem;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: linear-gradient(135deg,#0066cc,#0099ff);
+    color: #ffffff;
+
+    font-size: 1.35rem;
+    font-weight: 700;
+
+    box-shadow: 0 8px 18px rgba(0,102,204,.30);
+
+}
+
+.process-card h3 {
+
+    margin-bottom: 1rem;
+    font-size: 1.30rem;
+    font-weight: 700;
+    color: #1f2937;
+
+}
+
+.process-card p {
+
+    margin: 0;
+    line-height: 1.8;
+    color: #555;
+
+}
+
+/* ========================================================= */
+/* SCOPE */
+/* ========================================================= */
+
+.scope-grid {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+
+}
+
+.scope-card {
+
+    padding: 2rem;
+    border-radius: 18px;
+    background: #ffffff;
+    text-align: center;
+    border: 1px solid rgba(0,0,0,.08);
+    box-shadow: 0 8px 25px rgba(0,0,0,.05);
+
+    transition: all .30s ease;
+
+}
+
+.scope-card:hover{
+
+    transform: translateY(-8px);
+    box-shadow:0 18px 35px rgba(0,0,0,.10);
+
+}
+
+.scope-card i{
+
+    font-size:2.5rem;
+    color:#0066cc;
+
+    margin-bottom:1.25rem;
+
+}
+
+.scope-card h3{
+
+    margin-bottom:.75rem;
+
+    font-weight:700;
+
+}
+
+.scope-card p{
+
+    margin:0;
+
+    line-height:1.8;
+    color:#555;
+
+}
+
+/* ========================================================= */
+/* SPECIALTIES */
+/* ========================================================= */
+
+.specialties-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    gap:1.5rem;
+
+    margin-top:3rem;
+
+}
+
+.specialty-item{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:1rem;
+
+    padding:1.5rem;
+
+    border-radius:14px;
+
+    background:#ffffff;
+
+    border:1px solid rgba(0,0,0,.08);
+
+    box-shadow:0 8px 20px rgba(0,0,0,.05);
+
+    transition:.30s;
+
+}
+
+.specialty-item:hover{
+
+    transform:translateX(8px);
+
+    box-shadow:0 15px 30px rgba(0,0,0,.10);
+
+}
+
+.specialty-item i{
+
+    font-size:2rem;
+
+    color:#0066cc;
+
+}
+
+.specialty-item span{
+
+    font-weight:600;
+
+}
+
+/* ========================================================= */
+/* VISION */
+/* ========================================================= */
+
+.about-vision{
+
+    background:#f7f9fc;
+
+}
+
+.about-vision blockquote{
+
+    max-width:900px;
+
+    margin:auto;
+
+    padding:4rem 2rem;
+
+    text-align:center;
+
+}
+
+.about-vision p{
+
+    font-size:1.6rem;
+
+    font-weight:300;
+
+    line-height:1.8;
+
+    color:#1f2937;
+
+    font-style:italic;
+
+}
+
+/* ========================================================= */
+/* CTA */
+/* ========================================================= */
+
+.about-cta{
+
+    text-align:center;
+
+}
+
+.cta-wrapper{
+
+    max-width:850px;
+
+    margin:auto;
+
+}
+
+.cta-wrapper h2{
+
+    margin-bottom:1rem;
+
+}
+
+.cta-wrapper p{
+
+    margin-bottom:2rem;
+
+    color:#555;
+
+    line-height:1.8;
+
+}
+
+.cta-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:1rem;
+
+}
+
+.cta-buttons .btn{
+
+    padding:.90rem 2rem;
+
+    border-radius:12px;
+
+    font-weight:600;
+
+}
+
+/* ========================================================= */
+/* RESPONSIVE */
+/* ========================================================= */
+
+@media (max-width:992px){
+
+    .process-grid,
+    .values-grid,
+    .scope-grid,
+    .specialties-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+@media (max-width:768px){
+
+    .process-grid,
+    .values-grid,
+    .scope-grid,
+    .specialties-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .about-vision p{
+
+        font-size:1.3rem;
+
+    }
+
+}
+
+@media (max-width:576px){
+
+    .about-philosophy,
+    .about-process,
+    .about-values,
+    .about-scope,
+    .about-specialties,
+    .about-vision,
+    .about-cta{
+
+        padding:4rem 1.25rem;
+
+    }
+
+    .process-card,
+    .value-card,
+    .scope-card{
+
+        padding:1.75rem;
+
+    }
+
+}
