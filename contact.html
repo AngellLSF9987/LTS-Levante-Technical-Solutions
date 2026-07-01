@@ -459,6 +459,10 @@
 
               <!-- Teléfono -->
 
+              <!-- ====================================== -->
+              <!-- TELÉFONO / WHATSAPP -->
+              <!-- ====================================== -->
+
               <div class="form-field">
 
                 <label for="contact-phone" data-i18n="contactForm.fields.phone">
@@ -467,8 +471,227 @@
 
                 </label>
 
-                <input id="contact-phone" name="telefono" type="tel" autocomplete="tel" required
-                  data-i18n-placeholder="contactForm.placeholders.phone" placeholder="+34 614 616 135">
+                <div class="phone-control">
+
+                  <!-- ====================================== -->
+                  <!-- SELECTOR DE PAÍS -->
+                  <!-- ====================================== -->
+
+                  <div class="country-selector" data-country-selector>
+
+                    <!-- País seleccionado -->
+
+                    <button type="button" class="country-selected" aria-haspopup="listbox" aria-expanded="false">
+
+                      <img class="country-flag" src="assets/img/header-flags/eu.webp" alt="Europa">
+
+                      <i class="bi bi-chevron-down"></i>
+
+                    </button>
+
+                    <!-- ====================================== -->
+                    <!-- MENÚ DESPLEGABLE -->
+                    <!-- ====================================== -->
+
+                    <div class="country-dropdown" role="listbox">
+
+                      <!-- España -->
+
+                      <button type="button" class="country-option country-placeholder" data-country="" data-prefix="">
+
+                        <img src="assets/img/header-flags/eu.webp" alt="Selecciona un país">
+
+                        <span class="country-name">
+
+                          Selecciona un país
+
+                        </span>
+
+                        <span class="country-prefix">
+
+                          ---
+
+                        </span>
+
+                      </button>
+
+                      <!-- España -->
+
+                      <button type="button" class="country-option" data-country="es" data-prefix="+34">
+
+                        <img src="assets/img/header-flags/es.webp" alt="España">
+
+                        <span class="country-name">
+
+                          España
+
+                        </span>
+
+                        <span class="country-prefix">
+
+                          +34
+
+                        </span>
+
+                      </button>                      
+
+                      <!-- Reino Unido -->
+
+                      <button type="button" class="country-option" data-country="en" data-prefix="+44">
+
+                        <img src="assets/img/header-flags/en.webp" alt="United Kingdom">
+
+                        <span class="country-name">
+
+                          United Kingdom
+
+                        </span>
+
+                        <span class="country-prefix">
+
+                          +44
+
+                        </span>
+
+                      </button>
+
+                      <!-- Alemania -->
+
+                      <button type="button" class="country-option" data-country="de" data-prefix="+49">
+
+                        <img src="assets/img/header-flags/de.webp" alt="Deutschland">
+
+                        <span class="country-name">
+
+                          Deutschland
+
+                        </span>
+
+                        <span class="country-prefix">
+
+                          +49
+
+                        </span>
+
+                      </button>
+
+                      <!-- Francia -->
+
+                      <button type="button" class="country-option" data-country="fr" data-prefix="+33">
+
+                        <img src="assets/img/header-flags/fr.webp" alt="France">
+
+                        <span class="country-name">
+
+                          France
+
+                        </span>
+
+                        <span class="country-prefix">
+
+                          +33
+
+                        </span>
+
+                      </button>
+
+                      <!-- Italia -->
+
+                      <button type="button" class="country-option" data-country="it" data-prefix="+39">
+
+                        <img src="assets/img/header-flags/it.webp" alt="Italia">
+
+                        <span class="country-name">
+
+                          Italia
+
+                        </span>
+
+                        <span class="country-prefix">
+
+                          +39
+
+                        </span>
+
+                      </button>
+
+                      <!-- Portugal -->
+
+                      <button type="button" class="country-option" data-country="pt" data-prefix="+351">
+
+                        <img src="assets/img/header-flags/pt.webp" alt="Portugal">
+
+                        <span class="country-name">
+
+                          Portugal
+
+                        </span>
+
+                        <span class="country-prefix">
+
+                          +351
+
+                        </span>
+
+                      </button>
+
+                      <!-- Polonia -->
+
+                      <button type="button" class="country-option" data-country="pl" data-prefix="+48">
+
+                        <img src="assets/img/header-flags/pl.webp" alt="Polska">
+
+                        <span class="country-name">
+
+                          Polska
+
+                        </span>
+
+                        <span class="country-prefix">
+
+                          +48
+
+                        </span>
+
+                      </button>
+
+                      <!-- Rusia -->
+
+                      <button type="button" class="country-option" data-country="ru" data-prefix="+7">
+
+                        <img src="assets/img/header-flags/ru.webp" alt="Россия">
+
+                        <span class="country-name">
+
+                          Россия
+
+                        </span>
+
+                        <span class="country-prefix">
+
+                          +7
+
+                        </span>
+
+                      </button>
+
+                    </div>
+
+                  </div>
+
+                  <!-- ====================================== -->
+                  <!-- NÚMERO DE TELÉFONO -->
+                  <!-- ====================================== -->
+
+                  <input id="contact-phone" name="telefono" type="tel" autocomplete="tel-national" inputmode="numeric"
+                    maxlength="9" minlength="9" pattern="[0-9]{9}" required data-phone-number
+                    data-i18n-placeholder="contactForm.placeholders.phone" placeholder="614616135">
+
+                  <!-- Prefijo oculto -->
+
+                  <input type="hidden" id="contact-prefix" value="+34" data-phone-prefix>
+
+                </div>
 
               </div>
 
@@ -482,7 +705,7 @@
 
                 </label>
 
-                <input id="contact-email" name="email" type="email" autocomplete="email"
+                <input id="contact-email" name="email" type="email" autocomplete="email" required
                   data-i18n-placeholder="contactForm.placeholders.email" placeholder="nombre@email.com">
 
               </div>
@@ -863,6 +1086,7 @@
   <script src="assets/js/app.js"></script>
 
   <script src="assets/js/contact-form.js?v=0.4.0" defer></script>
+  <script src="assets/js/country-selector.js?v=0.4.0" defer></script>  
 
 </body>
 

@@ -568,6 +568,260 @@ main.flyer-wrapper{
 }
 
 /* =========================================================
+   PHONE SELECTOR
+========================================================= */
+
+.phone-control{
+
+    display:flex;
+
+    align-items:stretch;
+
+    width:100%;
+
+}
+
+/* =========================================================
+   COUNTRY SELECTOR
+========================================================= */
+
+.country-selector{
+
+    position:relative;
+
+    flex-shrink:0;
+
+}
+
+/* =========================================================
+   SELECTED COUNTRY
+========================================================= */
+
+.country-selected{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:10px;
+
+    width:72px;
+
+    height:100%;
+
+    min-height:52px;
+
+    border:1px solid #1f63d6;
+
+    border-right:none;
+
+    border-radius:8px 0 0 8px;
+
+    background:#ffffff;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+.country-selected:hover{
+
+    background:#f5f9ff;
+
+}
+
+.country-selected i{
+
+    font-size:.72rem;
+
+    color:#5d6f92;
+
+    transition:.25s;
+
+}
+
+.country-selector.open .country-selected i{
+
+    transform:rotate(180deg);
+
+}
+
+/* =========================================================
+   FLAG
+========================================================= */
+
+.country-flag{
+
+    width:26px;
+
+    height:18px;
+
+    object-fit:cover;
+
+    border-radius:2px;
+
+    box-shadow:0 0 2px rgba(0,0,0,.20);
+
+}
+
+/* =========================================================
+   PHONE INPUT
+========================================================= */
+
+.phone-control input[type="tel"]{
+
+    flex:1;
+
+    border-radius:0 8px 8px 0;
+
+}
+
+/* =========================================================
+   DROPDOWN
+========================================================= */
+
+.country-dropdown{
+
+    position:absolute;
+
+    top:calc(100% + 6px);
+
+    left:0;
+
+    width:220px;
+
+    padding:8px;
+
+    border-radius:10px;
+
+    border:1px solid rgba(20,60,150,.12);
+
+    background:#ffffff;
+
+    box-shadow:0 18px 40px rgba(0,0,0,.12);
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transform:translateY(-8px);
+
+    transition:.25s;
+
+    z-index:500;
+
+}
+
+.country-selector.open .country-dropdown{
+
+    opacity:1;
+
+    visibility:visible;
+
+    transform:translateY(0);
+
+}
+
+/* =========================================================
+   COUNTRY OPTION
+========================================================= */
+
+.country-option{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    width:100%;
+
+    padding:10px 12px;
+
+    border:none;
+
+    border-radius:8px;
+
+    background:transparent;
+
+    cursor:pointer;
+
+    transition:.20s;
+
+    text-align:left;
+
+}
+
+.country-option:hover{
+
+    background:#eef5ff;
+
+}
+
+.country-option.active{
+
+    background:#dce9ff;
+
+}
+
+.country-option img{
+
+    width:24px;
+
+    height:16px;
+
+    object-fit:cover;
+
+    border-radius:2px;
+
+}
+
+.country-option span{
+
+    font-size:.92rem;
+
+    color:#233758;
+
+    font-weight:600;
+
+}
+
+.country-option{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+}
+
+.country-name{
+
+    flex:1;
+
+    font-size:.92rem;
+
+    font-weight:600;
+
+    color:#233758;
+
+}
+
+.country-prefix{
+
+    font-size:.84rem;
+
+    font-weight:700;
+
+    color:#5d6f92;
+
+}
+
+/* =========================================================
    TEXTO LEGAL
 ========================================================= */
 
