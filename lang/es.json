@@ -427,6 +427,7 @@
   "contact": {
 
     "title": "Contáctanos",
+    "description": "Elige el canal que prefieras. Estaremos encantados de ayudarte.",
     "phoneWhatsappLabel": "Teléfono / WhatsApp",
     "emailLabel": "Formulario de contacto",
     "googleProfileLabel": "Perfil de empresa",
@@ -437,7 +438,8 @@
 
   "area": {
 
-    "title": "Zona de trabajo:<br />Costa del Sol - Levante",
+    "title": "Zona de trabajo:<br />Zona Levante, Costa Cálida, Costa Blanca y alrededores, Costa del Sol y alrededores.",
+    "description": "Prestamos servicio en la Zona Levante, Costa Cálida, Costa Blanca y alrededores, Costa del Sol y alrededores.",
     "mapLinkLabel": "Abrir en Google Maps"
 
   },
@@ -449,8 +451,16 @@
     "trust": "Confianza",
     "results": "Resultados",
     "rights": "Todos los derechos reservados.",
-    "brandNotice": "es una marca comercial del proyecto TLS.",
+    "brandNotice": "es una marca comercial del proyecto LTS.",
     "author": "Diseño y desarrollo web:"
+
+  },
+
+  "contactHero": {
+
+    "title": "¿Necesitas un servicio técnico?",
+
+    "description": "Estamos preparados para ayudarte con proyectos de videovigilancia CCTV y seguridad, electricidad, redes y conectividad para empresas, comercios, comunidades y hogares."
 
   },
 
@@ -462,7 +472,7 @@
     "benefits": [
 
       "Respuesta personalizada según el tipo de servicio.",
-      "Atención para emepresas, comercios, comunidades y hogares.",
+      "Atención para empresas, comercios, comunidades y hogares.",
       "Zona de trabajo: Zona Levante, Costa Cálida, Costa Blanca y alrededores, Costa del Sol y alrededores."
 
     ],
@@ -474,6 +484,15 @@
       "email": "Correo electrónico",
       "service": "Tipo de servicio",
       "message": "Mensaje"
+
+    },
+
+    "placeholders": {
+
+    "name": "Escribe tu nombre",
+    "phone": "Número de teléfono",
+    "email": "tu@email.com",
+    "message": "Describe brevemente tu proyecto o consulta"
 
     },
 

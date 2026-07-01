@@ -418,6 +418,8 @@
 
     "title": "Contact",
 
+    "description": "Choisissez le moyen de contact qui vous convient le mieux. Nous serons ravis de vous aider.",
+
     "phoneWhatsappLabel": "Téléphone / WhatsApp",
 
     "emailLabel": "Formulaire de contact",
@@ -433,6 +435,8 @@
   "area": {
 
     "title": "Zone d'intervention :<br />Région du Levant espagnol, Costa Cálida, Costa Blanca et leurs environs, Costa del Sol et ses environs",
+
+    "description": "Nous intervenons dans la région du Levant, sur la Costa Cálida, la Costa Blanca et leurs environs, ainsi que sur la Costa del Sol et ses environs.",
 
     "mapLinkLabel": "Ouvrir dans Google Maps"
 
@@ -450,9 +454,18 @@
 
     "rights": "Tous droits réservés.",
 
-    "brandNotice": "est une marque commerciale du projet TLS.",
+    "brandNotice": "est une marque commerciale du projet LTS.",
 
     "author": "Conception et développement web :"
+
+  },
+
+  "contactHero": {
+
+
+  "title": "Vous avez besoin d'un service technique ?",
+
+  "description": "Nous vous accompagnons dans vos projets de vidéosurveillance CCTV et sécurité, d'installations électriques, de réseaux et de connectivité pour les entreprises, commerces, copropriétés et habitations."
 
   },
 
@@ -481,6 +494,18 @@
       "service": "Type de service",
 
       "message": "Message"
+
+    },
+
+    "placeholders": {
+
+      "name": "Saisissez votre nom",
+
+      "phone": "Numéro de téléphone",
+
+      "email": "votre@email.fr",
+
+      "message": "Décrivez brièvement votre projet ou votre demande"
 
     },
 

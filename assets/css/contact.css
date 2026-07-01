@@ -1,0 +1,704 @@
+/* =========================================================
+   CONTACT.CSS
+   LEVANTE TECHNICAL SOLUTIONS
+========================================================= */
+
+/* =========================================================
+   VARIABLES
+========================================================= */
+
+:root{
+
+    --contact-max-width:1280px;
+
+    --contact-radius:18px;
+
+    --contact-shadow:0 18px 45px rgba(14,38,90,.10);
+
+}
+
+/* =========================================================
+   MAIN
+========================================================= */
+
+main.flyer-wrapper{
+
+    overflow:hidden;
+
+}
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.contact-hero{
+
+    position:relative;
+
+    padding:70px 0 55px;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(255,255,255,.98),
+            rgba(246,249,255,1)
+        );
+
+}
+
+.contact-hero .container{
+
+    max-width:var(--contact-max-width);
+
+}
+
+/* =========================================================
+   HERO KICKER
+========================================================= */
+
+.contact-hero-kicker{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    padding:8px 18px;
+
+    border-radius:999px;
+
+    margin-bottom:22px;
+
+    font-size:.80rem;
+
+    font-weight:700;
+
+    letter-spacing:.14em;
+
+    text-transform:uppercase;
+
+    color:var(--lts-blue);
+
+    background:#eef5ff;
+
+}
+
+/* =========================================================
+   HERO TITLE
+========================================================= */
+
+.contact-hero-title{
+
+    max-width:850px;
+
+    margin:0 0 28px;
+
+    font-size:clamp(2.9rem,5vw,4.6rem);
+
+    font-weight:800;
+
+    line-height:1.05;
+
+    letter-spacing:-1px;
+
+    color:var(--lts-blue-dark);
+
+}
+
+/* =========================================================
+   HERO DESCRIPTION
+========================================================= */
+
+.contact-hero-description{
+
+    max-width:900px;
+
+    margin:0;
+
+    font-size:1.18rem;
+
+    line-height:1.90;
+
+    color:#4b5b75;
+
+}
+
+/* =========================================================
+   SPECIALTIES
+========================================================= */
+
+.contact-specialties{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:18px;
+
+    margin-top:42px;
+
+    padding:0;
+
+    list-style:none;
+
+}
+
+/* =========================================================
+   CONTACT LAYOUT
+========================================================= */
+
+.contact-form-section{
+
+    padding:48px 0 70px;
+
+}
+
+.contact-form-section .container{
+
+    max-width:1280px;
+
+}
+
+.contact-form-layout{
+
+    display:grid;
+
+    grid-template-columns:420px 1fr;
+
+    gap:70px;
+
+    align-items:start;
+
+}
+
+/* =========================================================
+   CONTACT LAYOUT - ASIDE
+========================================================= */
+
+.contact-form-copy{
+
+    position:sticky;
+
+    top:30px;
+
+    padding-top:8px;
+
+}
+
+/* =========================================================
+   CONTACT LAYOUT - TITLE
+========================================================= */
+
+.contact-form-copy h2{
+
+    margin-bottom:22px;
+
+    font-size:clamp(2rem,3vw,2.8rem);
+
+    line-height:1.1;
+
+    color:var(--lts-blue-dark);
+
+}
+
+/* =========================================================
+   CONTACT LAYOUT - DESCRIPTION
+========================================================= */
+
+.contact-form-copy p{
+
+    margin-bottom:28px;
+
+    font-size:1.05rem;
+
+    line-height:1.8;
+
+    color:#4b5b75;
+
+}
+
+/* =========================================================
+   CONTACT LAYOUT - BENEFITS
+========================================================= */
+
+.contact-form-benefits{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+    padding:0;
+
+    margin:0;
+
+    list-style:none;
+
+}
+
+.contact-form-benefits li{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:14px;
+
+    line-height:1.6;
+
+}
+
+.contact-form-benefits li::before{
+
+    content:"✓";
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    width:24px;
+
+    height:24px;
+
+    flex-shrink:0;
+
+    border-radius:50%;
+
+    background:var(--lts-blue);
+
+    color:#fff;
+
+    font-size:.8rem;
+
+    font-weight:700;
+
+}
+
+/* =========================================================
+   CONTACT LAYOUT - FORM
+========================================================= */
+
+.contact-form{
+
+    background:#ffffff;
+
+    border-radius:18px;
+
+    padding:42px;
+
+    border:1px solid rgba(20,60,150,.08);
+
+    box-shadow:0 18px 45px rgba(16,42,92,.08);
+
+}
+
+/* =========================================================
+   CONTACT LAYOUT - FORM - GRID
+========================================================= */
+
+.form-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,minmax(0,1fr));
+
+    gap:24px;
+
+}
+
+.form-field-full{
+
+    grid-column:1 / -1;
+
+}
+
+/* =========================================================
+   CONTACT LAYOUT - FORM - LABELS
+========================================================= */
+
+.contact-form label{
+
+    display:block;
+
+    margin-bottom:8px;
+
+    font-size:.88rem;
+
+    font-weight:700;
+
+    color:var(--lts-blue-dark);
+
+}
+
+/* =========================================================
+   CONTACT LAYOUT - FORM - INPUTS + PLACEHOLDERS
+========================================================= */
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea{
+
+    width:100%;
+
+    padding:14px 16px;
+
+    border:1px solid #1f63d6;
+
+    border-radius:8px;
+
+    background:#ffffff;
+
+    font-size:1rem;
+
+    color:#1b2b46;
+
+    transition:.25s;
+
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder{
+
+    color:#95a3bb;
+
+}
+
+/* =========================================================
+   CONTACT LAYOUT - FORM - FOCUS + TEXTAREA + SELECT
+========================================================= */
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus{
+
+    outline:none;
+
+    border-color:#1f63d6;
+
+    box-shadow:0 0 0 4px rgba(31,99,214,.10);
+
+}
+
+.contact-form textarea{
+
+    resize:vertical;
+
+    min-height:180px;
+
+}
+
+.contact-form select{
+
+    cursor:pointer;
+
+}
+
+/* =========================================================
+   CONTACT LAYOUT - FORM - HONEYPOT + CHECKBOX
+========================================================= */
+
+.tls-hp{
+
+    display:none;
+
+}
+
+.privacy-consent-label{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:12px;
+
+    cursor:pointer;
+
+    font-size:.92rem;
+
+    line-height:1.6;
+
+}
+
+.privacy-consent-label input{
+
+    width:18px;
+
+    height:18px;
+
+    margin-top:2px;
+
+    flex-shrink:0;
+
+}
+
+/* =========================================================
+   CONTACT LAYOUT - FORM - TURNSTILE + STATUS
+========================================================= */
+
+.turnstile-field{
+
+    display:flex;
+
+    justify-content:flex-start;
+
+}
+
+.contact-form-status{
+
+    min-height:24px;
+
+    margin-top:18px;
+
+    font-weight:600;
+
+}
+
+/* =========================================================
+   ACCIONES DEL FORMULARIO
+========================================================= */
+
+.form-actions{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+    margin-top:34px;
+
+}
+
+/* =========================================================
+   SUBMIT BUTTON
+========================================================= */
+
+.contact-submit-btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:12px;
+
+    align-self:flex-start;
+
+    min-width:240px;
+
+    padding:16px 34px;
+
+    border:none;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    font-size:1rem;
+
+    font-weight:700;
+
+    letter-spacing:.02em;
+
+    color:#fff;
+
+    background:linear-gradient(
+        135deg,
+        #1b5fd1 0%,
+        #0d3f96 100%
+    );
+
+    box-shadow:0 14px 35px rgba(13,63,150,.22);
+
+    transition:.30s;
+
+}
+
+.contact-submit-btn:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 22px 45px rgba(13,63,150,.30);
+
+}
+
+.contact-submit-btn:active{
+
+    transform:translateY(0);
+
+}
+
+.contact-submit-btn i{
+
+    font-size:1.05rem;
+
+}
+
+/* =========================================================
+   TEXTO LEGAL
+========================================================= */
+
+.form-actions>p:last-child{
+
+    margin:0;
+
+    font-size:.90rem;
+
+    line-height:1.7;
+
+    color:#6a7890;
+
+}
+
+/* =========================================================
+   BLOQUE INFERIOR
+========================================================= */
+
+.lower-section{
+
+    padding:70px 0 90px;
+
+    background:#f7f9fc;
+
+    border-top:1px solid rgba(22,56,120,.06);
+
+}
+
+.lower-section .container{
+
+    max-width:1280px;
+
+}
+
+.team-box,
+.contact-box,
+.service-area-box{
+
+    height:100%;
+
+    padding:34px;
+
+    border-radius:18px;
+
+    background:#ffffff;
+
+    border:1px solid rgba(25,66,140,.08);
+
+    box-shadow:0 16px 38px rgba(15,40,90,.08);
+
+    transition:.30s;
+
+}
+
+.team-box:hover,
+.contact-box:hover,
+.service-area-box:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:0 24px 50px rgba(15,40,90,.14);
+
+}
+
+.team-box h2,
+.contact-box h2,
+.service-area-box h2{
+
+    margin-bottom:18px;
+
+    font-size:1.55rem;
+
+    font-weight:700;
+
+    color:var(--lts-blue-dark);
+
+}
+
+.team-box p,
+.contact-box p,
+.service-area-box p{
+
+    line-height:1.75;
+
+    color:#53627b;
+
+}
+
+.map-embed-box{
+
+    overflow:hidden;
+
+    border-radius:14px;
+
+    margin-bottom:22px;
+
+}
+
+.map-embed{
+
+    width:100%;
+
+    height:260px;
+
+    border:none;
+
+}
+
+.map-open-link{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    margin-top:16px;
+
+    padding:11px 22px;
+
+    border-radius:6px;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    color:#ffffff;
+
+    background:#1b5fd1;
+
+    transition:.25s;
+
+}
+
+.map-open-link:hover{
+
+    background:#0d3f96;
+
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width:1200px){
+
+    .contact-form-layout{
+
+        grid-template-columns:1fr;
+
+        gap:50px;
+
+    }
+
+    .contact-form-copy{
+
+        position:static;
+
+        max-width:820px;
+
+    }
+
+}

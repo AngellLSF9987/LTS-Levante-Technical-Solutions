@@ -418,6 +418,8 @@
 
     "title": "Contact Us",
 
+    "description": "Choose the contact method that suits you best. We'll be happy to help you.",
+
     "phoneWhatsappLabel": "Phone / WhatsApp",
 
     "emailLabel": "Contact Form",
@@ -433,6 +435,8 @@
   "area": {
 
     "title": "Service Area:<br />Levante Region, Costa Cálida, Costa Blanca and surrounding areas, Costa del Sol and surrounding areas",
+
+    "description": "We provide services throughout the Levante Region, Costa Cálida, Costa Blanca and surrounding areas, Costa del Sol and surrounding areas.",
 
     "mapLinkLabel": "Open in Google Maps"
 
@@ -450,9 +454,17 @@
 
     "rights": "All rights reserved.",
 
-    "brandNotice": "is a trademark of the TLS project.",
+    "brandNotice": "is a trademark of the LTS project.",
 
     "author": "Website design and development:"
+
+  },
+
+  "contactHero": {
+
+    "title": "Need a technical service?",
+
+    "description": "We're ready to help with CCTV surveillance & security, electrical installations, networking and connectivity projects for businesses, commercial premises, residential communities and homes."
 
   },
 
@@ -462,12 +474,16 @@
 
     "title": "Tell us what you need",
 
-    "description": "Complete the form and we will prepare a personalised response for your CCTV surveillance & security, electrical installations, networking and connectivity requirements.",
+    "description": "Complete the form and we'll prepare a personalised response to help you with our CCTV surveillance & security, electrical installations, networking and connectivity services.",
 
     "benefits": [
-      "Personalised advice based on the requested service.",
-      "Support for homes, residential communities, commercial premises and businesses.",
+
+      "Personalised advice based on the service you require.",
+
+      "Support for businesses, commercial premises, residential communities and homes.",
+
       "Service area: Levante Region, Costa Cálida, Costa Blanca and surrounding areas, Costa del Sol and surrounding areas."
+
     ],
 
     "fields": {
@@ -476,11 +492,23 @@
 
       "phone": "Phone / WhatsApp",
 
-      "email": "Email Address",
+      "email": "Email",
 
-      "service": "Service Type",
+      "service": "Service type",
 
       "message": "Message"
+
+    },
+
+    "placeholders": {
+
+      "name": "Enter your name",
+
+      "phone": "Phone number",
+
+      "email": "your@email.com",
+
+      "message": "Briefly describe your project or enquiry"
 
     },
 
@@ -494,15 +522,15 @@
 
       "network": "Networking & Connectivity",
 
-      "other": "Other Technical Service"
+      "other": "Other technical service"
 
     },
 
-    "submit": "Send Request",
+    "submit": "Send request",
 
-    "privacy": "Your data will only be used to process this request. You may also contact us by phone or WhatsApp.",
+    "privacy": "Your data will only be used to process your enquiry. You can also contact us by phone or WhatsApp.",
 
-    "privacyConsent": "I agree that LTS may use this information to respond to my contact request."
+    "privacyConsent": "I agree that LTS may use this information to respond to my enquiry."
 
   }
 
