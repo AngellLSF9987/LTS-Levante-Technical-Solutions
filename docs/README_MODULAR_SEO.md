@@ -1,4 +1,4 @@
-# TLS - Modularización controlada + SEO técnico base
+# LTS - Modularización controlada + SEO técnico base
 
 ## Fase 1: CSS modular
 CSS separado en `base`, `header`, `hero`, `services`, `layout`, `footer` y `responsive`, importados desde `assets/css/main.css`.

@@ -1,8 +1,8 @@
-# Aplicar TLS v0.4.3
+# Aplicar LTS v0.4.3
 
 ## 1. Copiar paquete
 
-Descomprimir este paquete en la raíz del proyecto local `TLS-Levante-Technical-Solutions`.
+Descomprimir este paquete en la raíz del proyecto local `LTS-Levante-Technical-Solutions`.
 
 Archivos que se reemplazan directamente:
 
@@ -62,7 +62,7 @@ ved=
 
 ```bash
 git add .
-git commit -m "TLS v0.4.3 Google profile link and Search Console SEO fixes"
+git commit -m "LTS v0.4.3 Google profile link and Search Console SEO fixes"
 git push origin main
 ```
 

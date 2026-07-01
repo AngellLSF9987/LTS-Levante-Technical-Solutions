@@ -1,9 +1,0 @@
-es/index.html images: OK
-en/index.html images: OK
-de/index.html images: OK
-fr/index.html images: OK
-it/index.html images: OK
-pt/index.html images: OK
-ru/index.html images: OK
-pl/index.html images: OK
-card4 css override: OK

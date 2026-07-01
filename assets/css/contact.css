@@ -463,11 +463,15 @@ main.flyer-wrapper{
 
     display:flex;
 
-    flex-direction:column;
+    justify-content:flex-start;
 
-    gap:18px;
+    align-items:center;
+
+    gap:20px;
 
     margin-top:34px;
+
+    flex-wrap:wrap;
 
 }
 
@@ -475,9 +479,13 @@ main.flyer-wrapper{
    SUBMIT BUTTON
 ========================================================= */
 
+/* =========================================================
+   SUBMIT BUTTON
+========================================================= */
+
 .contact-submit-btn{
 
-    display:inline-flex;
+    display:flex;
 
     align-items:center;
 
@@ -485,11 +493,11 @@ main.flyer-wrapper{
 
     gap:12px;
 
-    align-self:flex-start;
+    width:260px;
 
-    min-width:240px;
+    height:58px;
 
-    padding:16px 34px;
+    padding:0 28px;
 
     border:none;
 
@@ -515,6 +523,8 @@ main.flyer-wrapper{
 
     transition:.30s;
 
+    flex-shrink:0;
+
 }
 
 .contact-submit-btn:hover{
@@ -533,7 +543,27 @@ main.flyer-wrapper{
 
 .contact-submit-btn i{
 
-    font-size:1.05rem;
+    font-size:1.25rem;
+
+}
+
+.whatsapp-btn{
+
+    background:linear-gradient(
+        135deg,
+        #25d366,
+        #128c7e
+    );
+
+}
+
+.email-btn{
+
+    background:linear-gradient(
+        135deg,
+        #1b5fd1,
+        #0d3f96
+    );
 
 }
 
@@ -559,7 +589,7 @@ main.flyer-wrapper{
 
 .lower-section{
 
-    padding:70px 0 90px;
+    padding:4px 0 90px;
 
     background:#f7f9fc;
 
@@ -579,7 +609,7 @@ main.flyer-wrapper{
 
     height:100%;
 
-    padding:34px;
+    padding:4px;
 
     border-radius:18px;
 

@@ -1,15 +1,15 @@
-# TLS - Levante Technical Solutions
+LTS# LTS - Levante Technical Solutions
 
 **Versión documental y técnica:** `v0.4.4`  
 **Fecha:** 2026-06-09  
-**Proyecto:** Web corporativa TLS - Levante Technical Solutions  
+**Proyecto:** Web corporativa LTS - Levante Technical Solutions  
 **Tipo:** Landing web corporativa multilingüe + formulario seguro + integración Google Business Profile + preparación Search Console
 
 ---
 
 ## 1. Descripción del proyecto
 
-TLS - Levante Technical Solutions es una web corporativa orientada a la captación de solicitudes para servicios técnicos integrales a domicilio:
+LTS - Levante Technical Solutions es una web corporativa orientada a la captación de solicitudes para servicios técnicos integrales a domicilio:
 
 - Mantenimiento de piscinas.
 - Electricidad.
@@ -59,14 +59,14 @@ Esta versión corrige y deja documentada la integración pública con Google:
 - Web pública Cloudflare Pages: `https://levante-tls.pages.dev/`
 - Sitemap: `https://levante-tls.pages.dev/sitemap.xml`
 - Perfil público Google Business Profile: `https://share.google/ydplMedKFJiICu13F`
-- Repositorio GitHub: `https://github.com/AngellLSF9987/TLS-Levante-Technical-Solutions`
+- Repositorio GitHub: `https://github.com/AngellLSF9987/LTS-Levante-Technical-Solutions`
 
 ---
 
 ## 5. Estructura recomendada
 
 ```txt
-TLS-Levante-Technical-Solutions/
+LTS-Levante-Technical-Solutions/
   README.md
   LICENSE
   VERSION.json
@@ -156,7 +156,7 @@ python scripts/apply_v0.4.4_google_profile_link.py "https://share.google/ydplMed
 git status
 git diff
 git add .
-git commit -m "TLS v0.4.4 Google Business Profile link and Search Console SEO fixes"
+git commit -m "LTS v0.4.4 Google Business Profile link and Search Console SEO fixes"
 git push origin main
 ```
 
@@ -188,5 +188,5 @@ git push origin main
 
 ## 10. Autoría
 
-Proyecto desarrollado y documentado para **TLS - Levante Technical Solutions**.  
+Proyecto desarrollado y documentado para **LTS - Levante Technical Solutions**.  
 Diseño y desarrollo web: **A. SF**.

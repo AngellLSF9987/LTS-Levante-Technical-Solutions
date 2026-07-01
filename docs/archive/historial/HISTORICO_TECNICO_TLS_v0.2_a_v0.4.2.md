@@ -1,15 +1,15 @@
-# Dossier técnico histórico - TLS Levante Technical Solutions
+# Dossier técnico histórico - LTS Levante Technical Solutions
 
 **Documento:** Histórico técnico consolidado  
 **Rango cubierto:** v0.2 → v0.4.2  
 **Fecha:** 2026-06-05  
-**Proyecto:** TLS - Levante Technical Solutions
+**Proyecto:** LTS - Levante Technical Solutions
 
 ---
 
 ## 1. Finalidad del dossier
 
-Este dossier agrupa el trabajo realizado en el proyecto TLS para que el repositorio conserve una trazabilidad clara:
+Este dossier agrupa el trabajo realizado en el proyecto LTS para que el repositorio conserve una trazabilidad clara:
 
 - Evolución de versiones.
 - Correcciones técnicas.
@@ -43,7 +43,7 @@ docs/
   INDICE_DOCUMENTACION.md
   CHANGELOG.md
   historial/
-    HISTORICO_TECNICO_TLS_v0.2_a_v0.4.2.md
+    HISTORICO_TECNICO_LTS_v0.2_a_v0.4.2.md
   versiones/
     README_v0.2.md
     README_v0.3.md
@@ -56,7 +56,7 @@ docs/
     README_CHECKS_INDEX.md
     CHECK_*.txt
   formulario/
-    README_TURNSTILE_FORMULARIO_TLS.md
+    README_TURNSTILE_FORMULARIO_LTS.md
     QA_TEST_FORMULARIO_TURNSTILE.md
   git/
     GIT_FIX_WINDOWS_INVALID_FILENAMES.md
@@ -149,7 +149,7 @@ Validación Turnstile server-side
   ↓
 Resend API
   ↓
-Correo interno a TLS
+Correo interno a LTS
   ↓
 Autorespuesta opcional
 ```
@@ -160,7 +160,7 @@ Autorespuesta opcional
 - `functions/api/contact.js`.
 - `_headers`.
 - `wrangler.toml.example`.
-- `docs/formulario/README_TURNSTILE_FORMULARIO_TLS.md`.
+- `docs/formulario/README_TURNSTILE_FORMULARIO_LTS.md`.
 - `docs/formulario/QA_TEST_FORMULARIO_TURNSTILE.md`.
 
 #### Controles anti-spam
@@ -235,7 +235,7 @@ La versión v0.4.2 no cambia la identidad visual principal. Su objetivo es orden
 
 - [ ] `README.md` refleja versión `v0.4.2`.
 - [ ] `docs/CHANGELOG.md` existe.
-- [ ] `docs/historial/HISTORICO_TECNICO_TLS_v0.2_a_v0.4.2.md` existe.
+- [ ] `docs/historial/HISTORICO_TECNICO_LTS_v0.2_a_v0.4.2.md` existe.
 - [ ] Los `README_FIX_*.md` están conservados en `docs/fixes/`.
 - [ ] Los `CHECK_*.txt` están conservados en `docs/checks/`.
 - [ ] El formulario apunta a `/api/contact`.
@@ -250,7 +250,7 @@ La versión v0.4.2 no cambia la identidad visual principal. Su objetivo es orden
 
 ## 8. Resultado esperado
 
-Con v0.4.2, TLS queda como proyecto más profesional, con:
+Con v0.4.2, LTS queda como proyecto más profesional, con:
 
 - Web corporativa modular.
 - Histórico técnico documentado.

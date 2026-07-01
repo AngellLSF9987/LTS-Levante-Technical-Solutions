@@ -1,4 +1,4 @@
-# Aplicar TLS v0.4.4
+# Aplicar LTS v0.4.4
 
 ## 1. Copiar archivos
 
@@ -35,7 +35,7 @@ https://share.google/ydplMedKFJiICu13F
 
 ```bash
 git add .
-git commit -m "TLS v0.4.4 Google Business Profile link and Search Console fixes"
+git commit -m "LTS v0.4.4 Google Business Profile link and Search Console fixes"
 git push origin main
 ```
 

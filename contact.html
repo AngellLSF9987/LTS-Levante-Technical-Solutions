@@ -423,7 +423,8 @@
           <!-- FORMULARIO -->
           <!-- ====================================== -->
 
-          <form class="contact-form" action="/api/contact" method="post" data-contact-form novalidate>
+          <form class="contact-form" data-contact-form data-status-whatsapp="contactForm.status.whatsapp"
+            data-status-email="contactForm.status.email" data-status-reset="contactForm.status.reset" novalidate>
 
             <div class="form-grid">
 
@@ -532,9 +533,7 @@
 
                 <textarea id="contact-message" name="mensaje" rows="6" required
                   data-i18n-placeholder="contactForm.placeholders.message"
-                  placeholder="Describe brevemente tu proyecto...">
-
-                        </textarea>
+                  placeholder="Describe brevemente tu proyecto..."></textarea>
 
               </div>
 
@@ -554,39 +553,33 @@
 
               </div>
 
-              <!-- Turnstile -->
-
-              <div class="form-field form-field-full turnstile-field">
-
-                <div class="cf-turnstile" data-sitekey="0X4AAAAAADe7eNVtqiMvK570" data-theme="light">
-
-                </div>
-
-              </div>
-
             </div>
 
             <div class="form-actions">
 
-              <button type="submit" class="contact-submit-btn">
+              <button type="button" class="contact-submit-btn whatsapp-btn" data-send="whatsapp">
 
-                <i class="bi bi-send-fill"></i>
+                <i class="bi bi-whatsapp"></i>
 
-                <span data-i18n="contactForm.submit">
+                <span data-i18n="contactForm.submitWhatsapp">
 
-                  Enviar solicitud
+                  Enviar por WhatsApp
 
                 </span>
 
               </button>
 
-              <p class="contact-form-status" data-contact-status role="status" aria-live="polite">
+              <button type="button" class="contact-submit-btn email-btn" data-send="email">
 
-              </p>
+                <i class="bi bi-envelope-fill"></i>
 
-              <p class="contact-privacy" data-i18n="contactForm.privacy">
+                <span data-i18n="contactForm.submitEmail">
 
-              </p>
+                  Enviar por correo
+
+                </span>
+
+              </button>
 
             </div>
 
@@ -868,8 +861,6 @@
   <script src="assets/js/i18n.js"></script>
 
   <script src="assets/js/app.js"></script>
-
-  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 
   <script src="assets/js/contact-form.js?v=0.4.0" defer></script>
 

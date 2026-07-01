@@ -1,8 +1,8 @@
 // =========================================================
-// TLS - Versión pública de assets
+// LTS - Versión pública de assets
 // Cambia este valor cuando sustituyas favicon, logos o CSS crítico.
 // =========================================================
-const TLS_ASSET_VERSION = "0.3.6";
+const LTS_ASSET_VERSION = "1.0.0";
 
 function versionFavicons() {
   document
@@ -13,7 +13,7 @@ function versionFavicons() {
       if (!href) return;
 
       const cleanHref = href.split("?")[0];
-      link.setAttribute("href", `${cleanHref}?v=${TLS_ASSET_VERSION}`);
+      link.setAttribute("href", `${cleanHref}?v=${LTS_ASSET_VERSION}`);
     });
 }
 

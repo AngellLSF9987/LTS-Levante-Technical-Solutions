@@ -1,4 +1,4 @@
-# TLS v0.4.5 - Verificacion Google Search Console e indexacion
+# LTS v0.4.5 - Verificacion Google Search Console e indexacion
 
 Esta version cierra la fase de conexion con Google Search Console para el dominio publico de Cloudflare Pages:
 
@@ -14,7 +14,7 @@ URL publica esperada tras desplegar:
 
 ## 1. Copiar archivos
 
-Descomprime este paquete en la raiz del proyecto local `TLS-Levante-Technical-Solutions`.
+Descomprime este paquete en la raiz del proyecto local `LTS-Levante-Technical-Solutions`.
 
 El archivo de verificacion debe quedar al mismo nivel que:
 
@@ -71,7 +71,7 @@ powershell -ExecutionPolicy Bypass -File scripts/check_v0.4.5_search_console_rea
 ```bash
 git status
 git add .
-git commit -m "TLS v0.4.5 Google Search Console verification file"
+git commit -m "LTS v0.4.5 Google Search Console verification file"
 git push origin main
 ```
 
