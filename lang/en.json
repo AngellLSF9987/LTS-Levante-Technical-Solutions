@@ -1,8 +1,9 @@
 {
   "meta": {
-    "title": "LTS | Comprehensive Technical Services",
-    "description": "Comprehensive technical services: CCTV Surveillance & Security, Electrical Services, Networks & Connectivity from Costa del Sol to the Spanish Levante."
+    "title": "LTS | Integrated Technical Services",
+    "description": "Integrated technical services: CCTV Surveillance & Security, Electrical Installations, and Networking & Connectivity throughout the Levante Region, Costa Cálida, Costa Blanca and surrounding areas, and Costa del Sol and surrounding areas."
   },
+
   "brand": {
     "logoAlt": "Levante Technical Solutions logo",
     "top": "Levante",
@@ -10,9 +11,19 @@
     "claimStart": "Solutions that work,",
     "claimStrong": "services you can trust."
   },
+
   "header": {
     "badgeAlt": "Guaranteed workmanship"
   },
+
+  "menu": {
+    "home": "Home",
+    "services": "Services",
+    "contact": "Contact",
+    "about": "About Us",
+    "google": "Find us on Google"
+  },
+
   "values": {
     "quality": "Quality",
     "experience": "Experience",
@@ -20,98 +31,479 @@
     "subtitle": "Everything in one place<br />for your peace of mind.",
     "subtitlePlain": "Everything in one place for your peace of mind."
   },
+
   "hero": {
     "title": "Solutions that work,",
     "subtitle": "Services you can trust."
   },
+
   "services": {
+
+    "meta": {
+      "title": "LTS | Technical Services",
+      "description": "Professional technical services by Levante Technical Solutions: CCTV Surveillance & Security, Electrical Installations, Networking & Connectivity."
+    },
+
+    "hero": {
+      "title": "Technical solutions for every need.",
+      "value1": "Professionalism",
+      "value2": "Technology",
+      "value3": "Trust",
+      "subtitle": "At Levante Technical Solutions we bring together different technical disciplines under one working philosophy: quality, reliability and solutions designed to last."
+    },
+
+    "intro": {
+      "kicker": "OUR SERVICES",
+      "title": "Three areas of expertise. One commitment.",
+      "text": "Every project is different. That's why we analyse every requirement to deliver tailored technical solutions, combining experience, technology and personalised support from the first contact through to project completion."
+    },
+
+    "more": "Discover the service",
     "surveillance": {
+
       "title": "CCTV Surveillance & Security",
+
       "imageAlt": "CCTV security camera",
+
+      "homeDescription": "CCTV solutions for businesses, residential communities and homes, designed to provide security, control and peace of mind through reliable technology and remote access.",
+
+      "description": "We design and install CCTV solutions tailored to homes, residential communities and businesses, prioritising security, reliability and remote access from anywhere.",
+
       "items": [
-        "Professional CCTV security camera installation",
-        "Real-time remote monitoring",
-        "Secure recording and storage",
-        "Solutions for homes, businesses and companies",
-        "Personalised advice tailored to your needs"
+        "Installation of IP cameras and CCTV systems.",
+        "NVR and DVR recording systems.",
+        "Integration with existing network infrastructures.",
+        "Real-time remote monitoring.",
+        "Secure video recording and storage.",
+        "Solutions for businesses, commercial premises and homes.",
+        "Tailored advice based on your specific requirements.",
+        "Preventive and corrective maintenance."
       ],
+
       "footer": "Protecting what matters most, 24 hours a day."
+
     },
+
     "electricity": {
-      "title": "Electrical Services",
-      "imageAlt": "Electrical panel installation",
+
+      "title": "Electrical Installations",
+
+      "imageAlt": "Electrical distribution board",
+
+      "homeDescription": "Electrical installations, maintenance and fault diagnosis carried out with a strong focus on safety, energy efficiency and professional quality for businesses, residential communities and homes.",
+
+      "description": "We carry out electrical installations, upgrades, maintenance and fault diagnosis, ensuring safety, energy efficiency and full compliance with current regulations.",
+
       "items": [
-        "Residential, commercial and industrial electrical installations",
-        "Preventive and corrective maintenance",
-        "Electrical fault diagnosis",
-        "Electrical panels and protection systems",
-        "Indoor and outdoor lighting"
+        "Residential, commercial and industrial electrical installations.",
+        "Preventive and corrective maintenance.",
+        "Electrical fault diagnosis.",
+        "Electrical distribution boards and protection systems.",
+        "Indoor and outdoor lighting."
       ],
+
       "footer": "Safety, efficiency and energy you can rely on."
+
     },
+
     "network": {
-      "title": "Networks & Connectivity",
-      "imageAlt": "Network and connectivity diagram",
+
+      "title": "Networking & Connectivity",
+
+      "imageAlt": "Network infrastructure and connectivity diagram",
+
+      "homeDescription": "We design and deploy wired and wireless networks, optimising connectivity for businesses, residential communities, private homes and holiday properties through reliable, secure and future-ready solutions.",
+
+      "description": "We design and implement reliable, secure network infrastructures that deliver optimal performance in both residential and professional environments.",
+
       "items": [
-        "Installation of antennas and satellite systems",
-        "Access to TV channels from your home country",
-        "High-definition HD picture quality",
-        "Professional alignment and configuration",
-        "Technical support and maintenance"
+        "Design and installation of LAN networks for homes, offices and businesses.",
+        "Structured cabling (Ethernet), patch panels and rack cabinets.",
+        "Configuration and optimisation of routers, switches and Wi-Fi access points.",
+        "Network segmentation using VLANs and subnets for business environments.",
+        "Wireless coverage extension and elimination of dead zones.",
+        "Integration of Smart Home, home automation and IoT devices.",
+        "Network diagnostics, maintenance and troubleshooting.",
+        "Performance optimisation for remote working, CCTV systems, POS terminals and servers."
       ],
-      "footer": "Enjoy the channels from your home country, wherever you are."
+
+      "footer": "Reliable, secure connectivity built to grow."
+
+    },
+
+    "process": {
+
+      "kicker": "HOW WE WORK",
+
+      "title": "A clear process for achieving the best results.",
+
+      "subtitle": "Every project follows a defined methodology that allows us to deliver organised, transparent solutions tailored to each client's needs.",
+
+      "step1": {
+        "title": "We Listen",
+        "text": "We analyse your requirements and answer all your questions before proposing any solution."
+      },
+
+      "step2": {
+        "title": "We Design",
+        "text": "We select the most suitable technical solution, always focusing on efficiency, safety and quality."
+      },
+
+      "step3": {
+        "title": "We Install",
+        "text": "We complete every project using quality materials while paying close attention to every detail."
+      },
+
+      "step4": {
+        "title": "We Support",
+        "text": "Our commitment continues after installation by providing support, maintenance and technical advice whenever you need it."
+      }
+
+    },
+
+    "cta": {
+
+      "kicker": "LET'S TALK",
+
+      "title": "Tell us about your project.",
+
+      "subtitle": "We'll assess your requirements and prepare a tailored technical solution, providing professional, transparent and personalised support from the very beginning.",
+
+      "contact": "Request Information",
+
+      "about": "About Us"
+
     }
   },
+
+  "about": {
+
+    "hero": {
+
+      "title": "About Us",
+
+      "subtitle": "Discover who we are, how we work and the philosophy that drives us to deliver integrated technical solutions for homes, residential communities and businesses.",
+
+      "values": {
+
+        "quality": "Quality",
+
+        "trust": "Trust",
+
+        "commitment": "Commitment"
+
+      }
+
+    },
+
+    "philosophy": {
+
+      "kicker": "OUR PHILOSOPHY",
+
+      "title": "Much more than a technical service provider.",
+
+      "p1": "At Levante Technical Solutions, we believe that a technical service should offer much more than an installation or repair. It should provide peace of mind, confidence and the assurance that every solution has been designed around each client's real needs.",
+
+      "p2": "Our goal is to become a single point of contact for homeowners, residential communities, businesses and holiday properties by providing a professional, approachable service capable of integrating different technical disciplines under one working philosophy.",
+
+      "p3": "We are committed to reliable solutions, high-quality materials, modern technology and personalised support throughout every stage of the project, because we believe trust is built not only through results but also through the way we work.",
+
+      "p4": "More than carrying out installations, we aim to build long-term relationships based on transparency, commitment and continuous improvement."
+
+    },
+
+    "process": {
+
+      "kicker": "OUR WAY OF WORKING",
+
+      "title": "A methodology built on planning, quality and trust.",
+
+      "subtitle": "Every project follows a structured process that guarantees personalised attention, professional execution and results tailored to each client's needs.",
+
+      "step1": {
+
+        "title": "We Listen",
+
+        "text": "We analyse every requirement to fully understand the project's objectives before proposing any solution."
+
+      },
+
+      "step2": {
+
+        "title": "We Assess",
+
+        "text": "We evaluate the environment, consider the available options and select the most suitable technical solution."
+
+      },
+
+      "step3": {
+
+        "title": "We Design",
+
+        "text": "We plan every installation with safety, efficiency and future scalability in mind."
+
+      },
+
+      "step4": {
+
+        "title": "We Deliver",
+
+        "text": "We complete every installation using quality materials, professional procedures and close attention to every detail."
+
+      },
+
+      "step5": {
+
+        "title": "We Support",
+
+        "text": "Our commitment continues after project completion through ongoing support, maintenance and technical advice whenever required."
+
+      }
+
+    },
+
+    "values": {
+
+      "kicker": "OUR COMMITMENT",
+
+      "title": "More than installations. We build trust.",
+
+      "subtitle": "We strive to become a trusted technical partner by delivering effective, approachable and tailored solutions for every project.",
+
+      "security": {
+
+        "title": "Safety",
+
+        "text": "Every installation is carried out according to professional standards, ensuring protection, reliability and best practices."
+
+      },
+
+      "personal": {
+
+        "title": "Personalised Service",
+
+        "text": "We listen before we act, ensuring every solution is tailored to the client's specific requirements."
+
+      },
+
+      "tech": {
+
+        "title": "Modern Technology",
+
+        "text": "We rely on equipment and solutions designed to evolve with future needs."
+
+      },
+
+      "quality": {
+
+        "title": "Quality",
+
+        "text": "We pay attention to every detail to deliver professional, long-lasting results."
+
+      },
+
+      "transparency": {
+
+        "title": "Transparency",
+
+        "text": "Every proposal is explained clearly so our clients always understand the scope of the project."
+
+      },
+
+      "integral": {
+
+        "title": "Integrated Solutions",
+
+        "text": "Different technical disciplines coordinated through a single point of contact."
+
+      }
+
+    },
+
+    "scope": {
+
+      "kicker": "WHERE WE WORK",
+
+      "title": "Solutions tailored to every environment.",
+
+      "subtitle": "Our experience enables us to deliver technical projects across a wide range of environments, adapting every solution to the specific needs of each client.",
+
+      "home": {
+
+        "title": "Homes",
+
+        "text": "Technical installations for primary residences and second homes."
+
+      },
+
+      "community": {
+
+        "title": "Residential Communities",
+
+        "text": "Maintenance and technical installations for homeowners' associations."
+
+      },
+
+      "tourist": {
+
+        "title": "Holiday Properties",
+
+        "text": "Technical solutions specifically designed for holiday rental properties."
+
+      },
+
+      "business": {
+
+        "title": "Retail & Commercial",
+
+        "text": "Technical systems for shops and small to medium-sized businesses."
+
+      },
+
+      "company": {
+
+        "title": "Companies",
+
+        "text": "Technical infrastructures tailored to professional environments."
+
+      }
+
+    },
+
+    "specialties": {
+
+      "kicker": "OUR SPECIALTIES",
+
+      "title": "Technology serving every project.",
+
+      "cctv": "CCTV Surveillance & Security",
+
+      "electricity": "Electrical Installations",
+
+      "network": "Networking & Connectivity",
+
+      "integration": "Technology Integration"
+
+    },
+
+    "vision": {
+
+      "quote": "Our goal is to become the trusted technical partner for homes, residential communities and businesses by delivering professional, approachable and future-ready solutions."
+
+    },
+
+    "cta": {
+
+      "title": "Do you have a project in mind?",
+
+      "subtitle": "We would be delighted to help you find the technical solution that best suits your needs.",
+
+      "contact": "Contact Us",
+
+      "services": "View Services"
+
+    }
+
+  },
+
   "team": {
-    "title": "One team,<br />all the solutions.",
+
+    "title": "One team,<br />every solution.",
+
     "subtitle": "We're here to help!"
+
   },
+
   "contact": {
-    "title": "Contact us",
+
+    "title": "Contact Us",
+
     "phoneWhatsappLabel": "Phone / WhatsApp",
-    "emailLabel": "Contact form",
+
+    "emailLabel": "Contact Form",
+
     "googleProfileLabel": "Business Profile",
+
     "googleProfileText": "Find us on Google",
+
     "formLinkAria": "Open contact form"
+
   },
+
   "area": {
-    "title": "Service area:<br />Costa del Sol - Levante",
+
+    "title": "Service Area:<br />Levante Region, Costa Cálida, Costa Blanca and surrounding areas, Costa del Sol and surrounding areas",
+
     "mapLinkLabel": "Open in Google Maps"
+
   },
+
   "footer": {
+
     "main": "Committed to your home, your business and your peace of mind.",
+
     "professionalism": "Professionalism",
+
     "trust": "Trust",
+
     "results": "Results",
+
     "rights": "All rights reserved.",
+
     "brandNotice": "is a trademark of the TLS project.",
+
     "author": "Website design and development:"
+
   },
+
   "contactForm": {
-    "kicker": "Service request",
+
+    "kicker": "Service Request",
+
     "title": "Tell us what you need",
-    "description": "Fill out the form and we'll prepare a response tailored to your needs: pools, electrical services, CCTV surveillance, antennas or satellite systems.",
+
+    "description": "Complete the form and we will prepare a personalised response for your CCTV surveillance & security, electrical installations, networking and connectivity requirements.",
+
     "benefits": [
-      "Personalised response according to the requested service.",
-      "Support for homes, residential communities, businesses and companies.",
-      "Service area: Costa del Sol and the Spanish Levante."
+      "Personalised advice based on the requested service.",
+      "Support for homes, residential communities, commercial premises and businesses.",
+      "Service area: Levante Region, Costa Cálida, Costa Blanca and surrounding areas, Costa del Sol and surrounding areas."
     ],
+
     "fields": {
+
       "name": "Name",
+
       "phone": "Phone / WhatsApp",
-      "email": "Email",
-      "service": "Service type",
+
+      "email": "Email Address",
+
+      "service": "Service Type",
+
       "message": "Message"
+
     },
+
     "services": {
+
       "placeholder": "Select an option",
+
       "surveillance": "CCTV Surveillance & Security",
-      "electricity": "Electrical Services",
-      "wireless": "Networks & Connectivity",
-      "other": "Other technical service"
+
+      "electricity": "Electrical Installations",
+
+      "network": "Networking & Connectivity",
+
+      "other": "Other Technical Service"
+
     },
-    "submit": "Send request",
-    "privacy": "Your data will only be used to process this request. You can also contact us by phone or WhatsApp.",
-    "privacyConsent": "I agree that TLS may use this data to respond to my contact request."
+
+    "submit": "Send Request",
+
+    "privacy": "Your data will only be used to process this request. You may also contact us by phone or WhatsApp.",
+
+    "privacyConsent": "I agree that LTS may use this information to respond to my contact request."
+
   }
-}
+
+}        

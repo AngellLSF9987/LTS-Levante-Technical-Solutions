@@ -1,8 +1,9 @@
 {
   "meta": {
     "title": "LTS | Umfassende technische Dienstleistungen",
-    "description": "Umfassende technische Dienstleistungen: CCTV-Videoüberwachung und Sicherheit, Elektroinstallationen sowie Netzwerke und Konnektivität von der Costa del Sol bis zur spanischen Levante."
+    "description": "Umfassende technische Dienstleistungen: CCTV-Videoüberwachung & Sicherheit, Elektroinstallationen sowie Netzwerke & Konnektivität in der Region Levante, an der Costa Cálida, der Costa Blanca und Umgebung sowie an der Costa del Sol und Umgebung."
   },
+
   "brand": {
     "logoAlt": "Logo von Levante Technical Solutions",
     "top": "Levante",
@@ -10,108 +11,499 @@
     "claimStart": "Lösungen, die funktionieren,",
     "claimStrong": "Dienstleistungen, denen Sie vertrauen können."
   },
+
   "header": {
     "badgeAlt": "Garantierte Qualität"
   },
+
+  "menu": {
+    "home": "Startseite",
+    "services": "Leistungen",
+    "contact": "Kontakt",
+    "about": "Über uns",
+    "google": "Auf Google finden"
+  },
+
   "values": {
     "quality": "Qualität",
     "experience": "Erfahrung",
     "commitment": "Engagement",
-    "subtitle": "Alles an einem Ort<br />für Ihre Sicherheit.",
-    "subtitlePlain": "Alles an einem Ort für Ihre Sicherheit."
+    "subtitle": "Alles aus einer Hand<br />für Ihre Sicherheit.",
+    "subtitlePlain": "Alles aus einer Hand für Ihre Sicherheit."
   },
+
   "hero": {
     "title": "Lösungen, die funktionieren,",
     "subtitle": "Dienstleistungen, denen Sie vertrauen können."
   },
+
   "services": {
+
+    "meta": {
+      "title": "LTS | Technische Dienstleistungen",
+      "description": "Professionelle technische Dienstleistungen von Levante Technical Solutions: CCTV-Videoüberwachung & Sicherheit, Elektroinstallationen sowie Netzwerke & Konnektivität."
+    },
+
+    "hero": {
+      "title": "Technische Lösungen für jeden Bedarf.",
+      "value1": "Professionalität",
+      "value2": "Technologie",
+      "value3": "Vertrauen",
+      "subtitle": "Bei Levante Technical Solutions vereinen wir verschiedene technische Fachbereiche unter einer gemeinsamen Philosophie: Qualität, Kundennähe und langlebige Lösungen."
+    },
+
+    "intro": {
+      "kicker": "UNSERE LEISTUNGEN",
+      "title": "Drei Fachbereiche. Ein gemeinsames Ziel.",
+      "text": "Jedes Projekt ist einzigartig. Deshalb analysieren wir jede Anforderung sorgfältig, um maßgeschneiderte technische Lösungen mit Erfahrung, moderner Technologie und persönlicher Betreuung vom ersten Kontakt bis zum Projektabschluss anzubieten."
+    },
+
+    "more": "Leistung entdecken",
     "surveillance": {
-      "title": "CCTV-Videoüberwachung und Sicherheit",
-      "imageAlt": "CCTV-Überwachungskamera",
+
+      "title": "CCTV-Videoüberwachung & Sicherheit",
+
+      "imageAlt": "CCTV-Sicherheitskamera",
+
+      "homeDescription": "Videoüberwachungslösungen für Unternehmen, Wohnanlagen und Privathaushalte – entwickelt, um Sicherheit, Kontrolle und ein gutes Gefühl durch zuverlässige Technik und Fernzugriff zu gewährleisten.",
+
+      "description": "Wir planen und installieren maßgeschneiderte Videoüberwachungssysteme für Privathaushalte, Wohnanlagen und Unternehmen, wobei Sicherheit, Zuverlässigkeit und weltweiter Fernzugriff im Mittelpunkt stehen.",
+
       "items": [
-        "Installation professioneller CCTV-Überwachungskameras",
-        "Fernüberwachung in Echtzeit",
-        "Sichere Videoaufzeichnung und Datenspeicherung",
-        "Lösungen für Privathaushalte, Unternehmen und Gewerbe",
-        "Individuelle Beratung nach Ihren Anforderungen"
+        "Installation von IP-Kameras und CCTV-Systemen.",
+        "NVR- und DVR-Aufzeichnungssysteme.",
+        "Integration in bestehende Netzwerkinfrastrukturen.",
+        "Fernüberwachung in Echtzeit.",
+        "Sichere Videoaufzeichnung und Datenspeicherung.",
+        "Lösungen für Unternehmen, Gewerbebetriebe und Privathaushalte.",
+        "Individuelle Beratung entsprechend Ihren Anforderungen.",
+        "Vorbeugende und korrektive Wartung."
       ],
+
       "footer": "Wir schützen, was Ihnen am wichtigsten ist – rund um die Uhr."
+
     },
+
     "electricity": {
+
       "title": "Elektroinstallationen",
-      "imageAlt": "Elektroinstallation",
+
+      "imageAlt": "Elektroverteiler",
+
+      "homeDescription": "Elektroinstallationen, Wartung und Fehlerdiagnose mit Schwerpunkt auf Sicherheit, Energieeffizienz und professioneller Qualität für Unternehmen, Wohnanlagen und Privathaushalte.",
+
+      "description": "Wir führen Elektroinstallationen, Erweiterungen, Wartungsarbeiten und Fehlerdiagnosen durch und gewährleisten dabei Sicherheit, Energieeffizienz sowie die Einhaltung aller geltenden Vorschriften.",
+
       "items": [
-        "Elektrische Installationen für Wohn-, Gewerbe- und Industriegebäude",
-        "Vorbeugende und korrigierende Wartung",
-        "Fehlerdiagnose",
-        "Schaltschränke und Schutzsysteme",
-        "Innen- und Außenbeleuchtung"
+        "Elektroinstallationen für Wohn-, Gewerbe- und Industriegebäude.",
+        "Vorbeugende und korrektive Wartung.",
+        "Diagnose elektrischer Störungen.",
+        "Schalt- und Verteileranlagen sowie Schutzsysteme.",
+        "Innen- und Außenbeleuchtung."
       ],
-      "footer": "Sicherheit, Effizienz und zuverlässige Energie."
+
+      "footer": "Sicherheit, Effizienz und Energie, auf die Sie sich verlassen können."
+
     },
+
     "network": {
-      "title": "Netzwerke und Konnektivität",
-      "imageAlt": "Netzwerk- und Konnektivitätsdiagramm",
+
+      "title": "Netzwerke & Konnektivität",
+
+      "imageAlt": "Netzwerkinfrastruktur und Konnektivität",
+
+      "homeDescription": "Wir planen und installieren kabelgebundene und drahtlose Netzwerke und optimieren die Konnektivität für Unternehmen, Wohnanlagen, Privathaushalte und Ferienimmobilien mit zuverlässigen, sicheren und zukunftsfähigen Lösungen.",
+
+      "description": "Wir entwickeln und implementieren zuverlässige und sichere Netzwerkinfrastrukturen für optimale Leistung in privaten und professionellen Umgebungen.",
+
       "items": [
-        "Strukturierte Netzwerkverkabelung",
-        "Professionelle WLAN-Installationen",
-        "Optimierung der Netzwerkabdeckung",
-        "Router, Switches und Access Points",
-        "Technischer Support und Wartung"
+        "Planung und Installation von LAN-Netzwerken für Wohnungen, Büros und Unternehmen.",
+        "Strukturierte Verkabelung (Ethernet), Patchpanels und Serverschränke.",
+        "Konfiguration und Optimierung von Routern, Switches und WLAN-Zugangspunkten.",
+        "Netzwerksegmentierung mittels VLANs und Subnetzen für Unternehmensumgebungen.",
+        "Erweiterung der WLAN-Abdeckung und Beseitigung von Funklöchern.",
+        "Integration von Smart-Home-, Hausautomations- und IoT-Geräten.",
+        "Netzwerkdiagnose, Wartung und Fehlerbehebung.",
+        "Leistungsoptimierung für Homeoffice, Videoüberwachung, Kassensysteme und Server."
       ],
-      "footer": "Zuverlässige Verbindungen – genau dort, wo Sie sie brauchen."
+
+      "footer": "Zuverlässige und sichere Konnektivität – bereit für zukünftiges Wachstum."
+
+    },
+
+    "process": {
+
+      "kicker": "SO ARBEITEN WIR",
+
+      "title": "Ein klarer Prozess für optimale Ergebnisse.",
+
+      "subtitle": "Jedes Projekt folgt einer klar definierten Methodik, damit wir strukturierte, transparente und individuell angepasste Lösungen anbieten können.",
+
+      "step1": {
+        "title": "Wir hören zu",
+        "text": "Wir analysieren Ihre Anforderungen und beantworten alle Ihre Fragen, bevor wir eine Lösung vorschlagen."
+      },
+
+      "step2": {
+        "title": "Wir planen",
+        "text": "Wir wählen die technisch optimale Lösung mit Fokus auf Effizienz, Sicherheit und Qualität."
+      },
+
+      "step3": {
+        "title": "Wir installieren",
+        "text": "Wir setzen jedes Projekt mit hochwertigen Materialien und größter Sorgfalt um."
+      },
+
+      "step4": {
+        "title": "Wir begleiten Sie",
+        "text": "Auch nach Abschluss des Projekts stehen wir Ihnen mit Support, Wartung und technischer Beratung zur Seite."
+      }
+
+    },
+
+    "cta": {
+
+      "kicker": "LASSEN SIE UNS SPRECHEN",
+
+      "title": "Erzählen Sie uns von Ihrem Projekt.",
+
+      "subtitle": "Wir analysieren Ihre Anforderungen und entwickeln eine maßgeschneiderte technische Lösung – professionell, transparent und persönlich von Anfang an.",
+
+      "contact": "Information anfordern",
+
+      "about": "Über uns"
+
     }
   },
-  "team": {
-    "title": "Ein Team,<br />alle Lösungen.",
-    "subtitle": "Wir sind für Sie da!"
-  },
-  "contact": {
-    "title": "Kontakt",
-    "phoneWhatsappLabel": "Telefon / WhatsApp",
-    "emailLabel": "Kontaktformular",
-    "googleProfileLabel": "Unternehmensprofil",
-    "googleProfileText": "Finden Sie uns bei Google",
-    "formLinkAria": "Kontaktformular öffnen"
-  },
-  "area": {
-    "title": "Einsatzgebiet:<br />Costa del Sol – Levante",
-    "mapLinkLabel": "In Google Maps öffnen"
-  },
-  "footer": {
-    "main": "Engagiert für Ihr Zuhause, Ihr Unternehmen und Ihre Sicherheit.",
-    "professionalism": "Professionalität",
-    "trust": "Vertrauen",
-    "results": "Ergebnisse",
-    "rights": "Alle Rechte vorbehalten.",
-    "brandNotice": "ist eine Marke des TLS-Projekts.",
-    "author": "Webdesign und Entwicklung:"
-  },
-  "contactForm": {
-    "kicker": "Serviceanfrage",
-    "title": "Sagen Sie uns, was Sie benötigen",
-    "description": "Füllen Sie das Formular aus und wir erstellen eine auf Ihre Anforderungen zugeschnittene Lösung für CCTV-Videoüberwachung, Elektroinstallationen oder Netzwerke und Konnektivität.",
-    "benefits": [
-      "Individuelle Antwort entsprechend der gewünschten Dienstleistung.",
-      "Service für Privathaushalte, Wohnanlagen, Unternehmen und Gewerbe.",
-      "Einsatzgebiet: Costa del Sol und spanische Levante."
-    ],
-    "fields": {
-      "name": "Name",
-      "phone": "Telefon / WhatsApp",
-      "email": "E-Mail",
-      "service": "Dienstleistung",
-      "message": "Nachricht"
+
+  "about": {
+
+    "hero": {
+
+      "title": "Über uns",
+
+      "subtitle": "Erfahren Sie, wer wir sind, wie wir arbeiten und welche Philosophie uns antreibt, umfassende technische Lösungen für Privathaushalte, Wohnanlagen und Unternehmen anzubieten.",
+
+      "values": {
+
+        "quality": "Qualität",
+
+        "trust": "Vertrauen",
+
+        "commitment": "Engagement"
+
+      }
+
     },
-    "services": {
-      "placeholder": "Bitte wählen",
-      "surveillance": "CCTV-Videoüberwachung und Sicherheit",
+
+    "philosophy": {
+
+      "kicker": "UNSERE PHILOSOPHIE",
+
+      "title": "Mehr als nur ein technischer Dienstleister.",
+
+      "p1": "Bei Levante Technical Solutions sind wir überzeugt, dass ein technischer Dienst weit mehr leisten sollte als eine Installation oder Reparatur. Er sollte Sicherheit, Vertrauen und die Gewissheit bieten, dass jede Lösung auf die tatsächlichen Bedürfnisse unserer Kunden zugeschnitten ist.",
+
+      "p2": "Unser Ziel ist es, als zentraler Ansprechpartner für Privathaushalte, Eigentümergemeinschaften, Unternehmen und Ferienimmobilien zu agieren und dabei einen professionellen, persönlichen Service anzubieten, der verschiedene technische Fachbereiche unter einer gemeinsamen Arbeitsphilosophie vereint.",
+
+      "p3": "Wir setzen auf zuverlässige Lösungen, hochwertige Materialien, moderne Technologien und eine persönliche Betreuung während des gesamten Projekts, denn Vertrauen entsteht nicht nur durch das Ergebnis, sondern auch durch die Art und Weise, wie wir arbeiten.",
+
+      "p4": "Unser Ziel ist nicht nur die Durchführung von Installationen, sondern der Aufbau langfristiger Beziehungen, die auf Transparenz, Engagement und kontinuierlicher Verbesserung basieren."
+
+    },
+
+    "process": {
+
+      "kicker": "UNSERE ARBEITSWEISE",
+
+      "title": "Eine Methodik, die auf Planung, Qualität und Vertrauen basiert.",
+
+      "subtitle": "Jedes Projekt folgt einem strukturierten Ablauf, der persönliche Betreuung, professionelle Ausführung und maßgeschneiderte Ergebnisse garantiert.",
+
+      "step1": {
+
+        "title": "Wir hören zu",
+
+        "text": "Wir analysieren jede Anforderung sorgfältig, um die Ziele des Projekts vollständig zu verstehen."
+
+      },
+
+      "step2": {
+
+        "title": "Wir analysieren",
+
+        "text": "Wir bewerten die Gegebenheiten, prüfen verschiedene Möglichkeiten und wählen die optimale technische Lösung."
+
+      },
+
+      "step3": {
+
+        "title": "Wir planen",
+
+        "text": "Jede Installation wird unter Berücksichtigung von Sicherheit, Effizienz und zukünftiger Erweiterbarkeit geplant."
+
+      },
+
+      "step4": {
+
+        "title": "Wir realisieren",
+
+        "text": "Wir führen jede Installation mit hochwertigen Materialien, professionellen Verfahren und größter Sorgfalt aus."
+
+      },
+
+      "step5": {
+
+        "title": "Wir begleiten Sie",
+
+        "text": "Unser Engagement endet nicht mit der Fertigstellung des Projekts – wir stehen Ihnen weiterhin mit Support, Wartung und technischer Beratung zur Verfügung."
+
+      }
+
+    },
+
+    "values": {
+
+      "kicker": "UNSER VERSPRECHEN",
+
+      "title": "Mehr als Installationen. Wir schaffen Vertrauen.",
+
+      "subtitle": "Unser Ziel ist es, Ihr zuverlässiger technischer Partner zu sein und effektive, persönliche sowie maßgeschneiderte Lösungen für jedes Projekt anzubieten.",
+
+      "security": {
+
+        "title": "Sicherheit",
+
+        "text": "Jede Installation wird nach höchsten Qualitäts- und Sicherheitsstandards ausgeführt."
+
+      },
+
+      "personal": {
+
+        "title": "Persönliche Betreuung",
+
+        "text": "Wir hören zu, bevor wir handeln, um wirklich passende Lösungen anbieten zu können."
+
+      },
+
+      "tech": {
+
+        "title": "Moderne Technologie",
+
+        "text": "Wir setzen auf Geräte und Lösungen, die auch zukünftigen Anforderungen gerecht werden."
+
+      },
+
+      "quality": {
+
+        "title": "Qualität",
+
+        "text": "Wir achten auf jedes Detail, um professionelle und langlebige Ergebnisse zu erzielen."
+
+      },
+
+      "transparency": {
+
+        "title": "Transparenz",
+
+        "text": "Jeder Vorschlag wird klar erläutert, damit unsere Kunden jederzeit den Umfang des Projekts verstehen."
+
+      },
+
+      "integral": {
+
+        "title": "Komplettlösungen",
+
+        "text": "Verschiedene technische Fachbereiche werden durch einen einzigen Ansprechpartner koordiniert."
+
+      }
+
+    },
+
+    "scope": {
+
+      "kicker": "WO WIR ARBEITEN",
+
+      "title": "Technische Lösungen für jede Umgebung.",
+
+      "subtitle": "Unsere Erfahrung ermöglicht es uns, Projekte in unterschiedlichsten Umgebungen durchzuführen und jede Lösung an die Anforderungen unserer Kunden anzupassen.",
+
+      "home": {
+
+        "title": "Privathaushalte",
+
+        "text": "Technische Installationen für Haupt- und Zweitwohnsitze."
+
+      },
+
+      "community": {
+
+        "title": "Wohnanlagen",
+
+        "text": "Wartung und technische Installationen für Eigentümergemeinschaften."
+
+      },
+
+      "tourist": {
+
+        "title": "Ferienimmobilien",
+
+        "text": "Technische Lösungen für Ferienwohnungen und touristische Unterkünfte."
+
+      },
+
+      "business": {
+
+        "title": "Gewerbe",
+
+        "text": "Technische Systeme für Geschäfte sowie kleine und mittlere Unternehmen."
+
+      },
+
+      "company": {
+
+        "title": "Unternehmen",
+
+        "text": "Technische Infrastrukturen für professionelle Arbeitsumgebungen."
+
+      }
+
+    },
+
+    "specialties": {
+
+      "kicker": "UNSERE FACHGEBIETE",
+
+      "title": "Technologie im Dienste jedes Projekts.",
+
+      "cctv": "CCTV-Videoüberwachung & Sicherheit",
+
       "electricity": "Elektroinstallationen",
-      "wireless": "Netzwerke und Konnektivität",
-      "other": "Sonstige technische Dienstleistung"
+
+      "network": "Netzwerke & Konnektivität",
+
+      "integration": "Technologieintegration"
+
     },
+
+    "vision": {
+
+      "quote": "Unser Ziel ist es, der vertrauenswürdige technische Partner für Privathaushalte, Wohnanlagen und Unternehmen zu werden – mit professionellen, persönlichen und zukunftssicheren Lösungen."
+
+    },
+
+    "cta": {
+
+      "title": "Haben Sie ein Projekt geplant?",
+
+      "subtitle": "Wir helfen Ihnen gerne dabei, die technische Lösung zu finden, die am besten zu Ihren Anforderungen passt.",
+
+      "contact": "Kontakt aufnehmen",
+
+      "services": "Leistungen ansehen"
+
+    }
+
+  },
+
+  "team": {
+
+    "title": "Ein Team,<br />alle Lösungen.",
+
+    "subtitle": "Wir sind für Sie da!"
+
+  },
+
+  "contact": {
+
+    "title": "Kontakt",
+
+    "phoneWhatsappLabel": "Telefon / WhatsApp",
+
+    "emailLabel": "Kontaktformular",
+
+    "googleProfileLabel": "Unternehmensprofil",
+
+    "googleProfileText": "Auf Google finden",
+
+    "formLinkAria": "Kontaktformular öffnen"
+
+  },
+
+  "area": {
+
+    "title": "Einsatzgebiet:<br />Region Levante, Costa Cálida, Costa Blanca und Umgebung, Costa del Sol und Umgebung",
+
+    "mapLinkLabel": "In Google Maps öffnen"
+
+  },
+
+  "footer": {
+
+    "main": "Engagiert für Ihr Zuhause, Ihr Unternehmen und Ihre Sicherheit.",
+
+    "professionalism": "Professionalität",
+
+    "trust": "Vertrauen",
+
+    "results": "Ergebnisse",
+
+    "rights": "Alle Rechte vorbehalten.",
+
+    "brandNotice": "ist eine Marke des TLS-Projekts.",
+
+    "author": "Webdesign und Entwicklung:"
+
+  },
+
+  "contactForm": {
+
+    "kicker": "SERVICEANFRAGE",
+
+    "title": "Teilen Sie uns Ihr Anliegen mit",
+
+    "description": "Füllen Sie das Formular aus und wir erstellen eine individuelle Antwort für Ihre Anforderungen in den Bereichen CCTV-Videoüberwachung & Sicherheit, Elektroinstallationen sowie Netzwerke & Konnektivität.",
+
+    "benefits": [
+      "Persönliche Beratung entsprechend der gewünschten Dienstleistung.",
+      "Service für Privathaushalte, Wohnanlagen, Gewerbebetriebe und Unternehmen.",
+      "Einsatzgebiet: Region Levante, Costa Cálida, Costa Blanca und Umgebung, Costa del Sol und Umgebung."
+    ],
+
+    "fields": {
+
+      "name": "Name",
+
+      "phone": "Telefon / WhatsApp",
+
+      "email": "E-Mail-Adresse",
+
+      "service": "Dienstleistung",
+
+      "message": "Nachricht"
+
+    },
+
+    "services": {
+
+      "placeholder": "Bitte auswählen",
+
+      "surveillance": "CCTV-Videoüberwachung & Sicherheit",
+
+      "electricity": "Elektroinstallationen",
+
+      "network": "Netzwerke & Konnektivität",
+
+      "other": "Sonstige technische Dienstleistung"
+
+    },
+
     "submit": "Anfrage senden",
-    "privacy": "Ihre Daten werden ausschließlich zur Bearbeitung Ihrer Anfrage verwendet. Sie können uns auch telefonisch oder per WhatsApp kontaktieren.",
-    "privacyConsent": "Ich stimme zu, dass LTS diese Daten zur Beantwortung meiner Anfrage verwenden darf."
+
+    "privacy": "Ihre Daten werden ausschließlich zur Bearbeitung dieser Anfrage verwendet. Sie können uns auch telefonisch oder per WhatsApp kontaktieren.",
+
+    "privacyConsent": "Ich bin damit einverstanden, dass LTS diese Daten zur Bearbeitung meiner Kontaktanfrage verwendet."
+
   }
+
 }
