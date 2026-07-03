@@ -3,74 +3,97 @@
 // Levante Technical Solutions
 // contact-form.js
 //
-// Gestión del formulario de contacto.
+// Gestión completa del formulario
+// de contacto.
 //
-// Flujo:
+// Responsabilidades:
 //
-// 1. Validar formulario.
-// 2. Construir mensaje.
-// 3. Abrir WhatsApp o correo.
-// 4. Esperar el regreso del usuario.
-// 5. Limpiar automáticamente.
+// • Validación HTML5.
+// • Construcción del mensaje.
+// • Envío por WhatsApp.
+// • Envío por correo.
+// • Limpieza automática.
+// • Integración con phone-input.js.
 //
-// Versión: 1.0.0
+// Este módulo NO conoce el
+// funcionamiento interno de
+// intl-tel-input.
+//
+// Toda la gestión telefónica
+// se realiza exclusivamente
+// mediante:
+//
+//     window.phoneInput
+//
 // ==========================================================
 
-"use strict";
+'use strict';
 
 (() => {
     /* ==========================================================
-   CONFIGURACIÓN
-========================================================== */
+       CONFIGURACIÓN
+    ========================================================== */
 
     /*
-     * Datos generales de la empresa.
+     * Parámetros generales
+     * de la empresa.
      */
 
     const CONFIG = {
+        /*
+         * Nombre comercial.
+         */
+
         companyName: 'Levante Technical Solutions',
 
+        /*
+         * WhatsApp.
+         */
+
         companyPhone: '34614616135',
+
+        /*
+         * Correo principal.
+         */
 
         companyEmail: 'levante.tls@gmail.com',
 
         /*
-         * Tiempo máximo antes de limpiar
-         * automáticamente el formulario.
+         * Tiempo máximo antes
+         * de limpiar el formulario.
          */
 
         resetDelay: 60000,
 
         /*
-         * Tiempo de espera tras volver
-         * desde WhatsApp o el cliente
-         * de correo electrónico.
+         * Tiempo de espera cuando
+         * el usuario vuelve desde
+         * WhatsApp o Mail.
          */
 
         returnDelay: 5000,
     };
 
     /* ==========================================================
-   ESTADO INTERNO
-========================================================== */
+       ESTADO INTERNO
+    ========================================================== */
 
     /*
-     * Temporizador principal.
+     * Temporizador activo.
      */
 
     let resetTimer = null;
 
     /*
-     * Indica que el usuario ha salido
-     * temporalmente de la página para
-     * completar el envío.
+     * Esperando regreso
+     * del usuario.
      */
 
     let waitingReturn = false;
 
     /* ==========================================================
-   FORMULARIO
-========================================================== */
+       FORMULARIO
+    ========================================================== */
 
     /*
      * Formulario principal.
@@ -79,8 +102,8 @@
     const form = document.querySelector('[data-contact-form]');
 
     /*
-     * Si la página no contiene formulario,
-     * abandonamos inmediatamente el módulo.
+     * Si la página no contiene
+     * formulario abandonamos.
      */
 
     if (!form) {
@@ -88,8 +111,13 @@
     }
 
     /* ==========================================================
-   CAMPOS
-========================================================== */
+       CAMPOS
+    ========================================================== */
+
+    /*
+     * Accesos rápidos a todos
+     * los campos del formulario.
+     */
 
     const fields = {
         name: form.querySelector('#contact-name'),
@@ -101,31 +129,43 @@
         service: form.querySelector('#contact-service'),
 
         message: form.querySelector('#contact-message'),
+
+        privacy: form.querySelector('#contact-privacy'),
     };
 
     /* ==========================================================
-   BOTONES
-========================================================== */
+       BOTONES
+    ========================================================== */
+
+    /*
+     * Botones disponibles
+     * para el envío.
+     */
 
     const buttons = {
-        whatsapp: form.querySelector("[data-send='whatsapp']"),
+        whatsapp: form.querySelector('[data-send="whatsapp"]'),
 
-        email: form.querySelector("[data-send='email']"),
+        email: form.querySelector('[data-send="email"]'),
     };
 
     /* ==========================================================
-   MENSAJE DE ESTADO
-========================================================== */
+       MENSAJE DE ESTADO
+    ========================================================== */
+
+    /*
+     * Zona donde mostramos
+     * mensajes al usuario.
+     */
 
     const status = form.querySelector('[data-contact-status]');
 
     /* ==========================================================
-   UTILIDADES
-========================================================== */
+       UTILIDADES
+    ========================================================== */
 
     /*
-     * Devuelve el contenido limpio
-     * de cualquier campo del formulario.
+     * Devuelve el contenido
+     * limpio de un campo.
      */
 
     function value(field) {
@@ -133,8 +173,8 @@
     }
 
     /*
-     * Devuelve el texto visible
-     * del servicio seleccionado.
+     * Devuelve el texto del
+     * servicio seleccionado.
      */
 
     function selectedService() {
@@ -142,43 +182,70 @@
     }
 
     /*
-     * Devuelve el número completo
-     * construido por el selector
-     * internacional.
+     * Número internacional.
+     *
+     * Este módulo desconoce
+     * cómo se obtiene.
      */
 
-    function fullPhone() {
-        if (!window.countrySelector) {
-            return value(fields.phone);
-        }
-
-        return window.countrySelector.getFullPhone();
+    function phoneNumber() {
+        return window.phoneInput.getNumber();
     }
 
     /*
-     * Comprueba que existe
-     * un país seleccionado.
+     * Valida el teléfono.
      */
 
-    function validateCountry() {
-        if (!window.countrySelector) {
-            return true;
-        }
-
-        if (window.countrySelector.hasCountry()) {
-            window.countrySelector.clearInvalid();
-
-            return true;
-        }
-
-        window.countrySelector.markInvalid();
-
-        return false;
+    function phoneIsValid() {
+        return window.phoneInput.isValid();
     }
 
     /*
-     * Valida completamente
-     * el formulario.
+     * Activa o desactiva
+     * todos los botones.
+     */
+
+    function disableButtons(disabled = true) {
+        Object.values(buttons).forEach((button) => {
+            if (button) {
+                button.disabled = disabled;
+            }
+        });
+    }
+
+    /*
+     * Muestra un mensaje
+     * traducido.
+     */
+
+    function showStatus(key) {
+        if (!status) {
+            return;
+        }
+
+        status.textContent = window.i18n?.get(key) || '';
+    }
+
+    /*
+     * Limpia el mensaje
+     * mostrado.
+     */
+
+    function clearStatus() {
+        if (!status) {
+            return;
+        }
+
+        status.textContent = '';
+    }
+
+    /* ==========================================================
+       VALIDACIÓN
+    ========================================================== */
+
+    /*
+     * Comprueba la validez
+     * completa del formulario.
      */
 
     function validateForm() {
@@ -193,196 +260,26 @@
         }
 
         /*
-         * Validación del selector
-         * internacional.
+         * Validación del teléfono.
          */
 
-        if (!validateCountry()) {
+        if (!phoneIsValid()) {
+            window.phoneInput.focus();
+
             return false;
         }
 
         return true;
     }
 
-    /*
-     * Activa o desactiva
-     * ambos botones de envío.
-     */
-
-    function disableButtons(disabled = true) {
-        Object.values(buttons).forEach((button) => {
-            if (button) {
-                button.disabled = disabled;
-            }
-        });
-    }
-
     /* ==========================================================
-   MENSAJES DE ESTADO
-========================================================== */
+       CONSTRUCCIÓN DEL MENSAJE
+    ========================================================== */
 
     /*
-     * Muestra un mensaje traducido
-     * al usuario.
-     */
-
-    function showStatus(key) {
-        if (!status) {
-            return;
-        }
-
-        status.textContent = window.i18n?.get(key) || '';
-    }
-
-    /*
-     * Elimina cualquier mensaje
-     * mostrado anteriormente.
-     */
-
-    function clearStatus() {
-        if (!status) {
-            return;
-        }
-
-        status.textContent = '';
-    }
-
-    /* ==========================================================
-   LIMPIEZA DEL FORMULARIO
-========================================================== */
-
-    /*
-     * Restablece completamente
-     * el formulario.
-     */
-
-    function clearForm() {
-        /*
-         * Restablecemos todos
-         * los campos HTML.
-         */
-
-        form.reset();
-
-        /*
-         * Eliminamos mensajes.
-         */
-
-        clearStatus();
-
-        /*
-         * Reactivamos botones.
-         */
-
-        disableButtons(false);
-
-        /*
-         * Cancelamos cualquier
-         * estado pendiente.
-         */
-
-        waitingReturn = false;
-
-        /*
-         * Eliminamos el temporizador.
-         */
-
-        resetTimer = null;
-
-        /*
-         * Reiniciamos el selector
-         * internacional.
-         */
-
-        if (window.countrySelector && typeof window.countrySelector.reset === 'function') {
-            window.countrySelector.reset();
-        }
-    }
-
-    /* ==========================================================
-   TEMPORIZADORES
-========================================================== */
-
-    /*
-     * Cancela el temporizador
-     * actualmente activo.
-     */
-
-    function cancelResetTimer() {
-        if (resetTimer === null) {
-            return;
-        }
-
-        clearTimeout(resetTimer);
-
-        resetTimer = null;
-    }
-
-    /*
-     * Programa la limpieza
-     * automática.
-     */
-
-    function startResetTimer() {
-        cancelResetTimer();
-
-        resetTimer = window.setTimeout(
-            clearForm,
-
-            CONFIG.resetDelay
-        );
-    }
-
-    /*
-     * Activa el modo de espera
-     * hasta que el usuario vuelva
-     * a la página.
-     */
-
-    function scheduleResetOnReturn() {
-        waitingReturn = true;
-
-        startResetTimer();
-    }
-
-    /* ==========================================================
-   REGRESO A LA PÁGINA
-========================================================== */
-
-    /*
-     * Cuando el usuario vuelve
-     * desde WhatsApp o desde
-     * el cliente de correo,
-     * esperamos unos segundos
-     * antes de limpiar.
-     */
-
-    document.addEventListener(
-        'visibilitychange',
-
-        () => {
-            if (!waitingReturn) {
-                return;
-            }
-
-            if (document.visibilityState !== 'visible') {
-                return;
-            }
-
-            cancelResetTimer();
-
-            window.setTimeout(
-                clearForm,
-
-                CONFIG.returnDelay
-            );
-        }
-    );
-
-    /*
-     * Construye el mensaje que será
-     * utilizado por WhatsApp y por
-     * el cliente de correo.
+     * Genera el texto que será
+     * utilizado tanto por
+     * WhatsApp como por correo.
      */
 
     function buildMessage() {
@@ -419,7 +316,7 @@
 
             `• ${g('mail.summary.name')}: ${value(fields.name)}`,
 
-            `• ${g('mail.phone')}: ${window.countrySelector.getFullPhone()}`,
+            `• ${g('mail.phone')}: ${phoneNumber()}`,
 
             `• ${g('mail.email')}: ${value(fields.email)}`,
 
@@ -463,7 +360,7 @@
 
             `${g('mail.summary.service')}: ${selectedService()}`,
 
-            `${g('mail.summary.phone')}: ${window.countrySelector.getFullPhone()}`,
+            `${g('mail.summary.phone')}: ${phoneNumber()}`,
 
             `${g('mail.summary.email')}: ${value(fields.email)}`,
 
@@ -474,18 +371,18 @@
     }
 
     /* ==========================================================
-   PREPARAR ENVÍO
-========================================================== */
+       PREPARACIÓN DEL ENVÍO
+    ========================================================== */
 
     /*
-     * Ejecuta todas las comprobaciones
-     * antes de iniciar cualquier envío.
+     * Ejecuta todas las
+     * comprobaciones antes
+     * del envío.
      */
 
     function prepareSend() {
         /*
-         * Validación completa
-         * del formulario.
+         * Validamos el formulario.
          */
 
         if (!validateForm()) {
@@ -499,7 +396,7 @@
         disableButtons(true);
 
         /*
-         * Limpiamos mensajes
+         * Eliminamos mensajes
          * anteriores.
          */
 
@@ -513,109 +410,267 @@
     }
 
     /* ==========================================================
-   ENVÍO POR WHATSAPP
-========================================================== */
+       ENVÍO
+    ========================================================== */
 
     /*
-     * Abre WhatsApp con el mensaje
-     * generado automáticamente.
+     * Construye la URL de envío
+     * según el destino elegido.
      */
 
-    function sendWhatsapp() {
-        const message = prepareSend();
+    function buildUrl(type, message) {
+        /*
+         * WhatsApp.
+         */
 
-        if (!message) {
-            return;
+        if (type === 'whatsapp') {
+            return `https://wa.me/${CONFIG.companyPhone}?text=${encodeURIComponent(message)}`;
         }
-
-        showStatus('contactForm.status.whatsapp');
-
-        scheduleResetOnReturn();
-
-        const url = `https://wa.me/${CONFIG.companyPhone}?text=${encodeURIComponent(message)}`;
-
-        window.location.href = url;
-    }
-
-    /* ==========================================================
-   ENVÍO POR CORREO
-========================================================== */
-
-    /*
-     * Abre el cliente de correo
-     * predeterminado.
-     */
-
-    function sendEmail() {
-        const message = prepareSend();
-
-        if (!message) {
-            return;
-        }
-
-        showStatus('contactForm.status.email');
-
-        scheduleResetOnReturn();
 
         /*
-         * Asunto profesional.
+         * Correo electrónico.
          */
 
         const subject = encodeURIComponent(window.i18n.get('mail.subject'));
 
-        /*
-         * Cuerpo del correo.
-         */
-
         const body = encodeURIComponent(message);
 
+        return `mailto:${CONFIG.companyEmail}` + `?subject=${subject}` + `&body=${body}`;
+    }
+
+    /*
+     * Devuelve la clave i18n
+     * del mensaje de estado.
+     */
+
+    function statusKey(type) {
+        if (type === 'whatsapp') {
+            return 'contactForm.status.whatsapp';
+        }
+
+        return 'contactForm.status.email';
+    }
+
+    /*
+     * Programa la limpieza
+     * automática tras salir
+     * de la página.
+     */
+
+    function scheduleReset() {
+        waitingReturn = true;
+
+        cancelResetTimer();
+
+        resetTimer = window.setTimeout(
+            clearForm,
+
+            CONFIG.resetDelay
+        );
+    }
+
+    /*
+     * Motor único de envío.
+     */
+
+    function send(type) {
         /*
-         * Apertura del cliente.
+         * Construimos el mensaje.
          */
 
-        window.location.href =
-            `mailto:${CONFIG.companyEmail}` + `?subject=${subject}` + `&body=${body}`;
+        const message = prepareSend();
+
+        if (!message) {
+            return;
+        }
+
+        /*
+         * Mensaje de estado.
+         */
+
+        showStatus(statusKey(type));
+
+        /*
+         * Programamos limpieza.
+         */
+
+        scheduleReset();
+
+        /*
+         * Abrimos destino.
+         */
+
+        window.location.href = buildUrl(
+            type,
+
+            message
+        );
     }
 
     /* ==========================================================
-   EVENTOS
-========================================================== */
+       LIMPIEZA DEL FORMULARIO
+    ========================================================== */
 
     /*
-     * Botón WhatsApp.
+     * Restablece completamente
+     * el formulario.
      */
 
-    if (buttons.whatsapp) {
-        buttons.whatsapp.addEventListener(
-            'click',
+    function clearForm() {
+        /*
+         * Restablecemos todos
+         * los campos HTML.
+         */
 
-            (event) => {
-                event.preventDefault();
+        form.reset();
 
-                sendWhatsapp();
-            }
+        /*
+         * Reiniciamos el
+         * componente teléfono.
+         */
+
+        window.phoneInput.reset();
+
+        /*
+         * Eliminamos mensajes.
+         */
+
+        clearStatus();
+
+        /*
+         * Reactivamos botones.
+         */
+
+        disableButtons(false);
+
+        /*
+         * Estado inicial.
+         */
+
+        waitingReturn = false;
+
+        resetTimer = null;
+    }
+
+    /* ==========================================================
+       TEMPORIZADORES
+    ========================================================== */
+
+    /*
+     * Cancela cualquier
+     * temporizador activo.
+     */
+
+    function cancelResetTimer() {
+        if (resetTimer === null) {
+            return;
+        }
+
+        clearTimeout(resetTimer);
+
+        resetTimer = null;
+    }
+
+    /*
+     * Programa la limpieza
+     * automática.
+     */
+
+    function startResetTimer() {
+        cancelResetTimer();
+
+        resetTimer = window.setTimeout(
+            clearForm,
+
+            CONFIG.resetDelay
         );
     }
 
     /*
-     * Botón Correo.
+     * Activa el modo espera
+     * mientras el usuario
+     * está fuera de la página.
      */
 
-    if (buttons.email) {
-        buttons.email.addEventListener(
-            'click',
+    function scheduleReset() {
+        waitingReturn = true;
 
-            (event) => {
-                event.preventDefault();
-
-                sendEmail();
-            }
-        );
+        startResetTimer();
     }
 
+    /* ==========================================================
+       REGRESO DEL USUARIO
+    ========================================================== */
+
     /*
-     * Mientras el usuario escribe
-     * eliminamos los mensajes de estado.
+     * Cuando el usuario vuelve
+     * desde WhatsApp o Mail,
+     * esperamos unos segundos
+     * antes de limpiar.
+     */
+
+    document.addEventListener(
+        'visibilitychange',
+
+        () => {
+            if (!waitingReturn) {
+                return;
+            }
+
+            if (document.visibilityState !== 'visible') {
+                return;
+            }
+
+            cancelResetTimer();
+
+            window.setTimeout(
+                clearForm,
+
+                CONFIG.returnDelay
+            );
+        }
+    );
+
+    /* ==========================================================
+       EVENTOS
+    ========================================================== */
+
+    /*
+     * Registramos todos los
+     * botones que disponen
+     * del atributo data-send.
+     */
+
+    form.querySelectorAll('[data-send]')
+
+        .forEach((button) => {
+            button.addEventListener(
+                'click',
+
+                (event) => {
+                    event.preventDefault();
+
+                    /*
+                     * Tipo de envío.
+                     */
+
+                    const type = button.dataset.send;
+
+                    /*
+                     * Ejecutamos
+                     * el envío.
+                     */
+
+                    send(type);
+                }
+            );
+        });
+
+    /*
+     * Mientras el usuario
+     * modifica cualquier
+     * campo eliminamos el
+     * mensaje de estado.
      */
 
     form.addEventListener(
@@ -627,37 +682,8 @@
     );
 
     /*
-     * Si el usuario cambia el servicio,
-     * eliminamos también los mensajes.
-     */
-
-    fields.service.addEventListener(
-        'change',
-
-        () => {
-            clearStatus();
-        }
-    );
-
-    /*
-     * Si el usuario vuelve a seleccionar
-     * un país eliminamos el estado inválido.
-     */
-
-    document.addEventListener(
-        'country:selected',
-
-        () => {
-            window.countrySelector?.clearInvalid();
-
-            clearStatus();
-        }
-    );
-
-    /*
-     * Evitamos que el formulario
-     * llegue a enviarse mediante
-     * el submit tradicional.
+     * Evitamos el envío
+     * HTML tradicional.
      */
 
     form.addEventListener(
@@ -669,12 +695,12 @@
     );
 
     /* ==========================================================
-   INICIALIZACIÓN
-========================================================== */
+       INICIALIZACIÓN
+    ========================================================== */
 
     /*
-     * Dejamos el formulario
-     * preparado desde el inicio.
+     * Dejamos preparado
+     * el formulario.
      */
 
     disableButtons(false);
