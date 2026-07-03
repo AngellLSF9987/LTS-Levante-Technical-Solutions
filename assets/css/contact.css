@@ -677,7 +677,6 @@ main.flyer-wrapper{
     transform:translateY(-8px);
     transition:.25s;
     z-index:500;
-    pointer-events:none;
 
 }
 
@@ -686,7 +685,6 @@ main.flyer-wrapper{
     opacity:1;
     visibility:visible;
     transform:translateY(0);
-    pointer-events:none;
 }
 
 /* =========================================================
