@@ -381,7 +381,7 @@
     const PHONE_RULES = {
         es: { length: 9 },
 
-        en: { length: 10 },
+        gb: { length: 10 },
 
         de: { length: 11 },
 
