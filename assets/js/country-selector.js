@@ -450,6 +450,8 @@
 
             const text = (event.clipboardData || window.clipboardData).getData('text');
 
+            console.trace('INPUT ESCRIBE', value);
+            
             phoneInput.value = text
 
                 .replace(/\D/g, '')
@@ -490,6 +492,8 @@
         /*
          * Estado interno.
          */
+
+        console.trace('RESET EJECUTADO');
 
         currentCountry = '';
 
