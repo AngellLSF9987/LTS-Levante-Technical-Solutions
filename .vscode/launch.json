@@ -1,0 +1,42 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+
+        {
+            "name": "LTS · Chrome",
+
+            "type": "pwa-chrome",
+
+            "request": "launch",
+
+            "url": "http://127.0.0.1:5501",
+
+            "webRoot": "${workspaceFolder}"
+        },
+
+        {
+            "name": "LTS · Microsoft Edge",
+
+            "type": "pwa-msedge",
+
+            "request": "launch",
+
+            "url": "http://127.0.0.1:5501",
+
+            "webRoot": "${workspaceFolder}"
+        },
+
+        {
+            "name": "LTS · Firefox",
+
+            "type": "firefox",
+
+            "request": "launch",
+
+            "url": "http://127.0.0.1:5501",
+
+            "webRoot": "${workspaceFolder}"
+}
+
+    ]
+}

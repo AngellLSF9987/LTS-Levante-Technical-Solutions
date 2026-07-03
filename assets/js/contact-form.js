@@ -19,565 +19,503 @@
 "use strict";
 
 (() => {
-
-    /* ==========================================================
+  /* ==========================================================
        CONFIGURACIÓN
     ========================================================== */
 
+  /*
+   * Datos generales de la empresa.
+   */
+
+  const CONFIG = {
+    companyName: "Levante Technical Solutions",
+
+    companyPhone: "34614616135",
+
+    companyEmail: "levante.tls@gmail.com",
+
     /*
-     * Datos generales de la empresa.
+     * Tiempo máximo antes
+     * de limpiar el formulario.
      */
 
-    const CONFIG = {
+    resetDelay: 60000,
 
-        companyName: "Levante Technical Solutions",
+    /*
+     * Espera después de volver
+     * a la página.
+     */
 
-        companyPhone: "34614616135",
+    returnDelay: 5000,
+  };
 
-        companyEmail: "levante.tls@gmail.com",
-
-        /*
-         * Tiempo máximo antes
-         * de limpiar el formulario.
-         */
-
-        resetDelay: 60000,
-
-        /*
-         * Espera después de volver
-         * a la página.
-         */
-
-        returnDelay: 5000
-
-    };
-
-    /* ==========================================================
+  /* ==========================================================
        ESTADO INTERNO
     ========================================================== */
 
-    /*
-     * Temporizador principal.
-     */
+  /*
+   * Temporizador principal.
+   */
 
-    let resetTimer = null;
+  let resetTimer = null;
 
-    /*
-     * Indica si estamos esperando
-     * el regreso del usuario.
-     */
+  /*
+   * Indica si estamos esperando
+   * el regreso del usuario.
+   */
 
-    let waitingReturn = false;
+  let waitingReturn = false;
 
-    /* ==========================================================
+  /* ==========================================================
        FORMULARIO
     ========================================================== */
 
-    const form = document.querySelector(
+  const form = document.querySelector("[data-contact-form]");
 
-        "[data-contact-form]"
+  /*
+   * Si la página no contiene
+   * formulario simplemente
+   * abandonamos el módulo.
+   */
 
-    );
+  if (!form) {
+    return;
+  }
 
-    /*
-     * Si la página no contiene
-     * formulario simplemente
-     * abandonamos el módulo.
-     */
-
-    if (!form) {
-
-        return;
-
-    }
-
-    /* ==========================================================
+  /* ==========================================================
        CAMPOS
     ========================================================== */
 
-    const fields = {
+  const fields = {
+    name: form.querySelector("#contact-name"),
 
-        name: form.querySelector("#contact-name"),
+    phone: form.querySelector("#contact-phone"),
 
-        phone: form.querySelector("#contact-phone"),
+    email: form.querySelector("#contact-email"),
 
-        email: form.querySelector("#contact-email"),
+    service: form.querySelector("#contact-service"),
 
-        service: form.querySelector("#contact-service"),
+    message: form.querySelector("#contact-message"),
+  };
 
-        message: form.querySelector("#contact-message")
-
-    };
-
-    /* ==========================================================
+  /* ==========================================================
        BOTONES
     ========================================================== */
 
-    const buttons = {
+  const buttons = {
+    whatsapp: form.querySelector("[data-send='whatsapp']"),
 
-        whatsapp: form.querySelector(
+    email: form.querySelector("[data-send='email']"),
+  };
 
-            "[data-send='whatsapp']"
+  /*
+   * Zona de mensajes
+   * al usuario.
+   */
 
-        ),
+  const status = form.querySelector("[data-contact-status]");
 
-        email: form.querySelector(
-
-            "[data-send='email']"
-
-        )
-
-    };
-
-    /*
-     * Zona de mensajes
-     * al usuario.
-     */
-
-    const status = form.querySelector(
-
-        "[data-contact-status]"
-
-    );
-
-    /* ==========================================================
+  /* ==========================================================
        UTILIDADES
     ========================================================== */
 
-    /*
-     * Devuelve el valor de un campo
-     * eliminando espacios al inicio
-     * y al final.
-     */
+  /*
+   * Devuelve el valor de un campo
+   * eliminando espacios al inicio
+   * y al final.
+   */
 
-    function value(field) {
+  function value(field) {
+    return field.value.trim();
+  }
 
-        return field.value.trim();
+  /*
+   * Obtiene el texto visible
+   * del servicio seleccionado.
+   */
 
+  function selectedService() {
+    return fields.service.options[fields.service.selectedIndex].text;
+  }
+
+  /*
+   * Comprueba que el formulario
+   * cumple todas las validaciones
+   * HTML5.
+   */
+
+  function validateForm() {
+    if (!form.checkValidity()) {
+      form.reportValidity();
+
+      return false;
     }
 
-    /*
-     * Obtiene el texto visible
-     * del servicio seleccionado.
-     */
+    return true;
+  }
 
-    function selectedService() {
+  /*
+   * Habilita o deshabilita
+   * ambos botones de envío.
+   */
 
-        return fields.service.options[
-            fields.service.selectedIndex
-        ].text;
+  function disableButtons(disabled = true) {
+    Object.values(buttons).forEach((button) => {
+      if (button) {
+        button.disabled = disabled;
+      }
+    });
+  }
 
-    }
-
-    /*
-     * Comprueba que el formulario
-     * cumple todas las validaciones
-     * HTML5.
-     */
-
-    function validateForm() {
-
-        if (!form.checkValidity()) {
-
-            form.reportValidity();
-
-            return false;
-
-        }
-
-        return true;
-
-    }
-
-    /*
-     * Habilita o deshabilita
-     * ambos botones de envío.
-     */
-
-    function disableButtons(disabled = true) {
-
-        Object.values(buttons).forEach(button => {
-
-            if (button) {
-
-                button.disabled = disabled;
-
-            }
-
-        });
-
-    }
-
-    /* ==========================================================
+  /* ==========================================================
        MENSAJES DE ESTADO
     ========================================================== */
 
-    /*
-     * Muestra un mensaje traducido
-     * utilizando el motor i18n.
-     *
-     * Ejemplo:
-     *
-     * showStatus(
-     *     "contactForm.status.whatsapp"
-     * );
-     */
+  /*
+   * Muestra un mensaje traducido
+   * utilizando el motor i18n.
+   *
+   * Ejemplo:
+   *
+   * showStatus(
+   *     "contactForm.status.whatsapp"
+   * );
+   */
 
-    function showStatus(key) {
+  function showStatus(key) {
+    if (!status) return;
 
-        if (!status) return;
+    const text = window.i18n?.get(key);
 
-        const text = window.i18n?.get(key);
+    status.textContent = text || "";
+  }
 
-        status.textContent = text || "";
+  /*
+   * Limpia el mensaje mostrado
+   * al usuario.
+   */
 
-    }
+  function clearStatus() {
+    if (!status) return;
 
-    /*
-     * Limpia el mensaje mostrado
-     * al usuario.
-     */
+    status.textContent = "";
+  }
 
-    function clearStatus() {
-
-        if (!status) return;
-
-        status.textContent = "";
-
-    }
-
-    /* ==========================================================
+  /* ==========================================================
        LIMPIEZA DEL FORMULARIO
     ========================================================== */
 
-    /*
-     * Restablece completamente
-     * el formulario.
-     */
+  /*
+   * Restablece completamente
+   * el formulario.
+   */
 
-    function clearForm() {
+  function clearForm() {
+    form.reset();
 
-        form.reset();
+    clearStatus();
 
-        clearStatus();
+    disableButtons(false);
 
-        disableButtons(false);
+    waitingReturn = false;
 
-        waitingReturn = false;
+    resetTimer = null;
+  }
 
-        resetTimer = null;
-
-    }
-
-    /* ==========================================================
+  /* ==========================================================
        CONSTRUIR MENSAJE
     ========================================================== */
 
+  /*
+   * Construye el mensaje que se enviará
+   * tanto por WhatsApp como por correo.
+   *
+   * Ambos métodos utilizarán exactamente
+   * el mismo contenido.
+   */
+
+  function buildMessage() {
     /*
-     * Construye el mensaje que se enviará
-     * tanto por WhatsApp como por correo.
-     *
-     * Ambos métodos utilizarán exactamente
-     * el mismo contenido.
+     * Texto introductorio personalizado
+     * según el servicio seleccionado.
      */
 
-    function buildMessage() {
+    let serviceIntroduction = "";
 
-        return [
+    switch (fields.service.value) {
+      case "surveillance":
+        serviceIntroduction =
+          "Estoy interesado en recibir información sobre una solución de videovigilancia y seguridad adaptada a mis necesidades.";
 
-            "────────────────────────────────",
+        break;
 
-            CONFIG.companyName,
+      case "electricity":
+        serviceIntroduction =
+          "Me gustaría solicitar información sobre un servicio relacionado con instalaciones eléctricas.";
 
-            "SOLICITUD DE SERVICIO",
+        break;
 
-            "────────────────────────────────",
+      case "network":
+        serviceIntroduction =
+          "Necesito asesoramiento sobre una solución de redes y conectividad para mi proyecto.";
 
-            "",
+        break;
 
-            `Nombre: ${value(fields.name)}`,
-
-            `Teléfono: ${value(fields.phone)}`,
-
-            `Correo electrónico: ${value(fields.email) || "-"}`,
-
-            `Servicio solicitado: ${selectedService()}`,
-
-            "",
-
-            "Mensaje:",
-
-            value(fields.message),
-
-            "",
-
-            "────────────────────────────────",
-
-            `Página: ${window.location.href}`,
-
-            `Fecha: ${new Date().toLocaleString(navigator.language)}`,
-
-            "",
-
-            "Enviado desde el formulario web."
-
-        ].join("\n");
-
+      default:
+        serviceIntroduction =
+          "Me gustaría recibir información sobre uno de vuestros servicios técnicos.";
     }
 
+    return [
+      "Hola,",
 
-    /* ==========================================================
+      "",
+
+      `Mi nombre es ${value(fields.name)} y me pongo en contacto con vosotros ` +
+        `a través del formulario de la página web de ${CONFIG.companyName}.`,
+
+      "",
+
+      serviceIntroduction,
+
+      "",
+
+      `Podéis contactar conmigo respondiendo a este mismo correo o, si lo preferís, ` +
+        `a través de cualquiera de los siguientes medios de contacto:`,
+
+      "",
+
+      `• Teléfono / WhatsApp: ${window.countrySelector.getFullPhone()}`,
+
+      `• Correo electrónico: ${value(fields.email)}`,
+
+      "",
+
+      "A continuación os detallo mi consulta:",
+
+      "",
+
+      value(fields.message),
+
+      "",
+
+      "Quedo pendiente de vuestra respuesta.",
+
+      "",
+
+      "Muchas gracias por vuestro tiempo y atención.",
+
+      "",
+
+      "Recibid un cordial saludo.",
+
+      "",
+
+      value(fields.name),
+
+      "",
+
+      "────────────────────────────────",
+
+      "RESUMEN DE LA CONSULTA",
+
+      "────────────────────────────────",
+
+      `Nombre: ${value(fields.name)}`,
+
+      `Servicio de interés: ${selectedService()}`,
+
+      `Teléfono / WhatsApp: ${window.countrySelector.getFullPhone()}`,
+
+      `Correo electrónico: ${value(fields.email)}`,
+
+      "",
+
+      `Página de origen: ${window.location.href}`,
+
+      `Fecha: ${new Date().toLocaleString(navigator.language)}`,
+    ].join("\n");
+  }
+
+  /* ==========================================================
        TEMPORIZADOR DE LIMPIEZA
     ========================================================== */
 
-    /*
-     * Cancela cualquier temporizador
-     * pendiente de limpieza.
-     */
+  /*
+   * Cancela cualquier temporizador
+   * pendiente de limpieza.
+   */
 
-    function cancelResetTimer() {
+  function cancelResetTimer() {
+    if (resetTimer !== null) {
+      clearTimeout(resetTimer);
 
-        if (resetTimer !== null) {
-
-            clearTimeout(resetTimer);
-
-            resetTimer = null;
-
-        }
-
+      resetTimer = null;
     }
+  }
 
+  /*
+   * Programa la limpieza automática
+   * transcurrido el tiempo configurado.
+   */
 
-    /*
-     * Programa la limpieza automática
-     * transcurrido el tiempo configurado.
-     */
+  function startResetTimer() {
+    cancelResetTimer();
 
-    function startResetTimer() {
+    resetTimer = setTimeout(() => {
+      clearForm();
+    }, CONFIG.resetDelay);
+  }
 
-        cancelResetTimer();
+  /*
+   * Activa el modo "esperando regreso".
+   *
+   * El formulario se limpiará cuando:
+   *
+   * • el usuario vuelva a la página,
+   * • o expire el temporizador máximo.
+   */
 
-        resetTimer = setTimeout(() => {
+  function scheduleResetOnReturn() {
+    waitingReturn = true;
 
-            clearForm();
+    startResetTimer();
+  }
 
-        }, CONFIG.resetDelay);
-
-    }
-
-
-    /*
-     * Activa el modo "esperando regreso".
-     *
-     * El formulario se limpiará cuando:
-     *
-     * • el usuario vuelva a la página,
-     * • o expire el temporizador máximo.
-     */
-
-    function scheduleResetOnReturn() {
-
-        waitingReturn = true;
-
-        startResetTimer();
-
-    }
-
-
-    /* ==========================================================
+  /* ==========================================================
        DETECTAR REGRESO A LA PÁGINA
     ========================================================== */
 
-    /*
-     * Cuando el usuario vuelve desde
-     * WhatsApp o desde su gestor de correo,
-     * esperamos unos segundos y limpiamos
-     * el formulario.
-     */
+  /*
+   * Cuando el usuario vuelve desde
+   * WhatsApp o desde su gestor de correo,
+   * esperamos unos segundos y limpiamos
+   * el formulario.
+   */
 
-    document.addEventListener(
+  document.addEventListener(
+    "visibilitychange",
 
-        "visibilitychange",
+    () => {
+      if (!waitingReturn) {
+        return;
+      }
 
-        () => {
+      if (document.visibilityState !== "visible") {
+        return;
+      }
 
-            if (!waitingReturn) {
+      cancelResetTimer();
 
-                return;
+      setTimeout(() => {
+        clearForm();
+      }, CONFIG.returnDelay);
+    },
+  );
 
-            }
-
-            if (document.visibilityState !== "visible") {
-
-                return;
-
-            }
-
-            cancelResetTimer();
-
-            setTimeout(() => {
-
-                clearForm();
-
-            }, CONFIG.returnDelay);
-
-        }
-
-    );
-
-    /* ==========================================================
+  /* ==========================================================
        PREPARAR ENVÍO
     ========================================================== */
 
-    /*
-     * Realiza las tareas comunes
-     * antes de abrir WhatsApp
-     * o el cliente de correo.
-     */
+  /*
+   * Realiza las tareas comunes
+   * antes de abrir WhatsApp
+   * o el cliente de correo.
+   */
 
-    function prepareSend() {
-
-        if (!validateForm()) {
-
-            return null;
-
-        }
-
-        disableButtons(true);
-
-        clearStatus();
-
-        return buildMessage();
-
+  function prepareSend() {
+    if (!validateForm()) {
+      return null;
     }
 
+    disableButtons(true);
 
-    /* ==========================================================
+    clearStatus();
+
+    return buildMessage();
+  }
+
+  /* ==========================================================
        ENVÍO POR WHATSAPP
     ========================================================== */
 
-    function sendWhatsapp() {
+  function sendWhatsapp() {
+    const message = prepareSend();
 
-        const message = prepareSend();
-
-        if (!message) {
-
-            return;
-
-        }
-
-        showStatus(
-
-            "contactForm.status.whatsapp"
-
-        );
-
-        scheduleResetOnReturn();
-
-        window.location.href =
-
-            `https://wa.me/${CONFIG.companyPhone}?text=${encodeURIComponent(message)}`;
-
+    if (!message) {
+      return;
     }
 
+    showStatus("contactForm.status.whatsapp");
 
-    /* ==========================================================
+    scheduleResetOnReturn();
+
+    window.location.href = `https://wa.me/${CONFIG.companyPhone}?text=${encodeURIComponent(message)}`;
+  }
+
+  /* ==========================================================
        ENVÍO POR CORREO
     ========================================================== */
 
-    function sendEmail() {
+  function sendEmail() {
+    const message = prepareSend();
 
-        const message = prepareSend();
-
-        if (!message) {
-
-            return;
-
-        }
-
-        showStatus(
-
-            "contactForm.status.email"
-
-        );
-
-        scheduleResetOnReturn();
-
-        const subject = encodeURIComponent(
-
-            "Solicitud de servicio | LTS"
-
-        );
-
-        const body = encodeURIComponent(
-
-            message
-
-        );
-
-        window.location.href =
-
-            `mailto:${CONFIG.companyEmail}?subject=${subject}&body=${body}`;
-
+    if (!message) {
+      return;
     }
 
+    showStatus("contactForm.status.email");
 
-    /* ==========================================================
+    scheduleResetOnReturn();
+
+    const subject = encodeURIComponent(
+      "Consulta desde la web de Levante Technical Solutions",
+    );
+
+    const body = encodeURIComponent(message);
+
+    window.location.href = `mailto:${CONFIG.companyEmail}?subject=${subject}&body=${body}`;
+  }
+
+  /* ==========================================================
        EVENTOS
     ========================================================== */
 
-    if (buttons.whatsapp) {
+  if (buttons.whatsapp) {
+    buttons.whatsapp.addEventListener(
+      "click",
 
-        buttons.whatsapp.addEventListener(
+      (event) => {
+        event.preventDefault();
 
-            "click",
-
-            (event) => {
-
-                event.preventDefault();
-
-                sendWhatsapp();
-
-            }
-
-        );
-
-    }
-
-    if (buttons.email) {
-
-        buttons.email.addEventListener(
-
-            "click",
-
-            (event) => {
-
-                event.preventDefault();
-
-                sendEmail();
-
-            }
-
-        );
-
-    }
-
-    /*
-     * Al volver a escribir,
-     * desaparecen los mensajes
-     * informativos.
-     */
-
-    form.addEventListener(
-
-        "input",
-
-        () => {
-
-            clearStatus();
-
-        }
-
+        sendWhatsapp();
+      },
     );
+  }
 
+  if (buttons.email) {
+    buttons.email.addEventListener(
+      "click",
+
+      (event) => {
+        event.preventDefault();
+
+        sendEmail();
+      },
+    );
+  }
+
+  /*
+   * Al volver a escribir,
+   * desaparecen los mensajes
+   * informativos.
+   */
+
+  form.addEventListener(
+    "input",
+
+    () => {
+      clearStatus();
+    },
+  );
 })();

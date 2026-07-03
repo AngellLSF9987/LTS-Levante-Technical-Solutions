@@ -530,7 +530,61 @@
 
     "privacy": "Your data will only be used to process your enquiry. You can also contact us by phone or WhatsApp.",
 
-    "privacyConsent": "I agree that LTS may use this information to respond to my enquiry."
+    "privacyConsent": "I agree that LTS may use this information to respond to my enquiry.",
+
+    "mail": {
+
+    "subject": "Enquiry from the Levante Technical Solutions website",
+
+    "greeting": "Hello,",
+
+    "introduction": "My name is {name} and I am contacting you through the contact form on the {company} website.",
+
+    "serviceIntroduction": {
+
+        "surveillance": "I am interested in receiving information about a video surveillance and security solution tailored to my needs.",
+
+        "electricity": "I would like to request information about an electrical installation service.",
+
+        "network": "I need advice regarding a network and connectivity solution for my project.",
+
+        "other": "I would like to receive information about one of your technical services."
+
+    },
+
+        "contactMethods": "You may reply to this email or, if you prefer, contact me using either of the following methods:",
+
+        "phone": "Phone / WhatsApp",
+
+        "email": "Email address",
+
+        "messageTitle": "Please find my enquiry below:",
+
+        "farewell": "I look forward to hearing from you.",
+
+        "thanks": "Thank you very much for your time and attention.",
+
+        "closing": "Kind regards,",
+
+        "summaryTitle": "ENQUIRY SUMMARY",
+
+        "summary": {
+
+            "name": "Name",
+
+            "service": "Service of interest",
+
+            "phone": "Phone / WhatsApp",
+
+            "email": "Email address",
+
+            "page": "Source page",
+
+            "date": "Date"
+
+        }
+
+    }
 
   }
 

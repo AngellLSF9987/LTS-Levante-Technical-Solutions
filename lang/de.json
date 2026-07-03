@@ -526,7 +526,61 @@
 
     "privacy": "Ihre Daten werden ausschließlich zur Bearbeitung dieser Anfrage verwendet. Sie können uns auch telefonisch oder per WhatsApp kontaktieren.",
 
-    "privacyConsent": "Ich bin damit einverstanden, dass LTS diese Daten zur Bearbeitung meiner Kontaktanfrage verwendet."
+    "privacyConsent": "Ich bin damit einverstanden, dass LTS diese Daten zur Bearbeitung meiner Kontaktanfrage verwendet.",
+
+          "mail": {
+
+          "subject": "Anfrage über die Website von Levante Technical Solutions",
+
+          "greeting": "Guten Tag,",
+
+          "introduction": "Mein Name ist {name} und ich nehme über das Kontaktformular der Website von {company} Kontakt mit Ihnen auf.",
+
+          "serviceIntroduction": {
+
+              "surveillance": "Ich interessiere mich für eine auf meine Anforderungen abgestimmte Videoüberwachungs- und Sicherheitslösung.",
+
+              "electricity": "Ich möchte Informationen zu einer Dienstleistung im Bereich Elektroinstallationen anfordern.",
+
+              "network": "Ich benötige Beratung zu einer Netzwerk- und Konnektivitätslösung für mein Projekt.",
+
+              "other": "Ich möchte Informationen zu einer Ihrer technischen Dienstleistungen erhalten."
+
+          },
+
+        "contactMethods": "Sie können mir gerne auf diese E-Mail antworten oder mich über einen der folgenden Kontaktwege erreichen:",
+
+        "phone": "Telefon / WhatsApp",
+
+        "email": "E-Mail-Adresse",
+
+        "messageTitle": "Nachfolgend finden Sie meine Anfrage:",
+
+        "farewell": "Ich freue mich auf Ihre Rückmeldung.",
+
+        "thanks": "Vielen Dank für Ihre Zeit und Aufmerksamkeit.",
+
+        "closing": "Mit freundlichen Grüßen",
+
+        "summaryTitle": "ZUSAMMENFASSUNG DER ANFRAGE",
+
+        "summary": {
+
+            "name": "Name",
+
+            "service": "Gewünschte Dienstleistung",
+
+            "phone": "Telefon / WhatsApp",
+
+            "email": "E-Mail-Adresse",
+
+            "page": "Herkunftsseite",
+
+            "date": "Datum"
+
+        }
+
+    }
 
   }
 

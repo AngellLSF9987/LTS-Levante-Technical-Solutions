@@ -526,7 +526,61 @@
 
     "privacy": "I tuoi dati saranno utilizzati esclusivamente per gestire questa richiesta. Puoi contattarci anche telefonicamente o tramite WhatsApp.",
 
-    "privacyConsent": "Acconsento all'utilizzo di questi dati da parte di LTS per rispondere alla mia richiesta di contatto."
+    "privacyConsent": "Acconsento all'utilizzo di questi dati da parte di LTS per rispondere alla mia richiesta di contatto.",
+
+      "mail": {
+
+      "subject": "Richiesta inviata dal sito web di Levante Technical Solutions",
+
+      "greeting": "Buongiorno,",
+
+      "introduction": "Mi chiamo {name} e vi contatto tramite il modulo di contatto del sito web di {company}.",
+
+      "serviceIntroduction": {
+
+          "surveillance": "Sono interessato a ricevere informazioni su una soluzione di videosorveglianza e sicurezza adatta alle mie esigenze.",
+
+          "electricity": "Desidero richiedere informazioni su un servizio relativo agli impianti elettrici.",
+
+          "network": "Ho bisogno di una consulenza riguardo a una soluzione di reti e connettività per il mio progetto.",
+
+          "other": "Desidero ricevere informazioni su uno dei vostri servizi tecnici."
+
+      },
+
+      "contactMethods": "Potete rispondermi direttamente a questa e-mail oppure contattarmi utilizzando uno dei seguenti recapiti:",
+
+      "phone": "Telefono / WhatsApp",
+
+      "email": "Indirizzo e-mail",
+
+      "messageTitle": "Di seguito riporto i dettagli della mia richiesta:",
+
+      "farewell": "Rimango in attesa di un vostro cortese riscontro.",
+
+      "thanks": "Vi ringrazio per il tempo e l'attenzione dedicatami.",
+
+      "closing": "Cordiali saluti,",
+
+      "summaryTitle": "RIEPILOGO DELLA RICHIESTA",
+
+      "summary": {
+
+          "name": "Nome",
+
+          "service": "Servizio richiesto",
+
+          "phone": "Telefono / WhatsApp",
+
+          "email": "Indirizzo e-mail",
+
+          "page": "Pagina di origine",
+
+          "date": "Data"
+
+      }
+
+  }
 
   }
 
