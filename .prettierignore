@@ -1,6 +1,7 @@
 node_modules
 .vscode
 docs/archive
-dist
-build
+/dist/
+/build/
+/output/
 coverage
