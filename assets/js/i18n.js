@@ -16,7 +16,7 @@
 // Versión: 1.0.0
 // ==========================================================
 
-"use strict";
+'use strict';
 
 /* ==========================================================
    CONFIGURACIÓN GENERAL
@@ -27,7 +27,7 @@
  * Se utiliza cuando el usuario visita la web por primera vez.
  */
 
-const DEFAULT_LANGUAGE = "es";
+const DEFAULT_LANGUAGE = 'es';
 
 /*
  * Objeto que almacenará en memoria
@@ -61,20 +61,10 @@ let currentTranslations = {};
  */
 
 function getNestedValue(object, path) {
-
-    return path
-        .split(".")
-        .reduce((current, key) => {
-
-            return current &&
-                   current[key] !== undefined
-                ? current[key]
-                : null;
-
-        }, object);
-
+    return path.split('.').reduce((current, key) => {
+        return current && current[key] !== undefined ? current[key] : null;
+    }, object);
 }
-
 
 /* ==========================================================
    APLICAR TRADUCCIONES
@@ -91,29 +81,22 @@ function getNestedValue(object, path) {
  */
 
 function applyTranslations() {
-
     /*
      * Traducción del texto visible del elemento.
      *
      * <span data-i18n="menu.home"></span>
      */
 
-    document.querySelectorAll("[data-i18n]").forEach((element) => {
-
+    document.querySelectorAll('[data-i18n]').forEach((element) => {
         const value = getNestedValue(
-
             currentTranslations,
 
             element.dataset.i18n
-
         );
 
         if (value !== null) {
-
             element.textContent = value;
-
         }
-
     });
 
     /*
@@ -122,22 +105,16 @@ function applyTranslations() {
      * Permite mantener etiquetas <br>, <strong>, etc.
      */
 
-    document.querySelectorAll("[data-i18n-html]").forEach((element) => {
-
+    document.querySelectorAll('[data-i18n-html]').forEach((element) => {
         const value = getNestedValue(
-
             currentTranslations,
 
             element.dataset.i18nHtml
-
         );
 
         if (value !== null) {
-
             element.innerHTML = value;
-
         }
-
     });
 
     /*
@@ -146,22 +123,16 @@ function applyTranslations() {
      * Utilizado principalmente en imágenes.
      */
 
-    document.querySelectorAll("[data-i18n-alt]").forEach((element) => {
-
+    document.querySelectorAll('[data-i18n-alt]').forEach((element) => {
         const value = getNestedValue(
-
             currentTranslations,
 
             element.dataset.i18nAlt
-
         );
 
         if (value !== null) {
-
             element.alt = value;
-
         }
-
     });
 
     /*
@@ -171,28 +142,20 @@ function applyTranslations() {
      * OpenGraph, Twitter Cards...
      */
 
-    document.querySelectorAll("[data-i18n-content]").forEach((element) => {
-
+    document.querySelectorAll('[data-i18n-content]').forEach((element) => {
         const value = getNestedValue(
-
             currentTranslations,
 
             element.dataset.i18nContent
-
         );
 
         if (value !== null) {
-
             element.setAttribute(
-
-                "content",
+                'content',
 
                 value
-
             );
-
         }
-
     });
 
     /*
@@ -201,28 +164,20 @@ function applyTranslations() {
      * Mejora la accesibilidad.
      */
 
-    document.querySelectorAll("[data-i18n-aria-label]").forEach((element) => {
-
+    document.querySelectorAll('[data-i18n-aria-label]').forEach((element) => {
         const value = getNestedValue(
-
             currentTranslations,
 
             element.dataset.i18nAriaLabel
-
         );
 
         if (value !== null) {
-
             element.setAttribute(
-
-                "aria-label",
+                'aria-label',
 
                 value
-
             );
-
         }
-
     });
 
     /*
@@ -231,24 +186,17 @@ function applyTranslations() {
      * Utilizado por formularios.
      */
 
-    document.querySelectorAll("[data-i18n-placeholder]").forEach((element) => {
-
+    document.querySelectorAll('[data-i18n-placeholder]').forEach((element) => {
         const value = getNestedValue(
-
             currentTranslations,
 
             element.dataset.i18nPlaceholder
-
         );
 
         if (value !== null) {
-
             element.placeholder = value;
-
         }
-
     });
-
 }
 
 /* ==========================================================
@@ -261,20 +209,14 @@ function applyTranslations() {
  */
 
 function updateHeroFlag(language) {
-
-    const heroFlag = document.getElementById(
-        "hero-language-flag"
-    );
+    const heroFlag = document.getElementById('hero-language-flag');
 
     if (!heroFlag) return;
 
-    heroFlag.src =
-        `assets/img/header-flags/${language}.webp`;
+    heroFlag.src = `assets/img/header-flags/${language}.webp`;
 
     heroFlag.alt = language;
-
 }
-
 
 /* ==========================================================
    ACTUALIZAR BOTONES DE IDIOMA
@@ -286,28 +228,14 @@ function updateHeroFlag(language) {
  */
 
 function updateLanguageButtons(language) {
+    document.querySelectorAll('[data-lang]').forEach((button) => {
+        const active = button.dataset.lang === language;
 
-    document
-        .querySelectorAll("[data-lang]")
-        .forEach((button) => {
+        button.classList.toggle('is-active', active);
 
-            const active =
-                button.dataset.lang === language;
-
-            button.classList.toggle(
-                "is-active",
-                active
-            );
-
-            button.setAttribute(
-                "aria-pressed",
-                active
-            );
-
-        });
-
+        button.setAttribute('aria-pressed', active);
+    });
 }
-
 
 /* ==========================================================
    CARGAR IDIOMA
@@ -328,14 +256,9 @@ function updateLanguageButtons(language) {
  */
 
 async function loadLanguage(language) {
-
+    console.log('Cargando idioma:', language);
     try {
-
-        let response = await fetch(
-
-            `/lang/${language}.json`
-
-        );
+        let response = await fetch(`/lang/${language}.json`);
 
         /*
          * Compatibilidad cuando la web
@@ -343,23 +266,11 @@ async function loadLanguage(language) {
          */
 
         if (!response.ok) {
-
-            response = await fetch(
-
-                `lang/${language}.json`
-
-            );
-
+            response = await fetch(`lang/${language}.json`);
         }
 
         if (!response.ok) {
-
-            throw new Error(
-
-                `No se pudo cargar el idioma: ${language}`
-
-            );
-
+            throw new Error(`No se pudo cargar el idioma: ${language}`);
         }
 
         /*
@@ -367,16 +278,14 @@ async function loadLanguage(language) {
          * en memoria.
          */
 
-        currentTranslations =
-            await response.json();
-
+        currentTranslations = await response.json();
+        console.log(currentTranslations);
         /*
          * Actualizamos el idioma
          * del documento.
          */
 
-        document.documentElement.lang =
-            language;
+        document.documentElement.lang = language;
 
         /*
          * Recordamos el idioma elegido
@@ -384,11 +293,9 @@ async function loadLanguage(language) {
          */
 
         localStorage.setItem(
-
-            "siteLanguage",
+            'siteLanguage',
 
             language
-
         );
 
         /*
@@ -396,7 +303,7 @@ async function loadLanguage(language) {
          */
 
         applyTranslations();
-
+        console.log('Traducciones aplicadas');
         /*
          * Actualizamos elementos
          * visuales.
@@ -405,21 +312,13 @@ async function loadLanguage(language) {
         updateLanguageButtons(language);
 
         updateHeroFlag(language);
-
-    }
-
-    catch (error) {
-
+    } catch (error) {
         console.error(
-
-            "[LTS i18n]",
+            '[LTS i18n]',
 
             error
-
         );
-
     }
-
 }
 
 /* ==========================================================
@@ -460,41 +359,25 @@ window.i18n = {
 
     translate(key, variables = {}) {
 
-        let text = this.get(
+        let text = this.get(key);
 
-            key
-
-        );
-
-        if (
-
-            typeof text !== "string"
-
-        ) {
+        if (typeof text !== 'string') {
 
             return text;
 
         }
 
-        Object.entries(
+        Object.entries(variables).forEach(([name, value]) => {
 
-            variables
+            text = text.replaceAll(
 
-        ).forEach(
+                `{${name}}`,
 
-            ([name, value]) => {
+                value
 
-                text = text.replaceAll(
+            );
 
-                    `{${name}}`,
-
-                    value
-
-                );
-
-            }
-
-        );
+        });
 
         return text;
 
@@ -517,11 +400,7 @@ window.i18n = {
 
     async changeLanguage(language) {
 
-        await loadLanguage(
-
-            language
-
-        );
+        await loadLanguage(language);
 
     },
 
@@ -535,4 +414,87 @@ window.i18n = {
 
     }
 
-};
+};   // ← AQUÍ TERMINA window.i18n
+
+
+
+/* ==========================================================
+   INICIALIZACIÓN
+========================================================== */
+
+/*
+ * Arranque del motor de internacionalización.
+ *
+ * Flujo:
+ *
+ * 1. Recupera el idioma guardado.
+ * 2. Carga el JSON correspondiente.
+ * 3. Traduce toda la página.
+ * 4. Registra el selector de idiomas.
+ */
+
+document.addEventListener(
+
+    'DOMContentLoaded',
+
+    async () => {
+
+        const language =
+
+            localStorage.getItem(
+
+                'siteLanguage'
+
+            ) ||
+
+            DEFAULT_LANGUAGE;
+
+        await loadLanguage(
+
+            language
+
+        );
+
+        document
+
+            .querySelectorAll('[data-lang]')
+
+            .forEach((button) => {
+
+                button.addEventListener(
+
+                    'click',
+
+                    () => {
+
+                        const language =
+
+                            button.dataset.lang;
+
+                        if (
+
+                            language ===
+
+                            window.i18n.getCurrentLanguage()
+
+                        ) {
+
+                            return;
+
+                        }
+
+                        window.i18n.changeLanguage(
+
+                            language
+
+                        );
+
+                    }
+
+                );
+
+            });
+
+    }
+
+);
