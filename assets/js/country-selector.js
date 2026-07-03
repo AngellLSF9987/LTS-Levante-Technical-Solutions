@@ -16,7 +16,7 @@
 // Versión: 1.0.0
 // ==========================================================
 
-"use strict";
+'use strict';
 
 (() => {
     /* ==========================================================
@@ -424,21 +424,16 @@
      * permitimos dígitos.
      */
 
-    phoneInput.addEventListener(
-        'input',
+    phoneInput.addEventListener('input', (event) => {
+        console.log('INPUT');
+        console.log('target:', event.target);
+        console.log('value:', event.target.value);
+        console.log('typeof:', typeof event.target.value);
 
-        () => {
-            phoneInput.value = phoneInput.value
+        const value = String(event.target.value ?? '');
 
-                .replace(/\D/g, '')
-
-                .substring(
-                    0,
-
-                    phoneInput.maxLength || 20
-                );
-        }
-    );
+        phoneInput.value = value.replace(/\D/g, '').substring(0, phoneInput.maxLength || 20);
+    });
 
     /*
      * Al pegar contenido
