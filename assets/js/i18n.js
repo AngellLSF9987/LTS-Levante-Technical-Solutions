@@ -453,6 +453,54 @@ window.i18n = {
     },
 
     /*
+     * Obtiene una traducción e
+     * interpola automáticamente
+     * las variables recibidas.
+     */
+
+    translate(key, variables = {}) {
+
+        let text = this.get(
+
+            key
+
+        );
+
+        if (
+
+            typeof text !== "string"
+
+        ) {
+
+            return text;
+
+        }
+
+        Object.entries(
+
+            variables
+
+        ).forEach(
+
+            ([name, value]) => {
+
+                text = text.replaceAll(
+
+                    `{${name}}`,
+
+                    value
+
+                );
+
+            }
+
+        );
+
+        return text;
+
+    },
+
+    /*
      * Reaplica todas las traducciones
      * al documento.
      */
@@ -469,7 +517,11 @@ window.i18n = {
 
     async changeLanguage(language) {
 
-        await loadLanguage(language);
+        await loadLanguage(
+
+            language
+
+        );
 
     },
 
@@ -484,67 +536,3 @@ window.i18n = {
     }
 
 };
-
-
-/* ==========================================================
-   INICIALIZACIÓN
-========================================================== */
-
-/*
- * Arranque del motor i18n.
- *
- * 1. Recupera el idioma guardado.
- * 2. Carga el JSON.
- * 3. Traduce la página.
- * 4. Activa el selector de idiomas.
- */
-
-document.addEventListener(
-
-    "DOMContentLoaded",
-
-    async () => {
-
-        const language =
-
-            localStorage.getItem(
-
-                "siteLanguage"
-
-            ) ||
-
-            DEFAULT_LANGUAGE;
-
-        await loadLanguage(
-
-            language
-
-        );
-
-        document
-
-            .querySelectorAll("[data-lang]")
-
-            .forEach((button) => {
-
-                button.addEventListener(
-
-                    "click",
-
-                    () => {
-
-                        window.i18n.changeLanguage(
-
-                            button.dataset.lang
-
-                        );
-
-                    }
-
-                );
-
-            });
-
-    }
-
-);

@@ -19,662 +19,614 @@
 "use strict";
 
 (() => {
-
     /* ==========================================================
-       ELEMENTOS
-    ========================================================== */
-
-    const selector = document.querySelector(
-
-        "[data-country-selector]"
-
-    );
+   ELEMENTOS DEL COMPONENTE
+========================================================== */
 
     /*
-     * Si la página no contiene selector,
-     * finalizamos el módulo.
+     * Contenedor principal
+     * del selector.
+     */
+
+    const selector = document.querySelector('[data-country-selector]');
+
+    /*
+     * Si la página no contiene
+     * selector abandonamos
+     * inmediatamente el módulo.
      */
 
     if (!selector) {
-
         return;
-
     }
 
     /*
      * Botón principal.
      */
 
-    const trigger = selector.querySelector(
-
-        ".country-selected"
-
-    );
+    const trigger = selector.querySelector('.country-selected');
 
     /*
-     * Imagen de la bandera.
+     * Bandera actualmente
+     * mostrada.
      */
 
-    const selectedFlag = trigger.querySelector(
-
-        ".country-flag"
-
-    );
+    const selectedFlag = trigger.querySelector('.country-flag');
 
     /*
-     * Lista desplegable.
+     * Menú desplegable.
      */
 
-    const dropdown = selector.querySelector(
-
-        ".country-dropdown"
-
-    );
+    const dropdown = selector.querySelector('.country-dropdown');
 
     /*
-     * Todos los países.
+     * Lista completa
+     * de países.
      */
 
-    const options = selector.querySelectorAll(
-
-        ".country-option"
-
-    );
+    const options = selector.querySelectorAll('.country-option');
 
     /*
-     * Campo oculto que almacena
-     * el prefijo seleccionado.
+     * Campo oculto
+     * del prefijo.
      */
 
-    const prefixInput = document.querySelector(
-
-        "[data-phone-prefix]"
-
-    );
+    const prefixInput = document.querySelector('[data-phone-prefix]');
 
     /*
-     * Campo del teléfono.
+     * Campo teléfono.
      */
 
-    const phoneInput = document.querySelector(
-
-        "[data-phone-number]"
-
-    );
+    const phoneInput = document.querySelector('[data-phone-number]');
 
     /* ==========================================================
-       ESTADO DEL COMPONENTE
-    ========================================================== */
+   CONFIGURACIÓN
+========================================================== */
 
     /*
-     * Indica si el desplegable
-     * está actualmente abierto.
+     * Bandera inicial.
+     */
+
+    const DEFAULT_FLAG = 'assets/img/header-flags/eu.webp';
+
+    /*
+     * Texto inicial.
+     */
+
+    const DEFAULT_ALT = 'Europa';
+
+    /* ==========================================================
+   ESTADO INTERNO
+========================================================== */
+
+    /*
+     * Estado del desplegable.
      */
 
     let opened = false;
 
+    /*
+     * País seleccionado.
+     */
 
-    /* ==========================================================
-       ABRIR DESPLEGABLE
-    ========================================================== */
-
-    function openDropdown() {
-
-        selector.classList.add("open");
-
-        trigger.setAttribute(
-
-            "aria-expanded",
-
-            "true"
-
-        );
-
-        opened = true;
-
-    }
-
-
-    /* ==========================================================
-       CERRAR DESPLEGABLE
-    ========================================================== */
-
-    function closeDropdown() {
-
-        selector.classList.remove("open");
-
-        trigger.setAttribute(
-
-            "aria-expanded",
-
-            "false"
-
-        );
-
-        opened = false;
-
-    }
-
-
-    /* ==========================================================
-       ALTERNAR DESPLEGABLE
-    ========================================================== */
-
-    function toggleDropdown() {
-
-        if (opened) {
-
-            closeDropdown();
-
-        }
-
-        else {
-
-            openDropdown();
-
-        }
-
-    }
-
-
-    /* ==========================================================
-       EVENTO BOTÓN PRINCIPAL
-    ========================================================== */
+    let currentCountry = '';
 
     /*
-     * Abre y cierra el desplegable
-     * al pulsar sobre la bandera.
+     * Prefijo internacional.
+     */
+
+    let currentPrefix = '';
+
+    /* ==========================================================
+   UTILIDADES
+========================================================== */
+
+    /*
+     * Devuelve TRUE si
+     * el desplegable
+     * está abierto.
+     */
+
+    function isOpened() {
+        return opened;
+    }
+
+    /*
+     * Marca el estado
+     * interno.
+     */
+
+    function setOpened(value) {
+        opened = value;
+    }
+
+    /* ==========================================================
+   APERTURA DEL DESPLEGABLE
+========================================================== */
+
+    /*
+     * Abre el selector.
+     */
+
+    function openDropdown() {
+        selector.classList.add('open');
+
+        trigger.setAttribute(
+            'aria-expanded',
+
+            'true'
+        );
+
+        setOpened(true);
+    }
+
+    /*
+     * Cierra el selector.
+     */
+
+    function closeDropdown() {
+        selector.classList.remove('open');
+
+        trigger.setAttribute(
+            'aria-expanded',
+
+            'false'
+        );
+
+        setOpened(false);
+    }
+
+    /*
+     * Alterna el estado
+     * del desplegable.
+     */
+
+    function toggleDropdown() {
+        if (isOpened()) {
+            closeDropdown();
+
+            return;
+        }
+
+        openDropdown();
+    }
+
+    /* ==========================================================
+   EVENTOS DEL DESPLEGABLE
+========================================================== */
+
+    /*
+     * Apertura y cierre
+     * mediante el botón
+     * principal.
      */
 
     trigger.addEventListener(
-
-        "click",
+        'click',
 
         (event) => {
-
             event.preventDefault();
 
             event.stopPropagation();
 
             toggleDropdown();
-
         }
-
     );
-
-
-    /* ==========================================================
-       CERRAR PULSANDO FUERA
-    ========================================================== */
-
-    document.addEventListener(
-
-        "click",
-
-        (event) => {
-
-            if (
-
-                !selector.contains(
-
-                    event.target
-
-                )
-
-            ) {
-
-                closeDropdown();
-
-            }
-
-        }
-
-    );
-
-
-    /* ==========================================================
-       CERRAR CON ESC
-    ========================================================== */
-
-    document.addEventListener(
-
-        "keydown",
-
-        (event) => {
-
-            if (
-
-                event.key === "Escape"
-
-            ) {
-
-                closeDropdown();
-
-            }
-
-        }
-
-    );
-
-    /* ==========================================================
-       SELECCIONAR PAÍS
-    ========================================================== */
 
     /*
-     * Actualiza el selector con el país elegido.
+     * Cerrar pulsando
+     * fuera del selector.
      */
 
-    function selectCountry(option) {
+    document.addEventListener(
+        'click',
 
-        /*
-         * Eliminamos el estado activo
-         * del país anterior.
-         */
+        (event) => {
+            if (selector.contains(event.target)) {
+                return;
+            }
 
-        options.forEach((item) => {
+            closeDropdown();
+        }
+    );
 
-            item.classList.remove(
+    /*
+     * Cerrar mediante
+     * la tecla ESC.
+     */
 
-                "active"
+    document.addEventListener(
+        'keydown',
 
-            );
+        (event) => {
+            if (event.key !== 'Escape') {
+                return;
+            }
 
+            closeDropdown();
+        }
+    );
+
+    /* ==========================================================
+   SELECCIÓN DE PAÍS
+========================================================== */
+
+    /*
+     * Elimina el estado activo
+     * de todas las opciones.
+     */
+
+    function clearSelection() {
+        options.forEach((option) => {
+            option.classList.remove('active');
         });
+    }
 
-        /*
-         * Marcamos el nuevo país.
-         */
+    /*
+     * Marca visualmente
+     * el país seleccionado.
+     */
 
-        option.classList.add(
+    function activateOption(option) {
+        option.classList.add('active');
+    }
 
-            "active"
+    /*
+     * Actualiza la bandera
+     * mostrada en el botón.
+     */
 
-        );
-
-        /*
-         * Actualizamos la bandera
-         * del botón principal.
-         */
-
-        const image = option.querySelector("img");
+    function updateFlag(option) {
+        const image = option.querySelector('img');
 
         selectedFlag.src = image.src;
 
         selectedFlag.alt = image.alt;
-
-        /*
-         * Actualizamos el prefijo.
-         */
-
-        prefixInput.value =
-
-            option.dataset.prefix;
-
-        /*
-         * Guardamos el país
-         * seleccionado.
-         */
-
-        trigger.dataset.country =
-
-            option.dataset.country;
-
-        trigger.dataset.prefix =
-
-            option.dataset.prefix;
-
-        /*
-         * Cerramos el desplegable.
-         */
-
-        closeDropdown();
-
-        /*
-         * Colocamos el foco
-         * en el teléfono.
-         */
-
-        phoneInput.focus();
-
     }
 
+    /*
+     * Actualiza el estado
+     * interno del selector.
+     */
 
-    /* ==========================================================
-       SELECCIONAR PAÍS
-    ========================================================== */
+    function updateState(option) {
+        currentCountry = option.dataset.country || '';
+
+        currentPrefix = option.dataset.prefix || '';
+
+        trigger.dataset.country = currentCountry;
+
+        trigger.dataset.prefix = currentPrefix;
+
+        prefixInput.value = currentPrefix;
+    }
 
     /*
-     * Actualiza el selector con el país elegido.
+     * Marca el selector
+     * como válido.
+     */
+
+    function clearInvalid() {
+        trigger.classList.remove('is-invalid');
+    }
+
+    /*
+     * Marca el selector
+     * como inválido.
+     */
+
+    function markInvalid() {
+        trigger.classList.add('is-invalid');
+
+        trigger.focus();
+    }
+
+    /*
+     * Selecciona un país.
      */
 
     function selectCountry(option) {
-
         /*
-         * Eliminamos el estado activo
-         * del país anterior.
+         * Ignoramos el placeholder.
          */
 
-        options.forEach((item) => {
+        if (option.classList.contains('country-placeholder')) {
+            return;
+        }
 
-            item.classList.remove(
+        clearSelection();
 
-                "active"
+        activateOption(option);
 
-            );
+        updateFlag(option);
 
-        });
+        updateState(option);
 
-        /*
-         * Marcamos el nuevo país.
-         */
-
-        option.classList.add(
-
-            "active"
-
-        );
-
-        /*
-         * Actualizamos la bandera
-         * del botón principal.
-         */
-
-        const image = option.querySelector("img");
-
-        selectedFlag.src = image.src;
-
-        selectedFlag.alt = image.alt;
-
-        /*
-         * Actualizamos el prefijo.
-         */
-
-        prefixInput.value =
-
-            option.dataset.prefix;
-
-        /*
-         * Guardamos el país
-         * seleccionado.
-         */
-
-        trigger.dataset.country =
-
-            option.dataset.country;
-
-        trigger.dataset.prefix =
-
-            option.dataset.prefix;
-
-        /*
-         * Adaptamos el campo teléfono
-         * al país seleccionado.
-         */
-
-        updatePhoneRules(
-
-            option.dataset.country
-
-        );
-
-        /*
-         * Cerramos el desplegable.
-         */
+        clearInvalid();
 
         closeDropdown();
 
-        /*
-         * Colocamos el foco
-         * directamente sobre
-         * el teléfono.
-         */
-
         phoneInput.focus();
-
     }
 
-
     /* ==========================================================
-       EVENTOS DE CADA PAÍS
-    ========================================================== */
+   EVENTOS DE SELECCIÓN
+========================================================== */
 
     options.forEach((option) => {
-
         option.addEventListener(
-
-            "click",
+            'click',
 
             (event) => {
-
                 event.preventDefault();
 
-                /*
-                 * La opción "Selecciona un país"
-                 * no puede seleccionarse.
-                 */
-
-                if (
-
-                    option.classList.contains(
-
-                        "country-placeholder"
-
-                    )
-
-                ) {
-
-                    return;
-
-                }
-
                 selectCountry(option);
-
             }
-
         );
-
     });
 
     /* ==========================================================
-       EVENTOS DE CADA PAÍS
-    ========================================================== */
-
-    options.forEach((option) => {
-
-        option.addEventListener(
-
-            "click",
-
-            (event) => {
-
-                event.preventDefault();
-
-                /*
-                 * La opción "Selecciona un país"
-                 * no puede seleccionarse.
-                 */
-
-                if (
-
-                    option.classList.contains(
-
-                        "country-placeholder"
-
-                    )
-
-                ) {
-
-                    return;
-
-                }
-
-                selectCountry(option);
-
-            }
-
-        );
-
-    });
-
-    /* ==========================================================
-       VALIDACIÓN DEL TELÉFONO
-    ========================================================== */
+   VALIDACIÓN DEL TELÉFONO
+========================================================== */
 
     /*
-     * Mientras el usuario escribe,
-     * únicamente se permiten dígitos.
+     * Configuración por país.
+     *
+     * En el futuro podremos
+     * ampliar fácilmente el
+     * número de países o la
+     * longitud admitida.
+     */
+
+    const PHONE_RULES = {
+        es: { length: 9 },
+
+        en: { length: 10 },
+
+        de: { length: 11 },
+
+        fr: { length: 9 },
+
+        it: { length: 10 },
+
+        pt: { length: 9 },
+
+        pl: { length: 9 },
+
+        ru: { length: 10 },
+    };
+
+    /*
+     * Actualiza las reglas
+     * del teléfono según
+     * el país seleccionado.
+     */
+
+    function updatePhoneRules(country) {
+        const rules = PHONE_RULES[country];
+
+        if (!rules) {
+            phoneInput.removeAttribute('maxlength');
+
+            phoneInput.removeAttribute('pattern');
+
+            return;
+        }
+
+        phoneInput.maxLength = rules.length;
+
+        phoneInput.pattern = `[0-9]{${rules.length}}`;
+    }
+
+    /*
+     * Mientras el usuario
+     * escribe únicamente
+     * permitimos dígitos.
      */
 
     phoneInput.addEventListener(
-
-        "input",
+        'input',
 
         () => {
+            phoneInput.value = phoneInput.value
 
-            phoneInput.value =
+                .replace(/\D/g, '')
 
-                phoneInput.value.replace(
+                .substring(
+                    0,
 
-                    /\D/g,
-
-                    ""
-
+                    phoneInput.maxLength || 20
                 );
-
         }
-
     );
 
     /*
-     * Al pegar texto,
+     * Al pegar contenido
      * eliminamos cualquier
      * carácter no numérico.
      */
 
     phoneInput.addEventListener(
-
-        "paste",
+        'paste',
 
         (event) => {
-
             event.preventDefault();
 
-            const text =
+            const text = (event.clipboardData || window.clipboardData).getData('text');
 
-                (
+            phoneInput.value = text
 
-                    event.clipboardData ||
+                .replace(/\D/g, '')
 
-                    window.clipboardData
-
-                ).getData("text");
-
-            phoneInput.value =
-
-                text.replace(
-
-                    /\D/g,
-
-                    ""
-
-                ).substring(
-
+                .substring(
                     0,
 
-                    phoneInput.maxLength
-
+                    phoneInput.maxLength || 20
                 );
-
         }
-
     );
 
+    /*
+     * Cuando el usuario
+     * comienza a escribir
+     * eliminamos el estado
+     * de error del selector.
+     */
+
+    phoneInput.addEventListener(
+        'focus',
+
+        () => {
+            clearInvalid();
+        }
+    );
 
     /* ==========================================================
-       API PÚBLICA
-    ========================================================== */
+   API PÚBLICA
+========================================================== */
 
     /*
-     * El resto de módulos
-     * podrán consultar
-     * el país seleccionado
-     * sin conocer la estructura
-     * interna del selector.
+     * Reinicia completamente
+     * el selector.
+     */
+
+    function reset() {
+        /*
+         * Estado interno.
+         */
+
+        currentCountry = '';
+
+        currentPrefix = '';
+
+        /*
+         * Estado del botón.
+         */
+
+        trigger.dataset.country = '';
+
+        trigger.dataset.prefix = '';
+
+        /*
+         * Bandera inicial.
+         */
+
+        selectedFlag.src = DEFAULT_FLAG;
+
+        selectedFlag.alt = DEFAULT_ALT;
+
+        /*
+         * Prefijo oculto.
+         */
+
+        prefixInput.value = '';
+
+        /*
+         * Teléfono.
+         */
+
+        phoneInput.value = '';
+
+        phoneInput.removeAttribute('pattern');
+
+        phoneInput.removeAttribute('maxlength');
+
+        /*
+         * Estado visual.
+         */
+
+        clearSelection();
+
+        clearInvalid();
+
+        closeDropdown();
+    }
+
+    /* ==========================================================
+   API DISPONIBLE
+========================================================== */
+
+    /*
+     * Único punto de acceso
+     * para el resto de módulos.
      */
 
     window.countrySelector = {
-
         /*
-         * Código ISO
+         * Código ISO.
          */
 
         getCountry() {
-
-            return trigger.dataset.country || "";
-
+            return currentCountry;
         },
 
         /*
-         * Prefijo internacional
+         * Prefijo internacional.
          */
 
         getPrefix() {
-
-            return prefixInput.value || "";
-
+            return currentPrefix;
         },
 
         /*
-         * Número nacional
+         * Número nacional.
          */
 
         getPhone() {
-
             return phoneInput.value.trim();
-
         },
 
         /*
-         * Número completo
+         * Número completo.
          */
 
         getFullPhone() {
+            if (!currentPrefix) {
+                return this.getPhone();
+            }
 
-            return (
-
-                `${this.getPrefix()} ${this.getPhone()}`
-
-            ).trim();
-
+            return `${currentPrefix} ${this.getPhone()}`.trim();
         },
 
         /*
-         * ¿Hay un país seleccionado?
+         * ¿Existe un país
+         * seleccionado?
          */
 
         hasCountry() {
+            return currentCountry !== '';
+        },
 
-            return this.getPrefix() !== "";
+        /*
+         * Marca el selector
+         * como inválido.
+         */
 
-        }
+        markInvalid,
 
+        /*
+         * Elimina el estado
+         * inválido.
+         */
+
+        clearInvalid,
+
+        /*
+         * Reinicia completamente
+         * el componente.
+         */
+
+        reset,
     };
 
-
     /* ==========================================================
-       ESTADO INICIAL
-    ========================================================== */
+   INICIALIZACIÓN
+========================================================== */
 
     /*
-     * Dejamos el componente
-     * preparado para obligar
-     * al usuario a seleccionar
-     * un país.
+     * Estado inicial del
+     * componente.
      */
 
-    prefixInput.value = "";
-
-    trigger.dataset.country = "";
-
-    trigger.dataset.prefix = "";
+    reset();
 })();
