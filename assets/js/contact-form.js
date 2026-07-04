@@ -761,4 +761,4 @@
     disableButtons(false);
 
     clearStatus();
-};)();
+})();
