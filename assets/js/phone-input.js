@@ -55,7 +55,6 @@
         iti
     );
 
-
     console.log('=================================');
     console.log('CLAVES DEL OBJETO ITI');
     console.log(Object.keys(iti));
@@ -82,33 +81,54 @@
         /*
          * Número internacional.
          */
-
         getNumber() {
             return iti.getNumber();
         },
 
         /*
+         * ¿Existe número?
+         */
+        hasNumber() {
+            return input.value.trim().length > 0;
+        },
+
+        /*
          * País seleccionado.
          */
-
         getCountry() {
-            return iti.getSelectedCountryData();
+            return iti.getSelectedCountryData?.() ?? null;
+        },
+
+        /*
+         * ¿Hay país seleccionado?
+         */
+        hasCountry() {
+            const country = this.getCountry();
+
+            return !!country?.iso2;
         },
 
         /*
          * Validez del número.
          */
-
         isValid() {
             return iti.isValidNumber();
         },
 
         /*
+         * Lleva el foco al teléfono.
+         */
+        focus() {
+            input.focus();
+        },
+
+        /*
          * Reinicia el componente.
          */
-
         reset() {
             input.value = '';
+
+            iti.setCountry('es');
         },
     };
 })();
