@@ -195,8 +195,35 @@
     /*
      * Valida el teléfono.
      */
-
     function phoneIsValid() {
+        /*
+         * ¿Existe la API?
+         */
+
+        if (!window.phoneInput) {
+            return false;
+        }
+
+        /*
+         * ¿Hay país seleccionado?
+         */
+
+        if (!window.phoneInput.hasCountry()) {
+            return false;
+        }
+
+        /*
+         * ¿Hay número?
+         */
+
+        if (!window.phoneInput.hasNumber()) {
+            return false;
+        }
+
+        /*
+         * Validación oficial del plugin.
+         */
+
         return window.phoneInput.isValid();
     }
 
