@@ -96,7 +96,7 @@
          * País seleccionado.
          */
         getCountry() {
-            return iti.getSelectedCountryData?.() ?? null;
+            return iti.getSelectedCountry() ?? null;
         },
 
         /*
@@ -128,7 +128,7 @@
         reset() {
             input.value = '';
 
-            iti.setCountry('es');
+            iti.setSelectedCountry('es');
         },
     };
 })();
