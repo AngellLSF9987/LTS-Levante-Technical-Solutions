@@ -55,6 +55,18 @@
         iti
     );
 
+
+    console.log('=================================');
+    console.log('CLAVES DEL OBJETO ITI');
+    console.log(Object.keys(iti));
+    console.log('=================================');
+
+    console.log('Método getSelectedCountryData:', typeof iti.getSelectedCountryData);
+
+    console.log('Método getNumber:', typeof iti.getNumber);
+
+    console.log('Método isValidNumber:', typeof iti.isValidNumber);
+
     /* ==========================================================
        API PÚBLICA
     ========================================================== */
