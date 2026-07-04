@@ -363,12 +363,12 @@
         const now = new Date().toLocaleString(navigator.language);
 
         return [
-            g('mail.greeting'),
+            g('contactForm.mail.greeting'),
 
             '',
 
             t(
-                'mail.introduction',
+                'contactForm.mail.introduction',
 
                 {
                     name: value(fields.name),
@@ -379,27 +379,27 @@
 
             '',
 
-            g(`mail.serviceIntroduction.${fields.service.value}`),
+            g(`contactForm.mail.serviceIntroduction.${fields.service.value}`),
 
             '',
 
-            g('mail.contactMethods'),
+            g('contactForm.mail.contactMethods'),
 
             '',
 
-            `• ${g('mail.summary.name')}: ${value(fields.name)}`,
+            `• ${g('contactForm.mail.summary.name')}: ${value(fields.name)}`,
 
-            `• ${g('mail.phone')}: ${phoneNumber()}`,
+            `• ${g('contactForm.mail.phone')}: ${phoneNumber()}`,
 
-            `• ${g('mail.email')}: ${value(fields.email)}`,
-
-            '',
-
-            `• ${g('mail.summary.service')}: ${selectedService()}`,
+            `• ${g('contactForm.mail.email')}: ${value(fields.email)}`,
 
             '',
 
-            g('mail.messageTitle'),
+            `• ${g('contactForm.mail.summary.service')}: ${selectedService()}`,
+
+            '',
+
+            g('contactForm.mail.messageTitle'),
 
             '',
 
@@ -407,15 +407,15 @@
 
             '',
 
-            g('mail.farewell'),
+            g('contactForm.mail.farewell'),
 
             '',
 
-            g('mail.thanks'),
+            g('contactForm.mail.thanks'),
 
             '',
 
-            g('mail.closing'),
+            g('contactForm.mail.closing'),
 
             '',
 
@@ -425,21 +425,21 @@
 
             '────────────────────────────────',
 
-            g('mail.summaryTitle'),
+            g('contactForm.mail.summaryTitle'),
 
             '────────────────────────────────',
 
-            `${g('mail.summary.name')}: ${value(fields.name)}`,
+            `${g('contactForm.mail.summary.name')}: ${value(fields.name)}`,
 
-            `${g('mail.summary.service')}: ${selectedService()}`,
+            `${g('contactForm.mail.summary.service')}: ${selectedService()}`,
 
-            `${g('mail.summary.phone')}: ${phoneNumber()}`,
+            `${g('contactForm.mail.summary.phone')}: ${phoneNumber()}`,
 
-            `${g('mail.summary.email')}: ${value(fields.email)}`,
+            `${g('contactForm.mail.summary.email')}: ${value(fields.email)}`,
 
-            `${g('mail.summary.page')}: ${window.location.href}`,
+            `${g('contactForm.mail.summary.page')}: ${window.location.href}`,
 
-            `${g('mail.summary.date')}: ${now}`,
+            `${g('contactForm.mail.summary.date')}: ${now}`,
         ].join('\n');
     }
 
