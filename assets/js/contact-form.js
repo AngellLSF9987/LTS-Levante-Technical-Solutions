@@ -289,21 +289,21 @@
 
     function validateForm() {
         /*
-         * Validación HTML5.
-         */
-
-        if (!form.checkValidity()) {
-            form.reportValidity();
-
-            return false;
-        }
-
-        /*
          * Validación del teléfono.
          */
 
         if (!phoneIsValid()) {
             window.phoneInput.focus();
+
+            return false;
+        }
+
+        /*
+         * Validación HTML5.
+         */
+
+        if (!form.checkValidity()) {
+            form.reportValidity();
 
             return false;
         }
@@ -488,24 +488,6 @@
         }
 
         return 'contactForm.status.email';
-    }
-
-    /*
-     * Programa la limpieza
-     * automática tras salir
-     * de la página.
-     */
-
-    function scheduleReset() {
-        waitingReturn = true;
-
-        cancelResetTimer();
-
-        resetTimer = window.setTimeout(
-            clearForm,
-
-            CONFIG.resetDelay
-        );
     }
 
     /*
