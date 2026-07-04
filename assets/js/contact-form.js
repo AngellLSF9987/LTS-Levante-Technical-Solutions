@@ -201,14 +201,18 @@
          */
 
         if (!window.phoneInput) {
+            console.warn('[PHONE] API no disponible.');
+
             return false;
         }
 
         /*
-         * ¿Hay país seleccionado?
+         * ¿Hay país?
          */
 
         if (!window.phoneInput.hasCountry()) {
+            console.warn('[PHONE] No hay país seleccionado.');
+
             return false;
         }
 
@@ -217,14 +221,22 @@
          */
 
         if (!window.phoneInput.hasNumber()) {
+            console.warn('[PHONE] No hay número.');
+
             return false;
         }
 
         /*
-         * Validación oficial del plugin.
+         * Validación oficial.
          */
 
-        return window.phoneInput.isValid();
+        if (!window.phoneInput.isValid()) {
+            console.warn('[PHONE] Número no válido.');
+
+            return false;
+        }
+
+        return true;
     }
 
     /*
