@@ -528,7 +528,8 @@
 
           "phoneCountry": "The international dialling code is not valid.",
 
-          "phoneNumber": "Please enter a valid phone number."
+          "phoneNumber": "Please enter a valid phone number.",
+          "phonePrefix": "Please check that the international dialling code matches your country before sending your request."
       },
 
       "actions": {

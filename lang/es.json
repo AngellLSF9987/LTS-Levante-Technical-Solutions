@@ -461,7 +461,8 @@
           "phoneTooShort": "El número es demasiado corto para el país seleccionado.",
           "phoneTooLong": "El número es demasiado largo para el país seleccionado.",
           "phoneCountry": "El prefijo internacional no es válido.",
-          "phoneNumber": "Introduce un número de teléfono válido."
+          "phoneNumber": "Introduce un número de teléfono válido.",
+          "phonePrefix": "Comprueba que el prefijo internacional corresponde a tu país antes de enviar la solicitud."
       },
 
       "actions": {

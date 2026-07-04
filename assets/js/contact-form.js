@@ -361,6 +361,21 @@
             showFieldError(fields.phone, message);
 
             return false;
+            /*
+             * Recordatorio sobre el prefijo internacional.
+             */
+
+            const phone = window.phoneInput.getNumber();
+
+            if (!phone.startsWith('+')) {
+                showFieldError(
+                    fields.phone,
+
+                    t('contactForm.validation.phonePrefix')
+                );
+
+                return false;
+            }
         }
 
         /*

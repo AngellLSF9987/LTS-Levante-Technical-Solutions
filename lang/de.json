@@ -526,7 +526,8 @@
 
           "phoneCountry": "Die internationale Vorwahl ist ungültig.",
 
-          "phoneNumber": "Bitte geben Sie eine gültige Telefonnummer ein."
+          "phoneNumber": "Bitte geben Sie eine gültige Telefonnummer ein.",
+          "phonePrefix": "Bitte überprüfen Sie, ob die internationale Vorwahl Ihrem Land entspricht, bevor Sie Ihre Anfrage senden."
       },
 
       "actions": {

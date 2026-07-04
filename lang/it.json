@@ -526,7 +526,8 @@
 
           "phoneCountry": "Il prefisso internazionale non è valido.",
 
-          "phoneNumber": "Inserisci un numero di telefono valido."
+          "phoneNumber": "Inserisci un numero di telefono valido.",
+          "phonePrefix": "Verifica che il prefisso internazionale corrisponda al tuo Paese prima di inviare la richiesta."
       },
 
       "actions": {

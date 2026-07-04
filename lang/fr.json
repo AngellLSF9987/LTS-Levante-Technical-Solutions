@@ -527,7 +527,8 @@
 
           "phoneCountry": "L'indicatif international n'est pas valide.",
 
-          "phoneNumber": "Veuillez saisir un numéro de téléphone valide."
+          "phoneNumber": "Veuillez saisir un numéro de téléphone valide.",
+          "phonePrefix": "Veuillez vérifier que l'indicatif international correspond à votre pays avant d'envoyer votre demande."
       },
 
       "actions": {

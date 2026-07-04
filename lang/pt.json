@@ -526,7 +526,8 @@
 
           "phoneCountry": "O indicativo internacional não é válido.",
 
-          "phoneNumber": "Introduza um número de telefone válido."
+          "phoneNumber": "Introduza um número de telefone válido.",
+          "phonePrefix": "Verifique se o indicativo internacional corresponde ao seu país antes de enviar o pedido."
       },
 
       "actions": {

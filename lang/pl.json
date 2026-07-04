@@ -526,7 +526,8 @@
 
           "phoneCountry": "Międzynarodowy numer kierunkowy jest nieprawidłowy.",
 
-          "phoneNumber": "Wprowadź prawidłowy numer telefonu."
+          "phoneNumber": "Wprowadź prawidłowy numer telefonu.",
+          "phonePrefix": "Przed wysłaniem zgłoszenia sprawdź, czy międzynarodowy numer kierunkowy odpowiada Twojemu krajowi."
       },
 
       "actions": {
