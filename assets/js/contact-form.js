@@ -240,6 +240,40 @@
     }
 
     /*
+     * Devuelve el mensaje correspondiente
+     * al error del teléfono.
+     */
+
+    function phoneValidationMessage() {
+        if (!window.phoneInput) {
+            return 'No se ha podido validar el teléfono.';
+        }
+
+        switch (window.phoneInput.getValidationError()) {
+            case 'TOO_SHORT':
+                return 'El número es demasiado corto.';
+
+            case 'TOO_LONG':
+                return 'El número es demasiado largo.';
+
+            case 'INVALID_COUNTRY_CODE':
+                return 'El prefijo internacional no es válido.';
+
+            case 'NOT_A_NUMBER':
+                return 'Introduce únicamente números.';
+
+            case 'INVALID_LENGTH':
+                return 'La longitud del número no es válida.';
+
+            case 'IS_POSSIBLE_LOCAL_ONLY':
+                return 'Falta el prefijo internacional.';
+
+            default:
+                return 'Número de teléfono no válido.';
+        }
+    }
+
+    /*
      * Activa o desactiva
      * todos los botones.
      */
@@ -727,4 +761,4 @@
     disableButtons(false);
 
     clearStatus();
-})();
+};)();
