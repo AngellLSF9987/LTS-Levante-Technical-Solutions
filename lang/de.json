@@ -469,67 +469,77 @@
   },
 
   "contactForm": {
+      "kicker": "SERVICEANFRAGE",
 
-    "kicker": "SERVICEANFRAGE",
+      "title": "Teilen Sie uns Ihr Anliegen mit",
 
-    "title": "Teilen Sie uns Ihr Anliegen mit",
+      "description": "Füllen Sie das Formular aus und wir erstellen eine individuelle Antwort für Ihre Anforderungen in den Bereichen CCTV-Videoüberwachung & Sicherheit, Elektroinstallationen sowie Netzwerke & Konnektivität.",
 
-    "description": "Füllen Sie das Formular aus und wir erstellen eine individuelle Antwort für Ihre Anforderungen in den Bereichen CCTV-Videoüberwachung & Sicherheit, Elektroinstallationen sowie Netzwerke & Konnektivität.",
+      "benefits": [
+          "Persönliche Beratung entsprechend der gewünschten Dienstleistung.",
+          "Service für Privathaushalte, Wohnanlagen, Gewerbebetriebe und Unternehmen.",
+          "Einsatzgebiet: Region Levante, Costa Cálida, Costa Blanca und Umgebung, Costa del Sol und Umgebung."
+      ],
 
-    "benefits": [
-      "Persönliche Beratung entsprechend der gewünschten Dienstleistung.",
-      "Service für Privathaushalte, Wohnanlagen, Gewerbebetriebe und Unternehmen.",
-      "Einsatzgebiet: Region Levante, Costa Cálida, Costa Blanca und Umgebung, Costa del Sol und Umgebung."
-    ],
+      "fields": {
+          "name": "Name",
 
-    "fields": {
+          "phone": "Telefon / WhatsApp",
 
-      "name": "Name",
+          "email": "E-Mail-Adresse",
 
-      "phone": "Telefon / WhatsApp",
+          "service": "Dienstleistung",
 
-      "email": "E-Mail-Adresse",
+          "message": "Nachricht"
+      },
 
-      "service": "Dienstleistung",
+      "placeholders": {
+          "name": "Geben Sie Ihren Namen ein",
 
-      "message": "Nachricht"
+          "phone": "Telefonnummer",
 
-    },
+          "email": "ihre@email.de",
 
-    "placeholders": {
+          "message": "Beschreiben Sie kurz Ihr Projekt oder Ihre Anfrage"
+      },
 
-      "name": "Geben Sie Ihren Namen ein",
+      "services": {
+          "placeholder": "Bitte auswählen",
 
-      "phone": "Telefonnummer",
+          "surveillance": "CCTV-Videoüberwachung & Sicherheit",
 
-      "email": "ihre@email.de",
+          "electricity": "Elektroinstallationen",
 
-      "message": "Beschreiben Sie kurz Ihr Projekt oder Ihre Anfrage"
+          "network": "Netzwerke & Konnektivität",
 
-    },
+          "other": "Sonstige technische Dienstleistung"
+      },
 
-    "services": {
+      "validation": {
+          "phoneRequired": "Bitte geben Sie eine Telefonnummer ein.",
 
-      "placeholder": "Bitte auswählen",
+          "phoneInvalid": "Die Telefonnummer ist ungültig.",
 
-      "surveillance": "CCTV-Videoüberwachung & Sicherheit",
+          "phoneTooShort": "Die Telefonnummer ist für das ausgewählte Land zu kurz.",
 
-      "electricity": "Elektroinstallationen",
+          "phoneTooLong": "Die Telefonnummer ist für das ausgewählte Land zu lang.",
 
-      "network": "Netzwerke & Konnektivität",
+          "phoneCountry": "Die internationale Vorwahl ist ungültig.",
 
-      "other": "Sonstige technische Dienstleistung"
+          "phoneNumber": "Bitte geben Sie eine gültige Telefonnummer ein."
+      },
 
-    },
+      "actions": {
+          "whatsapp": "Per WhatsApp senden",
 
-    "submit": "Anfrage senden",
+          "email": "Per E-Mail senden"
+      },
 
-    "privacy": "Ihre Daten werden ausschließlich zur Bearbeitung dieser Anfrage verwendet. Sie können uns auch telefonisch oder per WhatsApp kontaktieren.",
+      "privacy": "Ihre Daten werden ausschließlich zur Bearbeitung dieser Anfrage verwendet. Sie können uns auch telefonisch oder per WhatsApp kontaktieren.",
 
-    "privacyConsent": "Ich bin damit einverstanden, dass LTS diese Daten zur Bearbeitung meiner Kontaktanfrage verwendet.",
+      "privacyConsent": "Ich bin damit einverstanden, dass LTS diese Daten zur Bearbeitung meiner Kontaktanfrage verwendet.",
 
-          "mail": {
-
+      "mail": {
           "subject": "Anfrage über die Website von Levante Technical Solutions",
 
           "greeting": "Guten Tag,",
@@ -537,7 +547,6 @@
           "introduction": "Mein Name ist {name} und ich nehme über das Kontaktformular der Website von {company} Kontakt mit Ihnen auf.",
 
           "serviceIntroduction": {
-
               "surveillance": "Ich interessiere mich für eine auf meine Anforderungen abgestimmte Videoüberwachungs- und Sicherheitslösung.",
 
               "electricity": "Ich möchte Informationen zu einer Dienstleistung im Bereich Elektroinstallationen anfordern.",
@@ -545,43 +554,38 @@
               "network": "Ich benötige Beratung zu einer Netzwerk- und Konnektivitätslösung für mein Projekt.",
 
               "other": "Ich möchte Informationen zu einer Ihrer technischen Dienstleistungen erhalten."
-
           },
 
-        "contactMethods": "Sie können mir gerne auf diese E-Mail antworten oder mich über einen der folgenden Kontaktwege erreichen:",
+          "contactMethods": "Sie können mir gerne auf diese E-Mail antworten oder mich über einen der folgenden Kontaktwege erreichen:",
 
-        "phone": "Telefon / WhatsApp",
+          "phone": "Telefon / WhatsApp",
 
-        "email": "E-Mail-Adresse",
+          "email": "E-Mail-Adresse",
 
-        "messageTitle": "Nachfolgend finden Sie meine Anfrage:",
+          "messageTitle": "Nachfolgend finden Sie meine Anfrage:",
 
-        "farewell": "Ich freue mich auf Ihre Rückmeldung.",
+          "farewell": "Ich freue mich auf Ihre Rückmeldung.",
 
-        "thanks": "Vielen Dank für Ihre Zeit und Aufmerksamkeit.",
+          "thanks": "Vielen Dank für Ihre Zeit und Aufmerksamkeit.",
 
-        "closing": "Mit freundlichen Grüßen",
+          "closing": "Mit freundlichen Grüßen",
 
-        "summaryTitle": "ZUSAMMENFASSUNG DER ANFRAGE",
+          "summaryTitle": "ZUSAMMENFASSUNG DER ANFRAGE",
 
-        "summary": {
+          "summary": {
+              "name": "Name",
 
-            "name": "Name",
+              "service": "Gewünschte Dienstleistung",
 
-            "service": "Gewünschte Dienstleistung",
+              "phone": "Telefon / WhatsApp",
 
-            "phone": "Telefon / WhatsApp",
+              "email": "E-Mail-Adresse",
 
-            "email": "E-Mail-Adresse",
+              "page": "Herkunftsseite",
 
-            "page": "Herkunftsseite",
-
-            "date": "Datum"
-
-        }
-
-    }
-
+              "date": "Datum"
+          }
+      }
   }
 
 }

@@ -326,8 +326,39 @@
          * Validación del teléfono.
          */
 
-        if (!phoneIsValid()) {
-            window.phoneInput.focus();
+        if (!window.phoneInput.hasNumber()) {
+            showFieldError(fields.phone, t('contactForm.validation.phoneRequired'));
+
+            return false;
+        }
+
+        if (!window.phoneInput.isValid()) {
+            const error = window.phoneInput.getValidationError();
+
+            let message;
+
+            switch (error) {
+                case 'TOO_SHORT':
+                    message = t('contactForm.validation.phoneTooShort');
+                    break;
+
+                case 'TOO_LONG':
+                    message = t('contactForm.validation.phoneTooLong');
+                    break;
+
+                case 'INVALID_COUNTRY_CODE':
+                    message = t('contactForm.validation.phoneCountry');
+                    break;
+
+                case 'NOT_A_NUMBER':
+                    message = t('contactForm.validation.phoneNumber');
+                    break;
+
+                default:
+                    message = t('contactForm.validation.phoneInvalid');
+            }
+
+            showFieldError(fields.phone, message);
 
             return false;
         }

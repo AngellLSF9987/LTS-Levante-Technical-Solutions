@@ -469,119 +469,123 @@
   },
 
   "contactForm": {
+      "kicker": "ZGŁOSZENIE USŁUGI",
 
-    "kicker": "ZGŁOSZENIE USŁUGI",
+      "title": "Powiedz nam, czego potrzebujesz",
 
-    "title": "Powiedz nam, czego potrzebujesz",
+      "description": "Wypełnij formularz, a przygotujemy indywidualną odpowiedź dotyczącą monitoringu CCTV i systemów bezpieczeństwa, instalacji elektrycznych oraz sieci i łączności.",
 
-    "description": "Wypełnij formularz, a przygotujemy indywidualną odpowiedź dotyczącą monitoringu CCTV i systemów bezpieczeństwa, instalacji elektrycznych oraz sieci i łączności.",
+      "benefits": [
+          "Indywidualna odpowiedź dostosowana do wybranej usługi.",
+          "Obsługa domów, wspólnot mieszkaniowych, obiektów handlowych i firm.",
+          "Obszar działania: Region Levante, Costa Cálida, Costa Blanca i okolice oraz Costa del Sol i okolice."
+      ],
 
-    "benefits": [
-      "Indywidualna odpowiedź dostosowana do wybranej usługi.",
-      "Obsługa domów, wspólnot mieszkaniowych, obiektów handlowych i firm.",
-      "Obszar działania: Region Levante, Costa Cálida, Costa Blanca i okolice oraz Costa del Sol i okolice."
-    ],
-
-    "fields": {
-
-      "name": "Imię i nazwisko",
-
-      "phone": "Telefon / WhatsApp",
-
-      "email": "Adres e-mail",
-
-      "service": "Rodzaj usługi",
-
-      "message": "Wiadomość"
-
-    },
-
-    "placeholders": {
-
-      "name": "Wpisz swoje imię i nazwisko",
-
-      "phone": "Numer telefonu",
-
-      "email": "twoj@email.pl",
-
-      "message": "Krótko opisz swój projekt lub zapytanie"
-
-    },
-
-    "services": {
-
-      "placeholder": "Wybierz opcję",
-
-      "surveillance": "Monitoring CCTV i Systemy Bezpieczeństwa",
-
-      "electricity": "Instalacje Elektryczne",
-
-      "network": "Sieci i Łączność",
-
-      "other": "Inna usługa techniczna"
-
-    },
-
-    "submit": "Wyślij zgłoszenie",
-
-    "privacy": "Twoje dane będą wykorzystywane wyłącznie w celu obsługi tego zgłoszenia. Możesz również skontaktować się z nami telefonicznie lub przez WhatsApp.",
-
-    "privacyConsent": "Wyrażam zgodę na wykorzystanie przez LTS tych danych w celu udzielenia odpowiedzi na moje zgłoszenie.",
-
-      "mail": {
-
-      "subject": "Zapytanie wysłane ze strony internetowej Levante Technical Solutions",
-
-      "greeting": "Dzień dobry,",
-
-      "introduction": "Nazywam się {name} i kontaktuję się z Państwem za pośrednictwem formularza kontaktowego na stronie internetowej {company}.",
-
-      "serviceIntroduction": {
-
-          "surveillance": "Jestem zainteresowany(-a) uzyskaniem informacji na temat rozwiązania z zakresu monitoringu i systemów bezpieczeństwa dostosowanego do moich potrzeb.",
-
-          "electricity": "Chciałbym / Chciałabym uzyskać informacje dotyczące usług związanych z instalacjami elektrycznymi.",
-
-          "network": "Potrzebuję porady dotyczącej rozwiązania z zakresu sieci i łączności dla mojego projektu.",
-
-          "other": "Chciałbym / Chciałabym otrzymać informacje na temat jednej z Państwa usług technicznych."
-
-      },
-
-      "contactMethods": "Proszę o kontakt poprzez odpowiedź na tę wiadomość e-mail lub za pomocą jednego z poniższych sposobów:",
-
-      "phone": "Telefon / WhatsApp",
-
-      "email": "Adres e-mail",
-
-      "messageTitle": "Poniżej przedstawiam szczegóły mojego zapytania:",
-
-      "farewell": "Będę wdzięczny(-a) za odpowiedź.",
-
-      "thanks": "Dziękuję za poświęcony czas i uwagę.",
-
-      "closing": "Z poważaniem,",
-
-      "summaryTitle": "PODSUMOWANIE ZAPYTANIA",
-
-      "summary": {
-
+      "fields": {
           "name": "Imię i nazwisko",
-
-          "service": "Wybrana usługa",
 
           "phone": "Telefon / WhatsApp",
 
           "email": "Adres e-mail",
 
-          "page": "Strona źródłowa",
+          "service": "Rodzaj usługi",
 
-          "date": "Data"
+          "message": "Wiadomość"
+      },
 
+      "placeholders": {
+          "name": "Wpisz swoje imię i nazwisko",
+
+          "phone": "Numer telefonu",
+
+          "email": "twoj@email.pl",
+
+          "message": "Krótko opisz swój projekt lub zapytanie"
+      },
+
+      "services": {
+          "placeholder": "Wybierz opcję",
+
+          "surveillance": "Monitoring CCTV i Systemy Bezpieczeństwa",
+
+          "electricity": "Instalacje Elektryczne",
+
+          "network": "Sieci i Łączność",
+
+          "other": "Inna usługa techniczna"
+      },
+
+      "validation": {
+          "phoneRequired": "Wprowadź numer telefonu.",
+
+          "phoneInvalid": "Numer telefonu jest nieprawidłowy.",
+
+          "phoneTooShort": "Numer telefonu jest zbyt krótki dla wybranego kraju.",
+
+          "phoneTooLong": "Numer telefonu jest zbyt długi dla wybranego kraju.",
+
+          "phoneCountry": "Międzynarodowy numer kierunkowy jest nieprawidłowy.",
+
+          "phoneNumber": "Wprowadź prawidłowy numer telefonu."
+      },
+
+      "actions": {
+          "whatsapp": "Wyślij przez WhatsApp",
+
+          "email": "Wyślij e-mailem"
+      },
+
+      "privacy": "Twoje dane będą wykorzystywane wyłącznie w celu obsługi tego zgłoszenia. Możesz również skontaktować się z nami telefonicznie lub przez WhatsApp.",
+
+      "privacyConsent": "Wyrażam zgodę na wykorzystanie przez LTS tych danych w celu udzielenia odpowiedzi na moje zgłoszenie.",
+
+      "mail": {
+          "subject": "Zapytanie wysłane ze strony internetowej Levante Technical Solutions",
+
+          "greeting": "Dzień dobry,",
+
+          "introduction": "Nazywam się {name} i kontaktuję się z Państwem za pośrednictwem formularza kontaktowego na stronie internetowej {company}.",
+
+          "serviceIntroduction": {
+              "surveillance": "Jestem zainteresowany(-a) uzyskaniem informacji na temat rozwiązania z zakresu monitoringu i systemów bezpieczeństwa dostosowanego do moich potrzeb.",
+
+              "electricity": "Chciałbym / Chciałabym uzyskać informacje dotyczące usług związanych z instalacjami elektrycznymi.",
+
+              "network": "Potrzebuję porady dotyczącej rozwiązania z zakresu sieci i łączności dla mojego projektu.",
+
+              "other": "Chciałbym / Chciałabym otrzymać informacje na temat jednej z Państwa usług technicznych."
+          },
+
+          "contactMethods": "Proszę o kontakt poprzez odpowiedź na tę wiadomość e-mail lub za pomocą jednego z poniższych sposobów:",
+
+          "phone": "Telefon / WhatsApp",
+
+          "email": "Adres e-mail",
+
+          "messageTitle": "Poniżej przedstawiam szczegóły mojego zapytania:",
+
+          "farewell": "Będę wdzięczny(-a) za odpowiedź.",
+
+          "thanks": "Dziękuję za poświęcony czas i uwagę.",
+
+          "closing": "Z poważaniem,",
+
+          "summaryTitle": "PODSUMOWANIE ZAPYTANIA",
+
+          "summary": {
+              "name": "Imię i nazwisko",
+
+              "service": "Wybrana usługa",
+
+              "phone": "Telefon / WhatsApp",
+
+              "email": "Adres e-mail",
+
+              "page": "Strona źródłowa",
+
+              "date": "Data"
+          }
       }
-
   }
 
-  }
-
-}        
+}

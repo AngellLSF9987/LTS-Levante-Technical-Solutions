@@ -469,119 +469,123 @@
   },
 
   "contactForm": {
+      "kicker": "PEDIDO DE SERVIÇO",
 
-    "kicker": "PEDIDO DE SERVIÇO",
+      "title": "Diga-nos o que precisa",
 
-    "title": "Diga-nos o que precisa",
+      "description": "Preencha o formulário e prepararemos uma resposta personalizada para as suas necessidades de videovigilância CCTV e segurança, instalações elétricas, redes e conectividade.",
 
-    "description": "Preencha o formulário e prepararemos uma resposta personalizada para as suas necessidades de videovigilância CCTV e segurança, instalações elétricas, redes e conectividade.",
+      "benefits": [
+          "Resposta personalizada de acordo com o serviço pretendido.",
+          "Atendimento a habitações, condomínios, estabelecimentos comerciais e empresas.",
+          "Área de atuação: Região de Levante, Costa Cálida, Costa Blanca e zonas envolventes, Costa del Sol e zonas envolventes."
+      ],
 
-    "benefits": [
-      "Resposta personalizada de acordo com o serviço pretendido.",
-      "Atendimento a habitações, condomínios, estabelecimentos comerciais e empresas.",
-      "Área de atuação: Região de Levante, Costa Cálida, Costa Blanca e zonas envolventes, Costa del Sol e zonas envolventes."
-    ],
-
-    "fields": {
-
-      "name": "Nome",
-
-      "phone": "Telefone / WhatsApp",
-
-      "email": "Endereço de e-mail",
-
-      "service": "Tipo de serviço",
-
-      "message": "Mensagem"
-
-    },
-
-    "placeholders": {
-
-      "name": "Introduza o seu nome",
-
-      "phone": "Número de telefone",
-
-      "email": "seu@email.pt",
-
-      "message": "Descreva brevemente o seu projeto ou pedido"
-
-    },
-
-    "services": {
-
-      "placeholder": "Selecione uma opção",
-
-      "surveillance": "Videovigilância CCTV e Segurança",
-
-      "electricity": "Instalações Elétricas",
-
-      "network": "Redes e Conectividade",
-
-      "other": "Outro serviço técnico"
-
-    },
-
-    "submit": "Enviar pedido",
-
-    "privacy": "Os seus dados serão utilizados exclusivamente para tratar este pedido. Também pode contactar-nos por telefone ou WhatsApp.",
-
-    "privacyConsent": "Autorizo que a LTS utilize estes dados para responder ao meu pedido de contacto.",
-
-      "mail": {
-
-      "subject": "Pedido de informação enviado a partir do website da Levante Technical Solutions",
-
-      "greeting": "Olá,",
-
-      "introduction": "O meu nome é {name} e estou a entrar em contacto convosco através do formulário de contacto do website da {company}.",
-
-      "serviceIntroduction": {
-
-          "surveillance": "Gostaria de receber informações sobre uma solução de videovigilância e segurança adaptada às minhas necessidades.",
-
-          "electricity": "Pretendo solicitar informações sobre um serviço relacionado com instalações elétricas.",
-
-          "network": "Necessito de aconselhamento sobre uma solução de redes e conectividade para o meu projeto.",
-
-          "other": "Gostaria de receber informações sobre um dos vossos serviços técnicos."
-
-      },
-
-      "contactMethods": "Podem responder a este e-mail ou, se preferirem, contactar-me através de um dos seguintes meios:",
-
-      "phone": "Telefone / WhatsApp",
-
-      "email": "Endereço de e-mail",
-
-      "messageTitle": "Segue abaixo a descrição da minha solicitação:",
-
-      "farewell": "Fico a aguardar a vossa resposta.",
-
-      "thanks": "Muito obrigado pelo vosso tempo e atenção.",
-
-      "closing": "Com os melhores cumprimentos,",
-
-      "summaryTitle": "RESUMO DO PEDIDO",
-
-      "summary": {
-
+      "fields": {
           "name": "Nome",
-
-          "service": "Serviço pretendido",
 
           "phone": "Telefone / WhatsApp",
 
           "email": "Endereço de e-mail",
 
-          "page": "Página de origem",
+          "service": "Tipo de serviço",
 
-          "date": "Data"
+          "message": "Mensagem"
+      },
 
+      "placeholders": {
+          "name": "Introduza o seu nome",
+
+          "phone": "Número de telefone",
+
+          "email": "seu@email.pt",
+
+          "message": "Descreva brevemente o seu projeto ou pedido"
+      },
+
+      "services": {
+          "placeholder": "Selecione uma opção",
+
+          "surveillance": "Videovigilância CCTV e Segurança",
+
+          "electricity": "Instalações Elétricas",
+
+          "network": "Redes e Conectividade",
+
+          "other": "Outro serviço técnico"
+      },
+
+      "validation": {
+          "phoneRequired": "Introduza um número de telefone.",
+
+          "phoneInvalid": "O número de telefone não é válido.",
+
+          "phoneTooShort": "O número é demasiado curto para o país selecionado.",
+
+          "phoneTooLong": "O número é demasiado longo para o país selecionado.",
+
+          "phoneCountry": "O indicativo internacional não é válido.",
+
+          "phoneNumber": "Introduza um número de telefone válido."
+      },
+
+      "actions": {
+          "whatsapp": "Enviar pelo WhatsApp",
+
+          "email": "Enviar por e-mail"
+      },
+
+      "privacy": "Os seus dados serão utilizados exclusivamente para tratar este pedido. Também pode contactar-nos por telefone ou WhatsApp.",
+
+      "privacyConsent": "Autorizo que a LTS utilize estes dados para responder ao meu pedido de contacto.",
+
+      "mail": {
+          "subject": "Pedido de informação enviado a partir do website da Levante Technical Solutions",
+
+          "greeting": "Olá,",
+
+          "introduction": "O meu nome é {name} e estou a entrar em contacto convosco através do formulário de contacto do website da {company}.",
+
+          "serviceIntroduction": {
+              "surveillance": "Gostaria de receber informações sobre uma solução de videovigilância e segurança adaptada às minhas necessidades.",
+
+              "electricity": "Pretendo solicitar informações sobre um serviço relacionado com instalações elétricas.",
+
+              "network": "Necessito de aconselhamento sobre uma solução de redes e conectividade para o meu projeto.",
+
+              "other": "Gostaria de receber informações sobre um dos vossos serviços técnicos."
+          },
+
+          "contactMethods": "Podem responder a este e-mail ou, se preferirem, contactar-me através de um dos seguintes meios:",
+
+          "phone": "Telefone / WhatsApp",
+
+          "email": "Endereço de e-mail",
+
+          "messageTitle": "Segue abaixo a descrição da minha solicitação:",
+
+          "farewell": "Fico a aguardar a vossa resposta.",
+
+          "thanks": "Muito obrigado pelo vosso tempo e atenção.",
+
+          "closing": "Com os melhores cumprimentos,",
+
+          "summaryTitle": "RESUMO DO PEDIDO",
+
+          "summary": {
+              "name": "Nome",
+
+              "service": "Serviço pretendido",
+
+              "phone": "Telefone / WhatsApp",
+
+              "email": "Endereço de e-mail",
+
+              "page": "Página de origem",
+
+              "date": "Data"
+          }
       }
-
   }
 
-  }
-
-}    
+}

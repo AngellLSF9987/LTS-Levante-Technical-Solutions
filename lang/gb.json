@@ -469,123 +469,125 @@
   },
 
   "contactForm": {
+      "kicker": "Service Request",
 
-    "kicker": "Service Request",
+      "title": "Tell us what you need",
 
-    "title": "Tell us what you need",
+      "description": "Complete the form and we'll prepare a personalised response to help you with our CCTV surveillance & security, electrical installations, networking and connectivity services.",
 
-    "description": "Complete the form and we'll prepare a personalised response to help you with our CCTV surveillance & security, electrical installations, networking and connectivity services.",
+      "benefits": [
+          "Personalised advice based on the service you require.",
 
-    "benefits": [
+          "Support for businesses, commercial premises, residential communities and homes.",
 
-      "Personalised advice based on the service you require.",
+          "Service area: Levante Region, Costa Cálida, Costa Blanca and surrounding areas, Costa del Sol and surrounding areas."
+      ],
 
-      "Support for businesses, commercial premises, residential communities and homes.",
+      "fields": {
+          "name": "Name",
 
-      "Service area: Levante Region, Costa Cálida, Costa Blanca and surrounding areas, Costa del Sol and surrounding areas."
+          "phone": "Phone / WhatsApp",
 
-    ],
+          "email": "Email",
 
-    "fields": {
+          "service": "Service type",
 
-      "name": "Name",
+          "message": "Message"
+      },
 
-      "phone": "Phone / WhatsApp",
+      "placeholders": {
+          "name": "Enter your name",
 
-      "email": "Email",
+          "phone": "Phone number",
 
-      "service": "Service type",
+          "email": "your@email.com",
 
-      "message": "Message"
+          "message": "Briefly describe your project or enquiry"
+      },
 
-    },
+      "services": {
+          "placeholder": "Select an option",
 
-    "placeholders": {
+          "surveillance": "CCTV Surveillance & Security",
 
-      "name": "Enter your name",
+          "electricity": "Electrical Installations",
 
-      "phone": "Phone number",
+          "network": "Networking & Connectivity",
 
-      "email": "your@email.com",
+          "other": "Other technical service"
+      },
 
-      "message": "Briefly describe your project or enquiry"
+      "validation": {
+          "phoneRequired": "Please enter a phone number.",
 
-    },
+          "phoneInvalid": "The phone number is not valid.",
 
-    "services": {
+          "phoneTooShort": "The phone number is too short for the selected country.",
 
-      "placeholder": "Select an option",
+          "phoneTooLong": "The phone number is too long for the selected country.",
 
-      "surveillance": "CCTV Surveillance & Security",
+          "phoneCountry": "The international dialling code is not valid.",
 
-      "electricity": "Electrical Installations",
+          "phoneNumber": "Please enter a valid phone number."
+      },
 
-      "network": "Networking & Connectivity",
+      "actions": {
+          "whatsapp": "Send via WhatsApp",
 
-      "other": "Other technical service"
+          "email": "Send by email"
+      },
 
-    },
+      "privacy": "Your data will only be used to process your enquiry. You can also contact us by phone or WhatsApp.",
 
-    "submit": "Send request",
+      "privacyConsent": "I agree that LTS may use this information to respond to my enquiry.",
 
-    "privacy": "Your data will only be used to process your enquiry. You can also contact us by phone or WhatsApp.",
+      "mail": {
+          "subject": "Enquiry from the Levante Technical Solutions website",
 
-    "privacyConsent": "I agree that LTS may use this information to respond to my enquiry.",
+          "greeting": "Hello,",
 
-    "mail": {
+          "introduction": "My name is {name} and I am contacting you through the contact form on the {company} website.",
 
-    "subject": "Enquiry from the Levante Technical Solutions website",
+          "serviceIntroduction": {
+              "surveillance": "I am interested in receiving information about a video surveillance and security solution tailored to my needs.",
 
-    "greeting": "Hello,",
+              "electricity": "I would like to request information about an electrical installation service.",
 
-    "introduction": "My name is {name} and I am contacting you through the contact form on the {company} website.",
+              "network": "I need advice regarding a network and connectivity solution for my project.",
 
-    "serviceIntroduction": {
+              "other": "I would like to receive information about one of your technical services."
+          },
 
-        "surveillance": "I am interested in receiving information about a video surveillance and security solution tailored to my needs.",
+          "contactMethods": "You may reply to this email or, if you prefer, contact me using either of the following methods:",
 
-        "electricity": "I would like to request information about an electrical installation service.",
+          "phone": "Phone / WhatsApp",
 
-        "network": "I need advice regarding a network and connectivity solution for my project.",
+          "email": "Email address",
 
-        "other": "I would like to receive information about one of your technical services."
+          "messageTitle": "Please find my enquiry below:",
 
-    },
+          "farewell": "I look forward to hearing from you.",
 
-        "contactMethods": "You may reply to this email or, if you prefer, contact me using either of the following methods:",
+          "thanks": "Thank you very much for your time and attention.",
 
-        "phone": "Phone / WhatsApp",
+          "closing": "Kind regards,",
 
-        "email": "Email address",
+          "summaryTitle": "ENQUIRY SUMMARY",
 
-        "messageTitle": "Please find my enquiry below:",
+          "summary": {
+              "name": "Name",
 
-        "farewell": "I look forward to hearing from you.",
+              "service": "Service of interest",
 
-        "thanks": "Thank you very much for your time and attention.",
+              "phone": "Phone / WhatsApp",
 
-        "closing": "Kind regards,",
+              "email": "Email address",
 
-        "summaryTitle": "ENQUIRY SUMMARY",
+              "page": "Source page",
 
-        "summary": {
-
-            "name": "Name",
-
-            "service": "Service of interest",
-
-            "phone": "Phone / WhatsApp",
-
-            "email": "Email address",
-
-            "page": "Source page",
-
-            "date": "Date"
-
-        }
-
-    }
-
+              "date": "Date"
+          }
+      }
   }
 
-}        
+}

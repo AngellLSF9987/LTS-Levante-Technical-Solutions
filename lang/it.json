@@ -469,119 +469,123 @@
   },
 
   "contactForm": {
+      "kicker": "RICHIESTA DI SERVIZIO",
 
-    "kicker": "RICHIESTA DI SERVIZIO",
+      "title": "Raccontaci di cosa hai bisogno",
 
-    "title": "Raccontaci di cosa hai bisogno",
+      "description": "Compila il modulo e prepareremo una risposta personalizzata per le tue esigenze di videosorveglianza CCTV e sicurezza, impianti elettrici, reti e connettività.",
 
-    "description": "Compila il modulo e prepareremo una risposta personalizzata per le tue esigenze di videosorveglianza CCTV e sicurezza, impianti elettrici, reti e connettività.",
+      "benefits": [
+          "Risposta personalizzata in base al servizio richiesto.",
+          "Assistenza per abitazioni, condomini, attività commerciali e aziende.",
+          "Area di intervento: Regione di Levante, Costa Cálida, Costa Blanca e zone limitrofe, Costa del Sol e zone limitrofe."
+      ],
 
-    "benefits": [
-      "Risposta personalizzata in base al servizio richiesto.",
-      "Assistenza per abitazioni, condomini, attività commerciali e aziende.",
-      "Area di intervento: Regione di Levante, Costa Cálida, Costa Blanca e zone limitrofe, Costa del Sol e zone limitrofe."
-    ],
-
-    "fields": {
-
-      "name": "Nome",
-
-      "phone": "Telefono / WhatsApp",
-
-      "email": "E-mail",
-
-      "service": "Tipo di servizio",
-
-      "message": "Messaggio"
-
-    },
-
-    "placeholders": {
-
-      "name": "Inserisci il tuo nome",
-
-      "phone": "Numero di telefono",
-
-      "email": "tu@email.it",
-
-      "message": "Descrivi brevemente il tuo progetto o la tua richiesta"
-
-    },
-
-    "services": {
-
-      "placeholder": "Seleziona un'opzione",
-
-      "surveillance": "Videosorveglianza CCTV e Sicurezza",
-
-      "electricity": "Impianti Elettrici",
-
-      "network": "Reti e Connettività",
-
-      "other": "Altro servizio tecnico"
-
-    },
-
-    "submit": "Invia richiesta",
-
-    "privacy": "I tuoi dati saranno utilizzati esclusivamente per gestire questa richiesta. Puoi contattarci anche telefonicamente o tramite WhatsApp.",
-
-    "privacyConsent": "Acconsento all'utilizzo di questi dati da parte di LTS per rispondere alla mia richiesta di contatto.",
-
-      "mail": {
-
-      "subject": "Richiesta inviata dal sito web di Levante Technical Solutions",
-
-      "greeting": "Buongiorno,",
-
-      "introduction": "Mi chiamo {name} e vi contatto tramite il modulo di contatto del sito web di {company}.",
-
-      "serviceIntroduction": {
-
-          "surveillance": "Sono interessato a ricevere informazioni su una soluzione di videosorveglianza e sicurezza adatta alle mie esigenze.",
-
-          "electricity": "Desidero richiedere informazioni su un servizio relativo agli impianti elettrici.",
-
-          "network": "Ho bisogno di una consulenza riguardo a una soluzione di reti e connettività per il mio progetto.",
-
-          "other": "Desidero ricevere informazioni su uno dei vostri servizi tecnici."
-
-      },
-
-      "contactMethods": "Potete rispondermi direttamente a questa e-mail oppure contattarmi utilizzando uno dei seguenti recapiti:",
-
-      "phone": "Telefono / WhatsApp",
-
-      "email": "Indirizzo e-mail",
-
-      "messageTitle": "Di seguito riporto i dettagli della mia richiesta:",
-
-      "farewell": "Rimango in attesa di un vostro cortese riscontro.",
-
-      "thanks": "Vi ringrazio per il tempo e l'attenzione dedicatami.",
-
-      "closing": "Cordiali saluti,",
-
-      "summaryTitle": "RIEPILOGO DELLA RICHIESTA",
-
-      "summary": {
-
+      "fields": {
           "name": "Nome",
 
-          "service": "Servizio richiesto",
+          "phone": "Telefono / WhatsApp",
+
+          "email": "E-mail",
+
+          "service": "Tipo di servizio",
+
+          "message": "Messaggio"
+      },
+
+      "placeholders": {
+          "name": "Inserisci il tuo nome",
+
+          "phone": "Numero di telefono",
+
+          "email": "tu@email.it",
+
+          "message": "Descrivi brevemente il tuo progetto o la tua richiesta"
+      },
+
+      "services": {
+          "placeholder": "Seleziona un'opzione",
+
+          "surveillance": "Videosorveglianza CCTV e Sicurezza",
+
+          "electricity": "Impianti Elettrici",
+
+          "network": "Reti e Connettività",
+
+          "other": "Altro servizio tecnico"
+      },
+
+      "validation": {
+          "phoneRequired": "Inserisci un numero di telefono.",
+
+          "phoneInvalid": "Il numero di telefono non è valido.",
+
+          "phoneTooShort": "Il numero è troppo corto per il Paese selezionato.",
+
+          "phoneTooLong": "Il numero è troppo lungo per il Paese selezionato.",
+
+          "phoneCountry": "Il prefisso internazionale non è valido.",
+
+          "phoneNumber": "Inserisci un numero di telefono valido."
+      },
+
+      "actions": {
+          "whatsapp": "Invia tramite WhatsApp",
+
+          "email": "Invia tramite e-mail"
+      },
+
+      "privacy": "I tuoi dati saranno utilizzati esclusivamente per gestire questa richiesta. Puoi contattarci anche telefonicamente o tramite WhatsApp.",
+
+      "privacyConsent": "Acconsento all'utilizzo di questi dati da parte di LTS per rispondere alla mia richiesta di contatto.",
+
+      "mail": {
+          "subject": "Richiesta inviata dal sito web di Levante Technical Solutions",
+
+          "greeting": "Buongiorno,",
+
+          "introduction": "Mi chiamo {name} e vi contatto tramite il modulo di contatto del sito web di {company}.",
+
+          "serviceIntroduction": {
+              "surveillance": "Sono interessato a ricevere informazioni su una soluzione di videosorveglianza e sicurezza adatta alle mie esigenze.",
+
+              "electricity": "Desidero richiedere informazioni su un servizio relativo agli impianti elettrici.",
+
+              "network": "Ho bisogno di una consulenza riguardo a una soluzione di reti e connettività per il mio progetto.",
+
+              "other": "Desidero ricevere informazioni su uno dei vostri servizi tecnici."
+          },
+
+          "contactMethods": "Potete rispondermi direttamente a questa e-mail oppure contattarmi utilizzando uno dei seguenti recapiti:",
 
           "phone": "Telefono / WhatsApp",
 
           "email": "Indirizzo e-mail",
 
-          "page": "Pagina di origine",
+          "messageTitle": "Di seguito riporto i dettagli della mia richiesta:",
 
-          "date": "Data"
+          "farewell": "Rimango in attesa di un vostro cortese riscontro.",
 
+          "thanks": "Vi ringrazio per il tempo e l'attenzione dedicatami.",
+
+          "closing": "Cordiali saluti,",
+
+          "summaryTitle": "RIEPILOGO DELLA RICHIESTA",
+
+          "summary": {
+              "name": "Nome",
+
+              "service": "Servizio richiesto",
+
+              "phone": "Telefono / WhatsApp",
+
+              "email": "Indirizzo e-mail",
+
+              "page": "Pagina di origine",
+
+              "date": "Data"
+          }
       }
-
   }
 
-  }
-
-}    
+}

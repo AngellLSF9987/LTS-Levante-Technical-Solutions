@@ -259,7 +259,7 @@
       "kicker": "NUESTRO COMPROMISO",
       "title": "Más que instalaciones. Construimos confianza.",
       "subtitle": "Trabajamos para convertirnos en un aliado técnico de confianza ofreciendo soluciones eficaces, cercanas y adaptadas a cada proyecto.",
-      
+
       "security": {
 
         "title": "Seguridad",
@@ -423,105 +423,103 @@
   },
 
   "contactForm": {
+      "kicker": "Solicitud de servicio",
+      "title": "Cuéntanos qué necesitas",
+      "description": "Rellena el formulario y prepararemos una respuesta personalizada para ayudarte con nuestros servicios de videovigilancia CCTV y seguridad, electricidad, redes y conectividad.",
+      "benefits": [
+          "Respuesta personalizada según el tipo de servicio.",
+          "Atención para empresas, comercios, comunidades y hogares.",
+          "Zona de trabajo: Zona Levante, Costa Cálida, Costa Blanca y alrededores, Costa del Sol y alrededores."
+      ],
 
-    "kicker": "Solicitud de servicio",
-    "title": "Cuéntanos qué necesitas",
-    "description": "Rellena el formulario y prepararemos una respuesta personalizada para ayudarte con nuestros servicios de videovigilancia CCTV y seguridad, electricidad, redes y conectividad.",
-    "benefits": [
-
-      "Respuesta personalizada según el tipo de servicio.",
-      "Atención para empresas, comercios, comunidades y hogares.",
-      "Zona de trabajo: Zona Levante, Costa Cálida, Costa Blanca y alrededores, Costa del Sol y alrededores."
-
-    ],
-
-    "fields": {
-
-      "name": "Nombre",
-      "phone": "Teléfono / WhatsApp",
-      "email": "Correo electrónico",
-      "service": "Tipo de servicio",
-      "message": "Mensaje"
-
-    },
-
-    "placeholders": {
-
-    "name": "Escribe tu nombre",
-    "phone": "Número de teléfono",
-    "email": "tu@email.com",
-    "message": "Describe brevemente tu proyecto o consulta"
-
-    },
-
-    "services": {
-
-      "placeholder": "Selecciona una opción",
-      "surveillance": "Videovigilancia y Seguridad",
-      "electricity": "Electricidad",
-      "network": "Redes y Conectividad",
-      "other": "Otro servicio técnico"
-
-    },
-
-    "submit": "Enviar solicitud",
-    "privacy": "Tus datos se utilizarán únicamente para gestionar esta solicitud. También puedes contactar con nosotros por teléfono o WhatsApp.",
-    "privacyConsent": "Acepto que LTS utilice estos datos para responder a mi solicitud de contacto.",
-
-    "mail": {
-
-      "subject": "Consulta desde la web de Levante Technical Solutions",
-
-      "greeting": "Hola,",
-
-      "introduction": "Mi nombre es {name} y me pongo en contacto con vosotros a través del formulario de la página web de {company}.",
-
-      "serviceIntroduction": {
-
-          "surveillance": "Estoy interesado en recibir información sobre una solución de videovigilancia y seguridad adaptada a mis necesidades.",
-
-          "electricity": "Me gustaría solicitar información sobre un servicio relacionado con instalaciones eléctricas.",
-
-          "network": "Necesito asesoramiento sobre una solución de redes y conectividad para mi proyecto.",
-
-          "other": "Me gustaría recibir información sobre uno de vuestros servicios técnicos."
-
+      "fields": {
+          "name": "Nombre",
+          "phone": "Teléfono / WhatsApp",
+          "email": "Correo electrónico",
+          "service": "Tipo de servicio",
+          "message": "Mensaje"
       },
 
-        "contactMethods": "Podéis contactar conmigo respondiendo a este mismo correo o, si lo preferís, utilizando cualquiera de los siguientes medios:",
+      "placeholders": {
+          "name": "Escribe tu nombre",
+          "phone": "Número de teléfono",
+          "email": "tu@email.com",
+          "message": "Describe brevemente tu proyecto o consulta"
+      },
 
-        "phone": "Teléfono / WhatsApp",
+      "services": {
+          "placeholder": "Selecciona una opción",
+          "surveillance": "Videovigilancia y Seguridad",
+          "electricity": "Electricidad",
+          "network": "Redes y Conectividad",
+          "other": "Otro servicio técnico"
+      },
 
-        "email": "Correo electrónico",
+      "validation": {
+          "phoneRequired": "Introduce un teléfono.",
+          "phoneInvalid": "El número no es válido.",
+          "phoneTooShort": "El número es demasiado corto para el país seleccionado.",
+          "phoneTooLong": "El número es demasiado largo para el país seleccionado.",
+          "phoneCountry": "El prefijo internacional no es válido.",
+          "phoneNumber": "Introduce un número de teléfono válido."
+      },
 
-        "messageTitle": "A continuación os detallo mi consulta:",
+      "actions": {
+          "whatsapp": "Enviar por WhatsApp",
 
-        "farewell": "Quedo pendiente de vuestra respuesta.",
+          "email": "Enviar por correo"
+      },
 
-        "thanks": "Muchas gracias por vuestro tiempo y atención.",
+      "privacy": "Tus datos se utilizarán únicamente para gestionar esta solicitud. También puedes contactar con nosotros por teléfono o WhatsApp.",
+      "privacyConsent": "Acepto que LTS utilice estos datos para responder a mi solicitud de contacto.",
 
-        "closing": "Recibid un cordial saludo.",
+      "mail": {
+          "subject": "Consulta desde la web de Levante Technical Solutions",
 
-        "summaryTitle": "RESUMEN DE LA CONSULTA",
+          "greeting": "Hola,",
 
-        "summary": {
+          "introduction": "Mi nombre es {name} y me pongo en contacto con vosotros a través del formulario de la página web de {company}.",
 
-            "name": "Nombre",
+          "serviceIntroduction": {
+              "surveillance": "Estoy interesado en recibir información sobre una solución de videovigilancia y seguridad adaptada a mis necesidades.",
 
-            "service": "Servicio de interés",
+              "electricity": "Me gustaría solicitar información sobre un servicio relacionado con instalaciones eléctricas.",
 
-            "phone": "Teléfono / WhatsApp",
+              "network": "Necesito asesoramiento sobre una solución de redes y conectividad para mi proyecto.",
 
-            "email": "Correo electrónico",
+              "other": "Me gustaría recibir información sobre uno de vuestros servicios técnicos."
+          },
 
-            "page": "Página de origen",
+          "contactMethods": "Podéis contactar conmigo respondiendo a este mismo correo o, si lo preferís, utilizando cualquiera de los siguientes medios:",
 
-            "date": "Fecha"
+          "phone": "Teléfono / WhatsApp",
 
-        }
+          "email": "Correo electrónico",
 
-    }
+          "messageTitle": "A continuación os detallo mi consulta:",
 
+          "farewell": "Quedo pendiente de vuestra respuesta.",
+
+          "thanks": "Muchas gracias por vuestro tiempo y atención.",
+
+          "closing": "Recibid un cordial saludo.",
+
+          "summaryTitle": "RESUMEN DE LA CONSULTA",
+
+          "summary": {
+              "name": "Nombre",
+
+              "service": "Servicio de interés",
+
+              "phone": "Teléfono / WhatsApp",
+
+              "email": "Correo electrónico",
+
+              "page": "Página de origen",
+
+              "date": "Fecha"
+          }
+      }
   }
 
 }
