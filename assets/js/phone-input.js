@@ -67,6 +67,13 @@
 
     console.log('Método isValidNumber:', typeof iti.isValidNumber);
 
+    iti.promise.then((instance) => {
+        console.log('==============================');
+        console.log('INSTANCIA REAL');
+        console.log(instance);
+        console.log(Object.keys(instance));
+    });
+
     /* ==========================================================
        API PÚBLICA
     ========================================================== */
