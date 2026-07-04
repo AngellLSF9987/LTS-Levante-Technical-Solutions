@@ -51,6 +51,23 @@
         autoPlaceholder: 'aggressive',
     });
 
+    /*
+     * Indica si el usuario ha confirmado
+     * explícitamente el país del teléfono.
+     */
+
+    let countryConfirmed = false;
+
+    /*
+     * Cuando el usuario cambia el país
+     * desde el selector de banderas,
+     * consideramos confirmado el prefijo.
+     */
+
+    input.addEventListener('countrychange', () => {
+        countryConfirmed = true;
+    });
+
     console.log(
         '[PHONE] Plugin inicializado.',
 
