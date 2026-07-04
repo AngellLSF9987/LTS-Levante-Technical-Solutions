@@ -39,15 +39,17 @@
 
     console.log('[PHONE] Inicializando intl-tel-input...');
 
-    const iti = window.intlTelInput(
-        input,
+    const iti = window.intlTelInput(input, {
+        initialCountry: 'es',
 
-        {
-            initialCountry: 'es',
+        separateDialCode: true,
 
-            separateDialCode: true,
-        }
-    );
+        nationalMode: false,
+
+        formatOnDisplay: true,
+
+        autoPlaceholder: 'aggressive',
+    });
 
     console.log(
         '[PHONE] Plugin inicializado.',
