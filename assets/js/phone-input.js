@@ -66,6 +66,8 @@
 
     input.addEventListener('countrychange', () => {
         countryConfirmed = true;
+
+        console.log('[PHONE] País cambiado:', iti.getSelectedCountryData());
     });
 
     console.log(
