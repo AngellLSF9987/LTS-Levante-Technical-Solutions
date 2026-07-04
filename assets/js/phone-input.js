@@ -116,6 +116,14 @@
         },
 
         /*
+         * Motivo del error de validación.
+         */
+
+        getValidationError() {
+            return iti.getValidationError();
+        },
+
+        /*
          * Lleva el foco al teléfono.
          */
         focus() {
