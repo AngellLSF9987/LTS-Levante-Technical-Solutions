@@ -44,11 +44,11 @@
 
         separateDialCode: true,
 
-        nationalMode: false,
+        strictMode: true,
 
-        formatOnDisplay: true,
+        fixDropdownWidth: true,
 
-        autoPlaceholder: 'aggressive',
+        countrySearch: true,
     });
 
     /*

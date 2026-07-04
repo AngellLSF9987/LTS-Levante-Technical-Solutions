@@ -327,7 +327,7 @@
          */
 
         if (!window.phoneInput.hasNumber()) {
-            showFieldError(fields.phone, t('contactForm.validation.phoneRequired'));
+            showFieldError(fields.phone, window.i18n.get('contactForm.validation.phonePrefix'));
 
             return false;
         }
@@ -339,23 +339,23 @@
 
             switch (error) {
                 case 'TOO_SHORT':
-                    message = t('contactForm.validation.phoneTooShort');
+                    message = window.i18n.get('contactForm.validation.phoneTooShort');
                     break;
 
                 case 'TOO_LONG':
-                    message = t('contactForm.validation.phoneTooLong');
+                    message = window.i18n.get('contactForm.validation.phoneTooLong');
                     break;
 
                 case 'INVALID_COUNTRY_CODE':
-                    message = t('contactForm.validation.phoneCountry');
+                    message = window.i18n.get('contactForm.validation.phoneCountry');
                     break;
 
                 case 'NOT_A_NUMBER':
-                    message = t('contactForm.validation.phoneNumber');
+                    message = window.i18n.get('contactForm.validation.phoneNumber');
                     break;
 
                 default:
-                    message = t('contactForm.validation.phoneInvalid');
+                    message = window.i18n.get('contactForm.validation.phoneInvalid');
             }
 
             showFieldError(fields.phone, message);
@@ -371,7 +371,7 @@
                 showFieldError(
                     fields.phone,
 
-                    t('contactForm.validation.phonePrefix')
+                    window.i18n.get('contactForm.validation.phonePrefix')
                 );
 
                 return false;
