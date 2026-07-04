@@ -280,6 +280,18 @@ async function loadLanguage(language) {
 
         currentTranslations = await response.json();
         console.log(currentTranslations);
+
+
+        console.log('MAIL:', currentTranslations.mail);
+
+        console.log('SUMMARY:', currentTranslations.mail?.summary);
+
+        console.log('NAME:', currentTranslations.mail?.summary?.name);
+
+        console.log('OBJETO COMPLETO', currentTranslations);
+
+
+
         /*
          * Actualizamos el idioma
          * del documento.
