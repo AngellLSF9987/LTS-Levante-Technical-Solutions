@@ -54,4 +54,42 @@
 
         iti
     );
+
+    /* ==========================================================
+       API PÚBLICA
+    ========================================================== */
+
+    window.phoneInput = {
+        /*
+         * Número internacional.
+         */
+
+        getNumber() {
+            return iti.getNumber();
+        },
+
+        /*
+         * País seleccionado.
+         */
+
+        getCountry() {
+            return iti.getSelectedCountryData();
+        },
+
+        /*
+         * Validez del número.
+         */
+
+        isValid() {
+            return iti.isValidNumber();
+        },
+
+        /*
+         * Reinicia el componente.
+         */
+
+        reset() {
+            input.value = '';
+        },
+    };
 })();
