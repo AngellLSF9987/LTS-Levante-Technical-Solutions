@@ -28,7 +28,6 @@
     ========================================================== */
 
     if (typeof window.intlTelInput !== 'function') {
-        console.error('[PHONE] intl-tel-input no está disponible.');
 
         return;
     }
@@ -65,32 +64,8 @@
     input.addEventListener('countrychange', () => {
         countryConfirmed = true;
 
-        console.log('[PHONE] País cambiado:', iti.getSelectedCountryData());
     });
 
-    console.log(
-        '[PHONE] Plugin inicializado.',
-
-        iti
-    );
-
-    console.log('=================================');
-    console.log('CLAVES DEL OBJETO ITI');
-    console.log(Object.keys(iti));
-    console.log('=================================');
-
-    console.log('Método getSelectedCountryData:', typeof iti.getSelectedCountryData);
-
-    console.log('Método getNumber:', typeof iti.getNumber);
-
-    console.log('Método isValidNumber:', typeof iti.isValidNumber);
-
-    iti.promise.then((instance) => {
-        console.log('==============================');
-        console.log('INSTANCIA REAL');
-        console.log(instance);
-        console.log(Object.keys(instance));
-    });
 
     /* ==========================================================
        API PÚBLICA
@@ -115,7 +90,7 @@
          * País seleccionado.
          */
         getCountry() {
-            return iti.getSelectedCountry() ?? null;
+            return iti.getSelectedCountryData() ?? null;
         },
 
         /*
