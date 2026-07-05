@@ -46,8 +46,6 @@
 
         strictMode: true,
 
-        fixDropdownWidth: true,
-
         countrySearch: true,
     });
 
