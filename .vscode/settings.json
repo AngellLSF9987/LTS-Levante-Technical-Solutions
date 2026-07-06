@@ -388,5 +388,8 @@
         "vuelve",
         "Zona",
         "Русский"
-    ]
+    ],
+    "[xml]": {
+        "editor.defaultFormatter": "redhat.vscode-xml"
+    }
 }

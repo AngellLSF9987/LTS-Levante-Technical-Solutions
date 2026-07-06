@@ -5,3571 +5,3571 @@
     company="Levante Technical Solutions"
     language="multilingual">
 
-<!-- ========================================================== -->
-<!-- FASE 1 -->
-<!-- CATEGORÍAS PRINCIPALES -->
-<!-- ========================================================== -->
+    <!-- ========================================================== -->
+    <!-- FASE 1 -->
+    <!-- CATEGORÍAS PRINCIPALES -->
+    <!-- ========================================================== -->
 
-<topic
-    name="MAIN SERVICE CATEGORIES"
-    slug="main-service-categories">
+    <topic
+        name="MAIN SERVICE CATEGORIES"
+        slug="main-service-categories">
 
-<!-- ====================================================== -->
-<!-- VIDEOVIGILANCIA -->
-<!-- ====================================================== -->
+        <!-- ====================================================== -->
+        <!-- VIDEOVIGILANCIA -->
+        <!-- ====================================================== -->
 
-<category
-    id="security"
-    name="Videovigilancia CCTV y Seguridad">
+        <category
+            id="security"
+            name="Videovigilancia CCTV y Seguridad">
 
-<!-- ========================= -->
-<!-- ESPAÑOL -->
-<!-- ========================= -->
+            <!-- ========================= -->
+            <!-- ESPAÑOL -->
+            <!-- ========================= -->
 
-<language code="es">
+            <language code="es">
 
-<keyword>videovigilancia</keyword>
+                <keyword>videovigilancia</keyword>
 
-<keyword>videovigilancia CCTV</keyword>
+                <keyword>videovigilancia CCTV</keyword>
 
-<keyword>CCTV</keyword>
+                <keyword>CCTV</keyword>
 
-<keyword>instalación CCTV</keyword>
+                <keyword>instalación CCTV</keyword>
 
-<keyword>instalación cámaras de seguridad</keyword>
+                <keyword>instalación cámaras de seguridad</keyword>
 
-<keyword>empresa CCTV</keyword>
+                <keyword>empresa CCTV</keyword>
 
-<keyword>empresa videovigilancia</keyword>
+                <keyword>empresa videovigilancia</keyword>
 
-<keyword>empresa cámaras de seguridad</keyword>
+                <keyword>empresa cámaras de seguridad</keyword>
 
-<keyword>instalador CCTV</keyword>
+                <keyword>instalador CCTV</keyword>
 
-<keyword>instalador cámaras de seguridad</keyword>
+                <keyword>instalador cámaras de seguridad</keyword>
 
-<keyword>cámaras IP</keyword>
+                <keyword>cámaras IP</keyword>
 
-<keyword>cámaras WiFi</keyword>
+                <keyword>cámaras WiFi</keyword>
 
-<keyword>grabador NVR</keyword>
+                <keyword>grabador NVR</keyword>
 
-<keyword>grabador DVR</keyword>
+                <keyword>grabador DVR</keyword>
 
-<keyword>monitorización remota</keyword>
+                <keyword>monitorización remota</keyword>
 
-<keyword>seguridad electrónica</keyword>
+                <keyword>seguridad electrónica</keyword>
 
-<keyword>control de accesos</keyword>
+                <keyword>control de accesos</keyword>
 
-<keyword>videoporteros</keyword>
+                <keyword>videoporteros</keyword>
 
-<keyword>alarmas</keyword>
+                <keyword>alarmas</keyword>
 
-<keyword>protección viviendas</keyword>
+                <keyword>protección viviendas</keyword>
 
-<keyword>protección negocios</keyword>
+                <keyword>protección negocios</keyword>
 
-</language>
+            </language>
 
-<!-- ========================= -->
-<!-- ENGLISH -->
-<!-- ========================= -->
+            <!-- ========================= -->
+            <!-- ENGLISH -->
+            <!-- ========================= -->
 
-<language code="en">
+            <language code="en">
 
-<keyword>CCTV installation</keyword>
+                <keyword>CCTV installation</keyword>
 
-<keyword>CCTV installer</keyword>
+                <keyword>CCTV installer</keyword>
 
-<keyword>security camera installation</keyword>
+                <keyword>security camera installation</keyword>
 
-<keyword>home security systems</keyword>
+                <keyword>home security systems</keyword>
 
-<keyword>business security systems</keyword>
+                <keyword>business security systems</keyword>
 
-<keyword>video surveillance</keyword>
+                <keyword>video surveillance</keyword>
 
-<keyword>surveillance system</keyword>
+                <keyword>surveillance system</keyword>
 
-<keyword>security cameras</keyword>
+                <keyword>security cameras</keyword>
 
-<keyword>IP cameras</keyword>
+                <keyword>IP cameras</keyword>
 
-<keyword>wireless security cameras</keyword>
+                <keyword>wireless security cameras</keyword>
 
-<keyword>remote CCTV monitoring</keyword>
+                <keyword>remote CCTV monitoring</keyword>
 
-<keyword>NVR installation</keyword>
+                <keyword>NVR installation</keyword>
 
-<keyword>DVR installation</keyword>
+                <keyword>DVR installation</keyword>
 
-<keyword>access control systems</keyword>
+                <keyword>access control systems</keyword>
 
-<keyword>video intercom systems</keyword>
+                <keyword>video intercom systems</keyword>
 
-<keyword>burglar alarm installation</keyword>
+                <keyword>burglar alarm installation</keyword>
 
-<keyword>property security</keyword>
+                <keyword>property security</keyword>
 
-<keyword>holiday home security</keyword>
+                <keyword>holiday home security</keyword>
 
-<keyword>villa security systems</keyword>
+                <keyword>villa security systems</keyword>
 
-<keyword>CCTV near me</keyword>
+                <keyword>CCTV near me</keyword>
 
-<keyword>security installer Costa Blanca</keyword>
+                <keyword>security installer Costa Blanca</keyword>
 
-</language>
+            </language>
 
-<!-- ========================= -->
-<!-- DEUTSCH -->
-<!-- ========================= -->
+            <!-- ========================= -->
+            <!-- DEUTSCH -->
+            <!-- ========================= -->
 
-<language code="de">
+            <language code="de">
 
-<keyword>Videoüberwachung</keyword>
+                <keyword>Videoüberwachung</keyword>
 
-<keyword>Videoüberwachung installieren</keyword>
+                <keyword>Videoüberwachung installieren</keyword>
 
-<keyword>Überwachungskameras</keyword>
+                <keyword>Überwachungskameras</keyword>
 
-<keyword>Sicherheitskameras</keyword>
+                <keyword>Sicherheitskameras</keyword>
 
-<keyword>CCTV Installation</keyword>
+                <keyword>CCTV Installation</keyword>
 
-<keyword>Alarmanlage</keyword>
+                <keyword>Alarmanlage</keyword>
 
-<keyword>Einbruchschutz</keyword>
+                <keyword>Einbruchschutz</keyword>
 
-<keyword>Sicherheitstechnik</keyword>
+                <keyword>Sicherheitstechnik</keyword>
 
-<keyword>IP Kamera</keyword>
+                <keyword>IP Kamera</keyword>
 
-<keyword>WLAN Kamera</keyword>
+                <keyword>WLAN Kamera</keyword>
 
-<keyword>Fernüberwachung</keyword>
+                <keyword>Fernüberwachung</keyword>
 
-<keyword>NVR Recorder</keyword>
+                <keyword>NVR Recorder</keyword>
 
-<keyword>DVR Recorder</keyword>
+                <keyword>DVR Recorder</keyword>
 
-<keyword>Zutrittskontrolle</keyword>
+                <keyword>Zutrittskontrolle</keyword>
 
-<keyword>Videosprechanlage</keyword>
+                <keyword>Videosprechanlage</keyword>
 
-<keyword>Sicherheitsfirma</keyword>
+                <keyword>Sicherheitsfirma</keyword>
 
-<keyword>Haussicherheit</keyword>
+                <keyword>Haussicherheit</keyword>
 
-<keyword>Villensicherheit</keyword>
+                <keyword>Villensicherheit</keyword>
 
-<keyword>Ferienhaus Sicherheit</keyword>
+                <keyword>Ferienhaus Sicherheit</keyword>
 
-<keyword>Videoüberwachung Costa Blanca</keyword>
+                <keyword>Videoüberwachung Costa Blanca</keyword>
 
-</language>
+            </language>
 
-<!-- ========================= -->
-<!-- FRANÇAIS -->
-<!-- ========================= -->
+            <!-- ========================= -->
+            <!-- FRANÇAIS -->
+            <!-- ========================= -->
 
-<language code="fr">
+            <language code="fr">
 
-<keyword>installation vidéosurveillance</keyword>
+                <keyword>installation vidéosurveillance</keyword>
 
-<keyword>vidéosurveillance</keyword>
+                <keyword>vidéosurveillance</keyword>
 
-<keyword>caméras de surveillance</keyword>
+                <keyword>caméras de surveillance</keyword>
 
-<keyword>caméras de sécurité</keyword>
+                <keyword>caméras de sécurité</keyword>
 
-<keyword>système CCTV</keyword>
+                <keyword>système CCTV</keyword>
 
-<keyword>caméra IP</keyword>
+                <keyword>caméra IP</keyword>
 
-<keyword>caméra WiFi</keyword>
+                <keyword>caméra WiFi</keyword>
 
-<keyword>surveillance à distance</keyword>
+                <keyword>surveillance à distance</keyword>
 
-<keyword>entreprise vidéosurveillance</keyword>
+                <keyword>entreprise vidéosurveillance</keyword>
 
-<keyword>installation alarme</keyword>
+                <keyword>installation alarme</keyword>
 
-<keyword>contrôle d'accès</keyword>
+                <keyword>contrôle d'accès</keyword>
 
-<keyword>interphone vidéo</keyword>
+                <keyword>interphone vidéo</keyword>
 
-<keyword>protection maison</keyword>
+                <keyword>protection maison</keyword>
 
-<keyword>protection villa</keyword>
+                <keyword>protection villa</keyword>
 
-<keyword>sécurité habitation</keyword>
+                <keyword>sécurité habitation</keyword>
 
-<keyword>sécurité entreprise</keyword>
+                <keyword>sécurité entreprise</keyword>
 
-<keyword>vidéosurveillance Costa Blanca</keyword>
+                <keyword>vidéosurveillance Costa Blanca</keyword>
 
-</language>
+            </language>
 
-<!-- ========================= -->
-<!-- ITALIANO -->
-<!-- ========================= -->
+            <!-- ========================= -->
+            <!-- ITALIANO -->
+            <!-- ========================= -->
 
-<language code="it">
+            <language code="it">
 
-<keyword>installazione videosorveglianza</keyword>
+                <keyword>installazione videosorveglianza</keyword>
 
-<keyword>videosorveglianza</keyword>
+                <keyword>videosorveglianza</keyword>
 
-<keyword>telecamere di sicurezza</keyword>
+                <keyword>telecamere di sicurezza</keyword>
 
-<keyword>impianto CCTV</keyword>
+                <keyword>impianto CCTV</keyword>
 
-<keyword>telecamere IP</keyword>
+                <keyword>telecamere IP</keyword>
 
-<keyword>telecamere WiFi</keyword>
+                <keyword>telecamere WiFi</keyword>
 
-<keyword>sicurezza casa</keyword>
+                <keyword>sicurezza casa</keyword>
 
-<keyword>sistemi di sicurezza</keyword>
+                <keyword>sistemi di sicurezza</keyword>
 
-<keyword>controllo accessi</keyword>
+                <keyword>controllo accessi</keyword>
 
-<keyword>videocitofono</keyword>
+                <keyword>videocitofono</keyword>
 
-<keyword>allarme casa</keyword>
+                <keyword>allarme casa</keyword>
 
-<keyword>monitoraggio remoto</keyword>
+                <keyword>monitoraggio remoto</keyword>
 
-<keyword>protezione villa</keyword>
+                <keyword>protezione villa</keyword>
 
-<keyword>videosorveglianza Costa Blanca</keyword>
+                <keyword>videosorveglianza Costa Blanca</keyword>
 
-</language>
+            </language>
 
-<!-- ========================= -->
-<!-- PORTUGUÊS -->
-<!-- ========================= -->
+            <!-- ========================= -->
+            <!-- PORTUGUÊS -->
+            <!-- ========================= -->
 
-<language code="pt">
+            <language code="pt">
 
-<keyword>instalação CCTV</keyword>
+                <keyword>instalação CCTV</keyword>
 
-<keyword>videovigilância</keyword>
+                <keyword>videovigilância</keyword>
 
-<keyword>câmaras de segurança</keyword>
+                <keyword>câmaras de segurança</keyword>
 
-<keyword>sistema CCTV</keyword>
+                <keyword>sistema CCTV</keyword>
 
-<keyword>câmaras IP</keyword>
+                <keyword>câmaras IP</keyword>
 
-<keyword>câmaras WiFi</keyword>
+                <keyword>câmaras WiFi</keyword>
 
-<keyword>segurança residencial</keyword>
+                <keyword>segurança residencial</keyword>
 
-<keyword>segurança empresarial</keyword>
+                <keyword>segurança empresarial</keyword>
 
-<keyword>controlo de acessos</keyword>
+                <keyword>controlo de acessos</keyword>
 
-<keyword>videoporteiro</keyword>
+                <keyword>videoporteiro</keyword>
 
-<keyword>monitorização remota</keyword>
+                <keyword>monitorização remota</keyword>
 
-<keyword>alarme residencial</keyword>
+                <keyword>alarme residencial</keyword>
 
-<keyword>videovigilância Costa Blanca</keyword>
+                <keyword>videovigilância Costa Blanca</keyword>
 
-</language>
+            </language>
 
-<!-- ========================= -->
-<!-- РУССКИЙ -->
-<!-- ========================= -->
+            <!-- ========================= -->
+            <!-- РУССКИЙ -->
+            <!-- ========================= -->
 
-<language code="ru">
+            <language code="ru">
 
-<keyword>установка видеонаблюдения</keyword>
+                <keyword>установка видеонаблюдения</keyword>
 
-<keyword>видеонаблюдение</keyword>
+                <keyword>видеонаблюдение</keyword>
 
-<keyword>камеры видеонаблюдения</keyword>
+                <keyword>камеры видеонаблюдения</keyword>
 
-<keyword>камеры безопасности</keyword>
+                <keyword>камеры безопасности</keyword>
 
-<keyword>CCTV</keyword>
+                <keyword>CCTV</keyword>
 
-<keyword>IP камеры</keyword>
+                <keyword>IP камеры</keyword>
 
-<keyword>WiFi камеры</keyword>
+                <keyword>WiFi камеры</keyword>
 
-<keyword>охранные системы</keyword>
+                <keyword>охранные системы</keyword>
 
-<keyword>удалённое наблюдение</keyword>
+                <keyword>удалённое наблюдение</keyword>
 
-<keyword>контроль доступа</keyword>
+                <keyword>контроль доступа</keyword>
 
-<keyword>видеодомофон</keyword>
+                <keyword>видеодомофон</keyword>
 
-<keyword>охрана дома</keyword>
+                <keyword>охрана дома</keyword>
 
-<keyword>охрана виллы</keyword>
+                <keyword>охрана виллы</keyword>
 
-<keyword>видеонаблюдение Коста-Бланка</keyword>
+                <keyword>видеонаблюдение Коста-Бланка</keyword>
 
-</language>
+            </language>
 
-<!-- ========================= -->
-<!-- POLSKI -->
-<!-- ========================= -->
+            <!-- ========================= -->
+            <!-- POLSKI -->
+            <!-- ========================= -->
 
-<language code="pl">
+            <language code="pl">
 
-<keyword>monitoring CCTV</keyword>
+                <keyword>monitoring CCTV</keyword>
 
-<keyword>instalacja monitoringu</keyword>
+                <keyword>instalacja monitoringu</keyword>
 
-<keyword>kamery bezpieczeństwa</keyword>
+                <keyword>kamery bezpieczeństwa</keyword>
 
-<keyword>kamery IP</keyword>
+                <keyword>kamery IP</keyword>
 
-<keyword>kamery WiFi</keyword>
+                <keyword>kamery WiFi</keyword>
 
-<keyword>system monitoringu</keyword>
+                <keyword>system monitoringu</keyword>
 
-<keyword>monitoring domu</keyword>
+                <keyword>monitoring domu</keyword>
 
-<keyword>monitoring firmy</keyword>
+                <keyword>monitoring firmy</keyword>
 
-<keyword>kontrola dostępu</keyword>
+                <keyword>kontrola dostępu</keyword>
 
-<keyword>wideodomofon</keyword>
+                <keyword>wideodomofon</keyword>
 
-<keyword>zdalny monitoring</keyword>
+                <keyword>zdalny monitoring</keyword>
 
-<keyword>alarm domowy</keyword>
+                <keyword>alarm domowy</keyword>
 
-<keyword>ochrona posesji</keyword>
+                <keyword>ochrona posesji</keyword>
 
-<keyword>monitoring Costa Blanca</keyword>
+                <keyword>monitoring Costa Blanca</keyword>
 
-</language>
+            </language>
 
-</category>
+        </category>
 
-</topic>
+    </topic>
 
-<!-- ========================================================== -->
-<!-- FASE 2 -->
-<!-- SEO LOCAL -->
-<!-- ========================================================== -->
+    <!-- ========================================================== -->
+    <!-- FASE 2 -->
+    <!-- SEO LOCAL -->
+    <!-- ========================================================== -->
 
-<topic
-    id="phase-02"
-    name="LOCAL SEO"
-    slug="local-seo">
+    <topic
+        id="phase-02"
+        name="LOCAL SEO"
+        slug="local-seo">
 
-<!-- ====================================================== -->
-<!-- ZONA LEVANTE -->
-<!-- ====================================================== -->
+        <!-- ====================================================== -->
+        <!-- ZONA LEVANTE -->
+        <!-- ====================================================== -->
 
-<location
-    id="levante"
-    name="Zona Levante">
+        <location
+            id="levante"
+            name="Zona Levante">
 
-<language code="es">
+            <language code="es">
 
-<keyword>servicios técnicos Levante</keyword>
-<keyword>empresa servicios técnicos Levante</keyword>
-<keyword>videovigilancia Levante</keyword>
-<keyword>electricista Levante</keyword>
-<keyword>redes informáticas Levante</keyword>
-<keyword>router Levante</keyword>
-<keyword>WiFi Levante</keyword>
-<keyword>instalador CCTV Levante</keyword>
-<keyword>empresa mantenimiento Levante</keyword>
+                <keyword>servicios técnicos Levante</keyword>
+                <keyword>empresa servicios técnicos Levante</keyword>
+                <keyword>videovigilancia Levante</keyword>
+                <keyword>electricista Levante</keyword>
+                <keyword>redes informáticas Levante</keyword>
+                <keyword>router Levante</keyword>
+                <keyword>WiFi Levante</keyword>
+                <keyword>instalador CCTV Levante</keyword>
+                <keyword>empresa mantenimiento Levante</keyword>
 
-</language>
+            </language>
 
-<language code="en">
+            <language code="en">
 
-<keyword>technical services Levante</keyword>
-<keyword>technical services Costa Blanca</keyword>
-<keyword>CCTV installer Levante</keyword>
-<keyword>electrician Levante</keyword>
-<keyword>network installer Levante</keyword>
-<keyword>WiFi services Levante</keyword>
-<keyword>property maintenance Levante</keyword>
-<keyword>holiday home maintenance Levante</keyword>
+                <keyword>technical services Levante</keyword>
+                <keyword>technical services Costa Blanca</keyword>
+                <keyword>CCTV installer Levante</keyword>
+                <keyword>electrician Levante</keyword>
+                <keyword>network installer Levante</keyword>
+                <keyword>WiFi services Levante</keyword>
+                <keyword>property maintenance Levante</keyword>
+                <keyword>holiday home maintenance Levante</keyword>
 
-</language>
+            </language>
 
-<language code="de">
+            <language code="de">
 
-<keyword>Technischer Service Levante</keyword>
-<keyword>Elektriker Levante</keyword>
-<keyword>Videoüberwachung Levante</keyword>
-<keyword>Netzwerktechnik Levante</keyword>
-<keyword>WLAN Service Levante</keyword>
-<keyword>Ferienhaus Service Levante</keyword>
+                <keyword>Technischer Service Levante</keyword>
+                <keyword>Elektriker Levante</keyword>
+                <keyword>Videoüberwachung Levante</keyword>
+                <keyword>Netzwerktechnik Levante</keyword>
+                <keyword>WLAN Service Levante</keyword>
+                <keyword>Ferienhaus Service Levante</keyword>
 
-</language>
+            </language>
 
-<language code="fr">
+            <language code="fr">
 
-<keyword>services techniques Levante</keyword>
-<keyword>électricien Levante</keyword>
-<keyword>vidéosurveillance Levante</keyword>
-<keyword>réseau informatique Levante</keyword>
-<keyword>maintenance Levante</keyword>
+                <keyword>services techniques Levante</keyword>
+                <keyword>électricien Levante</keyword>
+                <keyword>vidéosurveillance Levante</keyword>
+                <keyword>réseau informatique Levante</keyword>
+                <keyword>maintenance Levante</keyword>
 
-</language>
+            </language>
 
-<language code="it">
+            <language code="it">
 
-<keyword>servizi tecnici Levante</keyword>
-<keyword>elettricista Levante</keyword>
-<keyword>videosorveglianza Levante</keyword>
-<keyword>reti informatiche Levante</keyword>
-<keyword>manutenzione Levante</keyword>
+                <keyword>servizi tecnici Levante</keyword>
+                <keyword>elettricista Levante</keyword>
+                <keyword>videosorveglianza Levante</keyword>
+                <keyword>reti informatiche Levante</keyword>
+                <keyword>manutenzione Levante</keyword>
 
-</language>
+            </language>
 
-<language code="pt">
+            <language code="pt">
 
-<keyword>serviços técnicos Levante</keyword>
-<keyword>eletricista Levante</keyword>
-<keyword>videovigilância Levante</keyword>
-<keyword>redes Levante</keyword>
+                <keyword>serviços técnicos Levante</keyword>
+                <keyword>eletricista Levante</keyword>
+                <keyword>videovigilância Levante</keyword>
+                <keyword>redes Levante</keyword>
 
-</language>
+            </language>
 
-<language code="ru">
+            <language code="ru">
 
-<keyword>технические услуги Леванте</keyword>
-<keyword>электрик Леванте</keyword>
-<keyword>видеонаблюдение Леванте</keyword>
-<keyword>обслуживание недвижимости Леванте</keyword>
+                <keyword>технические услуги Леванте</keyword>
+                <keyword>электрик Леванте</keyword>
+                <keyword>видеонаблюдение Леванте</keyword>
+                <keyword>обслуживание недвижимости Леванте</keyword>
 
-</language>
+            </language>
 
-<language code="pl">
+            <language code="pl">
 
-<keyword>usługi techniczne Levante</keyword>
-<keyword>elektryk Levante</keyword>
-<keyword>monitoring Levante</keyword>
-<keyword>serwis nieruchomości Levante</keyword>
+                <keyword>usługi techniczne Levante</keyword>
+                <keyword>elektryk Levante</keyword>
+                <keyword>monitoring Levante</keyword>
+                <keyword>serwis nieruchomości Levante</keyword>
 
-</language>
+            </language>
 
-</location>
+        </location>
 
-<!-- ====================================================== -->
-<!-- COSTA BLANCA -->
-<!-- ====================================================== -->
+        <!-- ====================================================== -->
+        <!-- COSTA BLANCA -->
+        <!-- ====================================================== -->
 
-<location id="costa-blanca" name="Costa Blanca">
+        <location id="costa-blanca" name="Costa Blanca">
 
-<language code="es">
-<keyword>Costa Blanca</keyword>
-<keyword>servicios técnicos Costa Blanca</keyword>
-<keyword>electricista Costa Blanca</keyword>
-<keyword>videovigilancia Costa Blanca</keyword>
-<keyword>router Costa Blanca</keyword>
-<keyword>WiFi Costa Blanca</keyword>
-<keyword>CCTV Costa Blanca</keyword>
-</language>
+            <language code="es">
+                <keyword>Costa Blanca</keyword>
+                <keyword>servicios técnicos Costa Blanca</keyword>
+                <keyword>electricista Costa Blanca</keyword>
+                <keyword>videovigilancia Costa Blanca</keyword>
+                <keyword>router Costa Blanca</keyword>
+                <keyword>WiFi Costa Blanca</keyword>
+                <keyword>CCTV Costa Blanca</keyword>
+            </language>
 
-<language code="en">
-<keyword>Costa Blanca electrician</keyword>
-<keyword>CCTV Costa Blanca</keyword>
-<keyword>security systems Costa Blanca</keyword>
-<keyword>WiFi Costa Blanca</keyword>
-<keyword>holiday home maintenance Costa Blanca</keyword>
-<keyword>technical services Costa Blanca</keyword>
-</language>
+            <language code="en">
+                <keyword>Costa Blanca electrician</keyword>
+                <keyword>CCTV Costa Blanca</keyword>
+                <keyword>security systems Costa Blanca</keyword>
+                <keyword>WiFi Costa Blanca</keyword>
+                <keyword>holiday home maintenance Costa Blanca</keyword>
+                <keyword>technical services Costa Blanca</keyword>
+            </language>
 
-<language code="de">
-<keyword>Elektriker Costa Blanca</keyword>
-<keyword>Videoüberwachung Costa Blanca</keyword>
-<keyword>Sicherheitstechnik Costa Blanca</keyword>
-<keyword>WLAN Costa Blanca</keyword>
-<keyword>Hausbetreuung Costa Blanca</keyword>
-</language>
+            <language code="de">
+                <keyword>Elektriker Costa Blanca</keyword>
+                <keyword>Videoüberwachung Costa Blanca</keyword>
+                <keyword>Sicherheitstechnik Costa Blanca</keyword>
+                <keyword>WLAN Costa Blanca</keyword>
+                <keyword>Hausbetreuung Costa Blanca</keyword>
+            </language>
 
-<language code="fr">
-<keyword>électricien Costa Blanca</keyword>
-<keyword>vidéosurveillance Costa Blanca</keyword>
-<keyword>maintenance Costa Blanca</keyword>
-</language>
+            <language code="fr">
+                <keyword>électricien Costa Blanca</keyword>
+                <keyword>vidéosurveillance Costa Blanca</keyword>
+                <keyword>maintenance Costa Blanca</keyword>
+            </language>
 
-<language code="it">
-<keyword>elettricista Costa Blanca</keyword>
-<keyword>videosorveglianza Costa Blanca</keyword>
-<keyword>manutenzione Costa Blanca</keyword>
-</language>
+            <language code="it">
+                <keyword>elettricista Costa Blanca</keyword>
+                <keyword>videosorveglianza Costa Blanca</keyword>
+                <keyword>manutenzione Costa Blanca</keyword>
+            </language>
 
-<language code="pt">
-<keyword>eletricista Costa Blanca</keyword>
-<keyword>videovigilância Costa Blanca</keyword>
-</language>
+            <language code="pt">
+                <keyword>eletricista Costa Blanca</keyword>
+                <keyword>videovigilância Costa Blanca</keyword>
+            </language>
 
-<language code="ru">
-<keyword>электрик Коста-Бланка</keyword>
-<keyword>видеонаблюдение Коста-Бланка</keyword>
-</language>
+            <language code="ru">
+                <keyword>электрик Коста-Бланка</keyword>
+                <keyword>видеонаблюдение Коста-Бланка</keyword>
+            </language>
 
-<language code="pl">
-<keyword>elektryk Costa Blanca</keyword>
-<keyword>monitoring Costa Blanca</keyword>
-</language>
+            <language code="pl">
+                <keyword>elektryk Costa Blanca</keyword>
+                <keyword>monitoring Costa Blanca</keyword>
+            </language>
 
-</location>
+        </location>
 
-<!-- ====================================================== -->
-<!-- LOCALIDADES -->
-<!-- ====================================================== -->
+        <!-- ====================================================== -->
+        <!-- LOCALIDADES -->
+        <!-- ====================================================== -->
 
-<location id="orihuela" name="Orihuela">
+        <location id="orihuela" name="Orihuela">
 
-<language code="es">
-<keyword>electricista Orihuela</keyword>
-<keyword>videovigilancia Orihuela</keyword>
-<keyword>CCTV Orihuela</keyword>
-<keyword>redes Orihuela</keyword>
-<keyword>router Orihuela</keyword>
-<keyword>WiFi Orihuela</keyword>
-<keyword>servicios técnicos Orihuela</keyword>
-<keyword>empresa mantenimiento Orihuela</keyword>
-<keyword>electricista cerca de mí Orihuela</keyword>
-</language>
+            <language code="es">
+                <keyword>electricista Orihuela</keyword>
+                <keyword>videovigilancia Orihuela</keyword>
+                <keyword>CCTV Orihuela</keyword>
+                <keyword>redes Orihuela</keyword>
+                <keyword>router Orihuela</keyword>
+                <keyword>WiFi Orihuela</keyword>
+                <keyword>servicios técnicos Orihuela</keyword>
+                <keyword>empresa mantenimiento Orihuela</keyword>
+                <keyword>electricista cerca de mí Orihuela</keyword>
+            </language>
 
-<language code="en">
-<keyword>electrician Orihuela</keyword>
-<keyword>CCTV installer Orihuela</keyword>
-<keyword>security systems Orihuela</keyword>
-<keyword>WiFi Orihuela</keyword>
-<keyword>technical services Orihuela</keyword>
-<keyword>property maintenance Orihuela</keyword>
-<keyword>electrician near me Orihuela</keyword>
-</language>
+            <language code="en">
+                <keyword>electrician Orihuela</keyword>
+                <keyword>CCTV installer Orihuela</keyword>
+                <keyword>security systems Orihuela</keyword>
+                <keyword>WiFi Orihuela</keyword>
+                <keyword>technical services Orihuela</keyword>
+                <keyword>property maintenance Orihuela</keyword>
+                <keyword>electrician near me Orihuela</keyword>
+            </language>
 
-<language code="de">
-<keyword>Elektriker Orihuela</keyword>
-<keyword>Videoüberwachung Orihuela</keyword>
-<keyword>Sicherheitstechnik Orihuela</keyword>
-<keyword>WLAN Orihuela</keyword>
-<keyword>Hausbetreuung Orihuela</keyword>
-</language>
+            <language code="de">
+                <keyword>Elektriker Orihuela</keyword>
+                <keyword>Videoüberwachung Orihuela</keyword>
+                <keyword>Sicherheitstechnik Orihuela</keyword>
+                <keyword>WLAN Orihuela</keyword>
+                <keyword>Hausbetreuung Orihuela</keyword>
+            </language>
 
-<language code="fr">
-<keyword>électricien Orihuela</keyword>
-<keyword>vidéosurveillance Orihuela</keyword>
-<keyword>services techniques Orihuela</keyword>
-</language>
+            <language code="fr">
+                <keyword>électricien Orihuela</keyword>
+                <keyword>vidéosurveillance Orihuela</keyword>
+                <keyword>services techniques Orihuela</keyword>
+            </language>
 
-<language code="it">
-<keyword>elettricista Orihuela</keyword>
-<keyword>videosorveglianza Orihuela</keyword>
-<keyword>servizi tecnici Orihuela</keyword>
-</language>
+            <language code="it">
+                <keyword>elettricista Orihuela</keyword>
+                <keyword>videosorveglianza Orihuela</keyword>
+                <keyword>servizi tecnici Orihuela</keyword>
+            </language>
 
-<language code="pt">
-<keyword>eletricista Orihuela</keyword>
-<keyword>videovigilância Orihuela</keyword>
-</language>
+            <language code="pt">
+                <keyword>eletricista Orihuela</keyword>
+                <keyword>videovigilância Orihuela</keyword>
+            </language>
 
-<language code="ru">
-<keyword>электрик Ориуэла</keyword>
-<keyword>видеонаблюдение Ориуэла</keyword>
-</language>
+            <language code="ru">
+                <keyword>электрик Ориуэла</keyword>
+                <keyword>видеонаблюдение Ориуэла</keyword>
+            </language>
 
-<language code="pl">
-<keyword>elektryk Orihuela</keyword>
-<keyword>monitoring Orihuela</keyword>
-</language>
+            <language code="pl">
+                <keyword>elektryk Orihuela</keyword>
+                <keyword>monitoring Orihuela</keyword>
+            </language>
 
-</location>
+        </location>
+    </topic>
+    <!-- ========================================================== -->
+    <!-- FASE 3 -->
+    <!-- SEARCH INTENT -->
+    <!-- ========================================================== -->
 
-<!-- ========================================================== -->
-<!-- FASE 3 -->
-<!-- SEARCH INTENT -->
-<!-- ========================================================== -->
+    <topic
+        id="phase-03"
+        name="SEARCH INTENT"
+        slug="search-intent">
 
-<topic
-    id="phase-03"
-    name="SEARCH INTENT"
-    slug="search-intent">
+        <!-- ====================================================== -->
+        <!-- KNOW -->
+        <!-- ====================================================== -->
 
-<!-- ====================================================== -->
-<!-- KNOW -->
-<!-- ====================================================== -->
+        <intent
+            id="know"
+            name="Informational Searches">
 
-<intent
-    id="know"
-    name="Informational Searches">
+            <language code="es">
 
-<language code="es">
+                <keyword>cómo mejorar el WiFi</keyword>
+                <keyword>qué cámaras de seguridad instalar</keyword>
+                <keyword>qué router necesito</keyword>
+                <keyword>cómo funciona un sistema CCTV</keyword>
+                <keyword>cómo ampliar la cobertura WiFi</keyword>
+                <keyword>qué electricista contratar</keyword>
+                <keyword>cómo proteger una vivienda</keyword>
+                <keyword>cómo proteger un negocio</keyword>
 
-<keyword>cómo mejorar el WiFi</keyword>
-<keyword>qué cámaras de seguridad instalar</keyword>
-<keyword>qué router necesito</keyword>
-<keyword>cómo funciona un sistema CCTV</keyword>
-<keyword>cómo ampliar la cobertura WiFi</keyword>
-<keyword>qué electricista contratar</keyword>
-<keyword>cómo proteger una vivienda</keyword>
-<keyword>cómo proteger un negocio</keyword>
+            </language>
 
-</language>
+            <language code="en">
 
-<language code="en">
+                <keyword>how to improve WiFi signal</keyword>
+                <keyword>best security cameras for home</keyword>
+                <keyword>which CCTV system do I need</keyword>
+                <keyword>best wireless router</keyword>
+                <keyword>how to secure a holiday home</keyword>
+                <keyword>how to protect my villa</keyword>
+                <keyword>how CCTV works</keyword>
 
-<keyword>how to improve WiFi signal</keyword>
-<keyword>best security cameras for home</keyword>
-<keyword>which CCTV system do I need</keyword>
-<keyword>best wireless router</keyword>
-<keyword>how to secure a holiday home</keyword>
-<keyword>how to protect my villa</keyword>
-<keyword>how CCTV works</keyword>
+            </language>
 
-</language>
+            <language code="de">
 
-<language code="de">
+                <keyword>WLAN verbessern</keyword>
+                <keyword>welche Überwachungskamera kaufen</keyword>
+                <keyword>welches Sicherheitssystem brauche ich</keyword>
+                <keyword>bester WLAN Router</keyword>
+                <keyword>Ferienhaus sichern</keyword>
+                <keyword>Videoüberwachung Haus</keyword>
 
-<keyword>WLAN verbessern</keyword>
-<keyword>welche Überwachungskamera kaufen</keyword>
-<keyword>welches Sicherheitssystem brauche ich</keyword>
-<keyword>bester WLAN Router</keyword>
-<keyword>Ferienhaus sichern</keyword>
-<keyword>Videoüberwachung Haus</keyword>
+            </language>
 
-</language>
+            <language code="fr">
 
-<language code="fr">
+                <keyword>comment améliorer le WiFi</keyword>
+                <keyword>quelle caméra de sécurité choisir</keyword>
+                <keyword>quel système CCTV installer</keyword>
+                <keyword>protéger une maison</keyword>
+                <keyword>sécuriser une villa</keyword>
 
-<keyword>comment améliorer le WiFi</keyword>
-<keyword>quelle caméra de sécurité choisir</keyword>
-<keyword>quel système CCTV installer</keyword>
-<keyword>protéger une maison</keyword>
-<keyword>sécuriser une villa</keyword>
+            </language>
 
-</language>
+            <language code="it">
 
-<language code="it">
+                <keyword>come migliorare il WiFi</keyword>
+                <keyword>quale telecamera installare</keyword>
+                <keyword>quale router scegliere</keyword>
+                <keyword>proteggere una villa</keyword>
 
-<keyword>come migliorare il WiFi</keyword>
-<keyword>quale telecamera installare</keyword>
-<keyword>quale router scegliere</keyword>
-<keyword>proteggere una villa</keyword>
+            </language>
 
-</language>
+            <language code="pt">
 
-<language code="pt">
+                <keyword>como melhorar o WiFi</keyword>
+                <keyword>melhores câmaras de segurança</keyword>
+                <keyword>qual router escolher</keyword>
 
-<keyword>como melhorar o WiFi</keyword>
-<keyword>melhores câmaras de segurança</keyword>
-<keyword>qual router escolher</keyword>
+            </language>
 
-</language>
+            <language code="ru">
 
-<language code="ru">
+                <keyword>как улучшить WiFi</keyword>
+                <keyword>какие камеры выбрать</keyword>
+                <keyword>какой роутер купить</keyword>
 
-<keyword>как улучшить WiFi</keyword>
-<keyword>какие камеры выбрать</keyword>
-<keyword>какой роутер купить</keyword>
+            </language>
 
-</language>
+            <language code="pl">
 
-<language code="pl">
+                <keyword>jak poprawić WiFi</keyword>
+                <keyword>jakie kamery wybrać</keyword>
+                <keyword>jaki router kupić</keyword>
 
-<keyword>jak poprawić WiFi</keyword>
-<keyword>jakie kamery wybrać</keyword>
-<keyword>jaki router kupić</keyword>
+            </language>
 
-</language>
+        </intent>
 
-</intent>
+        <!-- ====================================================== -->
+        <!-- DO -->
+        <!-- ====================================================== -->
 
-<!-- ====================================================== -->
-<!-- DO -->
-<!-- ====================================================== -->
+        <intent
+            id="do"
+            name="Service Searches">
 
-<intent
-    id="do"
-    name="Service Searches">
+            <language code="es">
 
-<language code="es">
+                <keyword>instalar cámaras de seguridad</keyword>
+                <keyword>instalar CCTV</keyword>
+                <keyword>instalar router</keyword>
+                <keyword>configurar WiFi</keyword>
+                <keyword>instalar red informática</keyword>
+                <keyword>reparar instalación eléctrica</keyword>
 
-<keyword>instalar cámaras de seguridad</keyword>
-<keyword>instalar CCTV</keyword>
-<keyword>instalar router</keyword>
-<keyword>configurar WiFi</keyword>
-<keyword>instalar red informática</keyword>
-<keyword>reparar instalación eléctrica</keyword>
+            </language>
 
-</language>
+            <language code="en">
 
-<language code="en">
+                <keyword>CCTV installation</keyword>
+                <keyword>security camera installation</keyword>
+                <keyword>WiFi installation</keyword>
+                <keyword>network installation</keyword>
+                <keyword>router installation</keyword>
+                <keyword>electrical installation</keyword>
 
-<keyword>CCTV installation</keyword>
-<keyword>security camera installation</keyword>
-<keyword>WiFi installation</keyword>
-<keyword>network installation</keyword>
-<keyword>router installation</keyword>
-<keyword>electrical installation</keyword>
+            </language>
 
-</language>
+            <language code="de">
 
-<language code="de">
+                <keyword>Videoüberwachung installieren</keyword>
+                <keyword>Elektriker beauftragen</keyword>
+                <keyword>WLAN installieren</keyword>
+                <keyword>Netzwerk installieren</keyword>
 
-<keyword>Videoüberwachung installieren</keyword>
-<keyword>Elektriker beauftragen</keyword>
-<keyword>WLAN installieren</keyword>
-<keyword>Netzwerk installieren</keyword>
+            </language>
 
-</language>
+            <language code="fr">
 
-<language code="fr">
+                <keyword>installation vidéosurveillance</keyword>
+                <keyword>installation WiFi</keyword>
+                <keyword>installation électrique</keyword>
 
-<keyword>installation vidéosurveillance</keyword>
-<keyword>installation WiFi</keyword>
-<keyword>installation électrique</keyword>
+            </language>
 
-</language>
+            <language code="it">
 
-<language code="it">
+                <keyword>installazione videosorveglianza</keyword>
+                <keyword>installazione WiFi</keyword>
+                <keyword>installazione elettrica</keyword>
 
-<keyword>installazione videosorveglianza</keyword>
-<keyword>installazione WiFi</keyword>
-<keyword>installazione elettrica</keyword>
+            </language>
 
-</language>
+            <language code="pt">
 
-<language code="pt">
+                <keyword>instalação CCTV</keyword>
+                <keyword>instalação WiFi</keyword>
+                <keyword>instalação elétrica</keyword>
 
-<keyword>instalação CCTV</keyword>
-<keyword>instalação WiFi</keyword>
-<keyword>instalação elétrica</keyword>
+            </language>
 
-</language>
+            <language code="ru">
 
-<language code="ru">
+                <keyword>установка видеонаблюдения</keyword>
+                <keyword>монтаж WiFi</keyword>
+                <keyword>электромонтаж</keyword>
 
-<keyword>установка видеонаблюдения</keyword>
-<keyword>монтаж WiFi</keyword>
-<keyword>электромонтаж</keyword>
+            </language>
 
-</language>
+            <language code="pl">
 
-<language code="pl">
+                <keyword>instalacja monitoringu</keyword>
+                <keyword>instalacja WiFi</keyword>
+                <keyword>instalacje elektryczne</keyword>
 
-<keyword>instalacja monitoringu</keyword>
-<keyword>instalacja WiFi</keyword>
-<keyword>instalacje elektryczne</keyword>
+            </language>
 
-</language>
+        </intent>
 
-</intent>
+        <!-- ====================================================== -->
+        <!-- BUY -->
+        <!-- ====================================================== -->
 
-<!-- ====================================================== -->
-<!-- BUY -->
-<!-- ====================================================== -->
+        <intent
+            id="buy"
+            name="Commercial Searches">
 
-<intent
-    id="buy"
-    name="Commercial Searches">
+            <language code="es">
 
-<language code="es">
+                <keyword>presupuesto CCTV</keyword>
+                <keyword>precio cámaras de seguridad</keyword>
+                <keyword>precio electricista</keyword>
+                <keyword>presupuesto instalación WiFi</keyword>
 
-<keyword>presupuesto CCTV</keyword>
-<keyword>precio cámaras de seguridad</keyword>
-<keyword>precio electricista</keyword>
-<keyword>presupuesto instalación WiFi</keyword>
+            </language>
 
-</language>
+            <language code="en">
 
-<language code="en">
+                <keyword>CCTV installation cost</keyword>
+                <keyword>security camera installation price</keyword>
+                <keyword>electrician quote</keyword>
+                <keyword>WiFi installation cost</keyword>
 
-<keyword>CCTV installation cost</keyword>
-<keyword>security camera installation price</keyword>
-<keyword>electrician quote</keyword>
-<keyword>WiFi installation cost</keyword>
+            </language>
 
-</language>
+            <language code="de">
 
-<language code="de">
+                <keyword>Kosten Videoüberwachung</keyword>
+                <keyword>Elektriker Angebot</keyword>
+                <keyword>WLAN Installation Kosten</keyword>
 
-<keyword>Kosten Videoüberwachung</keyword>
-<keyword>Elektriker Angebot</keyword>
-<keyword>WLAN Installation Kosten</keyword>
+            </language>
 
-</language>
+            <language code="fr">
 
-<language code="fr">
+                <keyword>devis vidéosurveillance</keyword>
+                <keyword>prix électricien</keyword>
 
-<keyword>devis vidéosurveillance</keyword>
-<keyword>prix électricien</keyword>
+            </language>
 
-</language>
+            <language code="it">
 
-<language code="it">
+                <keyword>preventivo videosorveglianza</keyword>
+                <keyword>costo elettricista</keyword>
 
-<keyword>preventivo videosorveglianza</keyword>
-<keyword>costo elettricista</keyword>
+            </language>
 
-</language>
+            <language code="pt">
 
-<language code="pt">
+                <keyword>orçamento CCTV</keyword>
+                <keyword>preço eletricista</keyword>
 
-<keyword>orçamento CCTV</keyword>
-<keyword>preço eletricista</keyword>
+            </language>
 
-</language>
+            <language code="ru">
 
-<language code="ru">
+                <keyword>стоимость видеонаблюдения</keyword>
+                <keyword>вызов электрика цена</keyword>
 
-<keyword>стоимость видеонаблюдения</keyword>
-<keyword>вызов электрика цена</keyword>
+            </language>
 
-</language>
+            <language code="pl">
 
-<language code="pl">
+                <keyword>koszt monitoringu</keyword>
+                <keyword>cena elektryka</keyword>
 
-<keyword>koszt monitoringu</keyword>
-<keyword>cena elektryka</keyword>
+            </language>
 
-</language>
+        </intent>
 
-</intent>
+        <!-- ====================================================== -->
+        <!-- LOCAL -->
+        <!-- ====================================================== -->
 
-<!-- ====================================================== -->
-<!-- LOCAL -->
-<!-- ====================================================== -->
+        <intent
+            id="local"
+            name="Local Searches">
 
-<intent
-    id="local"
-    name="Local Searches">
+            <language code="es">
 
-<language code="es">
+                <keyword>electricista cerca de mí</keyword>
+                <keyword>CCTV cerca de mí</keyword>
+                <keyword>WiFi cerca de mí</keyword>
+                <keyword>empresa mantenimiento cerca de mí</keyword>
 
-<keyword>electricista cerca de mí</keyword>
-<keyword>CCTV cerca de mí</keyword>
-<keyword>WiFi cerca de mí</keyword>
-<keyword>empresa mantenimiento cerca de mí</keyword>
+            </language>
 
-</language>
+            <language code="en">
 
-<language code="en">
+                <keyword>electrician near me</keyword>
+                <keyword>CCTV installer near me</keyword>
+                <keyword>security company near me</keyword>
 
-<keyword>electrician near me</keyword>
-<keyword>CCTV installer near me</keyword>
-<keyword>security company near me</keyword>
+            </language>
 
-</language>
+            <language code="de">
 
-<language code="de">
+                <keyword>Elektriker in der Nähe</keyword>
+                <keyword>Videoüberwachung in meiner Nähe</keyword>
 
-<keyword>Elektriker in der Nähe</keyword>
-<keyword>Videoüberwachung in meiner Nähe</keyword>
+            </language>
 
-</language>
+            <language code="fr">
 
-<language code="fr">
+                <keyword>électricien près de moi</keyword>
+                <keyword>vidéosurveillance près de moi</keyword>
 
-<keyword>électricien près de moi</keyword>
-<keyword>vidéosurveillance près de moi</keyword>
+            </language>
 
-</language>
+            <language code="it">
 
-<language code="it">
+                <keyword>elettricista vicino a me</keyword>
+                <keyword>videosorveglianza vicino a me</keyword>
 
-<keyword>elettricista vicino a me</keyword>
-<keyword>videosorveglianza vicino a me</keyword>
+            </language>
 
-</language>
+            <language code="pt">
 
-<language code="pt">
+                <keyword>eletricista perto de mim</keyword>
+                <keyword>CCTV perto de mim</keyword>
 
-<keyword>eletricista perto de mim</keyword>
-<keyword>CCTV perto de mim</keyword>
+            </language>
 
-</language>
+            <language code="ru">
 
-<language code="ru">
+                <keyword>электрик рядом</keyword>
+                <keyword>видеонаблюдение рядом</keyword>
 
-<keyword>электрик рядом</keyword>
-<keyword>видеонаблюдение рядом</keyword>
+            </language>
 
-</language>
+            <language code="pl">
 
-<language code="pl">
+                <keyword>elektryk w pobliżu</keyword>
+                <keyword>monitoring w pobliżu</keyword>
 
-<keyword>elektryk w pobliżu</keyword>
-<keyword>monitoring w pobliżu</keyword>
+            </language>
 
-</language>
+        </intent>
 
-</intent>
+        <!-- ====================================================== -->
+        <!-- EMERGENCY -->
+        <!-- ====================================================== -->
 
-<!-- ====================================================== -->
-<!-- EMERGENCY -->
-<!-- ====================================================== -->
+        <intent
+            id="emergency"
+            name="Emergency Searches">
 
-<intent
-    id="emergency"
-    name="Emergency Searches">
+            <language code="es">
 
-<language code="es">
+                <keyword>electricista urgente</keyword>
+                <keyword>Internet no funciona</keyword>
+                <keyword>WiFi no funciona</keyword>
+                <keyword>cámaras averiadas</keyword>
+                <keyword>salta el diferencial</keyword>
 
-<keyword>electricista urgente</keyword>
-<keyword>Internet no funciona</keyword>
-<keyword>WiFi no funciona</keyword>
-<keyword>cámaras averiadas</keyword>
-<keyword>salta el diferencial</keyword>
+            </language>
 
-</language>
+            <language code="en">
 
-<language code="en">
+                <keyword>emergency electrician</keyword>
+                <keyword>Internet not working</keyword>
+                <keyword>WiFi not working</keyword>
+                <keyword>CCTV repair</keyword>
+                <keyword>power outage electrician</keyword>
 
-<keyword>emergency electrician</keyword>
-<keyword>Internet not working</keyword>
-<keyword>WiFi not working</keyword>
-<keyword>CCTV repair</keyword>
-<keyword>power outage electrician</keyword>
+            </language>
 
-</language>
+            <language code="de">
 
-<language code="de">
+                <keyword>Elektriker Notdienst</keyword>
+                <keyword>WLAN funktioniert nicht</keyword>
+                <keyword>Internet ausgefallen</keyword>
 
-<keyword>Elektriker Notdienst</keyword>
-<keyword>WLAN funktioniert nicht</keyword>
-<keyword>Internet ausgefallen</keyword>
+            </language>
 
-</language>
+            <language code="fr">
 
-<language code="fr">
+                <keyword>électricien urgence</keyword>
+                <keyword>WiFi ne fonctionne pas</keyword>
 
-<keyword>électricien urgence</keyword>
-<keyword>WiFi ne fonctionne pas</keyword>
+            </language>
 
-</language>
+            <language code="it">
 
-<language code="it">
+                <keyword>elettricista urgente</keyword>
+                <keyword>WiFi non funziona</keyword>
 
-<keyword>elettricista urgente</keyword>
-<keyword>WiFi non funziona</keyword>
+            </language>
 
-</language>
+            <language code="pt">
 
-<language code="pt">
+                <keyword>eletricista urgente</keyword>
+                <keyword>WiFi não funciona</keyword>
 
-<keyword>eletricista urgente</keyword>
-<keyword>WiFi não funciona</keyword>
+            </language>
 
-</language>
+            <language code="ru">
 
-<language code="ru">
+                <keyword>срочный электрик</keyword>
+                <keyword>не работает WiFi</keyword>
 
-<keyword>срочный электрик</keyword>
-<keyword>не работает WiFi</keyword>
+            </language>
 
-</language>
+            <language code="pl">
 
-<language code="pl">
+                <keyword>pogotowie elektryczne</keyword>
+                <keyword>WiFi nie działa</keyword>
 
-<keyword>pogotowie elektryczne</keyword>
-<keyword>WiFi nie działa</keyword>
+            </language>
 
-</language>
+        </intent>
 
-</intent>
+    </topic>
 
-</topic>
+    <!-- ========================================================== -->
+    <!-- FASE 4 -->
+    <!-- SEMANTIC KNOWLEDGE BASE -->
+    <!-- ========================================================== -->
 
-<!-- ========================================================== -->
-<!-- FASE 4 -->
-<!-- SEMANTIC KNOWLEDGE BASE -->
-<!-- ========================================================== -->
+    <topic
+        id="phase-04"
+        name="SEMANTIC KNOWLEDGE BASE"
+        slug="semantic-knowledge-base">
 
-<topic
-    id="phase-04"
-    name="SEMANTIC KNOWLEDGE BASE"
-    slug="semantic-knowledge-base">
+        <!-- ====================================================== -->
+        <!-- VIDEOVIGILANCIA -->
+        <!-- ====================================================== -->
 
-<!-- ====================================================== -->
-<!-- VIDEOVIGILANCIA -->
-<!-- ====================================================== -->
+        <entity
+            id="security"
+            type="service">
 
-<entity
-    id="security"
-    type="service">
+            <language code="es">
 
-<language code="es">
+                <name>Videovigilancia CCTV y Seguridad</name>
 
-<name>Videovigilancia CCTV y Seguridad</name>
+                <synonyms>
 
-<synonyms>
+                    <term>videovigilancia</term>
+                    <term>CCTV</term>
+                    <term>cámaras de seguridad</term>
+                    <term>video vigilancia</term>
+                    <term>seguridad electrónica</term>
+                    <term>sistemas CCTV</term>
+                    <term>monitorización remota</term>
 
-<term>videovigilancia</term>
-<term>CCTV</term>
-<term>cámaras de seguridad</term>
-<term>video vigilancia</term>
-<term>seguridad electrónica</term>
-<term>sistemas CCTV</term>
-<term>monitorización remota</term>
+                </synonyms>
 
-</synonyms>
+                <related>
 
-<related>
+                    <term>NVR</term>
+                    <term>DVR</term>
+                    <term>PoE</term>
+                    <term>cámara IP</term>
+                    <term>cámara WiFi</term>
+                    <term>control de accesos</term>
+                    <term>videoportero</term>
+                    <term>alarma</term>
 
-<term>NVR</term>
-<term>DVR</term>
-<term>PoE</term>
-<term>cámara IP</term>
-<term>cámara WiFi</term>
-<term>control de accesos</term>
-<term>videoportero</term>
-<term>alarma</term>
+                </related>
 
-</related>
+            </language>
 
-</language>
+            <language code="en">
 
-<language code="en">
+                <name>CCTV &amp; Security Systems</name>
 
-<name>CCTV &amp; Security Systems</name>
+                <synonyms>
 
-<synonyms>
+                    <term>CCTV</term>
+                    <term>security cameras</term>
+                    <term>video surveillance</term>
+                    <term>home security</term>
+                    <term>business security</term>
+                    <term>surveillance system</term>
 
-<term>CCTV</term>
-<term>security cameras</term>
-<term>video surveillance</term>
-<term>home security</term>
-<term>business security</term>
-<term>surveillance system</term>
+                </synonyms>
 
-</synonyms>
+                <related>
 
-<related>
+                    <term>NVR</term>
+                    <term>DVR</term>
+                    <term>IP camera</term>
+                    <term>wireless camera</term>
+                    <term>access control</term>
+                    <term>video intercom</term>
 
-<term>NVR</term>
-<term>DVR</term>
-<term>IP camera</term>
-<term>wireless camera</term>
-<term>access control</term>
-<term>video intercom</term>
+                </related>
 
-</related>
+            </language>
 
-</language>
+            <language code="de">
 
-<language code="de">
+                <name>Videoüberwachung</name>
 
-<name>Videoüberwachung</name>
+                <synonyms>
 
-<synonyms>
+                    <term>Videoüberwachung</term>
+                    <term>Überwachungskameras</term>
+                    <term>Sicherheitstechnik</term>
+                    <term>Alarmanlage</term>
+                    <term>Haussicherheit</term>
 
-<term>Videoüberwachung</term>
-<term>Überwachungskameras</term>
-<term>Sicherheitstechnik</term>
-<term>Alarmanlage</term>
-<term>Haussicherheit</term>
+                </synonyms>
 
-</synonyms>
+                <related>
 
-<related>
+                    <term>IP Kamera</term>
+                    <term>NVR</term>
+                    <term>DVR</term>
+                    <term>Videosprechanlage</term>
 
-<term>IP Kamera</term>
-<term>NVR</term>
-<term>DVR</term>
-<term>Videosprechanlage</term>
+                </related>
 
-</related>
+            </language>
 
-</language>
+            <language code="fr">
 
-<language code="fr">
+                <name>Vidéosurveillance</name>
 
-<name>Vidéosurveillance</name>
+                <synonyms>
 
-<synonyms>
+                    <term>vidéosurveillance</term>
+                    <term>caméras de sécurité</term>
+                    <term>système CCTV</term>
+                    <term>sécurité habitation</term>
 
-<term>vidéosurveillance</term>
-<term>caméras de sécurité</term>
-<term>système CCTV</term>
-<term>sécurité habitation</term>
+                </synonyms>
 
-</synonyms>
+            </language>
 
-</language>
+            <language code="it">
 
-<language code="it">
+                <name>Videosorveglianza</name>
 
-<name>Videosorveglianza</name>
+                <synonyms>
 
-<synonyms>
+                    <term>videosorveglianza</term>
+                    <term>telecamere di sicurezza</term>
+                    <term>impianto CCTV</term>
 
-<term>videosorveglianza</term>
-<term>telecamere di sicurezza</term>
-<term>impianto CCTV</term>
+                </synonyms>
 
-</synonyms>
+            </language>
 
-</language>
+            <language code="pt">
 
-<language code="pt">
+                <name>Videovigilância</name>
 
-<name>Videovigilância</name>
+                <synonyms>
 
-<synonyms>
+                    <term>videovigilância</term>
+                    <term>câmaras de segurança</term>
+                    <term>sistema CCTV</term>
 
-<term>videovigilância</term>
-<term>câmaras de segurança</term>
-<term>sistema CCTV</term>
+                </synonyms>
 
-</synonyms>
+            </language>
 
-</language>
+            <language code="ru">
 
-<language code="ru">
+                <name>Видеонаблюдение</name>
 
-<name>Видеонаблюдение</name>
+                <synonyms>
 
-<synonyms>
+                    <term>видеонаблюдение</term>
+                    <term>камеры безопасности</term>
+                    <term>CCTV</term>
 
-<term>видеонаблюдение</term>
-<term>камеры безопасности</term>
-<term>CCTV</term>
+                </synonyms>
 
-</synonyms>
+            </language>
 
-</language>
+            <language code="pl">
 
-<language code="pl">
+                <name>Monitoring</name>
 
-<name>Monitoring</name>
+                <synonyms>
 
-<synonyms>
+                    <term>monitoring CCTV</term>
+                    <term>kamery bezpieczeństwa</term>
+                    <term>system monitoringu</term>
 
-<term>monitoring CCTV</term>
-<term>kamery bezpieczeństwa</term>
-<term>system monitoringu</term>
+                </synonyms>
 
-</synonyms>
+            </language>
 
-</language>
+        </entity>
 
-</entity>
+        <!-- ====================================================== -->
+        <!-- ELECTRICIDAD -->
+        <!-- ====================================================== -->
 
-<!-- ====================================================== -->
-<!-- ELECTRICIDAD -->
-<!-- ====================================================== -->
+        <entity
+            id="electricity"
+            type="service">
 
-<entity
-    id="electricity"
-    type="service">
+            <language code="es">
 
-<language code="es">
+                <name>Electricidad</name>
 
-<name>Electricidad</name>
+                <synonyms>
 
-<synonyms>
+                    <term>electricista</term>
+                    <term>instalación eléctrica</term>
+                    <term>avería eléctrica</term>
+                    <term>mantenimiento eléctrico</term>
 
-<term>electricista</term>
-<term>instalación eléctrica</term>
-<term>avería eléctrica</term>
-<term>mantenimiento eléctrico</term>
+                </synonyms>
 
-</synonyms>
+                <related>
 
-<related>
+                    <term>cuadro eléctrico</term>
+                    <term>diferencial</term>
+                    <term>magnetotérmico</term>
+                    <term>puesta a tierra</term>
+                    <term>iluminación LED</term>
 
-<term>cuadro eléctrico</term>
-<term>diferencial</term>
-<term>magnetotérmico</term>
-<term>puesta a tierra</term>
-<term>iluminación LED</term>
+                </related>
 
-</related>
+            </language>
 
-</language>
+            <language code="en">
 
-<language code="en">
+                <name>Electrical Services</name>
 
-<name>Electrical Services</name>
+                <synonyms>
 
-<synonyms>
+                    <term>electrician</term>
+                    <term>electrical contractor</term>
+                    <term>electrical installation</term>
+                    <term>electrical maintenance</term>
 
-<term>electrician</term>
-<term>electrical contractor</term>
-<term>electrical installation</term>
-<term>electrical maintenance</term>
+                </synonyms>
 
-</synonyms>
+            </language>
 
-</language>
+            <language code="de">
 
-<language code="de">
+                <name>Elektrotechnik</name>
 
-<name>Elektrotechnik</name>
+                <synonyms>
 
-<synonyms>
+                    <term>Elektriker</term>
+                    <term>Elektroinstallation</term>
+                    <term>Elektroservice</term>
 
-<term>Elektriker</term>
-<term>Elektroinstallation</term>
-<term>Elektroservice</term>
+                </synonyms>
 
-</synonyms>
+            </language>
 
-</language>
+            <language code="fr">
 
-<language code="fr">
+                <name>Électricité</name>
 
-<name>Électricité</name>
+                <synonyms>
 
-<synonyms>
+                    <term>électricien</term>
+                    <term>installation électrique</term>
 
-<term>électricien</term>
-<term>installation électrique</term>
+                </synonyms>
 
-</synonyms>
+            </language>
 
-</language>
+            <language code="it">
 
-<language code="it">
+                <name>Impianti Elettrici</name>
 
-<name>Impianti Elettrici</name>
+                <synonyms>
 
-<synonyms>
+                    <term>elettricista</term>
+                    <term>impianto elettrico</term>
 
-<term>elettricista</term>
-<term>impianto elettrico</term>
+                </synonyms>
 
-</synonyms>
+            </language>
 
-</language>
+            <language code="pt">
 
-<language code="pt">
+                <name>Serviços Elétricos</name>
 
-<name>Serviços Elétricos</name>
+                <synonyms>
 
-<synonyms>
+                    <term>eletricista</term>
+                    <term>instalação elétrica</term>
 
-<term>eletricista</term>
-<term>instalação elétrica</term>
+                </synonyms>
 
-</synonyms>
+            </language>
 
-</language>
+            <language code="ru">
 
-<language code="ru">
+                <name>Электромонтаж</name>
 
-<name>Электромонтаж</name>
+                <synonyms>
 
-<synonyms>
+                    <term>электрик</term>
+                    <term>электромонтаж</term>
 
-<term>электрик</term>
-<term>электромонтаж</term>
+                </synonyms>
 
-</synonyms>
+            </language>
 
-</language>
+            <language code="pl">
 
-<language code="pl">
+                <name>Instalacje Elektryczne</name>
 
-<name>Instalacje Elektryczne</name>
+                <synonyms>
 
-<synonyms>
+                    <term>elektryk</term>
+                    <term>instalacje elektryczne</term>
 
-<term>elektryk</term>
-<term>instalacje elektryczne</term>
+                </synonyms>
 
-</synonyms>
+            </language>
 
-</language>
+        </entity>
 
-</entity>
+        <!-- ====================================================== -->
+        <!-- REDES -->
+        <!-- ====================================================== -->
 
-<!-- ====================================================== -->
-<!-- REDES -->
-<!-- ====================================================== -->
+        <entity
+            id="network"
+            type="service">
 
-<entity
-    id="network"
-    type="service">
+            <language code="es">
 
-<language code="es">
+                <name>Redes y Conectividad</name>
 
-<name>Redes y Conectividad</name>
+                <synonyms>
 
-<synonyms>
+                    <term>WiFi</term>
+                    <term>router</term>
+                    <term>Internet</term>
+                    <term>red informática</term>
+                    <term>LAN</term>
+                    <term>WAN</term>
 
-<term>WiFi</term>
-<term>router</term>
-<term>Internet</term>
-<term>red informática</term>
-<term>LAN</term>
-<term>WAN</term>
+                </synonyms>
 
-</synonyms>
+                <related>
 
-<related>
+                    <term>Mesh</term>
+                    <term>Access Point</term>
+                    <term>Switch</term>
+                    <term>Rack</term>
+                    <term>RJ45</term>
+                    <term>CAT6</term>
+                    <term>CAT6A</term>
+                    <term>CAT7</term>
+                    <term>fibra óptica</term>
 
-<term>Mesh</term>
-<term>Access Point</term>
-<term>Switch</term>
-<term>Rack</term>
-<term>RJ45</term>
-<term>CAT6</term>
-<term>CAT6A</term>
-<term>CAT7</term>
-<term>fibra óptica</term>
+                </related>
 
-</related>
+            </language>
 
-</language>
+            <language code="en">
 
-<language code="en">
+                <name>Networking &amp; Connectivity</name>
 
-<name>Networking &amp; Connectivity</name>
+                <synonyms>
 
-<synonyms>
+                    <term>WiFi</term>
+                    <term>wireless network</term>
+                    <term>router</term>
+                    <term>network installation</term>
 
-<term>WiFi</term>
-<term>wireless network</term>
-<term>router</term>
-<term>network installation</term>
+                </synonyms>
 
-</synonyms>
+            </language>
 
-</language>
+            <language code="de">
 
-<language code="de">
+                <name>Netzwerktechnik</name>
 
-<name>Netzwerktechnik</name>
+                <synonyms>
 
-<synonyms>
+                    <term>WLAN</term>
+                    <term>Netzwerk</term>
+                    <term>Router</term>
 
-<term>WLAN</term>
-<term>Netzwerk</term>
-<term>Router</term>
+                </synonyms>
 
-</synonyms>
+            </language>
 
-</language>
+            <language code="fr">
 
-<language code="fr">
+                <name>Réseaux Informatiques</name>
 
-<name>Réseaux Informatiques</name>
+                <synonyms>
 
-<synonyms>
+                    <term>WiFi</term>
+                    <term>réseau informatique</term>
 
-<term>WiFi</term>
-<term>réseau informatique</term>
+                </synonyms>
 
-</synonyms>
+            </language>
 
-</language>
+            <language code="it">
 
-<language code="it">
+                <name>Reti Informatiche</name>
 
-<name>Reti Informatiche</name>
+                <synonyms>
 
-<synonyms>
+                    <term>WiFi</term>
+                    <term>rete informatica</term>
 
-<term>WiFi</term>
-<term>rete informatica</term>
+                </synonyms>
 
-</synonyms>
+            </language>
 
-</language>
+            <language code="pt">
 
-<language code="pt">
+                <name>Redes Informáticas</name>
 
-<name>Redes Informáticas</name>
+                <synonyms>
 
-<synonyms>
+                    <term>WiFi</term>
+                    <term>rede informática</term>
 
-<term>WiFi</term>
-<term>rede informática</term>
+                </synonyms>
 
-</synonyms>
+            </language>
 
-</language>
+            <language code="ru">
 
-<language code="ru">
+                <name>Компьютерные сети</name>
 
-<name>Компьютерные сети</name>
+                <synonyms>
 
-<synonyms>
+                    <term>WiFi</term>
+                    <term>компьютерная сеть</term>
 
-<term>WiFi</term>
-<term>компьютерная сеть</term>
+                </synonyms>
 
-</synonyms>
+            </language>
 
-</language>
+            <language code="pl">
 
-<language code="pl">
+                <name>Sieci Komputerowe</name>
 
-<name>Sieci Komputerowe</name>
+                <synonyms>
 
-<synonyms>
+                    <term>WiFi</term>
+                    <term>sieć komputerowa</term>
 
-<term>WiFi</term>
-<term>sieć komputerowa</term>
+                </synonyms>
 
-</synonyms>
+            </language>
 
-</language>
+        </entity>
 
-</entity>
+    </topic>
 
-</topic>
+    <!-- ========================================================== -->
+    <!-- FASE 5 -->
+    <!-- KNOWLEDGE GRAPH -->
+    <!-- ========================================================== -->
 
-<!-- ========================================================== -->
-<!-- FASE 5 -->
-<!-- KNOWLEDGE GRAPH -->
-<!-- ========================================================== -->
+    <topic
+        id="phase-05"
+        name="KNOWLEDGE GRAPH"
+        slug="knowledge-graph">
 
-<topic
-    id="phase-05"
-    name="KNOWLEDGE GRAPH"
-    slug="knowledge-graph">
+        <!-- ====================================================== -->
+        <!-- EMPRESA -->
+        <!-- ====================================================== -->
 
-<!-- ====================================================== -->
-<!-- EMPRESA -->
-<!-- ====================================================== -->
+        <entity
+            id="lts"
+            type="company">
 
-<entity
-    id="lts"
-    type="company">
+            <language code="es">
 
-<language code="es">
+                <name>Levante Technical Solutions</name>
 
-<name>Levante Technical Solutions</name>
+                <brand>LTS</brand>
 
-<brand>LTS</brand>
+                <description>
 
-<description>
+                    Empresa especializada en videovigilancia CCTV, electricidad,
+                    redes informáticas y soluciones técnicas integrales para
+                    particulares, empresas, comunidades de propietarios y
+                    viviendas vacacionales.
 
-Empresa especializada en videovigilancia CCTV, electricidad,
-redes informáticas y soluciones técnicas integrales para
-particulares, empresas, comunidades de propietarios y
-viviendas vacacionales.
+                </description>
 
-</description>
+            </language>
 
-</language>
+            <language code="en">
 
-<language code="en">
+                <name>Levante Technical Solutions</name>
 
-<name>Levante Technical Solutions</name>
+                <brand>LTS</brand>
 
-<brand>LTS</brand>
+                <description>
 
-<description>
+                    Technical services company specialising in CCTV,
+                    electrical installations, networking and integrated
+                    technical solutions for homes, businesses,
+                    holiday properties and residential communities.
 
-Technical services company specialising in CCTV,
-electrical installations, networking and integrated
-technical solutions for homes, businesses,
-holiday properties and residential communities.
+                </description>
 
-</description>
+            </language>
 
-</language>
+            <language code="de">
 
-<language code="de">
+                <name>Levante Technical Solutions</name>
 
-<name>Levante Technical Solutions</name>
+                <brand>LTS</brand>
 
-<brand>LTS</brand>
+                <description>
 
-<description>
+                    Technischer Dienstleister für Videoüberwachung,
+                    Elektrotechnik, Netzwerktechnik und technische
+                    Komplettlösungen.
 
-Technischer Dienstleister für Videoüberwachung,
-Elektrotechnik, Netzwerktechnik und technische
-Komplettlösungen.
+                </description>
 
-</description>
+            </language>
 
-</language>
+            <language code="fr">
 
-<language code="fr">
+                <name>Levante Technical Solutions</name>
 
-<name>Levante Technical Solutions</name>
+                <brand>LTS</brand>
 
-<brand>LTS</brand>
+                <description>
 
-<description>
+                    Entreprise spécialisée en vidéosurveillance,
+                    électricité, réseaux informatiques et services techniques.
 
-Entreprise spécialisée en vidéosurveillance,
-électricité, réseaux informatiques et services techniques.
+                </description>
 
-</description>
+            </language>
 
-</language>
+            <language code="it">
 
-<language code="it">
+                <name>Levante Technical Solutions</name>
 
-<name>Levante Technical Solutions</name>
+                <brand>LTS</brand>
 
-<brand>LTS</brand>
+                <description>
 
-<description>
+                    Azienda specializzata in videosorveglianza,
+                    impianti elettrici, reti informatiche
+                    e servizi tecnici.
 
-Azienda specializzata in videosorveglianza,
-impianti elettrici, reti informatiche
-e servizi tecnici.
+                </description>
 
-</description>
+            </language>
 
-</language>
+            <language code="pt">
 
-<language code="pt">
+                <name>Levante Technical Solutions</name>
 
-<name>Levante Technical Solutions</name>
+                <brand>LTS</brand>
 
-<brand>LTS</brand>
+                <description>
 
-<description>
+                    Empresa especializada em videovigilância,
+                    eletricidade, redes informáticas
+                    e soluções técnicas.
 
-Empresa especializada em videovigilância,
-eletricidade, redes informáticas
-e soluções técnicas.
+                </description>
 
-</description>
+            </language>
 
-</language>
+            <language code="ru">
 
-<language code="ru">
+                <name>Levante Technical Solutions</name>
 
-<name>Levante Technical Solutions</name>
+                <brand>LTS</brand>
 
-<brand>LTS</brand>
+                <description>
 
-<description>
+                    Компания, специализирующаяся
+                    на видеонаблюдении,
+                    электромонтаже,
+                    компьютерных сетях
+                    и техническом обслуживании.
 
-Компания, специализирующаяся
-на видеонаблюдении,
-электромонтаже,
-компьютерных сетях
-и техническом обслуживании.
+                </description>
 
-</description>
+            </language>
 
-</language>
+            <language code="pl">
 
-<language code="pl">
+                <name>Levante Technical Solutions</name>
 
-<name>Levante Technical Solutions</name>
+                <brand>LTS</brand>
 
-<brand>LTS</brand>
+                <description>
 
-<description>
+                    Firma specjalizująca się
+                    w monitoringu,
+                    instalacjach elektrycznych,
+                    sieciach komputerowych
+                    i usługach technicznych.
 
-Firma specjalizująca się
-w monitoringu,
-instalacjach elektrycznych,
-sieciach komputerowych
-i usługach technicznych.
+                </description>
 
-</description>
+            </language>
 
-</language>
+        </entity>
 
-</entity>
+        <!-- ====================================================== -->
+        <!-- CLIENTES -->
+        <!-- ====================================================== -->
 
-<!-- ====================================================== -->
-<!-- CLIENTES -->
-<!-- ====================================================== -->
+        <entity
+            id="customers"
+            type="customer">
 
-<entity
-    id="customers"
-    type="customer">
+            <language code="es">
 
-<language code="es">
+                <item>Particulares</item>
+                <item>Empresas</item>
+                <item>Comunidades de propietarios</item>
+                <item>Locales comerciales</item>
+                <item>Viviendas vacacionales</item>
+                <item>Segundas residencias</item>
+                <item>Urbanizaciones</item>
+                <item>Hoteles</item>
+                <item>Restaurantes</item>
 
-<item>Particulares</item>
-<item>Empresas</item>
-<item>Comunidades de propietarios</item>
-<item>Locales comerciales</item>
-<item>Viviendas vacacionales</item>
-<item>Segundas residencias</item>
-<item>Urbanizaciones</item>
-<item>Hoteles</item>
-<item>Restaurantes</item>
+            </language>
 
-</language>
+            <language code="en">
 
-<language code="en">
+                <item>Homeowners</item>
+                <item>Businesses</item>
+                <item>Residential communities</item>
+                <item>Commercial premises</item>
+                <item>Holiday homes</item>
+                <item>Second homes</item>
+                <item>Residential developments</item>
+                <item>Hotels</item>
+                <item>Restaurants</item>
 
-<item>Homeowners</item>
-<item>Businesses</item>
-<item>Residential communities</item>
-<item>Commercial premises</item>
-<item>Holiday homes</item>
-<item>Second homes</item>
-<item>Residential developments</item>
-<item>Hotels</item>
-<item>Restaurants</item>
+            </language>
 
-</language>
+            <language code="de">
 
-<language code="de">
+                <item>Privatkunden</item>
+                <item>Unternehmen</item>
+                <item>Wohnanlagen</item>
+                <item>Ferienhäuser</item>
+                <item>Zweitwohnsitze</item>
 
-<item>Privatkunden</item>
-<item>Unternehmen</item>
-<item>Wohnanlagen</item>
-<item>Ferienhäuser</item>
-<item>Zweitwohnsitze</item>
+            </language>
 
-</language>
+            <language code="fr">
 
-<language code="fr">
+                <item>Particuliers</item>
+                <item>Entreprises</item>
+                <item>Copropriétés</item>
+                <item>Résidences secondaires</item>
 
-<item>Particuliers</item>
-<item>Entreprises</item>
-<item>Copropriétés</item>
-<item>Résidences secondaires</item>
+            </language>
 
-</language>
+            <language code="it">
 
-<language code="it">
+                <item>Privati</item>
+                <item>Aziende</item>
+                <item>Condomini</item>
+                <item>Seconde case</item>
 
-<item>Privati</item>
-<item>Aziende</item>
-<item>Condomini</item>
-<item>Seconde case</item>
+            </language>
 
-</language>
+            <language code="pt">
 
-<language code="pt">
+                <item>Particulares</item>
+                <item>Empresas</item>
+                <item>Condomínios</item>
+                <item>Segundas residências</item>
 
-<item>Particulares</item>
-<item>Empresas</item>
-<item>Condomínios</item>
-<item>Segundas residências</item>
+            </language>
 
-</language>
+            <language code="ru">
 
-<language code="ru">
+                <item>Частные клиенты</item>
+                <item>Компании</item>
+                <item>Жилые комплексы</item>
+                <item>Вторые дома</item>
 
-<item>Частные клиенты</item>
-<item>Компании</item>
-<item>Жилые комплексы</item>
-<item>Вторые дома</item>
+            </language>
 
-</language>
+            <language code="pl">
 
-<language code="pl">
+                <item>Klienci indywidualni</item>
+                <item>Firmy</item>
+                <item>Wspólnoty mieszkaniowe</item>
+                <item>Drugie domy</item>
 
-<item>Klienci indywidualni</item>
-<item>Firmy</item>
-<item>Wspólnoty mieszkaniowe</item>
-<item>Drugie domy</item>
+            </language>
 
-</language>
+        </entity>
 
-</entity>
+        <!-- ====================================================== -->
+        <!-- TECNOLOGÍAS -->
+        <!-- ====================================================== -->
 
-<!-- ====================================================== -->
-<!-- TECNOLOGÍAS -->
-<!-- ====================================================== -->
+        <entity
+            id="technologies"
+            type="technology">
 
-<entity
-    id="technologies"
-    type="technology">
+            <language code="es">
 
-<language code="es">
+                <item>PoE</item>
+                <item>ONVIF</item>
+                <item>WiFi 6</item>
+                <item>WiFi Mesh</item>
+                <item>IPv6</item>
+                <item>VPN</item>
+                <item>Fibra óptica</item>
+                <item>CAT6</item>
+                <item>CAT6A</item>
+                <item>CAT7</item>
 
-<item>PoE</item>
-<item>ONVIF</item>
-<item>WiFi 6</item>
-<item>WiFi Mesh</item>
-<item>IPv6</item>
-<item>VPN</item>
-<item>Fibra óptica</item>
-<item>CAT6</item>
-<item>CAT6A</item>
-<item>CAT7</item>
+            </language>
 
-</language>
+            <language code="en">
 
-<language code="en">
+                <item>PoE</item>
+                <item>ONVIF</item>
+                <item>WiFi 6</item>
+                <item>Mesh WiFi</item>
+                <item>IPv6</item>
+                <item>VPN</item>
+                <item>Fibre Optic</item>
+                <item>CAT6</item>
+                <item>CAT6A</item>
+                <item>CAT7</item>
 
-<item>PoE</item>
-<item>ONVIF</item>
-<item>WiFi 6</item>
-<item>Mesh WiFi</item>
-<item>IPv6</item>
-<item>VPN</item>
-<item>Fibre Optic</item>
-<item>CAT6</item>
-<item>CAT6A</item>
-<item>CAT7</item>
+            </language>
 
-</language>
+            <language code="de">
 
-<language code="de">
+                <item>PoE</item>
+                <item>ONVIF</item>
+                <item>WiFi 6</item>
+                <item>Mesh WLAN</item>
+                <item>Glasfaser</item>
 
-<item>PoE</item>
-<item>ONVIF</item>
-<item>WiFi 6</item>
-<item>Mesh WLAN</item>
-<item>Glasfaser</item>
+            </language>
 
-</language>
+            <language code="fr">
 
-<language code="fr">
+                <item>PoE</item>
+                <item>ONVIF</item>
+                <item>WiFi 6</item>
+                <item>Fibre optique</item>
 
-<item>PoE</item>
-<item>ONVIF</item>
-<item>WiFi 6</item>
-<item>Fibre optique</item>
+            </language>
 
-</language>
+            <language code="it">
 
-<language code="it">
+                <item>PoE</item>
+                <item>ONVIF</item>
+                <item>WiFi 6</item>
+                <item>Fibra ottica</item>
 
-<item>PoE</item>
-<item>ONVIF</item>
-<item>WiFi 6</item>
-<item>Fibra ottica</item>
+            </language>
 
-</language>
+            <language code="pt">
 
-<language code="pt">
+                <item>PoE</item>
+                <item>ONVIF</item>
+                <item>WiFi 6</item>
+                <item>Fibra ótica</item>
 
-<item>PoE</item>
-<item>ONVIF</item>
-<item>WiFi 6</item>
-<item>Fibra ótica</item>
+            </language>
 
-</language>
+            <language code="ru">
 
-<language code="ru">
+                <item>PoE</item>
+                <item>ONVIF</item>
+                <item>WiFi 6</item>
+                <item>Оптоволокно</item>
 
-<item>PoE</item>
-<item>ONVIF</item>
-<item>WiFi 6</item>
-<item>Оптоволокно</item>
+            </language>
 
-</language>
+            <language code="pl">
 
-<language code="pl">
+                <item>PoE</item>
+                <item>ONVIF</item>
+                <item>WiFi 6</item>
+                <item>Światłowód</item>
 
-<item>PoE</item>
-<item>ONVIF</item>
-<item>WiFi 6</item>
-<item>Światłowód</item>
+            </language>
 
-</language>
+        </entity>
 
-</entity>
+        <!-- ====================================================== -->
+        <!-- RELACIONES -->
+        <!-- ====================================================== -->
 
-<!-- ====================================================== -->
-<!-- RELACIONES -->
-<!-- ====================================================== -->
+        <relations>
 
-<relations>
+            <relation>
 
-<relation>
+                <source>LTS</source>
 
-<source>LTS</source>
+                <target>Videovigilancia CCTV y Seguridad</target>
 
-<target>Videovigilancia CCTV y Seguridad</target>
+                <type>provides</type>
 
-<type>provides</type>
+            </relation>
 
-</relation>
+            <relation>
 
-<relation>
+                <source>LTS</source>
 
-<source>LTS</source>
+                <target>Electricidad</target>
 
-<target>Electricidad</target>
+                <type>provides</type>
 
-<type>provides</type>
+            </relation>
 
-</relation>
+            <relation>
 
-<relation>
+                <source>LTS</source>
 
-<source>LTS</source>
+                <target>Redes y Conectividad</target>
 
-<target>Redes y Conectividad</target>
+                <type>provides</type>
 
-<type>provides</type>
+            </relation>
 
-</relation>
+            <relation>
 
-<relation>
+                <source>Videovigilancia CCTV y Seguridad</source>
 
-<source>Videovigilancia CCTV y Seguridad</source>
+                <target>PoE</target>
 
-<target>PoE</target>
+                <type>uses</type>
 
-<type>uses</type>
+            </relation>
 
-</relation>
+            <relation>
 
-<relation>
+                <source>Videovigilancia CCTV y Seguridad</source>
 
-<source>Videovigilancia CCTV y Seguridad</source>
+                <target>ONVIF</target>
 
-<target>ONVIF</target>
+                <type>uses</type>
 
-<type>uses</type>
+            </relation>
 
-</relation>
+            <relation>
 
-<relation>
+                <source>Redes y Conectividad</source>
 
-<source>Redes y Conectividad</source>
+                <target>WiFi 6</target>
 
-<target>WiFi 6</target>
+                <type>uses</type>
 
-<type>uses</type>
+            </relation>
 
-</relation>
+            <relation>
 
-<relation>
+                <source>Redes y Conectividad</source>
 
-<source>Redes y Conectividad</source>
+                <target>Mesh WiFi</target>
 
-<target>Mesh WiFi</target>
+                <type>uses</type>
 
-<type>uses</type>
+            </relation>
 
-</relation>
+        </relations>
 
-</relations>
+    </topic>
 
-</topic>
+    <!-- ========================================================== -->
+    <!-- FASE 6 -->
+    <!-- BUSINESS KNOWLEDGE -->
+    <!-- ========================================================== -->
 
-<!-- ========================================================== -->
-<!-- FASE 6 -->
-<!-- BUSINESS KNOWLEDGE -->
-<!-- ========================================================== -->
+    <topic
+        id="phase-06"
+        name="BUSINESS KNOWLEDGE"
+        slug="business-knowledge">
 
-<topic
-    id="phase-06"
-    name="BUSINESS KNOWLEDGE"
-    slug="business-knowledge">
+        <!-- ====================================================== -->
+        <!-- ÁREA DE SERVICIO -->
+        <!-- ====================================================== -->
 
-<!-- ====================================================== -->
-<!-- ÁREA DE SERVICIO -->
-<!-- ====================================================== -->
+        <entity
+            id="service-area"
+            type="coverage">
 
-<entity
-    id="service-area"
-    type="coverage">
+            <language code="es">
 
-<language code="es">
+                <item>Zona Levante</item>
+                <item>Costa Blanca</item>
+                <item>Costa Cálida</item>
+                <item>Costa del Sol</item>
+                <item>Orihuela</item>
+                <item>Orihuela Costa</item>
+                <item>Torrevieja</item>
+                <item>Alicante</item>
+                <item>Murcia</item>
+                <item>Cartagena</item>
+                <item>San Javier</item>
+                <item>San Pedro del Pinatar</item>
+                <item>Santiago de la Ribera</item>
+                <item>Lo Pagán</item>
 
-<item>Zona Levante</item>
-<item>Costa Blanca</item>
-<item>Costa Cálida</item>
-<item>Costa del Sol</item>
-<item>Orihuela</item>
-<item>Orihuela Costa</item>
-<item>Torrevieja</item>
-<item>Alicante</item>
-<item>Murcia</item>
-<item>Cartagena</item>
-<item>San Javier</item>
-<item>San Pedro del Pinatar</item>
-<item>Santiago de la Ribera</item>
-<item>Lo Pagán</item>
+            </language>
 
-</language>
+            <language code="en">
 
-<language code="en">
+                <item>Levante Area</item>
+                <item>Costa Blanca</item>
+                <item>Costa Cálida</item>
+                <item>Costa del Sol</item>
+                <item>Orihuela</item>
+                <item>Orihuela Costa</item>
+                <item>Torrevieja</item>
+                <item>Alicante</item>
+                <item>Murcia</item>
+                <item>Cartagena</item>
+                <item>San Javier</item>
+                <item>San Pedro del Pinatar</item>
+                <item>Santiago de la Ribera</item>
+                <item>Lo Pagán</item>
 
-<item>Levante Area</item>
-<item>Costa Blanca</item>
-<item>Costa Cálida</item>
-<item>Costa del Sol</item>
-<item>Orihuela</item>
-<item>Orihuela Costa</item>
-<item>Torrevieja</item>
-<item>Alicante</item>
-<item>Murcia</item>
-<item>Cartagena</item>
-<item>San Javier</item>
-<item>San Pedro del Pinatar</item>
-<item>Santiago de la Ribera</item>
-<item>Lo Pagán</item>
+            </language>
 
-</language>
+            <language code="de">
 
-<language code="de">
+                <item>Levante</item>
+                <item>Costa Blanca</item>
+                <item>Costa Cálida</item>
+                <item>Costa del Sol</item>
+                <item>Orihuela</item>
+                <item>Orihuela Costa</item>
+                <item>Torrevieja</item>
+                <item>Alicante</item>
 
-<item>Levante</item>
-<item>Costa Blanca</item>
-<item>Costa Cálida</item>
-<item>Costa del Sol</item>
-<item>Orihuela</item>
-<item>Orihuela Costa</item>
-<item>Torrevieja</item>
-<item>Alicante</item>
+            </language>
 
-</language>
+            <language code="fr">
 
-<language code="fr">
+                <item>Zone Levante</item>
+                <item>Costa Blanca</item>
+                <item>Costa Cálida</item>
+                <item>Costa del Sol</item>
+                <item>Orihuela</item>
+                <item>Torrevieja</item>
 
-<item>Zone Levante</item>
-<item>Costa Blanca</item>
-<item>Costa Cálida</item>
-<item>Costa del Sol</item>
-<item>Orihuela</item>
-<item>Torrevieja</item>
+            </language>
 
-</language>
+            <language code="it">
 
-<language code="it">
+                <item>Zona Levante</item>
+                <item>Costa Blanca</item>
+                <item>Costa Cálida</item>
+                <item>Costa del Sol</item>
+                <item>Orihuela</item>
 
-<item>Zona Levante</item>
-<item>Costa Blanca</item>
-<item>Costa Cálida</item>
-<item>Costa del Sol</item>
-<item>Orihuela</item>
+            </language>
 
-</language>
+            <language code="pt">
 
-<language code="pt">
+                <item>Zona Levante</item>
+                <item>Costa Blanca</item>
+                <item>Costa Cálida</item>
+                <item>Costa del Sol</item>
 
-<item>Zona Levante</item>
-<item>Costa Blanca</item>
-<item>Costa Cálida</item>
-<item>Costa del Sol</item>
+            </language>
 
-</language>
+            <language code="ru">
 
-<language code="ru">
+                <item>Леванте</item>
+                <item>Коста-Бланка</item>
+                <item>Коста-Калида</item>
+                <item>Коста-дель-Соль</item>
 
-<item>Леванте</item>
-<item>Коста-Бланка</item>
-<item>Коста-Калида</item>
-<item>Коста-дель-Соль</item>
+            </language>
 
-</language>
+            <language code="pl">
 
-<language code="pl">
+                <item>Levante</item>
+                <item>Costa Blanca</item>
+                <item>Costa Cálida</item>
+                <item>Costa del Sol</item>
 
-<item>Levante</item>
-<item>Costa Blanca</item>
-<item>Costa Cálida</item>
-<item>Costa del Sol</item>
+            </language>
 
-</language>
+        </entity>
 
-</entity>
+        <!-- ====================================================== -->
+        <!-- IDIOMAS -->
+        <!-- ====================================================== -->
 
-<!-- ====================================================== -->
-<!-- IDIOMAS -->
-<!-- ====================================================== -->
+        <entity
+            id="supported-languages"
+            type="languages">
 
-<entity
-    id="supported-languages"
-    type="languages">
+            <language code="es">
 
-<language code="es">
+                <item>Español</item>
+                <item>English</item>
+                <item>Deutsch</item>
+                <item>Français</item>
+                <item>Italiano</item>
+                <item>Português</item>
+                <item>Русский</item>
+                <item>Polski</item>
 
-<item>Español</item>
-<item>English</item>
-<item>Deutsch</item>
-<item>Français</item>
-<item>Italiano</item>
-<item>Português</item>
-<item>Русский</item>
-<item>Polski</item>
+            </language>
 
-</language>
+            <language code="en">
 
-<language code="en">
+                <item>Spanish</item>
+                <item>English</item>
+                <item>German</item>
+                <item>French</item>
+                <item>Italian</item>
+                <item>Portuguese</item>
+                <item>Russian</item>
+                <item>Polish</item>
 
-<item>Spanish</item>
-<item>English</item>
-<item>German</item>
-<item>French</item>
-<item>Italian</item>
-<item>Portuguese</item>
-<item>Russian</item>
-<item>Polish</item>
+            </language>
 
-</language>
+            <language code="de">
 
-<language code="de">
+                <item>Spanisch</item>
+                <item>Englisch</item>
+                <item>Deutsch</item>
+                <item>Französisch</item>
+                <item>Italienisch</item>
+                <item>Portugiesisch</item>
+                <item>Russisch</item>
+                <item>Polnisch</item>
 
-<item>Spanisch</item>
-<item>Englisch</item>
-<item>Deutsch</item>
-<item>Französisch</item>
-<item>Italienisch</item>
-<item>Portugiesisch</item>
-<item>Russisch</item>
-<item>Polnisch</item>
+            </language>
 
-</language>
+            <language code="fr">
 
-<language code="fr">
+                <item>Espagnol</item>
+                <item>Anglais</item>
+                <item>Allemand</item>
+                <item>Français</item>
+                <item>Italien</item>
+                <item>Portugais</item>
+                <item>Russe</item>
+                <item>Polonais</item>
 
-<item>Espagnol</item>
-<item>Anglais</item>
-<item>Allemand</item>
-<item>Français</item>
-<item>Italien</item>
-<item>Portugais</item>
-<item>Russe</item>
-<item>Polonais</item>
+            </language>
 
-</language>
+            <language code="it">
 
-<language code="it">
+                <item>Spagnolo</item>
+                <item>Inglese</item>
+                <item>Tedesco</item>
+                <item>Francese</item>
+                <item>Italiano</item>
+                <item>Portoghese</item>
+                <item>Russo</item>
+                <item>Polacco</item>
 
-<item>Spagnolo</item>
-<item>Inglese</item>
-<item>Tedesco</item>
-<item>Francese</item>
-<item>Italiano</item>
-<item>Portoghese</item>
-<item>Russo</item>
-<item>Polacco</item>
+            </language>
 
-</language>
+            <language code="pt">
 
-<language code="pt">
+                <item>Espanhol</item>
+                <item>Inglês</item>
+                <item>Alemão</item>
+                <item>Francês</item>
+                <item>Italiano</item>
+                <item>Português</item>
+                <item>Russo</item>
+                <item>Polaco</item>
 
-<item>Espanhol</item>
-<item>Inglês</item>
-<item>Alemão</item>
-<item>Francês</item>
-<item>Italiano</item>
-<item>Português</item>
-<item>Russo</item>
-<item>Polaco</item>
+            </language>
 
-</language>
+            <language code="ru">
 
-<language code="ru">
+                <item>Испанский</item>
+                <item>Английский</item>
+                <item>Немецкий</item>
+                <item>Французский</item>
+                <item>Итальянский</item>
+                <item>Португальский</item>
+                <item>Русский</item>
+                <item>Польский</item>
 
-<item>Испанский</item>
-<item>Английский</item>
-<item>Немецкий</item>
-<item>Французский</item>
-<item>Итальянский</item>
-<item>Португальский</item>
-<item>Русский</item>
-<item>Польский</item>
+            </language>
 
-</language>
+            <language code="pl">
 
-<language code="pl">
+                <item>Hiszpański</item>
+                <item>Angielski</item>
+                <item>Niemiecki</item>
+                <item>Francuski</item>
+                <item>Włoski</item>
+                <item>Portugalski</item>
+                <item>Rosyjski</item>
+                <item>Polski</item>
 
-<item>Hiszpański</item>
-<item>Angielski</item>
-<item>Niemiecki</item>
-<item>Francuski</item>
-<item>Włoski</item>
-<item>Portugalski</item>
-<item>Rosyjski</item>
-<item>Polski</item>
+            </language>
 
-</language>
+        </entity>
 
-</entity>
+        <!-- ====================================================== -->
+        <!-- VALORES -->
+        <!-- ====================================================== -->
 
-<!-- ====================================================== -->
-<!-- VALORES -->
-<!-- ====================================================== -->
+        <entity
+            id="business-values"
+            type="values">
 
-<entity
-    id="business-values"
-    type="values">
+            <language code="es">
 
-<language code="es">
+                <item>Profesionalidad</item>
+                <item>Rapidez</item>
+                <item>Fiabilidad</item>
+                <item>Calidad</item>
+                <item>Atención personalizada</item>
+                <item>Soluciones integrales</item>
+                <item>Asistencia multilingüe</item>
 
-<item>Profesionalidad</item>
-<item>Rapidez</item>
-<item>Fiabilidad</item>
-<item>Calidad</item>
-<item>Atención personalizada</item>
-<item>Soluciones integrales</item>
-<item>Asistencia multilingüe</item>
+            </language>
 
-</language>
+            <language code="en">
 
-<language code="en">
+                <item>Professionalism</item>
+                <item>Fast response</item>
+                <item>Reliability</item>
+                <item>Quality</item>
+                <item>Personal service</item>
+                <item>Integrated solutions</item>
+                <item>Multilingual support</item>
 
-<item>Professionalism</item>
-<item>Fast response</item>
-<item>Reliability</item>
-<item>Quality</item>
-<item>Personal service</item>
-<item>Integrated solutions</item>
-<item>Multilingual support</item>
+            </language>
 
-</language>
+            <language code="de">
 
-<language code="de">
+                <item>Professionalität</item>
+                <item>Zuverlässigkeit</item>
+                <item>Schneller Service</item>
+                <item>Qualität</item>
+                <item>Mehrsprachiger Support</item>
 
-<item>Professionalität</item>
-<item>Zuverlässigkeit</item>
-<item>Schneller Service</item>
-<item>Qualität</item>
-<item>Mehrsprachiger Support</item>
+            </language>
 
-</language>
+            <language code="fr">
 
-<language code="fr">
+                <item>Professionnalisme</item>
+                <item>Fiabilité</item>
+                <item>Réactivité</item>
+                <item>Qualité</item>
 
-<item>Professionnalisme</item>
-<item>Fiabilité</item>
-<item>Réactivité</item>
-<item>Qualité</item>
+            </language>
 
-</language>
+            <language code="it">
 
-<language code="it">
+                <item>Professionalità</item>
+                <item>Affidabilità</item>
+                <item>Rapidità</item>
+                <item>Qualità</item>
 
-<item>Professionalità</item>
-<item>Affidabilità</item>
-<item>Rapidità</item>
-<item>Qualità</item>
+            </language>
 
-</language>
+            <language code="pt">
 
-<language code="pt">
+                <item>Profissionalismo</item>
+                <item>Rapidez</item>
+                <item>Qualidade</item>
+                <item>Fiabilidade</item>
 
-<item>Profissionalismo</item>
-<item>Rapidez</item>
-<item>Qualidade</item>
-<item>Fiabilidade</item>
+            </language>
 
-</language>
+            <language code="ru">
 
-<language code="ru">
+                <item>Профессионализм</item>
+                <item>Надёжность</item>
+                <item>Качество</item>
+                <item>Оперативность</item>
 
-<item>Профессионализм</item>
-<item>Надёжность</item>
-<item>Качество</item>
-<item>Оперативность</item>
+            </language>
 
-</language>
+            <language code="pl">
 
-<language code="pl">
+                <item>Profesjonalizm</item>
+                <item>Niezawodność</item>
+                <item>Jakość</item>
+                <item>Szybka reakcja</item>
 
-<item>Profesjonalizm</item>
-<item>Niezawodność</item>
-<item>Jakość</item>
-<item>Szybka reakcja</item>
+            </language>
 
-</language>
+        </entity>
 
-</entity>
+        <!-- ====================================================== -->
+        <!-- RELACIONES -->
+        <!-- ====================================================== -->
 
-<!-- ====================================================== -->
-<!-- RELACIONES -->
-<!-- ====================================================== -->
+        <relations>
 
-<relations>
+            <relation>
 
-<relation>
+                <source>LTS</source>
 
-<source>LTS</source>
+                <target>Zona Levante</target>
 
-<target>Zona Levante</target>
+                <type>operates-in</type>
 
-<type>operates-in</type>
+            </relation>
 
-</relation>
+            <relation>
 
-<relation>
+                <source>LTS</source>
 
-<source>LTS</source>
+                <target>Costa Blanca</target>
 
-<target>Costa Blanca</target>
+                <type>operates-in</type>
 
-<type>operates-in</type>
+            </relation>
 
-</relation>
+            <relation>
 
-<relation>
+                <source>LTS</source>
 
-<source>LTS</source>
+                <target>Costa Cálida</target>
 
-<target>Costa Cálida</target>
+                <type>operates-in</type>
 
-<type>operates-in</type>
+            </relation>
 
-</relation>
+            <relation>
 
-<relation>
+                <source>LTS</source>
 
-<source>LTS</source>
+                <target>Costa del Sol</target>
 
-<target>Costa del Sol</target>
+                <type>operates-in</type>
 
-<type>operates-in</type>
+            </relation>
 
-</relation>
+            <relation>
 
-<relation>
+                <source>LTS</source>
 
-<source>LTS</source>
+                <target>8 Languages</target>
 
-<target>8 Languages</target>
+                <type>supports</type>
 
-<type>supports</type>
+            </relation>
 
-</relation>
+        </relations>
 
-</relations>
+    </topic>
 
-</topic>
+    <!-- ========================================================== -->
+    <!-- FASE 7 -->
+    <!-- CUSTOMER JOURNEY -->
+    <!-- ========================================================== -->
 
-<!-- ========================================================== -->
-<!-- FASE 7 -->
-<!-- CUSTOMER JOURNEY -->
-<!-- ========================================================== -->
+    <topic
+        id="phase-07"
+        name="CUSTOMER JOURNEY"
+        slug="customer-journey">
 
-<topic
-    id="phase-07"
-    name="CUSTOMER JOURNEY"
-    slug="customer-journey">
+        <!-- ====================================================== -->
+        <!-- DESCUBRIMIENTO -->
+        <!-- ====================================================== -->
 
-<!-- ====================================================== -->
-<!-- DESCUBRIMIENTO -->
-<!-- ====================================================== -->
+        <entity
+            id="discovery"
+            type="customer-stage">
 
-<entity
-    id="discovery"
-    type="customer-stage">
+            <language code="es">
 
-<language code="es">
+                <item>Necesito un electricista.</item>
+                <item>Quiero instalar cámaras de seguridad.</item>
+                <item>Busco una empresa de videovigilancia.</item>
+                <item>Necesito mejorar el WiFi.</item>
+                <item>Quiero proteger mi vivienda.</item>
+                <item>Quiero proteger mi negocio.</item>
+                <item>Busco una empresa de mantenimiento.</item>
 
-<item>Necesito un electricista.</item>
-<item>Quiero instalar cámaras de seguridad.</item>
-<item>Busco una empresa de videovigilancia.</item>
-<item>Necesito mejorar el WiFi.</item>
-<item>Quiero proteger mi vivienda.</item>
-<item>Quiero proteger mi negocio.</item>
-<item>Busco una empresa de mantenimiento.</item>
+            </language>
 
-</language>
+            <language code="en">
 
-<language code="en">
+                <item>I need an electrician.</item>
+                <item>I want CCTV installed.</item>
+                <item>Looking for a security company.</item>
+                <item>I need better WiFi coverage.</item>
+                <item>I want to protect my home.</item>
+                <item>I want to protect my business.</item>
+                <item>I need property maintenance.</item>
 
-<item>I need an electrician.</item>
-<item>I want CCTV installed.</item>
-<item>Looking for a security company.</item>
-<item>I need better WiFi coverage.</item>
-<item>I want to protect my home.</item>
-<item>I want to protect my business.</item>
-<item>I need property maintenance.</item>
+            </language>
 
-</language>
+            <language code="de">
 
-<language code="de">
+                <item>Ich brauche einen Elektriker.</item>
+                <item>Ich möchte eine Videoüberwachung installieren.</item>
+                <item>Ich suche eine Sicherheitsfirma.</item>
+                <item>Mein WLAN soll verbessert werden.</item>
+                <item>Ich möchte mein Haus schützen.</item>
 
-<item>Ich brauche einen Elektriker.</item>
-<item>Ich möchte eine Videoüberwachung installieren.</item>
-<item>Ich suche eine Sicherheitsfirma.</item>
-<item>Mein WLAN soll verbessert werden.</item>
-<item>Ich möchte mein Haus schützen.</item>
+            </language>
 
-</language>
+            <language code="fr">
 
-<language code="fr">
+                <item>Je cherche un électricien.</item>
+                <item>Je souhaite installer une vidéosurveillance.</item>
+                <item>Je veux améliorer mon WiFi.</item>
+                <item>Je souhaite protéger ma maison.</item>
 
-<item>Je cherche un électricien.</item>
-<item>Je souhaite installer une vidéosurveillance.</item>
-<item>Je veux améliorer mon WiFi.</item>
-<item>Je souhaite protéger ma maison.</item>
+            </language>
 
-</language>
+            <language code="it">
 
-<language code="it">
+                <item>Ho bisogno di un elettricista.</item>
+                <item>Voglio installare un sistema di videosorveglianza.</item>
+                <item>Voglio migliorare il WiFi.</item>
 
-<item>Ho bisogno di un elettricista.</item>
-<item>Voglio installare un sistema di videosorveglianza.</item>
-<item>Voglio migliorare il WiFi.</item>
+            </language>
 
-</language>
+            <language code="pt">
 
-<language code="pt">
+                <item>Preciso de um eletricista.</item>
+                <item>Quero instalar CCTV.</item>
+                <item>Quero melhorar o WiFi.</item>
 
-<item>Preciso de um eletricista.</item>
-<item>Quero instalar CCTV.</item>
-<item>Quero melhorar o WiFi.</item>
+            </language>
 
-</language>
+            <language code="ru">
 
-<language code="ru">
+                <item>Мне нужен электрик.</item>
+                <item>Хочу установить видеонаблюдение.</item>
+                <item>Нужно улучшить WiFi.</item>
 
-<item>Мне нужен электрик.</item>
-<item>Хочу установить видеонаблюдение.</item>
-<item>Нужно улучшить WiFi.</item>
+            </language>
 
-</language>
+            <language code="pl">
 
-<language code="pl">
+                <item>Potrzebuję elektryka.</item>
+                <item>Chcę zainstalować monitoring.</item>
+                <item>Chcę poprawić WiFi.</item>
 
-<item>Potrzebuję elektryka.</item>
-<item>Chcę zainstalować monitoring.</item>
-<item>Chcę poprawić WiFi.</item>
+            </language>
 
-</language>
+        </entity>
 
-</entity>
+        <!-- ====================================================== -->
+        <!-- INVESTIGACIÓN -->
+        <!-- ====================================================== -->
 
-<!-- ====================================================== -->
-<!-- INVESTIGACIÓN -->
-<!-- ====================================================== -->
+        <entity
+            id="research"
+            type="customer-stage">
 
-<entity
-    id="research"
-    type="customer-stage">
+            <language code="es">
 
-<language code="es">
+                <item>¿Qué empresa me recomienda?</item>
+                <item>¿Qué sistema CCTV necesito?</item>
+                <item>¿Qué router debo instalar?</item>
+                <item>¿Cuánto cuesta?</item>
 
-<item>¿Qué empresa me recomienda?</item>
-<item>¿Qué sistema CCTV necesito?</item>
-<item>¿Qué router debo instalar?</item>
-<item>¿Cuánto cuesta?</item>
+            </language>
 
-</language>
+            <language code="en">
 
-<language code="en">
+                <item>Which company should I choose?</item>
+                <item>What CCTV system do I need?</item>
+                <item>Which router is best?</item>
+                <item>How much does it cost?</item>
 
-<item>Which company should I choose?</item>
-<item>What CCTV system do I need?</item>
-<item>Which router is best?</item>
-<item>How much does it cost?</item>
+            </language>
 
-</language>
+            <language code="de">
 
-<language code="de">
+                <item>Welche Firma ist empfehlenswert?</item>
+                <item>Welches Sicherheitssystem brauche ich?</item>
+                <item>Was kostet die Installation?</item>
 
-<item>Welche Firma ist empfehlenswert?</item>
-<item>Welches Sicherheitssystem brauche ich?</item>
-<item>Was kostet die Installation?</item>
+            </language>
 
-</language>
+            <language code="fr">
 
-<language code="fr">
+                <item>Quelle entreprise choisir ?</item>
+                <item>Quel système CCTV installer ?</item>
 
-<item>Quelle entreprise choisir ?</item>
-<item>Quel système CCTV installer ?</item>
+            </language>
 
-</language>
+            <language code="it">
 
-<language code="it">
+                <item>Quale azienda scegliere?</item>
+                <item>Quale sistema installare?</item>
 
-<item>Quale azienda scegliere?</item>
-<item>Quale sistema installare?</item>
+            </language>
 
-</language>
+            <language code="pt">
 
-<language code="pt">
+                <item>Qual empresa escolher?</item>
+                <item>Quanto custa?</item>
 
-<item>Qual empresa escolher?</item>
-<item>Quanto custa?</item>
+            </language>
 
-</language>
+            <language code="ru">
 
-<language code="ru">
+                <item>Какую компанию выбрать?</item>
+                <item>Сколько это стоит?</item>
 
-<item>Какую компанию выбрать?</item>
-<item>Сколько это стоит?</item>
+            </language>
 
-</language>
+            <language code="pl">
 
-<language code="pl">
+                <item>Jaką firmę wybrać?</item>
+                <item>Ile to kosztuje?</item>
 
-<item>Jaką firmę wybrać?</item>
-<item>Ile to kosztuje?</item>
+            </language>
 
-</language>
+        </entity>
 
-</entity>
+        <!-- ====================================================== -->
+        <!-- DECISIÓN -->
+        <!-- ====================================================== -->
 
-<!-- ====================================================== -->
-<!-- DECISIÓN -->
-<!-- ====================================================== -->
+        <entity
+            id="decision"
+            type="customer-stage">
 
-<entity
-    id="decision"
-    type="customer-stage">
+            <language code="es">
 
-<language code="es">
+                <item>Solicitar presupuesto.</item>
+                <item>Pedir visita técnica.</item>
+                <item>Contratar servicio.</item>
 
-<item>Solicitar presupuesto.</item>
-<item>Pedir visita técnica.</item>
-<item>Contratar servicio.</item>
+            </language>
 
-</language>
+            <language code="en">
 
-<language code="en">
+                <item>Request a quote.</item>
+                <item>Book a technical visit.</item>
+                <item>Hire the service.</item>
 
-<item>Request a quote.</item>
-<item>Book a technical visit.</item>
-<item>Hire the service.</item>
+            </language>
 
-</language>
+            <language code="de">
 
-<language code="de">
+                <item>Angebot anfordern.</item>
+                <item>Technikertermin vereinbaren.</item>
 
-<item>Angebot anfordern.</item>
-<item>Technikertermin vereinbaren.</item>
+            </language>
 
-</language>
+            <language code="fr">
 
-<language code="fr">
+                <item>Demander un devis.</item>
+                <item>Prendre rendez-vous.</item>
 
-<item>Demander un devis.</item>
-<item>Prendre rendez-vous.</item>
+            </language>
 
-</language>
+            <language code="it">
 
-<language code="it">
+                <item>Richiedere un preventivo.</item>
+                <item>Prenotare una visita.</item>
 
-<item>Richiedere un preventivo.</item>
-<item>Prenotare una visita.</item>
+            </language>
 
-</language>
+            <language code="pt">
 
-<language code="pt">
+                <item>Pedir orçamento.</item>
+                <item>Marcar visita técnica.</item>
 
-<item>Pedir orçamento.</item>
-<item>Marcar visita técnica.</item>
+            </language>
 
-</language>
+            <language code="ru">
 
-<language code="ru">
+                <item>Запросить смету.</item>
+                <item>Заказать выезд специалиста.</item>
 
-<item>Запросить смету.</item>
-<item>Заказать выезд специалиста.</item>
+            </language>
 
-</language>
+            <language code="pl">
 
-<language code="pl">
+                <item>Poprosić o wycenę.</item>
+                <item>Umówić wizytę technika.</item>
 
-<item>Poprosić o wycenę.</item>
-<item>Umówić wizytę technika.</item>
+            </language>
 
-</language>
+        </entity>
 
-</entity>
+        <!-- ====================================================== -->
+        <!-- FIDELIZACIÓN -->
+        <!-- ====================================================== -->
 
-<!-- ====================================================== -->
-<!-- FIDELIZACIÓN -->
-<!-- ====================================================== -->
+        <entity
+            id="retention"
+            type="customer-stage">
 
-<entity
-    id="retention"
-    type="customer-stage">
+            <language code="es">
 
-<language code="es">
+                <item>Mantenimiento preventivo.</item>
+                <item>Ampliar instalación.</item>
+                <item>Actualizar equipos.</item>
 
-<item>Mantenimiento preventivo.</item>
-<item>Ampliar instalación.</item>
-<item>Actualizar equipos.</item>
+            </language>
 
-</language>
+            <language code="en">
 
-<language code="en">
+                <item>Preventive maintenance.</item>
+                <item>Upgrade installation.</item>
+                <item>Replace old equipment.</item>
 
-<item>Preventive maintenance.</item>
-<item>Upgrade installation.</item>
-<item>Replace old equipment.</item>
+            </language>
 
-</language>
+            <language code="de">
 
-<language code="de">
+                <item>Wartungsvertrag.</item>
+                <item>Anlage erweitern.</item>
 
-<item>Wartungsvertrag.</item>
-<item>Anlage erweitern.</item>
+            </language>
 
-</language>
+            <language code="fr">
 
-<language code="fr">
+                <item>Maintenance préventive.</item>
+                <item>Mise à niveau.</item>
 
-<item>Maintenance préventive.</item>
-<item>Mise à niveau.</item>
+            </language>
 
-</language>
+            <language code="it">
 
-<language code="it">
+                <item>Manutenzione preventiva.</item>
+                <item>Aggiornare l'impianto.</item>
 
-<item>Manutenzione preventiva.</item>
-<item>Aggiornare l'impianto.</item>
+            </language>
 
-</language>
+            <language code="pt">
 
-<language code="pt">
+                <item>Manutenção preventiva.</item>
+                <item>Atualizar instalação.</item>
 
-<item>Manutenção preventiva.</item>
-<item>Atualizar instalação.</item>
+            </language>
 
-</language>
+            <language code="ru">
 
-<language code="ru">
+                <item>Профилактическое обслуживание.</item>
+                <item>Модернизация системы.</item>
 
-<item>Профилактическое обслуживание.</item>
-<item>Модернизация системы.</item>
+            </language>
 
-</language>
+            <language code="pl">
 
-<language code="pl">
+                <item>Konserwacja zapobiegawcza.</item>
+                <item>Modernizacja instalacji.</item>
 
-<item>Konserwacja zapobiegawcza.</item>
-<item>Modernizacja instalacji.</item>
+            </language>
 
-</language>
+        </entity>
 
-</entity>
+        <!-- ====================================================== -->
+        <!-- RELACIONES -->
+        <!-- ====================================================== -->
 
-<!-- ====================================================== -->
-<!-- RELACIONES -->
-<!-- ====================================================== -->
+        <relations>
 
-<relations>
+            <relation>
 
-<relation>
+                <source>Discovery</source>
 
-<source>Discovery</source>
+                <target>Research</target>
 
-<target>Research</target>
+                <type>next-stage</type>
 
-<type>next-stage</type>
+            </relation>
 
-</relation>
+            <relation>
 
-<relation>
+                <source>Research</source>
 
-<source>Research</source>
+                <target>Decision</target>
 
-<target>Decision</target>
+                <type>next-stage</type>
 
-<type>next-stage</type>
+            </relation>
 
-</relation>
+            <relation>
 
-<relation>
+                <source>Decision</source>
 
-<source>Decision</source>
+                <target>Retention</target>
 
-<target>Retention</target>
+                <type>next-stage</type>
 
-<type>next-stage</type>
+            </relation>
 
-</relation>
+        </relations>
 
-</relations>
+    </topic>
 
-</topic>
+    <!-- ========================================================== -->
+    <!-- FASE 8 -->
+    <!-- TECHNICAL KNOWLEDGE -->
+    <!-- ========================================================== -->
 
-<!-- ========================================================== -->
-<!-- FASE 8 -->
-<!-- TECHNICAL KNOWLEDGE -->
-<!-- ========================================================== -->
+    <topic
+        id="phase-08"
+        name="TECHNICAL KNOWLEDGE"
+        slug="technical-knowledge">
 
-<topic
-    id="phase-08"
-    name="TECHNICAL KNOWLEDGE"
-    slug="technical-knowledge">
+        <!-- ====================================================== -->
+        <!-- VIDEOVIGILANCIA -->
+        <!-- ====================================================== -->
 
-<!-- ====================================================== -->
-<!-- VIDEOVIGILANCIA -->
-<!-- ====================================================== -->
+        <entity
+            id="security-diagnostics"
+            type="technical-service">
 
-<entity
-    id="security-diagnostics"
-    type="technical-service">
+            <language code="es">
 
-<language code="es">
+                <problem>
 
-<problem>
+                    <symptom>No puedo ver las cámaras.</symptom>
 
-<symptom>No puedo ver las cámaras.</symptom>
+                    <possibleCauses>
 
-<possibleCauses>
+                        <cause>Fallo de alimentación.</cause>
+                        <cause>Conexión de red interrumpida.</cause>
+                        <cause>Configuración IP incorrecta.</cause>
+                        <cause>Grabador NVR/DVR averiado.</cause>
+                        <cause>Acceso remoto mal configurado.</cause>
 
-<cause>Fallo de alimentación.</cause>
-<cause>Conexión de red interrumpida.</cause>
-<cause>Configuración IP incorrecta.</cause>
-<cause>Grabador NVR/DVR averiado.</cause>
-<cause>Acceso remoto mal configurado.</cause>
+                    </possibleCauses>
 
-</possibleCauses>
+                </problem>
 
-</problem>
+                <problem>
 
-<problem>
+                    <symptom>Imagen borrosa.</symptom>
 
-<symptom>Imagen borrosa.</symptom>
+                    <possibleCauses>
 
-<possibleCauses>
+                        <cause>Lente sucia.</cause>
+                        <cause>Mala iluminación.</cause>
+                        <cause>Resolución incorrecta.</cause>
 
-<cause>Lente sucia.</cause>
-<cause>Mala iluminación.</cause>
-<cause>Resolución incorrecta.</cause>
+                    </possibleCauses>
 
-</possibleCauses>
+                </problem>
 
-</problem>
+            </language>
 
-</language>
+            <language code="en">
 
-<language code="en">
+                <problem>
 
-<problem>
+                    <symptom>I can't see my CCTV cameras.</symptom>
 
-<symptom>I can't see my CCTV cameras.</symptom>
+                    <possibleCauses>
 
-<possibleCauses>
+                        <cause>Power failure.</cause>
+                        <cause>Network connection problem.</cause>
+                        <cause>Incorrect IP configuration.</cause>
+                        <cause>NVR/DVR failure.</cause>
+                        <cause>Remote access configuration issue.</cause>
 
-<cause>Power failure.</cause>
-<cause>Network connection problem.</cause>
-<cause>Incorrect IP configuration.</cause>
-<cause>NVR/DVR failure.</cause>
-<cause>Remote access configuration issue.</cause>
+                    </possibleCauses>
 
-</possibleCauses>
+                </problem>
 
-</problem>
+            </language>
 
-</language>
+            <language code="de">
 
-<language code="de">
+                <problem>
 
-<problem>
+                    <symptom>Die Kameras funktionieren nicht.</symptom>
 
-<symptom>Die Kameras funktionieren nicht.</symptom>
+                    <possibleCauses>
 
-<possibleCauses>
+                        <cause>Stromversorgung.</cause>
+                        <cause>Netzwerkfehler.</cause>
+                        <cause>IP-Konfiguration.</cause>
 
-<cause>Stromversorgung.</cause>
-<cause>Netzwerkfehler.</cause>
-<cause>IP-Konfiguration.</cause>
+                    </possibleCauses>
 
-</possibleCauses>
+                </problem>
 
-</problem>
+            </language>
 
-</language>
+            <language code="fr">
 
-<language code="fr">
+                <problem>
 
-<problem>
+                    <symptom>Les caméras ne fonctionnent pas.</symptom>
 
-<symptom>Les caméras ne fonctionnent pas.</symptom>
+                    <possibleCauses>
 
-<possibleCauses>
+                        <cause>Alimentation électrique.</cause>
+                        <cause>Problème réseau.</cause>
 
-<cause>Alimentation électrique.</cause>
-<cause>Problème réseau.</cause>
+                    </possibleCauses>
 
-</possibleCauses>
+                </problem>
 
-</problem>
+            </language>
 
-</language>
+            <language code="it">
 
-<language code="it">
+                <problem>
 
-<problem>
+                    <symptom>Le telecamere non funzionano.</symptom>
 
-<symptom>Le telecamere non funzionano.</symptom>
+                    <possibleCauses>
 
-<possibleCauses>
+                        <cause>Problema di alimentazione.</cause>
+                        <cause>Problema di rete.</cause>
 
-<cause>Problema di alimentazione.</cause>
-<cause>Problema di rete.</cause>
+                    </possibleCauses>
 
-</possibleCauses>
+                </problem>
 
-</problem>
+            </language>
 
-</language>
+            <language code="pt">
 
-<language code="pt">
+                <problem>
 
-<problem>
+                    <symptom>As câmaras não funcionam.</symptom>
 
-<symptom>As câmaras não funcionam.</symptom>
+                    <possibleCauses>
 
-<possibleCauses>
+                        <cause>Falha de alimentação.</cause>
+                        <cause>Problema de rede.</cause>
 
-<cause>Falha de alimentação.</cause>
-<cause>Problema de rede.</cause>
+                    </possibleCauses>
 
-</possibleCauses>
+                </problem>
 
-</problem>
+            </language>
 
-</language>
+            <language code="ru">
 
-<language code="ru">
+                <problem>
 
-<problem>
+                    <symptom>Камеры не работают.</symptom>
 
-<symptom>Камеры не работают.</symptom>
+                    <possibleCauses>
 
-<possibleCauses>
+                        <cause>Нет питания.</cause>
+                        <cause>Ошибка сети.</cause>
 
-<cause>Нет питания.</cause>
-<cause>Ошибка сети.</cause>
+                    </possibleCauses>
 
-</possibleCauses>
+                </problem>
 
-</problem>
+            </language>
 
-</language>
+            <language code="pl">
 
-<language code="pl">
+                <problem>
 
-<problem>
+                    <symptom>Kamery nie działają.</symptom>
 
-<symptom>Kamery nie działają.</symptom>
+                    <possibleCauses>
 
-<possibleCauses>
+                        <cause>Brak zasilania.</cause>
+                        <cause>Problem z siecią.</cause>
 
-<cause>Brak zasilania.</cause>
-<cause>Problem z siecią.</cause>
+                    </possibleCauses>
 
-</possibleCauses>
+                </problem>
 
-</problem>
+            </language>
 
-</language>
+        </entity>
 
-</entity>
+        <!-- ====================================================== -->
+        <!-- ELECTRICIDAD -->
+        <!-- ====================================================== -->
 
-<!-- ====================================================== -->
-<!-- ELECTRICIDAD -->
-<!-- ====================================================== -->
+        <entity
+            id="electricity-diagnostics"
+            type="technical-service">
 
-<entity
-    id="electricity-diagnostics"
-    type="technical-service">
+            <language code="es">
 
-<language code="es">
+                <problem>
 
-<problem>
+                    <symptom>Salta el diferencial.</symptom>
 
-<symptom>Salta el diferencial.</symptom>
+                    <possibleCauses>
 
-<possibleCauses>
+                        <cause>Fuga a tierra.</cause>
+                        <cause>Electrodoméstico averiado.</cause>
+                        <cause>Diferencial defectuoso.</cause>
 
-<cause>Fuga a tierra.</cause>
-<cause>Electrodoméstico averiado.</cause>
-<cause>Diferencial defectuoso.</cause>
+                    </possibleCauses>
 
-</possibleCauses>
+                </problem>
 
-</problem>
+                <problem>
 
-<problem>
+                    <symptom>No hay corriente.</symptom>
 
-<symptom>No hay corriente.</symptom>
+                    <possibleCauses>
 
-<possibleCauses>
+                        <cause>Magnetotérmico disparado.</cause>
+                        <cause>Avería de suministro.</cause>
+                        <cause>Cuadro eléctrico averiado.</cause>
 
-<cause>Magnetotérmico disparado.</cause>
-<cause>Avería de suministro.</cause>
-<cause>Cuadro eléctrico averiado.</cause>
+                    </possibleCauses>
 
-</possibleCauses>
+                </problem>
 
-</problem>
+            </language>
 
-</language>
+            <language code="en">
 
-<language code="en">
+                <problem>
 
-<problem>
+                    <symptom>RCD keeps tripping.</symptom>
 
-<symptom>RCD keeps tripping.</symptom>
+                    <possibleCauses>
 
-<possibleCauses>
+                        <cause>Earth leakage.</cause>
+                        <cause>Faulty appliance.</cause>
+                        <cause>Defective RCD.</cause>
 
-<cause>Earth leakage.</cause>
-<cause>Faulty appliance.</cause>
-<cause>Defective RCD.</cause>
+                    </possibleCauses>
 
-</possibleCauses>
+                </problem>
 
-</problem>
+            </language>
 
-</language>
+            <language code="de">
 
-<language code="de">
+                <problem>
 
-<problem>
+                    <symptom>FI-Schalter löst aus.</symptom>
 
-<symptom>FI-Schalter löst aus.</symptom>
+                    <possibleCauses>
 
-<possibleCauses>
+                        <cause>Erdschluss.</cause>
+                        <cause>Defektes Gerät.</cause>
 
-<cause>Erdschluss.</cause>
-<cause>Defektes Gerät.</cause>
+                    </possibleCauses>
 
-</possibleCauses>
+                </problem>
 
-</problem>
+            </language>
 
-</language>
+            <language code="fr">
 
-<language code="fr">
+                <problem>
 
-<problem>
+                    <symptom>Le disjoncteur saute.</symptom>
 
-<symptom>Le disjoncteur saute.</symptom>
+                    <possibleCauses>
 
-<possibleCauses>
+                        <cause>Fuite de courant.</cause>
+                        <cause>Appareil défectueux.</cause>
 
-<cause>Fuite de courant.</cause>
-<cause>Appareil défectueux.</cause>
+                    </possibleCauses>
 
-</possibleCauses>
+                </problem>
 
-</problem>
+            </language>
 
-</language>
+            <language code="it">
 
-<language code="it">
+                <problem>
 
-<problem>
+                    <symptom>Scatta il differenziale.</symptom>
 
-<symptom>Scatta il differenziale.</symptom>
+                    <possibleCauses>
 
-<possibleCauses>
+                        <cause>Dispersione di corrente.</cause>
+                        <cause>Guasto elettrico.</cause>
 
-<cause>Dispersione di corrente.</cause>
-<cause>Guasto elettrico.</cause>
+                    </possibleCauses>
 
-</possibleCauses>
+                </problem>
 
-</problem>
+            </language>
 
-</language>
+            <language code="pt">
 
-<language code="pt">
+                <problem>
 
-<problem>
+                    <symptom>O diferencial dispara.</symptom>
 
-<symptom>O diferencial dispara.</symptom>
+                    <possibleCauses>
 
-<possibleCauses>
+                        <cause>Fuga de corrente.</cause>
+                        <cause>Equipamento avariado.</cause>
 
-<cause>Fuga de corrente.</cause>
-<cause>Equipamento avariado.</cause>
+                    </possibleCauses>
 
-</possibleCauses>
+                </problem>
 
-</problem>
+            </language>
 
-</language>
+            <language code="ru">
 
-<language code="ru">
+                <problem>
 
-<problem>
+                    <symptom>Срабатывает УЗО.</symptom>
 
-<symptom>Срабатывает УЗО.</symptom>
+                    <possibleCauses>
 
-<possibleCauses>
+                        <cause>Утечка тока.</cause>
+                        <cause>Неисправный прибор.</cause>
 
-<cause>Утечка тока.</cause>
-<cause>Неисправный прибор.</cause>
+                    </possibleCauses>
 
-</possibleCauses>
+                </problem>
 
-</problem>
+            </language>
 
-</language>
+            <language code="pl">
 
-<language code="pl">
+                <problem>
 
-<problem>
+                    <symptom>Wyłącza się różnicówka.</symptom>
 
-<symptom>Wyłącza się różnicówka.</symptom>
+                    <possibleCauses>
 
-<possibleCauses>
+                        <cause>Upływ prądu.</cause>
+                        <cause>Uszkodzone urządzenie.</cause>
 
-<cause>Upływ prądu.</cause>
-<cause>Uszkodzone urządzenie.</cause>
+                    </possibleCauses>
 
-</possibleCauses>
+                </problem>
 
-</problem>
+            </language>
 
-</language>
+        </entity>
 
-</entity>
+        <!-- ====================================================== -->
+        <!-- REDES -->
+        <!-- ====================================================== -->
 
-<!-- ====================================================== -->
-<!-- REDES -->
-<!-- ====================================================== -->
+        <entity
+            id="network-diagnostics"
+            type="technical-service">
 
-<entity
-    id="network-diagnostics"
-    type="technical-service">
+            <language code="es">
 
-<language code="es">
+                <problem>
 
-<problem>
+                    <symptom>WiFi lento.</symptom>
 
-<symptom>WiFi lento.</symptom>
+                    <possibleCauses>
 
-<possibleCauses>
+                        <cause>Interferencias.</cause>
+                        <cause>Cobertura insuficiente.</cause>
+                        <cause>Router obsoleto.</cause>
+                        <cause>Canal saturado.</cause>
 
-<cause>Interferencias.</cause>
-<cause>Cobertura insuficiente.</cause>
-<cause>Router obsoleto.</cause>
-<cause>Canal saturado.</cause>
+                    </possibleCauses>
 
-</possibleCauses>
+                </problem>
 
-</problem>
+                <problem>
 
-<problem>
+                    <symptom>No hay Internet.</symptom>
 
-<symptom>No hay Internet.</symptom>
+                    <possibleCauses>
 
-<possibleCauses>
+                        <cause>Router sin sincronismo.</cause>
+                        <cause>Proveedor caído.</cause>
+                        <cause>Configuración incorrecta.</cause>
 
-<cause>Router sin sincronismo.</cause>
-<cause>Proveedor caído.</cause>
-<cause>Configuración incorrecta.</cause>
+                    </possibleCauses>
 
-</possibleCauses>
+                </problem>
 
-</problem>
+            </language>
 
-</language>
+            <language code="en">
 
-<language code="en">
+                <problem>
 
-<problem>
+                    <symptom>Slow WiFi.</symptom>
 
-<symptom>Slow WiFi.</symptom>
+                    <possibleCauses>
 
-<possibleCauses>
+                        <cause>Wireless interference.</cause>
+                        <cause>Poor coverage.</cause>
+                        <cause>Old router.</cause>
+                        <cause>Busy WiFi channel.</cause>
 
-<cause>Wireless interference.</cause>
-<cause>Poor coverage.</cause>
-<cause>Old router.</cause>
-<cause>Busy WiFi channel.</cause>
+                    </possibleCauses>
 
-</possibleCauses>
+                </problem>
 
-</problem>
+            </language>
 
-</language>
+            <language code="de">
 
-<language code="de">
+                <problem>
 
-<problem>
+                    <symptom>Langsames WLAN.</symptom>
 
-<symptom>Langsames WLAN.</symptom>
+                    <possibleCauses>
 
-<possibleCauses>
+                        <cause>Störungen.</cause>
+                        <cause>Schlechte Abdeckung.</cause>
 
-<cause>Störungen.</cause>
-<cause>Schlechte Abdeckung.</cause>
+                    </possibleCauses>
 
-</possibleCauses>
+                </problem>
 
-</problem>
+            </language>
 
-</language>
+            <language code="fr">
 
-<language code="fr">
+                <problem>
 
-<problem>
+                    <symptom>WiFi lent.</symptom>
 
-<symptom>WiFi lent.</symptom>
+                    <possibleCauses>
 
-<possibleCauses>
+                        <cause>Interférences.</cause>
+                        <cause>Mauvaise couverture.</cause>
 
-<cause>Interférences.</cause>
-<cause>Mauvaise couverture.</cause>
+                    </possibleCauses>
 
-</possibleCauses>
+                </problem>
 
-</problem>
+            </language>
 
-</language>
+            <language code="it">
 
-<language code="it">
+                <problem>
 
-<problem>
+                    <symptom>WiFi lento.</symptom>
 
-<symptom>WiFi lento.</symptom>
+                    <possibleCauses>
 
-<possibleCauses>
+                        <cause>Interferenze.</cause>
+                        <cause>Copertura insufficiente.</cause>
 
-<cause>Interferenze.</cause>
-<cause>Copertura insufficiente.</cause>
+                    </possibleCauses>
 
-</possibleCauses>
+                </problem>
 
-</problem>
+            </language>
 
-</language>
+            <language code="pt">
 
-<language code="pt">
+                <problem>
 
-<problem>
+                    <symptom>WiFi lento.</symptom>
 
-<symptom>WiFi lento.</symptom>
+                    <possibleCauses>
 
-<possibleCauses>
+                        <cause>Interferências.</cause>
+                        <cause>Cobertura insuficiente.</cause>
 
-<cause>Interferências.</cause>
-<cause>Cobertura insuficiente.</cause>
+                    </possibleCauses>
 
-</possibleCauses>
+                </problem>
 
-</problem>
+            </language>
 
-</language>
+            <language code="ru">
 
-<language code="ru">
+                <problem>
 
-<problem>
+                    <symptom>Медленный WiFi.</symptom>
 
-<symptom>Медленный WiFi.</symptom>
+                    <possibleCauses>
 
-<possibleCauses>
+                        <cause>Помехи.</cause>
+                        <cause>Слабый сигнал.</cause>
 
-<cause>Помехи.</cause>
-<cause>Слабый сигнал.</cause>
+                    </possibleCauses>
 
-</possibleCauses>
+                </problem>
 
-</problem>
+            </language>
 
-</language>
+            <language code="pl">
 
-<language code="pl">
+                <problem>
 
-<problem>
+                    <symptom>Wolne WiFi.</symptom>
 
-<symptom>Wolne WiFi.</symptom>
+                    <possibleCauses>
 
-<possibleCauses>
+                        <cause>Zakłócenia.</cause>
+                        <cause>Słaby zasięg.</cause>
 
-<cause>Zakłócenia.</cause>
-<cause>Słaby zasięg.</cause>
+                    </possibleCauses>
 
-</possibleCauses>
+                </problem>
 
-</problem>
+            </language>
 
-</language>
+        </entity>
 
-</entity>
+        <!-- ====================================================== -->
+        <!-- RELACIONES -->
+        <!-- ====================================================== -->
 
-<!-- ====================================================== -->
-<!-- RELACIONES -->
-<!-- ====================================================== -->
+        <relations>
 
-<relations>
+            <relation>
 
-<relation>
+                <source>Videovigilancia CCTV y Seguridad</source>
 
-<source>Videovigilancia CCTV y Seguridad</source>
+                <target>Diagnóstico CCTV</target>
 
-<target>Diagnóstico CCTV</target>
+                <type>supports</type>
 
-<type>supports</type>
+            </relation>
 
-</relation>
+            <relation>
 
-<relation>
+                <source>Electricidad</source>
 
-<source>Electricidad</source>
+                <target>Diagnóstico Eléctrico</target>
 
-<target>Diagnóstico Eléctrico</target>
+                <type>supports</type>
 
-<type>supports</type>
+            </relation>
 
-</relation>
+            <relation>
 
-<relation>
+                <source>Redes y Conectividad</source>
 
-<source>Redes y Conectividad</source>
+                <target>Diagnóstico de Redes</target>
 
-<target>Diagnóstico de Redes</target>
+                <type>supports</type>
 
-<type>supports</type>
+            </relation>
 
-</relation>
+        </relations>
 
-</relations>
+    </topic>
 
-</topic>
+    <!-- ========================================================== -->
+    <!-- FASE 9 -->
+    <!-- DECISION ENGINE -->
+    <!-- ========================================================== -->
 
-<!-- ========================================================== -->
-<!-- FASE 9 -->
-<!-- DECISION ENGINE -->
-<!-- ========================================================== -->
+    <topic
+        id="phase-09"
+        name="DECISION ENGINE"
+        slug="decision-engine">
 
-<topic
-    id="phase-09"
-    name="DECISION ENGINE"
-    slug="decision-engine">
+        <!-- ====================================================== -->
+        <!-- VIDEOVIGILANCIA -->
+        <!-- ====================================================== -->
 
-<!-- ====================================================== -->
-<!-- VIDEOVIGILANCIA -->
-<!-- ====================================================== -->
+        <entity
+            id="security-decisions"
+            type="decision-engine">
 
-<entity
-    id="security-decisions"
-    type="decision-engine">
+            <language code="es">
 
-<language code="es">
+                <decision>
 
-<decision>
+                    <condition>Quiero proteger mi vivienda.</condition>
 
-<condition>Quiero proteger mi vivienda.</condition>
+                    <recommendation>Instalación de cámaras IP con acceso remoto.</recommendation>
 
-<recommendation>Instalación de cámaras IP con acceso remoto.</recommendation>
+                </decision>
 
-</decision>
+                <decision>
 
-<decision>
+                    <condition>Tengo una vivienda vacacional.</condition>
 
-<condition>Tengo una vivienda vacacional.</condition>
+                    <recommendation>Sistema CCTV con monitorización remota.</recommendation>
 
-<recommendation>Sistema CCTV con monitorización remota.</recommendation>
+                </decision>
 
-</decision>
+                <decision>
 
-<decision>
+                    <condition>Quiero proteger mi negocio.</condition>
 
-<condition>Quiero proteger mi negocio.</condition>
+                    <recommendation>Videovigilancia profesional con grabación continua.</recommendation>
 
-<recommendation>Videovigilancia profesional con grabación continua.</recommendation>
+                </decision>
 
-</decision>
+            </language>
 
-</language>
+            <language code="en">
 
-<language code="en">
+                <decision>
 
-<decision>
+                    <condition>I want to protect my home.</condition>
 
-<condition>I want to protect my home.</condition>
+                    <recommendation>IP CCTV system with remote access.</recommendation>
 
-<recommendation>IP CCTV system with remote access.</recommendation>
+                </decision>
 
-</decision>
+                <decision>
 
-<decision>
+                    <condition>I own a holiday home.</condition>
 
-<condition>I own a holiday home.</condition>
+                    <recommendation>Remote monitored CCTV installation.</recommendation>
 
-<recommendation>Remote monitored CCTV installation.</recommendation>
+                </decision>
 
-</decision>
+                <decision>
 
-<decision>
+                    <condition>I want to protect my business.</condition>
 
-<condition>I want to protect my business.</condition>
+                    <recommendation>Professional commercial CCTV system.</recommendation>
 
-<recommendation>Professional commercial CCTV system.</recommendation>
+                </decision>
 
-</decision>
+            </language>
 
-</language>
+            <language code="de">
 
-<language code="de">
+                <decision>
 
-<decision>
+                    <condition>Ich möchte mein Haus schützen.</condition>
 
-<condition>Ich möchte mein Haus schützen.</condition>
+                    <recommendation>IP Videoüberwachung mit Fernzugriff.</recommendation>
 
-<recommendation>IP Videoüberwachung mit Fernzugriff.</recommendation>
+                </decision>
 
-</decision>
+            </language>
 
-</language>
+            <language code="fr">
 
-<language code="fr">
+                <decision>
 
-<decision>
+                    <condition>Je souhaite protéger ma maison.</condition>
 
-<condition>Je souhaite protéger ma maison.</condition>
+                    <recommendation>Système CCTV avec accès à distance.</recommendation>
 
-<recommendation>Système CCTV avec accès à distance.</recommendation>
+                </decision>
 
-</decision>
+            </language>
 
-</language>
+            <language code="it">
 
-<language code="it">
+                <decision>
 
-<decision>
+                    <condition>Voglio proteggere la mia casa.</condition>
 
-<condition>Voglio proteggere la mia casa.</condition>
+                    <recommendation>Videosorveglianza IP con accesso remoto.</recommendation>
 
-<recommendation>Videosorveglianza IP con accesso remoto.</recommendation>
+                </decision>
 
-</decision>
+            </language>
 
-</language>
+            <language code="pt">
 
-<language code="pt">
+                <decision>
 
-<decision>
+                    <condition>Quero proteger a minha casa.</condition>
 
-<condition>Quero proteger a minha casa.</condition>
+                    <recommendation>Sistema CCTV IP com acesso remoto.</recommendation>
 
-<recommendation>Sistema CCTV IP com acesso remoto.</recommendation>
+                </decision>
 
-</decision>
+            </language>
 
-</language>
+            <language code="ru">
 
-<language code="ru">
+                <decision>
 
-<decision>
+                    <condition>Хочу защитить свой дом.</condition>
 
-<condition>Хочу защитить свой дом.</condition>
+                    <recommendation>IP видеонаблюдение с удалённым доступом.</recommendation>
 
-<recommendation>IP видеонаблюдение с удалённым доступом.</recommendation>
+                </decision>
 
-</decision>
+            </language>
 
-</language>
+            <language code="pl">
 
-<language code="pl">
+                <decision>
 
-<decision>
+                    <condition>Chcę zabezpieczyć swój dom.</condition>
 
-<condition>Chcę zabezpieczyć swój dom.</condition>
+                    <recommendation>Monitoring IP z dostępem zdalnym.</recommendation>
 
-<recommendation>Monitoring IP z dostępem zdalnym.</recommendation>
+                </decision>
 
-</decision>
+            </language>
 
-</language>
+        </entity>
 
-</entity>
+        <!-- ====================================================== -->
+        <!-- ELECTRICIDAD -->
+        <!-- ====================================================== -->
 
-<!-- ====================================================== -->
-<!-- ELECTRICIDAD -->
-<!-- ====================================================== -->
+        <entity
+            id="electricity-decisions"
+            type="decision-engine">
 
-<entity
-    id="electricity-decisions"
-    type="decision-engine">
+            <language code="es">
 
-<language code="es">
+                <decision>
 
-<decision>
+                    <condition>Salta el diferencial.</condition>
 
-<condition>Salta el diferencial.</condition>
+                    <recommendation>Diagnóstico completo de la instalación eléctrica.</recommendation>
 
-<recommendation>Diagnóstico completo de la instalación eléctrica.</recommendation>
+                </decision>
 
-</decision>
+                <decision>
 
-<decision>
+                    <condition>Necesito renovar una instalación antigua.</condition>
 
-<condition>Necesito renovar una instalación antigua.</condition>
+                    <recommendation>Actualización completa del cuadro eléctrico y protecciones.</recommendation>
 
-<recommendation>Actualización completa del cuadro eléctrico y protecciones.</recommendation>
+                </decision>
 
-</decision>
+                <decision>
 
-<decision>
+                    <condition>Quiero una instalación eléctrica nueva.</condition>
 
-<condition>Quiero una instalación eléctrica nueva.</condition>
+                    <recommendation>Proyecto eléctrico adaptado a normativa vigente.</recommendation>
 
-<recommendation>Proyecto eléctrico adaptado a normativa vigente.</recommendation>
+                </decision>
 
-</decision>
+            </language>
 
-</language>
+            <language code="en">
 
-<language code="en">
+                <decision>
 
-<decision>
+                    <condition>The RCD keeps tripping.</condition>
 
-<condition>The RCD keeps tripping.</condition>
+                    <recommendation>Complete electrical inspection.</recommendation>
 
-<recommendation>Complete electrical inspection.</recommendation>
+                </decision>
 
-</decision>
+                <decision>
 
-<decision>
+                    <condition>I need to upgrade an old installation.</condition>
 
-<condition>I need to upgrade an old installation.</condition>
+                    <recommendation>Electrical board replacement.</recommendation>
 
-<recommendation>Electrical board replacement.</recommendation>
+                </decision>
 
-</decision>
+            </language>
 
-</language>
+            <language code="de">
 
-<language code="de">
+                <decision>
 
-<decision>
+                    <condition>FI-Schalter löst aus.</condition>
 
-<condition>FI-Schalter löst aus.</condition>
+                    <recommendation>Komplette Elektroprüfung.</recommendation>
 
-<recommendation>Komplette Elektroprüfung.</recommendation>
+                </decision>
 
-</decision>
+            </language>
 
-</language>
+            <language code="fr">
 
-<language code="fr">
+                <decision>
 
-<decision>
+                    <condition>Le disjoncteur saute.</condition>
 
-<condition>Le disjoncteur saute.</condition>
+                    <recommendation>Diagnostic électrique complet.</recommendation>
 
-<recommendation>Diagnostic électrique complet.</recommendation>
+                </decision>
 
-</decision>
+            </language>
 
-</language>
+            <language code="it">
 
-<language code="it">
+                <decision>
 
-<decision>
+                    <condition>Scatta il differenziale.</condition>
 
-<condition>Scatta il differenziale.</condition>
+                    <recommendation>Verifica completa dell'impianto elettrico.</recommendation>
 
-<recommendation>Verifica completa dell'impianto elettrico.</recommendation>
+                </decision>
 
-</decision>
+            </language>
 
-</language>
+            <language code="pt">
 
-<language code="pt">
+                <decision>
 
-<decision>
+                    <condition>O diferencial dispara.</condition>
 
-<condition>O diferencial dispara.</condition>
+                    <recommendation>Inspeção elétrica completa.</recommendation>
 
-<recommendation>Inspeção elétrica completa.</recommendation>
+                </decision>
 
-</decision>
+            </language>
 
-</language>
+            <language code="ru">
 
-<language code="ru">
+                <decision>
 
-<decision>
+                    <condition>Срабатывает УЗО.</condition>
 
-<condition>Срабатывает УЗО.</condition>
+                    <recommendation>Полная диагностика электросети.</recommendation>
 
-<recommendation>Полная диагностика электросети.</recommendation>
+                </decision>
 
-</decision>
+            </language>
 
-</language>
+            <language code="pl">
 
-<language code="pl">
+                <decision>
 
-<decision>
+                    <condition>Wyłącza się różnicówka.</condition>
 
-<condition>Wyłącza się różnicówka.</condition>
+                    <recommendation>Kompleksowa diagnostyka instalacji.</recommendation>
 
-<recommendation>Kompleksowa diagnostyka instalacji.</recommendation>
+                </decision>
 
-</decision>
+            </language>
 
-</language>
+        </entity>
 
-</entity>
+        <!-- ====================================================== -->
+        <!-- REDES -->
+        <!-- ====================================================== -->
 
-<!-- ====================================================== -->
-<!-- REDES -->
-<!-- ====================================================== -->
+        <entity
+            id="network-decisions"
+            type="decision-engine">
 
-<entity
-    id="network-decisions"
-    type="decision-engine">
+            <language code="es">
 
-<language code="es">
+                <decision>
 
-<decision>
+                    <condition>El WiFi no llega a toda la vivienda.</condition>
 
-<condition>El WiFi no llega a toda la vivienda.</condition>
+                    <recommendation>Instalación de sistema WiFi Mesh.</recommendation>
 
-<recommendation>Instalación de sistema WiFi Mesh.</recommendation>
+                </decision>
 
-</decision>
+                <decision>
 
-<decision>
+                    <condition>Internet funciona lento.</condition>
 
-<condition>Internet funciona lento.</condition>
+                    <recommendation>Optimización de red y estudio de cobertura.</recommendation>
 
-<recommendation>Optimización de red y estudio de cobertura.</recommendation>
+                </decision>
 
-</decision>
+                <decision>
 
-<decision>
+                    <condition>Necesito una red profesional.</condition>
 
-<condition>Necesito una red profesional.</condition>
+                    <recommendation>Infraestructura cableada + WiFi profesional.</recommendation>
 
-<recommendation>Infraestructura cableada + WiFi profesional.</recommendation>
+                </decision>
 
-</decision>
+            </language>
 
-</language>
+            <language code="en">
 
-<language code="en">
+                <decision>
 
-<decision>
+                    <condition>WiFi doesn't reach the whole property.</condition>
 
-<condition>WiFi doesn't reach the whole property.</condition>
+                    <recommendation>Professional Mesh WiFi installation.</recommendation>
 
-<recommendation>Professional Mesh WiFi installation.</recommendation>
+                </decision>
 
-</decision>
+                <decision>
 
-<decision>
+                    <condition>Internet is too slow.</condition>
 
-<condition>Internet is too slow.</condition>
+                    <recommendation>Network optimisation and coverage survey.</recommendation>
 
-<recommendation>Network optimisation and coverage survey.</recommendation>
+                </decision>
 
-</decision>
+            </language>
 
-</language>
+            <language code="de">
 
-<language code="de">
+                <decision>
 
-<decision>
+                    <condition>WLAN deckt das Haus nicht ab.</condition>
 
-<condition>WLAN deckt das Haus nicht ab.</condition>
+                    <recommendation>Mesh WLAN Installation.</recommendation>
 
-<recommendation>Mesh WLAN Installation.</recommendation>
+                </decision>
 
-</decision>
+            </language>
 
-</language>
+            <language code="fr">
 
-<language code="fr">
+                <decision>
 
-<decision>
+                    <condition>Le WiFi ne couvre pas toute la maison.</condition>
 
-<condition>Le WiFi ne couvre pas toute la maison.</condition>
+                    <recommendation>Installation d'un réseau Mesh.</recommendation>
 
-<recommendation>Installation d'un réseau Mesh.</recommendation>
+                </decision>
 
-</decision>
+            </language>
 
-</language>
+            <language code="it">
 
-<language code="it">
+                <decision>
 
-<decision>
+                    <condition>Il WiFi non copre tutta la casa.</condition>
 
-<condition>Il WiFi non copre tutta la casa.</condition>
+                    <recommendation>Installazione rete Mesh.</recommendation>
 
-<recommendation>Installazione rete Mesh.</recommendation>
+                </decision>
 
-</decision>
+            </language>
 
-</language>
+            <language code="pt">
 
-<language code="pt">
+                <decision>
 
-<decision>
+                    <condition>O WiFi não cobre toda a casa.</condition>
 
-<condition>O WiFi não cobre toda a casa.</condition>
+                    <recommendation>Instalação de rede Mesh.</recommendation>
 
-<recommendation>Instalação de rede Mesh.</recommendation>
+                </decision>
 
-</decision>
+            </language>
 
-</language>
+            <language code="ru">
 
-<language code="ru">
+                <decision>
 
-<decision>
+                    <condition>WiFi не покрывает весь дом.</condition>
 
-<condition>WiFi не покрывает весь дом.</condition>
+                    <recommendation>Установка Mesh-системы.</recommendation>
 
-<recommendation>Установка Mesh-системы.</recommendation>
+                </decision>
 
-</decision>
+            </language>
 
-</language>
+            <language code="pl">
 
-<language code="pl">
+                <decision>
 
-<decision>
+                    <condition>WiFi nie obejmuje całego domu.</condition>
 
-<condition>WiFi nie obejmuje całego domu.</condition>
+                    <recommendation>Instalacja systemu Mesh.</recommendation>
 
-<recommendation>Instalacja systemu Mesh.</recommendation>
+                </decision>
 
-</decision>
+            </language>
 
-</language>
+        </entity>
 
-</entity>
+        <!-- ====================================================== -->
+        <!-- RELACIONES -->
+        <!-- ====================================================== -->
 
-<!-- ====================================================== -->
-<!-- RELACIONES -->
-<!-- ====================================================== -->
+        <relations>
 
-<relations>
+            <relation>
 
-<relation>
+                <source>Customer Journey</source>
 
-<source>Customer Journey</source>
+                <target>Decision Engine</target>
 
-<target>Decision Engine</target>
+                <type>feeds</type>
 
-<type>feeds</type>
+            </relation>
 
-</relation>
+            <relation>
 
-<relation>
+                <source>Decision Engine</source>
 
-<source>Decision Engine</source>
+                <target>Videovigilancia CCTV y Seguridad</target>
 
-<target>Videovigilancia CCTV y Seguridad</target>
+                <type>recommends</type>
 
-<type>recommends</type>
+            </relation>
 
-</relation>
+            <relation>
 
-<relation>
+                <source>Decision Engine</source>
 
-<source>Decision Engine</source>
+                <target>Electricidad</target>
 
-<target>Electricidad</target>
+                <type>recommends</type>
 
-<type>recommends</type>
+            </relation>
 
-</relation>
+            <relation>
 
-<relation>
+                <source>Decision Engine</source>
 
-<source>Decision Engine</source>
+                <target>Redes y Conectividad</target>
 
-<target>Redes y Conectividad</target>
+                <type>recommends</type>
 
-<type>recommends</type>
+            </relation>
 
-</relation>
+        </relations>
 
-</relations>
-
-</topic>
+    </topic>
 
 </ltsSemanticKnowledgeBase>
