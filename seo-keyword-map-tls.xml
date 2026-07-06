@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <seoKeywordMap project="TLS" baseUrl="https://levante-tls.pages.dev/" lang="es">
   <note>Archivo interno de planificación SEO. No sustituye al sitemap oficial.</note>
-  <topic name="TEMA PRINCIPAL GENERAL TLS" slug="tema-principal-general-tls">
+  <topic name="TEMA PRINCIPAL GENERAL LTS" slug="tema-principal-general-tls">
     <keyword>servicios técnicos integrales</keyword>
     <keyword>empresa de servicios técnicos</keyword>
     <keyword>mantenimiento técnico hogar</keyword>
@@ -13,19 +13,18 @@
     <keyword>empresa multiservicios técnicos</keyword>
     <keyword>mantenimiento hogar empresa</keyword>
   </topic>
-  <topic name="PISCINAS" slug="piscinas">
-    <keyword>mantenimiento de piscinas</keyword>
-    <keyword>limpieza de piscinas</keyword>
-    <keyword>tratamiento de piscinas</keyword>
-    <keyword>empresa mantenimiento piscinas</keyword>
-    <keyword>mantenimiento piscinas particulares</keyword>
-    <keyword>mantenimiento piscinas comunidades</keyword>
-    <keyword>limpieza piscinas comunidades</keyword>
-    <keyword>tratamiento químico piscina</keyword>
-    <keyword>análisis agua piscina</keyword>
-    <keyword>puesta a punto piscina</keyword>
-    <keyword>mantenimiento piscina todo el año</keyword>
-    <keyword>servicio técnico piscinas</keyword>
+    <topic name="VIDEOVIGILANCIA / CCTV" slug="videovigilancia--cctv">
+    <keyword>instalación cámaras seguridad</keyword>
+    <keyword>instalación CCTV</keyword>
+    <keyword>videovigilancia</keyword>
+    <keyword>cámaras de seguridad</keyword>
+    <keyword>cámaras vigilancia vivienda</keyword>
+    <keyword>cámaras vigilancia empresa</keyword>
+    <keyword>cámaras seguridad comunidad</keyword>
+    <keyword>monitoreo remoto cámaras</keyword>
+    <keyword>sistemas de videovigilancia</keyword>
+    <keyword>grabación cámaras seguridad</keyword>
+    <keyword>instalador cámaras seguridad</keyword>
   </topic>
   <topic name="ELECTRICIDAD" slug="electricidad">
     <keyword>electricista</keyword>
@@ -41,20 +40,7 @@
     <keyword>instalación iluminación</keyword>
     <keyword>electricidad hogar empresa</keyword>
   </topic>
-  <topic name="VIDEOVIGILANCIA / CCTV" slug="videovigilancia--cctv">
-    <keyword>instalación cámaras seguridad</keyword>
-    <keyword>instalación CCTV</keyword>
-    <keyword>videovigilancia</keyword>
-    <keyword>cámaras de seguridad</keyword>
-    <keyword>cámaras vigilancia vivienda</keyword>
-    <keyword>cámaras vigilancia empresa</keyword>
-    <keyword>cámaras seguridad comunidad</keyword>
-    <keyword>monitoreo remoto cámaras</keyword>
-    <keyword>sistemas de videovigilancia</keyword>
-    <keyword>grabación cámaras seguridad</keyword>
-    <keyword>instalador cámaras seguridad</keyword>
-  </topic>
-  <topic name="ANTENAS Y SATÉLITE" slug="antenas-y-satelite">
+  <topic name="REDES Y CONECTIVIDAD" slug="redes-y-conectividad">
     <keyword>instalación de antenas</keyword>
     <keyword>antenas satélite</keyword>
     <keyword>instalador antenas</keyword>
@@ -83,13 +69,11 @@
     <keyword>servicios técnicos Costa del Sol</keyword>
     <keyword>mantenimiento Costa del Sol</keyword>
     <keyword>electricista Costa del Sol</keyword>
-    <keyword>mantenimiento piscinas Costa del Sol</keyword>
     <keyword>cámaras seguridad Costa del Sol</keyword>
     <keyword>antenas Costa del Sol</keyword>
     <keyword>servicios técnicos Levante</keyword>
     <keyword>mantenimiento Levante</keyword>
     <keyword>electricista Levante</keyword>
-    <keyword>mantenimiento piscinas Levante</keyword>
     <keyword>cámaras seguridad Levante</keyword>
     <keyword>antenas Levante</keyword>
   </topic>
@@ -107,9 +91,6 @@
   </topic>
   <topic name="BLOQUE RECOMENDADO PARA GOOGLE ADS / SEO OPERATIVO" slug="bloque-recomendado-para-google-ads--seo-operativo">
     <keyword>servicios técnicos integrales</keyword>
-    <keyword>mantenimiento de piscinas</keyword>
-    <keyword>limpieza de piscinas</keyword>
-    <keyword>tratamiento de piscinas</keyword>
     <keyword>electricista profesional</keyword>
     <keyword>instalaciones eléctricas</keyword>
     <keyword>averías eléctricas</keyword>
@@ -129,8 +110,6 @@
   <topic name="TEMAS LOCALES ORIHUELA / ORIHUELA COSTA 24H" slug="temas-locales-orihuela--orihuela-costa-24h">
     <keyword>servicios técnicos Orihuela</keyword>
     <keyword>servicios técnicos Orihuela Costa 24 horas</keyword>
-    <keyword>mantenimiento piscinas Orihuela Costa</keyword>
-    <keyword>limpieza piscinas Orihuela Costa</keyword>
     <keyword>electricista Orihuela 24 horas</keyword>
     <keyword>electricista Orihuela Costa 24 horas</keyword>
     <keyword>instalación cámaras seguridad Orihuela Costa</keyword>
