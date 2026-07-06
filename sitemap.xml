@@ -30,7 +30,6 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url><loc>https://levante-tls.pages.dev/</loc><lastmod>2026-06-09</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
   <url><loc>https://levante-tls.pages.dev/services.html</loc><lastmod>2026-06-09</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
   <url><loc>https://levante-tls.pages.dev/contact.html</loc><lastmod>2026-06-09</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://levante-tls.pages.dev/about.html</loc><lastmod>2026-07-06</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
