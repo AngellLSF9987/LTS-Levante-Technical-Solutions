@@ -11,10 +11,9 @@ LTS# LTS - Levante Technical Solutions
 
 LTS - Levante Technical Solutions es una web corporativa orientada a la captación de solicitudes para servicios técnicos integrales a domicilio:
 
-- Mantenimiento de piscinas.
 - Electricidad.
 - Videovigilancia CCTV y cámaras de seguridad.
-- Antenas y sistemas satélite.
+- Redes y Conectividad.
 - Servicios técnicos para hogares, comunidades, negocios y viviendas vacacionales.
 
 El proyecto está preparado para funcionar como sitio estático desplegado en **Cloudflare Pages**, con soporte multilingüe, formulario de contacto protegido mediante **Cloudflare Turnstile**, validación server-side mediante **Cloudflare Pages Functions** y conexión pública con el **Perfil de Empresa de Google**.
